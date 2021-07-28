@@ -1,0 +1,292 @@
+rule cc
+  command = /home/harmony/llvm/bin/../bin/clang ${defines} ${include_dirs} ${cflags} ${cflags_c} -c ${in} -o ${out}
+  description = clang ${out}
+rule cxx
+  command = /home/harmony/llvm/bin/../bin/clang++ ${defines} ${include_dirs} ${cflags_cc} -c ${in} -o ${out}
+  description = clang++ ${out}
+  depfile = ${out}.d
+  deps = gcc
+rule asm
+  command = /home/harmony/llvm/bin/../bin/llvm-as ${include_dirs} ${asmflags} -c ${in} -o ${out}
+  description = ASM ${out}
+  depfile = ${out}.d
+  deps = gcc
+rule alink
+  command = /home/harmony/llvm/bin/../bin/llvm-ar -cr ${out} @"${out}.rsp"
+  description = AR ${out}
+  rspfile = ${out}.rsp
+  rspfile_content = ${in}
+rule solink
+  command = /home/harmony/llvm/bin/../bin/clang -shared ${ldflags} ${in} -o ${output_dir}/${target_output_name}${output_extension} && /home/harmony/llvm/bin/../bin/llvm-objcopy  --strip-all "${output_dir}/${target_output_name}${output_extension}" "${output_dir}/${target_output_name}${output_extension}"
+  description = SOLINK ${output_dir}/${target_output_name}${output_extension}
+  rspfile = ${output_dir}/${target_output_name}${output_extension}.rsp
+  rspfile_content = ${in}
+rule link
+  command = /home/harmony/llvm/bin/../bin/clang ${ldflags} ${in}   -o ${output_dir}/bin/${target_output_name}${output_extension} && /home/harmony/llvm/bin/../bin/llvm-objcopy  --strip-all ${output_dir}/bin/${target_output_name}${output_extension}
+  description = LLVM LINK ${output_dir}/bin/${target_output_name}${output_extension}
+  rspfile = ${output_dir}/bin/${target_output_name}${output_extension}.rsp
+  rspfile_content = ${in}
+rule stamp
+  command = /usr/bin/touch ${out}
+  description = STAMP ${out}
+rule copy
+  command = cp -afd ${in} ${out}
+  description = COPY ${in} ${out}
+
+build obj/applications/sample/camera/app/app_sample.stamp: stamp ./libs/libhello_world.a
+subninja obj/applications/sample/camera/app/camera_app.ninja
+subninja obj/applications/sample/camera/app/hello_world.ninja
+build obj/applications/sample/camera/communication/sample.stamp: stamp
+build system/internal/launcher.hap: copy ../../applications/sample/camera/hap/launcher.hap
+build system/internal/setting.hap: copy ../../applications/sample/camera/hap/setting.hap
+build system/internal/camera.hap: copy ../../applications/sample/camera/hap/camera.hap
+
+build obj/applications/sample/camera/hap/copy_hap.stamp: stamp system/internal/launcher.hap system/internal/setting.hap system/internal/camera.hap
+build data/cameradev.ini: copy ../../applications/sample/camera/media/cameradev_imx335.ini
+
+build obj/applications/sample/camera/media/camera_config.stamp: stamp data/cameradev.ini
+subninja obj/applications/sample/camera/media/camera_sample.ninja
+build obj/applications/sample/camera/media/media_sample.stamp: stamp dev_tools/bin/camera_sample dev_tools/bin/player_sample
+subninja obj/applications/sample/camera/media/player_sample.ninja
+build obj/base/global/frameworks/resmgr_lite/global_manager_lite.stamp: stamp ./libglobal_resmgr.so
+subninja obj/base/global/frameworks/resmgr_lite/global_resmgr.ninja
+build obj/base/hiviewdfx/frameworks/hilog_lite/featured/hilog_ndk.stamp: stamp ./libhilog_shared.so
+subninja obj/base/hiviewdfx/frameworks/hilog_lite/featured/hilog_shared.ninja
+subninja obj/base/hiviewdfx/frameworks/hilog_lite/featured/hilog_static.ninja
+subninja obj/base/hiviewdfx/services/hilogcat_lite/apphilogcat/apphilogcat.ninja
+subninja obj/base/hiviewdfx/services/hilogcat_lite/apphilogcat/apphilogcat_static.ninja
+subninja obj/base/hiviewdfx/services/hilogcat_lite/hilogcat/hilogcat.ninja
+subninja obj/base/hiviewdfx/services/hilogcat_lite/hilogcat/hilogcat_static.ninja
+subninja obj/base/security/frameworks/app_verify/verify.ninja
+subninja obj/base/security/frameworks/crypto_lite/cipher/cipher_shared.ninja
+subninja obj/base/security/frameworks/crypto_lite/js/builtin/ace_kit_cipher.ninja
+build obj/base/security/frameworks/hichainsdk_lite/hichainsdk.stamp: stamp ./libhichainsdk.so
+subninja obj/base/security/frameworks/hichainsdk_lite/source/hichainsdk.ninja
+subninja obj/base/security/frameworks/huks_lite/source/huks.ninja
+build obj/base/security/services/iam_lite/pms_lite.stamp: stamp ./libpms_base.so ./libipc_auth_target.so ./libpms_target.so ./libpms_client.so
+subninja obj/base/security/services/iam_lite/ipc_auth/ipc_auth_target.ninja
+subninja obj/base/security/services/iam_lite/pms/pms_target.ninja
+subninja obj/base/security/services/iam_lite/pms_base/pms_base.ninja
+subninja obj/base/security/services/iam_lite/pms_client/pms_client.ninja
+build obj/base/startup/frameworks/syspara_lite/parameter/parameter.stamp: stamp ./libsysparam.so
+build obj/base/startup/frameworks/syspara_lite/parameter/parameter_notes.stamp: stamp ./libsysparam.so
+subninja obj/base/startup/frameworks/syspara_lite/parameter/src/sysparam.ninja
+build obj/base/startup/frameworks/syspara_lite/token/token.stamp: stamp ./libtoken_shared.so
+build obj/base/startup/frameworks/syspara_lite/token/token_notes.stamp: stamp ./libtoken_shared.so
+subninja obj/base/startup/frameworks/syspara_lite/token/token_shared.ninja
+subninja obj/base/startup/services/appspawn_lite/appspawn.ninja
+build obj/base/startup/services/appspawn_lite/appspawn_lite.stamp: stamp ./bin/appspawn
+subninja obj/base/startup/services/bootstrap_lite/source/bootstrap.ninja
+subninja obj/base/startup/services/init_lite/init.ninja
+build obj/base/startup/services/init_lite/init_lite.stamp: stamp ./bin/init
+rule __build_lite_gen_rootfs___build_lite_toolchain_linux_x86_64_clang__rule
+  command = python ../../build/lite/gen_rootfs.py --path=../../out/ipcamera_hi3516dv300 --board=hi3516dv300 --kernel=liteos_a --compile_so=/home/harmony/llvm/bin/../bin/llvm-objcopy\$ --strip-all --compile_bin=/home/harmony/llvm/bin/../bin/llvm-objcopy\$ --strip-all
+  description = ACTION //build/lite:gen_rootfs(//build/lite/toolchain:linux_x86_64_clang)
+  restat = 1
+
+build gen/build/lite/gen_rootfs.log: __build_lite_gen_rootfs___build_lite_toolchain_linux_x86_64_clang__rule | ../../build/lite/gen_rootfs.py obj/build/lite/ohos.stamp
+
+build obj/build/lite/gen_rootfs.stamp: stamp gen/build/lite/gen_rootfs.log
+build obj/build/lite/ndk.stamp: stamp
+build obj/build/lite/ohos.stamp: stamp obj/foundation/aafwk/frameworks/ability_lite/aafwk_abilitykit_lite.stamp obj/foundation/aafwk/frameworks/ability_lite/aafwk_abilityMain_lite.stamp obj/foundation/aafwk/frameworks/abilitymgr_lite/aafwk_abilityManager_lite.stamp obj/foundation/aafwk/services/abilitymgr_lite/aafwk_services_lite.stamp ./bin/camera_app obj/applications/sample/camera/communication/sample.stamp obj/applications/sample/camera/hap/copy_hap.stamp ./libs/libhilog_static.a ./libhilog_shared.so ./libs/libhilogcat_static.a ./libs/libapphilogcat_static.a obj/foundation/distributedschedule/services/samgr_lite/samgr.stamp obj/foundation/distributedschedule/services/safwk_lite/safwk_lite.stamp obj/foundation/distributedschedule/services/dtbschedmgr_lite/dtbschedmgr.stamp obj/base/security/frameworks/hichainsdk_lite/hichainsdk.stamp obj/base/security/services/iam_lite/pms_lite.stamp ./libverify.so obj/applications/sample/camera/media/media_sample.stamp obj/foundation/multimedia/services/media_lite/media_lite.stamp obj/foundation/graphic/lite/frameworks/surface/litesurface.stamp obj/foundation/graphic/lite/utils/litegraphicutils.stamp obj/foundation/graphic/lite/frameworks/ui/liteui.stamp obj/foundation/graphic/lite/services/ims/liteims.stamp obj/foundation/graphic/lite/services/wms/litewms.stamp ./libs/libbootstrap.a obj/base/startup/frameworks/syspara_lite/parameter/parameter.stamp obj/base/startup/frameworks/syspara_lite/token/token.stamp obj/base/startup/services/init_lite/init_lite.stamp obj/base/startup/services/appspawn_lite/appspawn_lite.stamp obj/vendor/huawei/camera/init_configs/init_config.stamp obj/kernel/liteos_a/kernel.stamp obj/foundation/communication/frameworks/ipc_lite/liteipc.stamp obj/foundation/communication/services/softbus_lite/softbus.stamp obj/third_party/wpa_supplicant/wpa_supplicant-2.9/wpa_supplicant.stamp obj/foundation/ace/frameworks/lite/jsfwk.stamp obj/drivers/hdf/lite/posix/hdf_posix.stamp obj/drivers/hdf/lite/manager/hdf_manager.stamp obj/vendor/huawei/hdf/wifi/wifi_firmware.stamp obj/vendor/huawei/hdf/display/hdi/hdi_display.stamp obj/vendor/huawei/hdf/input/hdi/hdi_input.stamp obj/foundation/appexecfwk/frameworks/bundle_lite/appexecfwk_kits_lite.stamp obj/foundation/appexecfwk/services/bundlemgr_lite/appexecfwk_services_lite.stamp obj/vendor/hisi/hi35xx/hi35xx_init/hi3516dv300/hi3516dv300_image.stamp obj/vendor/hisi/hi35xx/hardware/hardware_media_sdk.stamp obj/vendor/hisi/hi35xx/middleware/middleware_source_sdk.stamp obj/test/xts/acts/acts.stamp obj/test/xts/tools/tools.stamp obj/test/developertest/test.stamp obj/utils/native/lite/kv_store/kv_store.stamp
+build obj/drivers/hdf/lite/adapter/osal/posix/hdf_posix.stamp: stamp ./libhdf_osal.so
+subninja obj/drivers/hdf/lite/adapter/osal/posix/hdf_posix_osal.ninja
+subninja obj/drivers/hdf/lite/manager/hdf_core.ninja
+build obj/drivers/hdf/lite/manager/hdf_manager.stamp: stamp ./libhdf_core.so
+build obj/drivers/hdf/lite/posix/hdf_posix.stamp: stamp obj/drivers/hdf/lite/adapter/osal/posix/hdf_posix.stamp
+build obj/foundation/aafwk/frameworks/ability_lite/aafwk_abilityMain_lite.stamp: stamp ./bin/abilityMain
+build obj/foundation/aafwk/frameworks/ability_lite/aafwk_abilitykit_lite.stamp: stamp ./libability.so
+subninja obj/foundation/aafwk/frameworks/ability_lite/ability.ninja
+subninja obj/foundation/aafwk/frameworks/ability_lite/abilityMain.ninja
+build obj/foundation/aafwk/frameworks/ability_lite/ability_notes.stamp: stamp ./libability.so ./libabilitymanager.so
+build obj/foundation/aafwk/frameworks/abilitymgr_lite/aafwk_abilityManager_lite.stamp: stamp ./libabilitymanager.so
+subninja obj/foundation/aafwk/frameworks/abilitymgr_lite/abilitymanager.ninja
+subninja obj/foundation/aafwk/frameworks/want_lite/want.ninja
+build obj/foundation/aafwk/services/abilitymgr_lite/aafwk_services_lite.stamp: stamp ./libabilityms.so dev_tools/bin/aa
+subninja obj/foundation/aafwk/services/abilitymgr_lite/abilityms.ninja
+subninja obj/foundation/aafwk/services/abilitymgr_lite/tools/aa.ninja
+build obj/foundation/aafwk/services/abilitymgr_lite/tools/tools_lite.stamp: stamp dev_tools/bin/aa
+subninja obj/foundation/ace/frameworks/lite/ace_lite.ninja
+build obj/foundation/ace/frameworks/lite/jsfwk.stamp: stamp ./libace_lite.so
+build obj/foundation/appexecfwk/frameworks/bundle_lite/appexecfwk_kits_lite.stamp: stamp ./libbundle.so
+subninja obj/foundation/appexecfwk/frameworks/bundle_lite/bundle.ninja
+build obj/foundation/appexecfwk/frameworks/bundle_lite/bundle_notes.stamp: stamp ./libbundle.so
+build obj/foundation/appexecfwk/services/bundlemgr_lite/appexecfwk_services_lite.stamp: stamp ./libbundlems.so dev_tools/bin/bm ./bin/bundle_daemon
+subninja obj/foundation/appexecfwk/services/bundlemgr_lite/bundlems.ninja
+subninja obj/foundation/appexecfwk/services/bundlemgr_lite/bundle_daemon/bundle_daemon.ninja
+subninja obj/foundation/appexecfwk/services/bundlemgr_lite/tools/bm.ninja
+build obj/foundation/communication/frameworks/ipc_lite/liteipc.stamp: stamp ./libliteipc_adapter.so
+subninja obj/foundation/communication/frameworks/ipc_lite/liteipc_adapter.ninja
+build obj/foundation/communication/frameworks/ipc_lite/liteipc_ndk.stamp: stamp ./libliteipc_adapter.so
+build obj/foundation/communication/services/softbus_lite/softbus.stamp: stamp ./libsoftbus_lite.so
+subninja obj/foundation/communication/services/softbus_lite/softbus_lite.ninja
+build obj/foundation/communication/services/softbus_lite/softbus_lite_ndk.stamp: stamp obj/foundation/communication/services/softbus_lite/softbus_ndk.stamp
+build obj/foundation/communication/services/softbus_lite/softbus_ndk.stamp: stamp ./libsoftbus_lite.so
+subninja obj/foundation/distributedschedule/services/dtbschedmgr_lite/dmslite.ninja
+build obj/foundation/distributedschedule/services/dtbschedmgr_lite/dtbschedmgr.stamp: stamp ./libdmslite.so
+subninja obj/foundation/distributedschedule/services/safwk_lite/foundation.ninja
+build obj/foundation/distributedschedule/services/safwk_lite/safwk_lite.stamp: stamp ./bin/foundation
+build obj/foundation/distributedschedule/services/samgr_lite/samgr.stamp: stamp ./libsamgr.so ./libbroadcast.so ./libserver.so obj/foundation/distributedschedule/services/samgr_lite/samgr_client/client.stamp
+build obj/foundation/distributedschedule/services/samgr_lite/samgr_lite_ndk.stamp: stamp ./libsamgr.so ./libbroadcast.so ./libserver.so
+subninja obj/foundation/distributedschedule/services/samgr_lite/communication/broadcast/broadcast.ninja
+subninja obj/foundation/distributedschedule/services/samgr_lite/samgr/samgr.ninja
+subninja obj/foundation/distributedschedule/services/samgr_lite/samgr/adapter/samgr_adapter.ninja
+subninja obj/foundation/distributedschedule/services/samgr_lite/samgr/source/samgr_source.ninja
+subninja obj/foundation/distributedschedule/services/samgr_lite/samgr_client/client.ninja
+subninja obj/foundation/distributedschedule/services/samgr_lite/samgr_endpoint/endpoint_source.ninja
+subninja obj/foundation/distributedschedule/services/samgr_lite/samgr_endpoint/store_source.ninja
+subninja obj/foundation/distributedschedule/services/samgr_lite/samgr_server/server.ninja
+build obj/foundation/graphic/lite/frameworks/surface/litesurface.stamp: stamp ./libsurface.so
+subninja obj/foundation/graphic/lite/frameworks/surface/surface.ninja
+build obj/foundation/graphic/lite/frameworks/ui/liteui.stamp: stamp ./libui.so
+subninja obj/foundation/graphic/lite/frameworks/ui/ui.ninja
+subninja obj/foundation/graphic/lite/hals/graphic_hals.ninja
+build obj/foundation/graphic/lite/hals/hals.stamp: stamp ./libgraphic_hals.so
+subninja obj/foundation/graphic/lite/services/ims/ims.ninja
+build obj/foundation/graphic/lite/services/ims/liteims.stamp: stamp ./libims.so
+build obj/foundation/graphic/lite/services/wms/litewms.stamp: stamp ./bin/wms_server ./libwms_client.so
+subninja obj/foundation/graphic/lite/services/wms/wms_client.ninja
+subninja obj/foundation/graphic/lite/services/wms/wms_server.ninja
+subninja obj/foundation/graphic/lite/utils/graphic_utils.ninja
+build obj/foundation/graphic/lite/utils/litegraphicutils.stamp: stamp ./libgraphic_utils.so
+build data/SourceHanSansSC-Regular.otf: copy ../../foundation/graphic/lite/utils/fonts/SourceHanSansSC-Regular.otf
+
+build obj/foundation/graphic/lite/utils/utils_config.stamp: stamp data/SourceHanSansSC-Regular.otf
+subninja obj/foundation/multimedia/frameworks/audio_lite/audio_capturer.ninja
+subninja obj/foundation/multimedia/frameworks/camera_lite/camera.ninja
+subninja obj/foundation/multimedia/frameworks/player_lite/player.ninja
+build obj/foundation/multimedia/frameworks/recorder_lite/media_lite.stamp: stamp ./librecorder.so
+subninja obj/foundation/multimedia/frameworks/recorder_lite/recorder.ninja
+subninja obj/foundation/multimedia/interfaces/kits/player_lite/js/builtin/audio_api.ninja
+build obj/foundation/multimedia/services/media_lite/media_lite.stamp: stamp ./bin/media_server ./libmedia_common.so ./libcamera.so ./libplayer.so ./librecorder.so
+build obj/foundation/multimedia/services/media_lite/media_ndk.stamp: stamp ./libcamera.so ./libplayer.so ./librecorder.so ./libaudio_capturer.so ./libmedia_common.so
+subninja obj/foundation/multimedia/services/media_lite/media_server.ninja
+subninja obj/foundation/multimedia/utils/lite/media_common.ninja
+build obj/kernel/liteos_a/kernel.stamp: stamp obj/kernel/liteos_a/make.stamp
+rule __kernel_liteos_a_make___build_lite_toolchain_linux_x86_64_clang__rule
+  command = python ../../build/lite/build_ext_components.py --path=/home/harmony/harmony/code/code-1.0/kernel/liteos_a --prebuilts=sh\$ build.sh\$ hi3516dv300\$ clang\$ release --command=make\$ clean\$ OUTDIR=/home/harmony/harmony/code/code-1.0/out/ipcamera_hi3516dv300/obj/kernel/liteos_a\$ \&\&\$ make\$ rootfs\$ VERSION=\"OpenHarmony\$ 1.0\"\$ -j\$ 16\$ OUTDIR=/home/harmony/harmony/code/code-1.0/out/ipcamera_hi3516dv300/obj/kernel/liteos_a
+  description = ACTION //kernel/liteos_a:make(//build/lite/toolchain:linux_x86_64_clang)
+  restat = 1
+
+build gen/kernel/liteos_a/liteos_a_build_log.txt: __kernel_liteos_a_make___build_lite_toolchain_linux_x86_64_clang__rule | ../../build/lite/build_ext_components.py
+
+build obj/kernel/liteos_a/make.stamp: stamp gen/kernel/liteos_a/liteos_a_build_log.txt
+build obj/test/developertest/test.stamp: stamp test/unittest/bin/CalcSubTest.bin
+subninja obj/test/developertest/example/cxx_demo/test/unittest/common/CalcSubTest.ninja
+subninja obj/test/developertest/third_party/lib/cpp/gtest.ninja
+subninja obj/test/developertest/third_party/lib/cpp/gtest_main.ninja
+rule __test_xdevice_xdevice___build_lite_toolchain_linux_x86_64_clang__rule
+  command = python ../../test/xts/tools/build/suite.py build_xdevice --project_dir /home/harmony/harmony/code/code-1.0/test/xdevice --output_dirs /home/harmony/harmony/code/code-1.0/out/ipcamera_hi3516dv300/suites/acts/tools,
+  description = ACTION //test/xdevice:xdevice(//build/lite/toolchain:linux_x86_64_clang)
+  restat = 1
+
+build suites/acts/tools: __test_xdevice_xdevice___build_lite_toolchain_linux_x86_64_clang__rule | ../../test/xts/tools/build/suite.py
+
+build obj/test/xdevice/xdevice.stamp: stamp suites/acts/tools
+rule __test_xts_acts_acts___build_lite_toolchain_linux_x86_64_clang__rule
+  command = python ../../test/xts/tools/build/suite.py archive_suite --suite_path /home/harmony/harmony/code/code-1.0/out/ipcamera_hi3516dv300/suites/acts --testcases_name testcases --prebuilts_resource , --build_enabled true
+  description = ACTION //test/xts/acts:acts(//build/lite/toolchain:linux_x86_64_clang)
+  restat = 1
+
+build suites/acts.zip: __test_xts_acts_acts___build_lite_toolchain_linux_x86_64_clang__rule | ../../test/xts/tools/build/suite.py obj/test/xdevice/xdevice.stamp obj/test/xts/acts/acts_compoment.stamp ./bin/query.bin
+
+build obj/test/xts/acts/acts.stamp: stamp suites/acts.zip
+build obj/test/xts/acts/acts_compoment.stamp: stamp
+build suites/acts/resource/tools/query.bin: copy bin/query.bin || obj/test/xts/acts/acts_compoment.stamp ./bin/query.bin
+
+build obj/test/xts/acts/query_copy.stamp: stamp suites/acts/resource/tools/query.bin
+build obj/test/xts/tools/tools.stamp: stamp
+subninja obj/test/xts/tools/others/query/query.ninja
+subninja obj/third_party/bounds_checking_function/libsec_shared.ninja
+subninja obj/third_party/bounds_checking_function/libsec_static.ninja
+build obj/third_party/cJSON/cjson_ndk.stamp: stamp ./libcjson_shared.so
+subninja obj/third_party/cJSON/cjson_shared.ninja
+subninja obj/third_party/cJSON/cjson_static.ninja
+subninja obj/third_party/freetype/freetype.ninja
+build obj/third_party/freetype/freetype_shared.stamp: stamp ./libfreetype.so
+subninja obj/third_party/iniparser/iniparser.ninja
+build obj/third_party/jerryscript/jerry-core/jerry-core.stamp: stamp ./libjerry-core_shared.so
+subninja obj/third_party/jerryscript/jerry-core/jerry-core_shared.ninja
+build obj/third_party/jerryscript/jerry-ext/jerry-ext.stamp: stamp ./libjerry-ext_shared.so
+subninja obj/third_party/jerryscript/jerry-ext/jerry-ext_shared.ninja
+build obj/third_party/jerryscript/jerry-libm/jerry-libm.stamp: stamp ./libjerry-libm_shared.so
+subninja obj/third_party/jerryscript/jerry-libm/jerry-libm_shared.ninja
+build obj/third_party/jerryscript/jerry-port/default/jerry-port-default.stamp: stamp ./libjerry-port-default_shared.so
+subninja obj/third_party/jerryscript/jerry-port/default/jerry-port-default_shared.ninja
+subninja obj/third_party/libjpeg/libjpeg.ninja
+subninja obj/third_party/libpng/libpng.ninja
+build obj/third_party/mbedtls/mbedtls.stamp: stamp ./libmbedtls.so
+build obj/third_party/mbedtls/mbedtls_ndk.stamp: stamp obj/third_party/mbedtls/mbedtls.stamp
+subninja obj/third_party/mbedtls/mbedtls_shared.ninja
+subninja obj/third_party/mbedtls/mbedtls_static.ninja
+subninja obj/third_party/openssl/openssl_shared.ninja
+subninja obj/third_party/openssl/openssl_static.ninja
+build obj/third_party/wpa_supplicant/wpa_supplicant-2.9/wpa_supplicant.stamp: stamp obj/third_party/wpa_supplicant/wpa_supplicant-2.9/wpa_supplicant-2.9.stamp ./libhdf_core.so
+rule __third_party_wpa_supplicant_wpa_supplicant-2.9_wpa_supplicant-2.9___build_lite_toolchain_linux_x86_64_clang__rule
+  command = python ../../build/lite/build_ext_components.py --path=../../third_party/wpa_supplicant/wpa_supplicant-2.9 --command=sh\$ build.sh\$ /home/harmony/harmony/code/code-1.0/out/ipcamera_hi3516dv300\$ clang\$ false\$ release\$ /home/harmony/llvm/bin/..
+  description = ACTION //third_party/wpa_supplicant/wpa_supplicant-2.9:wpa_supplicant-2.9(//build/lite/toolchain:linux_x86_64_clang)
+  restat = 1
+
+build obj/third_party/wpa_supplicant/wpa_supplicant-2.9/wpa_supplicant-2.9_build_ext_components.txt: __third_party_wpa_supplicant_wpa_supplicant-2.9_wpa_supplicant-2.9___build_lite_toolchain_linux_x86_64_clang__rule | ../../build/lite/build_ext_components.py ./libhdf_core.so
+
+build obj/third_party/wpa_supplicant/wpa_supplicant-2.9/wpa_supplicant-2.9.stamp: stamp obj/third_party/wpa_supplicant/wpa_supplicant-2.9/wpa_supplicant-2.9_build_ext_components.txt
+subninja obj/third_party/zlib/zlib_shared.ninja
+subninja obj/third_party/zlib/zlib_static.ninja
+build obj/utils/native/lite/js/builtin/ace_utils_kits.stamp: stamp ./libace_kit_common.so ./libace_kit_deviceinfo.so ./libace_kit_file.so ./libace_kit_kvstore.so ./libace_kit_timer.so
+subninja obj/utils/native/lite/js/builtin/common/ace_kit_common.ninja
+subninja obj/utils/native/lite/js/builtin/deviceinfokit/ace_kit_deviceinfo.ninja
+subninja obj/utils/native/lite/js/builtin/filekit/ace_kit_file.ninja
+subninja obj/utils/native/lite/js/builtin/kvstorekit/ace_kit_kvstore.ninja
+subninja obj/utils/native/lite/kal/timer/kal_timer.ninja
+build obj/utils/native/lite/kv_store/kv_store.stamp: stamp ./libutils_kv_store.so
+subninja obj/utils/native/lite/kv_store/src/utils_kv_store.ninja
+subninja obj/utils/native/lite/timer_task/ace_kit_timer.ninja
+rule __vendor_hisi_hi35xx_hardware_hardware_media_sdk___build_lite_toolchain_linux_x86_64_clang__rule
+  command = python ../../build/lite/build_ext_components.py --path=../../vendor/hisi/hi35xx/hardware --command=./build.sh\$ /home/harmony/harmony/code/code-1.0/out/ipcamera_hi3516dv300\$ hi3516dv300\$ liteos_a\$ clang
+  description = ACTION //vendor/hisi/hi35xx/hardware:hardware_media_sdk(//build/lite/toolchain:linux_x86_64_clang)
+  restat = 1
+
+build obj/vendor/hisi/hi35xx/hardware/hardware_media_sdk_build_ext_components.txt: __vendor_hisi_hi35xx_hardware_hardware_media_sdk___build_lite_toolchain_linux_x86_64_clang__rule | ../../build/lite/build_ext_components.py
+
+build obj/vendor/hisi/hi35xx/hardware/hardware_media_sdk.stamp: stamp obj/vendor/hisi/hi35xx/hardware/hardware_media_sdk_build_ext_components.txt
+build libhdi_media.so: copy ../../vendor/hisi/hi35xx/hi3516dv300/hi3516dv300_adapter/hals/multimedia/libs/hi3516dv300/release/libhdi_media.so || ./libsec_shared.so ./libiniparser.so obj/vendor/hisi/hi35xx/hi35xx_init/hi3516dv300/hi3516dv300_image.stamp
+
+build obj/vendor/hisi/hi35xx/hi3516dv300/hi3516dv300_adapter/hals/multimedia/hdi_media.stamp: stamp libhdi_media.so
+rule __vendor_hisi_hi35xx_hi35xx_init_hi3516dv300_hi3516dv300_image___build_lite_toolchain_linux_x86_64_clang__rule
+  command = python ../../build/lite/build_ext_components.py --path=../../vendor/hisi/hi35xx/hi35xx_init/hi3516dv300 --command=./build.sh\$ /home/harmony/harmony/code/code-1.0/out/ipcamera_hi3516dv300\$ hi3516dv300\$ liteos_a\$ clang
+  description = ACTION //vendor/hisi/hi35xx/hi35xx_init/hi3516dv300:hi3516dv300_image(//build/lite/toolchain:linux_x86_64_clang)
+  restat = 1
+
+build obj/vendor/hisi/hi35xx/hi35xx_init/hi3516dv300/hi3516dv300_image_build_ext_components.txt: __vendor_hisi_hi35xx_hi35xx_init_hi3516dv300_hi3516dv300_image___build_lite_toolchain_linux_x86_64_clang__rule | ../../build/lite/build_ext_components.py obj/kernel/liteos_a/kernel.stamp
+
+build obj/vendor/hisi/hi35xx/hi35xx_init/hi3516dv300/hi3516dv300_image.stamp: stamp obj/vendor/hisi/hi35xx/hi35xx_init/hi3516dv300/hi3516dv300_image_build_ext_components.txt
+rule __vendor_hisi_hi35xx_middleware_middleware_source_sdk___build_lite_toolchain_linux_x86_64_clang__rule
+  command = python ../../build/lite/build_ext_components.py --path=../../vendor/hisi/hi35xx/middleware --command=./build.sh\$ /home/harmony/harmony/code/code-1.0/out/ipcamera_hi3516dv300\$ hi3516dv300\$ liteos_a\$ clang\$ /home/harmony/llvm/bin/..
+  description = ACTION //vendor/hisi/hi35xx/middleware:middleware_source_sdk(//build/lite/toolchain:linux_x86_64_clang)
+  restat = 1
+
+build obj/vendor/hisi/hi35xx/middleware/middleware_source_sdk_build_ext_components.txt: __vendor_hisi_hi35xx_middleware_middleware_source_sdk___build_lite_toolchain_linux_x86_64_clang__rule | ../../build/lite/build_ext_components.py
+
+build obj/vendor/hisi/hi35xx/middleware/middleware_source_sdk.stamp: stamp obj/vendor/hisi/hi35xx/middleware/middleware_source_sdk_build_ext_components.txt
+subninja obj/vendor/huawei/camera/hals/utils/sys_param/hal_sysparam.ninja
+subninja obj/vendor/huawei/camera/hals/utils/token/haltoken_shared.ninja
+build obj/vendor/huawei/camera/init_configs/config/init.cfg: copy ../../vendor/huawei/camera/init_configs/init_liteos_a_3516dv300.cfg
+
+build obj/vendor/huawei/camera/init_configs/ConfigFiles.stamp: stamp obj/vendor/huawei/camera/init_configs/config/init.cfg
+build obj/vendor/huawei/camera/init_configs/init_config.stamp: stamp
+build libdisplay_gfx.so: copy ../../vendor/huawei/hdf/libs/hi3516dv300/libdisplay_gfx.so
+
+build obj/vendor/huawei/hdf/display/hdi/display_gfx.stamp: stamp libdisplay_gfx.so
+build libdisplay_gralloc.so: copy ../../vendor/huawei/hdf/libs/hi3516dv300/libdisplay_gralloc.so
+
+build obj/vendor/huawei/hdf/display/hdi/display_gralloc.stamp: stamp libdisplay_gralloc.so
+build libdisplay_layer.so: copy ../../vendor/huawei/hdf/libs/hi3516dv300/libdisplay_layer.so
+
+build obj/vendor/huawei/hdf/display/hdi/display_layer.stamp: stamp libdisplay_layer.so
+build obj/vendor/huawei/hdf/display/hdi/hdi_display.stamp: stamp obj/vendor/huawei/hdf/display/hdi/display_layer.stamp obj/vendor/huawei/hdf/display/hdi/display_gfx.stamp obj/vendor/huawei/hdf/display/hdi/display_gralloc.stamp
+build libhdi_input.so: copy ../../vendor/huawei/hdf/libs/hi3516dv300/libhdi_input.so
+
+build obj/vendor/huawei/hdf/input/hdi/hdi_input.stamp: stamp libhdi_input.so
+build vendor/firmware: copy ../../vendor/huawei/hdf/wifi/driver/firmware
+
+build obj/vendor/huawei/hdf/wifi/wifi_firmware.stamp: stamp vendor/firmware

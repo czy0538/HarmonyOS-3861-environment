@@ -1,0 +1,2620 @@
+Done. Made 177 targets from 121 files in 949ms
+ninja: Entering directory `/home/harmony/harmony/code/code-1.0/out/ipcamera_hi3516dv300'
+[1/1164] clang obj/base/security/services/iam_lite/pms/src/perm_operate.o
+[2/1164] STAMP obj/applications/sample/camera/communication/sample.stamp
+[3/1164] COPY ../../applications/sample/camera/hap/launcher.hap system/internal/launcher.hap
+[4/1164] COPY ../../applications/sample/camera/hap/setting.hap system/internal/setting.hap
+[5/1164] clang obj/base/security/frameworks/huks_lite/source/hw_keystore_sdk/soft_service/hks_storage.o
+[6/1164] clang obj/applications/sample/camera/app/src/helloworld.o
+[7/1164] COPY ../../applications/sample/camera/hap/camera.hap system/internal/camera.hap
+[8/1164] COPY ../../applications/sample/camera/media/cameradev_imx335.ini data/cameradev.ini
+[9/1164] STAMP obj/applications/sample/camera/hap/copy_hap.stamp
+[10/1164] STAMP obj/applications/sample/camera/media/camera_config.stamp
+[11/1164] clang obj/applications/sample/camera/app/src/los_sample.o
+[12/1164] AR libs/libhello_world.a
+[13/1164] STAMP obj/applications/sample/camera/app/app_sample.stamp
+[14/1164] clang obj/base/security/frameworks/huks_lite/source/hw_keystore_sdk/soft_service/hks_service.o
+[15/1164] clang obj/base/global/frameworks/resmgr_lite/src/global_utils.o
+[16/1164] clang obj/base/global/frameworks/resmgr_lite/src/global.o
+[17/1164] clang++ obj/base/hiviewdfx/frameworks/hilog_lite/featured/hilog.o
+[18/1164] clang obj/base/security/frameworks/app_verify/src/app_common.o
+[19/1164] clang obj/base/security/frameworks/app_verify/src/app_provision.o
+[20/1164] LLVM LINK ./bin/camera_app
+[21/1164] clang obj/base/hiviewdfx/frameworks/hilog_lite/featured/hiview_log.o
+[22/1164] clang obj/base/hiviewdfx/services/hilogcat_lite/apphilogcat/hiview_applogcat.o
+[23/1164] clang obj/base/hiviewdfx/services/hilogcat_lite/hilogcat/hiview_logcat.o
+[24/1164] clang obj/base/security/frameworks/app_verify/src/app_verify.o
+[25/1164] clang obj/base/security/frameworks/app_verify/src/app_file.o
+[26/1164] clang obj/base/security/frameworks/app_verify/src/mbedtls_pkcs7.o
+[27/1164] clang obj/base/security/frameworks/app_verify/src/app_verify_hap.o
+[28/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/auth_info/exchange_auth_info_client.o
+[29/1164] clang obj/base/security/frameworks/app_verify/src/app_centraldirectory.o
+[30/1164] clang obj/base/security/frameworks/crypto_lite/cipher/src/cipher_aes.o
+[31/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/auth_info/add_auth_info.o
+[32/1164] clang obj/base/security/frameworks/crypto_lite/cipher/src/cipher_rsa.o
+[33/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/auth_info/exchange_auth_info.o
+[34/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/auth_info/add_auth_info_client.o
+[35/1164] clang obj/base/security/services/iam_lite/ipc_auth/src/ipc_auth_lite.o
+[36/1164] clang++ obj/base/security/frameworks/crypto_lite/js/builtin/src/cipher_module.o
+[37/1164] clang obj/base/security/services/iam_lite/ipc_auth/src/ipc_auth_impl.o
+[38/1164] clang obj/base/security/frameworks/huks_lite/source/hw_keystore_sdk/hks_client.o
+[39/1164] clang obj/base/security/frameworks/huks_lite/source/hw_keystore_sdk/hks_access.o
+[40/1164] clang obj/base/security/services/iam_lite/pms/src/pms_server.o
+[41/1164] clang obj/base/security/services/iam_lite/pms/src/pms_inner.o
+[42/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/auth_info/auth_info.o
+[43/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/key_agreement/key_agreement.o
+[44/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/auth_info/remove_auth_info_client.o
+[45/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/key_agreement/key_agreement_client.o
+[46/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/json/commonutil.o
+[47/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/hichain.o
+[48/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/huks_adapter/huks_adapter.o
+[49/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/json/jsonutil.o
+[50/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/key_agreement/sec_clone_server.o
+[51/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/key_agreement/key_agreement_server.o
+[52/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/log/log.o
+[53/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/key_agreement/sts_client.o
+[54/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/key_agreement/pake_client.o
+[55/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/key_agreement/pake_server.o
+[56/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/struct/add_auth_info_request.o
+[57/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/key_agreement/sts_server.o
+[58/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/struct/add_auth_info_data.o
+[59/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/schedule/build_object.o
+[60/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/struct/add_auth_info_response.o
+[61/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/schedule/distribution.o
+[62/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/struct/auth_ack_response.o
+[63/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/struct/auth_ack_request.o
+[64/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/struct/auth_start_response.o
+[65/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/struct/exchange_response.o
+[66/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/struct/auth_start_request.o
+[67/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/struct/exchange_auth_data.o
+[68/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/struct/import_add_auth_data.o
+[69/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/struct/pake_client_confirm.o
+[70/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/struct/exchange_request.o
+[71/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/struct/inform_message.o
+[72/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/struct/key_agreement_version.o
+[73/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/struct/pake_server_confirm.o
+[74/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/struct/rmv_auth_info_data.o
+[75/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/struct/pake_request.o
+[76/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/struct/rmv_auth_info_request.o
+[77/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/struct/pake_response.o
+[78/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/struct/rmv_auth_info_response.o
+[79/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/struct/parsedata.o
+[80/1164] clang obj/base/security/frameworks/hichainsdk_lite/source/struct/sec_clone_data.o
+[81/1164] clang obj/base/security/frameworks/huks_lite/source/hw_keystore_sdk/common/hks_log_utils.o
+[82/1164] clang obj/base/security/frameworks/huks_lite/source/hw_keystore_sdk/common/hks_bn.o
+[83/1164] clang obj/base/security/frameworks/huks_lite/source/hw_keystore_sdk/common/hks_hardware_random.o
+[84/1164] clang obj/base/security/frameworks/huks_lite/source/hw_keystore_sdk/common/hks_mem.o
+[85/1164] clang obj/base/security/frameworks/huks_lite/source/hw_keystore_sdk/common/hks_common.o
+[86/1164] clang obj/base/security/frameworks/huks_lite/source/hw_keystore_sdk/soft_service/hks_file_liteos.o
+[87/1164] clang obj/base/security/frameworks/huks_lite/source/hw_keystore_sdk/soft_service/hks_file.o
+[88/1164] clang obj/base/security/frameworks/huks_lite/source/hw_keystore_sdk/common/hks_utility.o
+[89/1164] clang obj/base/security/services/iam_lite/pms/src/pms_impl.o
+[90/1164] clang obj/base/security/frameworks/huks_lite/source/hw_keystore_sdk/soft_service/hks_rkc.o
+[91/1164] clang obj/base/security/services/iam_lite/pms_base/src/permission_service.o
+[92/1164] clang obj/base/security/services/iam_lite/pms_client/perm_client.o
+[93/1164] clang obj/base/startup/services/appspawn_lite/src/main.o
+[94/1164] clang obj/base/startup/services/appspawn_lite/src/appspawn_process.o
+[95/1164] clang obj/base/startup/services/appspawn_lite/src/appspawn_service.o
+[96/1164] clang obj/base/startup/frameworks/syspara_lite/token/src/token_impl_posix/token.o
+[97/1164] clang obj/base/startup/frameworks/syspara_lite/parameter/src/param_impl_posix/param_impl_posix.o
+[98/1164] clang obj/base/startup/services/init_lite/src/main.o
+[99/1164] clang obj/base/startup/frameworks/syspara_lite/parameter/src/parameter_common.o
+[100/1164] clang obj/base/startup/services/bootstrap_lite/source/system_init.o
+[101/1164] clang obj/base/startup/services/bootstrap_lite/source/bootstrap_service.o
+[102/1164] AR libs/libbootstrap.a
+[103/1164] clang obj/base/startup/services/init_lite/src/init_jobs.o
+[104/1164] clang obj/base/startup/services/init_lite/src/init_cmds.o
+[105/1164] clang obj/base/startup/services/appspawn_lite/src/appspawn_message.o
+[106/1164] clang obj/base/startup/services/init_lite/src/init_read_cfg.o
+[107/1164] STAMP obj/build/lite/ndk.stamp
+[108/1164] clang obj/base/startup/services/appspawn_lite/src/appspawn_adapter.o
+[109/1164] clang obj/drivers/hdf/lite/adapter/osal/posix/src/osal_time.o
+[110/1164] clang obj/drivers/hdf/lite/adapter/osal/posix/src/osal_thread.o
+[111/1164] clang obj/drivers/hdf/lite/adapter/osal/posix/src/osal_sem.o
+[112/1164] clang obj/drivers/hdf/lite/adapter/osal/posix/src/osal_mem.o
+[113/1164] clang obj/drivers/hdf/lite/adapter/osal/posix/src/osal_mutex.o
+[114/1164] clang obj/base/startup/services/init_lite/src/init_service.o
+[115/1164] clang obj/base/startup/services/init_lite/src/init_adapter.o
+[116/1164] clang obj/base/startup/services/init_lite/src/init_signal_handler.o
+[117/1164] clang obj/base/startup/services/init_lite/src/init_service_manager.o
+[118/1164] clang obj/drivers/hdf/frameworks/core/shared/src/hdf_io_service.o
+[119/1164] clang obj/drivers/hdf/frameworks/ability/sbuf/src/hdf_sbuf.o
+[120/1164] clang obj/drivers/hdf/lite/adapter/syscall/src/hdf_syscall_adapter.o
+[121/1164] clang++ obj/foundation/aafwk/frameworks/ability_lite/src/ability_env.o
+[122/1164] clang++ obj/foundation/aafwk/frameworks/ability_lite/src/ability.o
+[123/1164] clang++ obj/foundation/aafwk/frameworks/abilitymgr_lite/src/abilityms_client.o
+[124/1164] clang++ obj/foundation/aafwk/frameworks/abilitymgr_lite/src/ability_service_manager.o
+[125/1164] clang++ obj/foundation/aafwk/frameworks/ability_lite/src/ability_context.o
+[126/1164] clang++ obj/foundation/aafwk/frameworks/abilitymgr_lite/src/ability_manager.o
+[127/1164] clang++ obj/foundation/aafwk/frameworks/ability_lite/src/ability_env_impl.o
+[128/1164] clang++ obj/foundation/aafwk/frameworks/ability_lite/src/ability_event_handler.o
+[129/1164] clang++ obj/foundation/aafwk/frameworks/ability_lite/src/ability_loader.o
+[130/1164] clang++ obj/foundation/aafwk/frameworks/ability_lite/src/ability_scheduler.o
+[131/1164] clang++ obj/foundation/aafwk/frameworks/ability_lite/src/ability_slice.o
+[132/1164] clang++ obj/foundation/aafwk/frameworks/ability_lite/src/ability_slice_manager.o
+[133/1164] clang++ obj/foundation/aafwk/frameworks/ability_lite/src/ability_thread.o
+[134/1164] clang++ obj/foundation/aafwk/frameworks/ability_lite/src/ability_slice_route.o
+[135/1164] clang++ obj/foundation/aafwk/frameworks/ability_lite/src/ability_slice_stack.o
+[136/1164] clang++ obj/foundation/aafwk/frameworks/ability_lite/src/ability_window.o
+[137/1164] clang obj/foundation/distributedschedule/services/samgr_lite/communication/broadcast/source/broadcast_service.o
+[138/1164] clang++ obj/foundation/aafwk/frameworks/ability_lite/src/ability_slice_scheduler.o
+[139/1164] clang++ obj/foundation/aafwk/frameworks/want_lite/src/want.o
+[140/1164] STAMP obj/foundation/aafwk/frameworks/want_lite/want.stamp
+[141/1164] clang++ obj/foundation/appexecfwk/services/bundlemgr_lite/src/bundle_ms_host.o
+[142/1164] clang++ obj/foundation/appexecfwk/services/bundlemgr_lite/src/bundle_ms_feature.o
+[143/1164] clang++ obj/foundation/appexecfwk/services/bundlemgr_lite/src/bundle_map.o
+[144/1164] clang++ obj/foundation/appexecfwk/services/bundlemgr_lite/src/bundle_res_transform.o
+[145/1164] clang++ obj/foundation/appexecfwk/services/bundlemgr_lite/src/bundle_info_creator.o
+[146/1164] clang++ obj/foundation/appexecfwk/services/bundlemgr_lite/src/bundle_daemon_client.o
+[147/1164] clang++ obj/foundation/appexecfwk/services/bundlemgr_lite/src/bundle_installer.o
+[148/1164] clang++ obj/foundation/appexecfwk/services/bundlemgr_lite/src/bundle_util.o
+[149/1164] clang obj/foundation/communication/services/softbus_lite/discovery/coap/source/json_payload.o
+[150/1164] clang obj/foundation/communication/services/softbus_lite/discovery/coap/source/nstackx_common.o
+[151/1164] clang obj/foundation/communication/services/softbus_lite/discovery/coap/source/nstackx_device.o
+[152/1164] clang obj/foundation/distributedschedule/services/samgr_lite/communication/broadcast/source/pub_sub_implement.o
+[153/1164] clang++ obj/foundation/appexecfwk/services/bundlemgr_lite/src/bundle_extractor.o
+[154/1164] clang obj/foundation/communication/frameworks/ipc_lite/liteipc/src/serializer.o
+[155/1164] clang obj/foundation/communication/services/softbus_lite/discovery/coap/source/coap_discover.o
+[156/1164] clang++ obj/foundation/appexecfwk/services/bundlemgr_lite/src/hap_sign_verify.o
+[157/1164] clang++ obj/foundation/appexecfwk/services/bundlemgr_lite/src/bundle_parser.o
+[158/1164] clang++ obj/foundation/appexecfwk/services/bundlemgr_lite/src/zip_file.o
+[159/1164] clang++ obj/foundation/appexecfwk/services/bundlemgr_lite/bundle_daemon/src/main.o
+[160/1164] clang++ obj/foundation/appexecfwk/services/bundlemgr_lite/bundle_daemon/src/bundle_daemon.o
+[161/1164] clang++ obj/foundation/appexecfwk/services/bundlemgr_lite/bundle_daemon/src/bundle_file_utils.o
+[162/1164] clang++ obj/foundation/appexecfwk/frameworks/bundle_lite/src/ability_info.o
+[163/1164] clang++ obj/foundation/appexecfwk/frameworks/bundle_lite/src/element_name.o
+[164/1164] clang++ obj/foundation/appexecfwk/frameworks/bundle_lite/src/bundle_info_utils.o
+[165/1164] clang++ obj/foundation/appexecfwk/services/bundlemgr_lite/bundle_daemon/src/bundle_daemon_handler.o
+[166/1164] clang++ obj/foundation/appexecfwk/frameworks/bundle_lite/src/bundle_callback_utils.o
+[167/1164] clang++ obj/foundation/appexecfwk/frameworks/bundle_lite/src/convert_utils.o
+[168/1164] clang++ obj/foundation/appexecfwk/frameworks/bundle_lite/src/module_info_utils.o
+[169/1164] clang++ obj/foundation/appexecfwk/frameworks/bundle_lite/src/bundle_self_callback.o
+[170/1164] clang++ obj/foundation/appexecfwk/frameworks/bundle_lite/src/bundle_info.o
+[171/1164] clang++ obj/foundation/appexecfwk/frameworks/bundle_lite/src/bundle_manager.o
+[172/1164] clang++ obj/foundation/appexecfwk/frameworks/bundle_lite/src/bundle_callback.o
+[173/1164] clang++ obj/foundation/appexecfwk/services/bundlemgr_lite/tools/src/command_parser.o
+[174/1164] clang++ obj/foundation/appexecfwk/services/bundlemgr_lite/src/bundle_inner_feature.o
+[175/1164] clang++ obj/foundation/appexecfwk/services/bundlemgr_lite/src/bundle_manager_service.o
+[176/1164] clang++ obj/foundation/appexecfwk/frameworks/bundle_lite/src/token_generate.o
+[177/1164] clang++ obj/foundation/appexecfwk/services/bundlemgr_lite/src/extractor_util.o
+[178/1164] clang++ obj/foundation/appexecfwk/frameworks/bundle_lite/src/module_info.o
+[179/1164] clang++ obj/foundation/appexecfwk/services/bundlemgr_lite/bundle_daemon/src/bundlems_client.o
+[180/1164] clang++ obj/foundation/appexecfwk/frameworks/bundle_lite/src/ability_info_utils.o
+[181/1164] clang obj/foundation/distributedschedule/services/dtbschedmgr_lite/source/distributed_schedule_service.o
+[182/1164] clang obj/foundation/communication/frameworks/ipc_lite/liteipc/src/liteipc_adapter.o
+[183/1164] clang obj/foundation/distributedschedule/services/dtbschedmgr_lite/source/dmslite_session.o
+[184/1164] clang obj/foundation/distributedschedule/services/dtbschedmgr_lite/source/dmslite_check_remote_permission.o
+[185/1164] clang obj/foundation/communication/services/softbus_lite/discovery/coap/source/coap_socket.o
+[186/1164] clang obj/foundation/communication/services/softbus_lite/os_adapter/source/L1/os_adapter.o
+[187/1164] clang++ obj/foundation/appexecfwk/services/bundlemgr_lite/tools/src/main.o
+[188/1164] clang obj/foundation/communication/services/softbus_lite/discovery/coap/source/coap_adapter.o
+[189/1164] clang obj/foundation/communication/services/softbus_lite/discovery/discovery_service/source/coap_service.o
+[190/1164] clang obj/foundation/communication/services/softbus_lite/trans_service/source/libdistbus/tcp_session.o
+[191/1164] clang obj/foundation/communication/services/softbus_lite/discovery/discovery_service/source/discovery_service.o
+[192/1164] clang obj/foundation/communication/services/softbus_lite/discovery/discovery_service/source/common_info_manager.o
+[193/1164] clang obj/foundation/communication/services/softbus_lite/trans_service/source/libdistbus/trans_lock.o
+[194/1164] clang obj/foundation/communication/services/softbus_lite/trans_service/source/libdistbus/auth_conn_manager.o
+[195/1164] clang obj/foundation/communication/services/softbus_lite/trans_service/source/utils/tcp_socket.o
+[196/1164] clang obj/foundation/communication/services/softbus_lite/trans_service/source/utils/message.o
+[197/1164] clang obj/foundation/communication/services/softbus_lite/trans_service/source/utils/aes_gcm.o
+[198/1164] clang obj/foundation/communication/services/softbus_lite/authmanager/source/auth_conn.o
+[199/1164] clang obj/foundation/communication/services/softbus_lite/trans_service/source/libdistbus/tcp_session_manager.o
+[200/1164] clang obj/foundation/communication/services/softbus_lite/authmanager/source/msg_get_deviceid.o
+[201/1164] clang obj/foundation/communication/services/softbus_lite/authmanager/source/auth_interface.o
+[202/1164] clang obj/foundation/communication/services/softbus_lite/authmanager/source/bus_manager.o
+[203/1164] clang obj/foundation/communication/services/softbus_lite/authmanager/source/wifi_auth_manager.o
+[204/1164] clang obj/foundation/distributedschedule/services/dtbschedmgr_lite/source/dmslite_famgr.o
+[205/1164] clang obj/foundation/distributedschedule/services/dtbschedmgr_lite/source/dmslite_msg_parser.o
+[206/1164] clang obj/foundation/distributedschedule/services/dtbschedmgr_lite/source/dmslite.o
+[207/1164] clang obj/foundation/distributedschedule/services/dtbschedmgr_lite/source/dmslite_tlv_common.o
+[208/1164] clang obj/foundation/distributedschedule/services/samgr_lite/samgr/adapter/posix/lock_free_queue.o
+[209/1164] clang obj/foundation/distributedschedule/services/samgr_lite/communication/broadcast/source/pub_sub_feature.o
+[210/1164] clang obj/foundation/distributedschedule/services/samgr_lite/samgr/source/samgr_lite.o
+[211/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-int16array.o
+[212/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-int32array.o
+[213/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-int8array-prototype.o
+[214/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-int32array-prototype.o
+[215/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-int8array.o
+[216/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-typedarray-helpers.o
+[217/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-uint16array-prototype.o
+[218/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-typedarray.o
+[219/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-uint16array.o
+[220/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-uint32array-prototype.o
+[221/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-typedarray-prototype.o
+[222/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-uint32array.o
+[223/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-uint8array-prototype.o
+[224/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-uint8clampedarray-prototype.o
+[225/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-uint8array.o
+[226/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-uint8clampedarray.o
+[227/1164] clang obj/foundation/distributedschedule/services/samgr_lite/samgr/source/task_manager.o
+[228/1164] clang obj/foundation/distributedschedule/services/samgr_lite/samgr/source/common.o
+[229/1164] clang obj/foundation/distributedschedule/services/samgr_lite/samgr_endpoint/source/endpoint.o
+[230/1164] clang obj/foundation/distributedschedule/services/samgr_lite/samgr/source/feature.o
+[231/1164] clang obj/foundation/distributedschedule/services/samgr_lite/samgr/source/service.o
+[232/1164] clang obj/foundation/distributedschedule/services/samgr_lite/samgr/source/message.o
+[233/1164] clang obj/foundation/distributedschedule/services/samgr_lite/samgr/adapter/posix/time_adapter.o
+[234/1164] clang obj/foundation/distributedschedule/services/samgr_lite/samgr_endpoint/source/default_client.o
+[235/1164] clang obj/foundation/distributedschedule/services/samgr_lite/samgr_endpoint/source/sa_store.o
+[236/1164] clang obj/foundation/distributedschedule/services/samgr_lite/samgr/adapter/posix/memory_adapter.o
+[237/1164] clang obj/foundation/distributedschedule/services/samgr_lite/samgr/adapter/posix/thread_adapter.o
+[238/1164] clang obj/foundation/distributedschedule/services/samgr_lite/samgr_endpoint/source/client_factory.o
+[239/1164] clang obj/foundation/distributedschedule/services/samgr_lite/samgr/adapter/posix/queue_adapter.o
+[240/1164] clang obj/foundation/distributedschedule/services/samgr_lite/samgr/source/iunknown.o
+[241/1164] clang obj/foundation/distributedschedule/services/samgr_lite/samgr_endpoint/source/token_bucket.o
+[242/1164] clang obj/foundation/distributedschedule/services/samgr_lite/samgr_client/source/remote_register.o
+[243/1164] COPY ../../foundation/graphic/lite/utils/fonts/SourceHanSansSC-Regular.otf data/SourceHanSansSC-Regular.otf
+[244/1164] STAMP obj/foundation/graphic/lite/utils/utils_config.stamp
+[245/1164] clang obj/foundation/distributedschedule/services/samgr_lite/samgr_server/source/samgr_server.o
+[246/1164] clang++ obj/foundation/graphic/lite/utils/src/mem_api.o
+[247/1164] clang++ obj/foundation/graphic/lite/utils/src/graphic_math.o
+[248/1164] clang++ obj/foundation/graphic/lite/utils/src/transform.o
+[249/1164] clang++ obj/foundation/graphic/lite/utils/src/style.o
+[250/1164] clang obj/foundation/graphic/lite/utils/src/linux_file.o
+[251/1164] clang++ obj/foundation/graphic/lite/utils/src/color.o
+[252/1164] clang obj/third_party/mbedtls/library/asn1write.o
+[253/1164] clang obj/third_party/mbedtls/library/base64.o
+[254/1164] clang obj/third_party/mbedtls/library/blowfish.o
+[255/1164] clang++ obj/foundation/graphic/lite/utils/src/version.o
+[256/1164] clang obj/third_party/mbedtls/library/camellia.o
+[257/1164] clang obj/third_party/mbedtls/library/ccm.o
+[258/1164] clang obj/third_party/mbedtls/library/chacha20.o
+[259/1164] clang obj/third_party/mbedtls/library/chachapoly.o
+[260/1164] clang obj/third_party/mbedtls/library/bignum.o
+[261/1164] clang obj/third_party/mbedtls/library/cipher_wrap.o
+[262/1164] clang obj/third_party/mbedtls/library/cmac.o
+[263/1164] clang obj/third_party/mbedtls/library/des.o
+[264/1164] clang obj/third_party/mbedtls/library/cipher.o
+[265/1164] clang obj/third_party/mbedtls/library/ctr_drbg.o
+[266/1164] clang obj/foundation/graphic/lite/utils/src/file.o
+[267/1164] clang++ obj/third_party/googletest/googletest/src/gtest-filepath.o
+[268/1164] clang++ obj/third_party/googletest/googletest/src/gtest-death-test.o
+[269/1164] clang++ obj/test/developertest/example/cxx_demo/test/unittest/common/calc_subtraction_test.o
+[270/1164] clang++ obj/third_party/googletest/googletest/src/gtest-port.o
+[271/1164] clang++ obj/third_party/googletest/googletest/src/gtest-printers.o
+[272/1164] clang++ obj/third_party/googletest/googletest/src/gtest-test-part.o
+[273/1164] clang++ obj/third_party/googletest/googletest/src/gtest-typed-test.o
+[274/1164] clang++ obj/third_party/googletest/googletest/src/hwext/gtest-ext.o
+[275/1164] clang++ obj/third_party/googletest/googletest/src/hwext/gtest-tag.o
+[276/1164] clang++ obj/third_party/googletest/googletest/src/gtest.o
+[277/1164] clang++ obj/third_party/googletest/googletest/src/hwext/gtest-utils.o
+[278/1164] clang++ obj/third_party/googletest/googletest/src/hwext/gtest-filter.o
+[279/1164] AR libs/libgtest.a
+[280/1164] ACTION //test/xdevice:xdevice(//build/lite/toolchain:linux_x86_64_clang)
+running install
+running bdist_egg
+running egg_info
+writing src/xdevice.egg-info/PKG-INFO
+writing dependency_links to src/xdevice.egg-info/dependency_links.txt
+writing entry points to src/xdevice.egg-info/entry_points.txt
+writing top-level names to src/xdevice.egg-info/top_level.txt
+reading manifest file 'src/xdevice.egg-info/SOURCES.txt'
+writing manifest file 'src/xdevice.egg-info/SOURCES.txt'
+installing library code to build/bdist.linux-x86_64/egg
+running install_lib
+running build_py
+creating build/bdist.linux-x86_64/egg
+creating build/bdist.linux-x86_64/egg/xdevice
+creating build/bdist.linux-x86_64/egg/xdevice/_core
+creating build/bdist.linux-x86_64/egg/xdevice/_core/testkit
+copying build/lib/xdevice/_core/testkit/__init__.py -> build/bdist.linux-x86_64/egg/xdevice/_core/testkit
+copying build/lib/xdevice/_core/testkit/json_parser.py -> build/bdist.linux-x86_64/egg/xdevice/_core/testkit
+copying build/lib/xdevice/_core/testkit/uikit_lite.py -> build/bdist.linux-x86_64/egg/xdevice/_core/testkit
+copying build/lib/xdevice/_core/testkit/kit_lite.py -> build/bdist.linux-x86_64/egg/xdevice/_core/testkit
+creating build/bdist.linux-x86_64/egg/xdevice/_core/command
+copying build/lib/xdevice/_core/command/console.py -> build/bdist.linux-x86_64/egg/xdevice/_core/command
+copying build/lib/xdevice/_core/command/__init__.py -> build/bdist.linux-x86_64/egg/xdevice/_core/command
+creating build/bdist.linux-x86_64/egg/xdevice/_core/executor
+copying build/lib/xdevice/_core/executor/request.py -> build/bdist.linux-x86_64/egg/xdevice/_core/executor
+copying build/lib/xdevice/_core/executor/source.py -> build/bdist.linux-x86_64/egg/xdevice/_core/executor
+copying build/lib/xdevice/_core/executor/scheduler.py -> build/bdist.linux-x86_64/egg/xdevice/_core/executor
+copying build/lib/xdevice/_core/executor/__init__.py -> build/bdist.linux-x86_64/egg/xdevice/_core/executor
+copying build/lib/xdevice/_core/executor/concurrent.py -> build/bdist.linux-x86_64/egg/xdevice/_core/executor
+copying build/lib/xdevice/_core/executor/listener.py -> build/bdist.linux-x86_64/egg/xdevice/_core/executor
+creating build/bdist.linux-x86_64/egg/xdevice/_core/resource
+creating build/bdist.linux-x86_64/egg/xdevice/_core/resource/template
+copying build/lib/xdevice/_core/resource/template/report.html -> build/bdist.linux-x86_64/egg/xdevice/_core/resource/template
+creating build/bdist.linux-x86_64/egg/xdevice/_core/resource/config
+copying build/lib/xdevice/_core/resource/config/user_config.xml -> build/bdist.linux-x86_64/egg/xdevice/_core/resource/config
+copying build/lib/xdevice/_core/constants.py -> build/bdist.linux-x86_64/egg/xdevice/_core
+creating build/bdist.linux-x86_64/egg/xdevice/_core/environment
+copying build/lib/xdevice/_core/environment/manager_env.py -> build/bdist.linux-x86_64/egg/xdevice/_core/environment
+copying build/lib/xdevice/_core/environment/device_lite.py -> build/bdist.linux-x86_64/egg/xdevice/_core/environment
+copying build/lib/xdevice/_core/environment/dmlib_lite.py -> build/bdist.linux-x86_64/egg/xdevice/_core/environment
+copying build/lib/xdevice/_core/environment/__init__.py -> build/bdist.linux-x86_64/egg/xdevice/_core/environment
+copying build/lib/xdevice/_core/environment/manager_lite.py -> build/bdist.linux-x86_64/egg/xdevice/_core/environment
+creating build/bdist.linux-x86_64/egg/xdevice/_core/report
+copying build/lib/xdevice/_core/report/result_reporter.py -> build/bdist.linux-x86_64/egg/xdevice/_core/report
+copying build/lib/xdevice/_core/report/__init__.py -> build/bdist.linux-x86_64/egg/xdevice/_core/report
+copying build/lib/xdevice/_core/report/reporter_helper.py -> build/bdist.linux-x86_64/egg/xdevice/_core/report
+copying build/lib/xdevice/_core/report/encrypt.py -> build/bdist.linux-x86_64/egg/xdevice/_core/report
+copying build/lib/xdevice/_core/report/suite_reporter.py -> build/bdist.linux-x86_64/egg/xdevice/_core/report
+copying build/lib/xdevice/_core/report/__main__.py -> build/bdist.linux-x86_64/egg/xdevice/_core/report
+copying build/lib/xdevice/_core/common.py -> build/bdist.linux-x86_64/egg/xdevice/_core
+copying build/lib/xdevice/_core/interface.py -> build/bdist.linux-x86_64/egg/xdevice/_core
+copying build/lib/xdevice/_core/__init__.py -> build/bdist.linux-x86_64/egg/xdevice/_core
+creating build/bdist.linux-x86_64/egg/xdevice/_core/build
+copying build/lib/xdevice/_core/build/__init__.py -> build/bdist.linux-x86_64/egg/xdevice/_core/build
+copying build/lib/xdevice/_core/utils.py -> build/bdist.linux-x86_64/egg/xdevice/_core
+copying build/lib/xdevice/_core/exception.py -> build/bdist.linux-x86_64/egg/xdevice/_core
+creating build/bdist.linux-x86_64/egg/xdevice/_core/config
+copying build/lib/xdevice/_core/config/config_manager.py -> build/bdist.linux-x86_64/egg/xdevice/_core/config
+copying build/lib/xdevice/_core/config/resource_manager.py -> build/bdist.linux-x86_64/egg/xdevice/_core/config
+copying build/lib/xdevice/_core/config/__init__.py -> build/bdist.linux-x86_64/egg/xdevice/_core/config
+copying build/lib/xdevice/_core/plugin.py -> build/bdist.linux-x86_64/egg/xdevice/_core
+copying build/lib/xdevice/_core/logger.py -> build/bdist.linux-x86_64/egg/xdevice/_core
+creating build/bdist.linux-x86_64/egg/xdevice/_core/driver
+copying build/lib/xdevice/_core/driver/drivers_lite.py -> build/bdist.linux-x86_64/egg/xdevice/_core/driver
+copying build/lib/xdevice/_core/driver/parser_lite.py -> build/bdist.linux-x86_64/egg/xdevice/_core/driver
+copying build/lib/xdevice/_core/driver/__init__.py -> build/bdist.linux-x86_64/egg/xdevice/_core/driver
+copying build/lib/xdevice/_core/driver/device_test.py -> build/bdist.linux-x86_64/egg/xdevice/_core/driver
+copying build/lib/xdevice/__init__.py -> build/bdist.linux-x86_64/egg/xdevice
+copying build/lib/xdevice/__main__.py -> build/bdist.linux-x86_64/egg/xdevice
+copying build/lib/xdevice/variables.py -> build/bdist.linux-x86_64/egg/xdevice
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/testkit/__init__.py to __init__.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/testkit/json_parser.py to json_parser.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/testkit/uikit_lite.py to uikit_lite.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/testkit/kit_lite.py to kit_lite.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/command/console.py to console.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/command/__init__.py to __init__.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/executor/request.py to request.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/executor/source.py to source.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/executor/scheduler.py to scheduler.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/executor/__init__.py to __init__.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/executor/concurrent.py to concurrent.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/executor/listener.py to listener.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/constants.py to constants.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/environment/manager_env.py to manager_env.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/environment/device_lite.py to device_lite.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/environment/dmlib_lite.py to dmlib_lite.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/environment/__init__.py to __init__.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/environment/manager_lite.py to manager_lite.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/report/result_reporter.py to result_reporter.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/report/__init__.py to __init__.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/report/reporter_helper.py to reporter_helper.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/report/encrypt.py to encrypt.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/report/suite_reporter.py to suite_reporter.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/report/__main__.py to __main__.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/common.py to common.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/interface.py to interface.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/__init__.py to __init__.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/build/__init__.py to __init__.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/utils.py to utils.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/exception.py to exception.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/config/config_manager.py to config_manager.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/config/resource_manager.py to resource_manager.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/config/__init__.py to __init__.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/plugin.py to plugin.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/logger.py to logger.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/driver/drivers_lite.py to drivers_lite.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/driver/parser_lite.py to parser_lite.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/driver/__init__.py to __init__.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/_core/driver/device_test.py to device_test.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/__init__.py to __init__.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/__main__.py to __main__.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/xdevice/variables.py to variables.cpython-38.pyc
+creating build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/xdevice.egg-info/PKG-INFO -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/xdevice.egg-info/SOURCES.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/xdevice.egg-info/dependency_links.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/xdevice.egg-info/entry_points.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/xdevice.egg-info/not-zip-safe -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/xdevice.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+creating 'dist/xdevice-0.0.0-py3.8.egg' and adding 'build/bdist.linux-x86_64/egg' to it
+removing 'build/bdist.linux-x86_64/egg' (and everything under it)
+Processing xdevice-0.0.0-py3.8.egg
+removing '/home/harmony/.local/lib/python3.8/site-packages/xdevice-0.0.0-py3.8.egg' (and everything under it)
+creating /home/harmony/.local/lib/python3.8/site-packages/xdevice-0.0.0-py3.8.egg
+Extracting xdevice-0.0.0-py3.8.egg to /home/harmony/.local/lib/python3.8/site-packages
+xdevice 0.0.0 is already the active version in easy-install.pth
+Installing xdevice script to /home/harmony/.local/bin
+Installing xdevice_report script to /home/harmony/.local/bin
+
+Installed /home/harmony/.local/lib/python3.8/site-packages/xdevice-0.0.0-py3.8.egg
+Processing dependencies for xdevice==0.0.0
+Finished processing dependencies for xdevice==0.0.0
+[281/1164] STAMP obj/test/xdevice/xdevice.stamp
+[282/1164] STAMP obj/test/xts/acts/acts_compoment.stamp
+[283/1164] STAMP obj/test/xts/tools/tools.stamp
+[284/1164] clang obj/third_party/bounds_checking_function/src/wmemmove_s.o
+[285/1164] clang++ obj/test/xts/tools/others/query/src/QueryMain.o
+[286/1164] clang obj/third_party/bounds_checking_function/src/vsscanf_s.o
+[287/1164] clang obj/third_party/bounds_checking_function/src/wcsncpy_s.o
+[288/1164] clang++ obj/third_party/googletest/googletest/src/gtest_main.o
+[289/1164] AR libs/libgtest_main.a
+[290/1164] clang obj/third_party/freetype/src/autofit/autofit.o
+[291/1164] clang obj/third_party/freetype/src/base/ftbase.o
+[292/1164] LLVM LINK test/unittest/bin/CalcSubTest.bin
+[293/1164] STAMP obj/test/developertest/test.stamp
+[294/1164] clang obj/third_party/freetype/src/base/ftbbox.o
+[295/1164] clang obj/third_party/freetype/src/base/ftbdf.o
+[296/1164] clang obj/third_party/freetype/src/base/ftcid.o
+[297/1164] clang obj/third_party/freetype/src/base/ftbitmap.o
+[298/1164] clang obj/third_party/freetype/src/base/ftfstype.o
+[299/1164] clang obj/third_party/freetype/src/base/ftgasp.o
+[300/1164] clang obj/third_party/freetype/src/base/ftglyph.o
+[301/1164] clang obj/third_party/bounds_checking_function/src/swscanf_s.o
+[302/1164] clang obj/third_party/iniparser/src/iniparser.o
+[303/1164] clang obj/third_party/bounds_checking_function/src/vsnprintf_s.o
+[304/1164] clang obj/third_party/bounds_checking_function/src/swprintf_s.o
+[305/1164] clang obj/third_party/bounds_checking_function/src/fwscanf_s.o
+[306/1164] clang obj/third_party/bounds_checking_function/src/sprintf_s.o
+[307/1164] clang obj/third_party/bounds_checking_function/src/vfscanf_s.o
+[308/1164] clang obj/third_party/bounds_checking_function/src/snprintf_s.o
+[309/1164] clang obj/third_party/bounds_checking_function/src/wcstok_s.o
+[310/1164] clang obj/third_party/bounds_checking_function/src/vwscanf_s.o
+[311/1164] clang obj/third_party/bounds_checking_function/src/vfwscanf_s.o
+[312/1164] clang obj/third_party/bounds_checking_function/src/secureinput_a.o
+[313/1164] clang obj/third_party/bounds_checking_function/src/memmove_s.o
+[314/1164] clang obj/third_party/bounds_checking_function/src/strcpy_s.o
+[315/1164] clang obj/third_party/bounds_checking_function/src/wmemcpy_s.o
+[316/1164] clang obj/third_party/bounds_checking_function/src/fscanf_s.o
+[317/1164] clang obj/third_party/bounds_checking_function/src/strcat_s.o
+[318/1164] clang obj/third_party/bounds_checking_function/src/secureprintoutput_w.o
+[319/1164] clang obj/third_party/bounds_checking_function/src/memcpy_s.o
+[320/1164] clang obj/third_party/bounds_checking_function/src/scanf_s.o
+[321/1164] clang obj/third_party/bounds_checking_function/src/securecutil.o
+[322/1164] clang obj/third_party/bounds_checking_function/src/vswscanf_s.o
+[323/1164] clang obj/third_party/bounds_checking_function/src/wcsncat_s.o
+[324/1164] clang obj/third_party/bounds_checking_function/src/strncpy_s.o
+[325/1164] clang obj/third_party/bounds_checking_function/src/gets_s.o
+[326/1164] clang obj/third_party/bounds_checking_function/src/wcscpy_s.o
+[327/1164] clang obj/third_party/bounds_checking_function/src/vswprintf_s.o
+[328/1164] clang obj/third_party/bounds_checking_function/src/strncat_s.o
+[329/1164] clang obj/third_party/bounds_checking_function/src/strtok_s.o
+[330/1164] clang obj/third_party/bounds_checking_function/src/vscanf_s.o
+[331/1164] clang obj/third_party/bounds_checking_function/src/wcscat_s.o
+[332/1164] clang obj/third_party/bounds_checking_function/src/memset_s.o
+[333/1164] clang obj/third_party/bounds_checking_function/src/wscanf_s.o
+[334/1164] clang obj/third_party/bounds_checking_function/src/secureinput_w.o
+[335/1164] clang obj/third_party/bounds_checking_function/src/sscanf_s.o
+[336/1164] clang obj/third_party/bounds_checking_function/src/vsprintf_s.o
+[337/1164] clang obj/third_party/freetype/src/base/ftgxval.o
+[338/1164] clang obj/third_party/freetype/src/base/ftinit.o
+[339/1164] clang obj/third_party/freetype/src/base/ftmm.o
+[340/1164] clang obj/third_party/bounds_checking_function/src/secureprintoutput_a.o
+[341/1164] clang obj/third_party/cJSON/cJSON_Utils.o
+[342/1164] clang obj/third_party/cJSON/cJSON.o
+[343/1164] AR libs/libcjson_static.a
+[344/1164] SOLINK ./libcjson_shared.so
+[345/1164] STAMP obj/third_party/cJSON/cjson_ndk.stamp
+[346/1164] AR libs/libsec_static.a
+[347/1164] clang obj/third_party/jerryscript/jerry-core/api/jerry-snapshot.o
+[348/1164] clang obj/third_party/jerryscript/jerry-core/api/jerry-debugger.o
+[349/1164] clang obj/third_party/jerryscript/jerry-core/api/jerry-debugger-transport.o
+[350/1164] SOLINK ./libsec_shared.so
+[351/1164] SOLINK ./libglobal_resmgr.so
+[352/1164] STAMP obj/base/global/frameworks/resmgr_lite/global_manager_lite.stamp
+[353/1164] clang obj/third_party/jerryscript/jerry-core/api/jerry.o
+[354/1164] AR libs/libhilog_static.a
+[355/1164] SOLINK ./libhilog_shared.so
+[356/1164] STAMP obj/base/hiviewdfx/frameworks/hilog_lite/featured/hilog_ndk.stamp
+[357/1164] AR libs/libapphilogcat_static.a
+[358/1164] SOLINK ./libhdf_osal.so
+[359/1164] AR libs/libhilogcat_static.a
+[360/1164] LLVM LINK ./bin/hilogcat
+[361/1164] STAMP obj/drivers/hdf/lite/adapter/osal/posix/hdf_posix.stamp
+[362/1164] STAMP obj/drivers/hdf/lite/posix/hdf_posix.stamp
+[363/1164] LLVM LINK ./bin/apphilogcat
+[364/1164] SOLINK ./libhdf_core.so
+[365/1164] STAMP obj/drivers/hdf/lite/manager/hdf_manager.stamp
+[366/1164] STAMP obj/foundation/distributedschedule/services/samgr_lite/samgr/adapter/samgr_adapter.stamp
+[367/1164] STAMP obj/foundation/distributedschedule/services/samgr_lite/samgr/source/samgr_source.stamp
+[368/1164] STAMP obj/foundation/distributedschedule/services/samgr_lite/samgr_endpoint/store_source.stamp
+[369/1164] clang obj/third_party/jerryscript/jerry-core/debugger/debugger.o
+[370/1164] clang obj/third_party/jerryscript/jerry-core/ecma/base/ecma-alloc.o
+[371/1164] SOLINK ./libliteipc_adapter.so
+[372/1164] STAMP obj/foundation/communication/frameworks/ipc_lite/liteipc.stamp
+[373/1164] STAMP obj/foundation/communication/frameworks/ipc_lite/liteipc_ndk.stamp
+[374/1164] STAMP obj/foundation/distributedschedule/services/samgr_lite/samgr_endpoint/endpoint_source.stamp
+[375/1164] STAMP obj/foundation/distributedschedule/services/samgr_lite/samgr_client/client.stamp
+[376/1164] clang obj/third_party/jerryscript/jerry-core/ecma/base/ecma-gc.o
+[377/1164] clang obj/third_party/jerryscript/jerry-core/ecma/base/ecma-helpers.o
+[378/1164] clang obj/third_party/jerryscript/jerry-core/ecma/base/ecma-helpers-external-pointers.o
+[379/1164] clang obj/third_party/jerryscript/jerry-core/ecma/base/ecma-helpers-collection.o
+[380/1164] SOLINK ./libsamgr.so
+[381/1164] clang obj/third_party/jerryscript/jerry-core/ecma/base/ecma-helpers-conversion.o
+[382/1164] SOLINK ./libpms_client.so
+[383/1164] SOLINK ./libpms_base.so
+[384/1164] LLVM LINK ./bin/appspawn
+[385/1164] STAMP obj/base/startup/services/appspawn_lite/appspawn_lite.stamp
+[386/1164] SOLINK ./libpms_target.so
+[387/1164] SOLINK ./libbroadcast.so
+[388/1164] SOLINK ./libserver.so
+[389/1164] STAMP obj/foundation/distributedschedule/services/samgr_lite/samgr.stamp
+[390/1164] STAMP obj/foundation/distributedschedule/services/samgr_lite/samgr_lite_ndk.stamp
+[391/1164] SOLINK ./libbundle.so
+[392/1164] clang obj/third_party/jerryscript/jerry-core/ecma/base/ecma-helpers-errol.o
+[393/1164] SOLINK ./libipc_auth_target.so
+[394/1164] STAMP obj/base/security/services/iam_lite/pms_lite.stamp
+[395/1164] SOLINK ./libabilitymanager.so
+[396/1164] STAMP obj/foundation/appexecfwk/frameworks/bundle_lite/appexecfwk_kits_lite.stamp
+[397/1164] STAMP obj/foundation/aafwk/frameworks/abilitymgr_lite/aafwk_abilityManager_lite.stamp
+[398/1164] STAMP obj/foundation/appexecfwk/frameworks/bundle_lite/bundle_notes.stamp
+[399/1164] LLVM LINK dev_tools/bin/bm
+[400/1164] clang obj/third_party/jerryscript/jerry-core/ecma/base/ecma-lcache.o
+[401/1164] clang obj/third_party/freetype/src/base/ftotval.o
+[402/1164] clang obj/third_party/freetype/src/base/ftpatent.o
+[403/1164] clang obj/third_party/freetype/src/base/ftpfr.o
+[404/1164] clang obj/third_party/freetype/src/base/ftstroke.o
+[405/1164] clang obj/third_party/freetype/src/base/ftsynth.o
+[406/1164] clang obj/third_party/freetype/src/base/ftsystem.o
+[407/1164] clang obj/third_party/freetype/src/base/fttype1.o
+[408/1164] clang obj/third_party/freetype/src/base/ftwinfnt.o
+[409/1164] clang obj/third_party/freetype/src/base/ftdebug.o
+[410/1164] SOLINK ./libability.so
+[411/1164] STAMP obj/foundation/aafwk/frameworks/ability_lite/aafwk_abilitykit_lite.stamp
+[412/1164] STAMP obj/foundation/aafwk/frameworks/ability_lite/ability_notes.stamp
+[413/1164] clang obj/third_party/freetype/src/bdf/bdf.o
+[414/1164] clang obj/third_party/freetype/src/cache/ftcache.o
+[415/1164] clang obj/third_party/freetype/src/cff/cff.o
+[416/1164] clang obj/third_party/freetype/src/cid/type1cid.o
+[417/1164] clang obj/third_party/freetype/src/lzw/ftlzw.o
+[418/1164] clang obj/third_party/freetype/src/pcf/pcf.o
+[419/1164] clang obj/third_party/freetype/src/gzip/ftgzip.o
+[420/1164] clang obj/third_party/freetype/src/pfr/pfr.o
+[421/1164] clang obj/third_party/freetype/src/pshinter/pshinter.o
+[422/1164] clang obj/third_party/freetype/src/psaux/psaux.o
+[423/1164] clang obj/third_party/freetype/src/psnames/psmodule.o
+[424/1164] clang obj/third_party/freetype/src/raster/raster.o
+[425/1164] clang obj/third_party/freetype/src/smooth/smooth.o
+[426/1164] clang obj/third_party/freetype/src/sfnt/sfnt.o
+[427/1164] clang obj/third_party/freetype/src/type1/type1.o
+[428/1164] clang obj/third_party/freetype/src/truetype/truetype.o
+[429/1164] clang obj/third_party/freetype/src/type42/type42.o
+[430/1164] clang obj/third_party/freetype/src/winfonts/winfnt.o
+[431/1164] clang obj/third_party/iniparser/src/dictionary.o
+[432/1164] SOLINK ./libiniparser.so
+[433/1164] clang obj/third_party/jerryscript/jerry-libm/log.o
+[434/1164] clang obj/third_party/jerryscript/jerry-libm/nextafter.o
+[435/1164] clang obj/third_party/jerryscript/jerry-libm/pow.o
+[436/1164] clang obj/third_party/jerryscript/jerry-libm/scalbn.o
+[437/1164] clang obj/third_party/jerryscript/jerry-libm/sqrt.o
+[438/1164] clang obj/third_party/jerryscript/jerry-libm/trig.o
+[439/1164] clang obj/third_party/jerryscript/jerry-port/default/default-date.o
+[440/1164] clang obj/third_party/libjpeg/jcapimin.o
+[441/1164] clang obj/third_party/libjpeg/jcapistd.o
+[442/1164] clang obj/third_party/jerryscript/jerry-port/default/default-debugger.o
+[443/1164] clang obj/third_party/jerryscript/jerry-port/default/default-external-context.o
+[444/1164] clang obj/third_party/libjpeg/jcarith.o
+[445/1164] clang obj/third_party/mbedtls/library/aesni.o
+[446/1164] clang obj/third_party/mbedtls/library/arc4.o
+[447/1164] clang obj/third_party/mbedtls/library/aria.o
+[448/1164] clang obj/third_party/mbedtls/library/asn1parse.o
+[449/1164] clang obj/third_party/libpng/pngtrans.o
+[450/1164] clang obj/third_party/libpng/pngwio.o
+[451/1164] clang obj/third_party/libpng/pngwrite.o
+[452/1164] clang obj/third_party/libpng/pngwtran.o
+[453/1164] clang obj/third_party/libpng/pngwutil.o
+[454/1164] clang obj/third_party/libpng/arm/arm_init.o
+[455/1164] clang obj/third_party/libpng/arm/filter_neon_intrinsics.o
+[456/1164] clang obj/third_party/libpng/arm/palette_neon_intrinsics.o
+[457/1164] clang obj/third_party/libjpeg/jccoefct.o
+[458/1164] clang obj/third_party/libjpeg/jccolor.o
+[459/1164] clang obj/third_party/libjpeg/jcdctmgr.o
+[460/1164] clang obj/third_party/libjpeg/jchuff.o
+[461/1164] clang obj/third_party/libjpeg/jcinit.o
+[462/1164] clang obj/third_party/libjpeg/jcmainct.o
+[463/1164] clang obj/third_party/libjpeg/jcmarker.o
+[464/1164] clang obj/third_party/libjpeg/jcmaster.o
+[465/1164] clang obj/third_party/libjpeg/jcomapi.o
+[466/1164] clang obj/third_party/libjpeg/jcparam.o
+[467/1164] clang obj/third_party/libjpeg/jcprepct.o
+[468/1164] clang obj/third_party/libjpeg/jcsample.o
+[469/1164] clang obj/third_party/libjpeg/jctrans.o
+[470/1164] clang obj/third_party/libjpeg/jdapimin.o
+[471/1164] clang obj/third_party/libjpeg/jdapistd.o
+[472/1164] clang obj/third_party/libjpeg/jdarith.o
+[473/1164] clang obj/third_party/libjpeg/jdatadst.o
+[474/1164] clang obj/third_party/libjpeg/jdatasrc.o
+[475/1164] clang obj/third_party/libjpeg/jdcoefct.o
+[476/1164] clang obj/third_party/libjpeg/jdcolor.o
+[477/1164] clang obj/third_party/libjpeg/jddctmgr.o
+[478/1164] clang obj/third_party/libjpeg/jdhuff.o
+[479/1164] clang obj/third_party/libjpeg/jdinput.o
+[480/1164] clang obj/third_party/libjpeg/jdmainct.o
+[481/1164] clang obj/third_party/libjpeg/jdmarker.o
+[482/1164] clang obj/third_party/libjpeg/jdmaster.o
+[483/1164] clang obj/third_party/libjpeg/jdmerge.o
+[484/1164] clang obj/third_party/libjpeg/jdpostct.o
+[485/1164] clang obj/third_party/libjpeg/jdsample.o
+[486/1164] clang obj/third_party/jerryscript/jerry-core/ecma/base/ecma-helpers-number.o
+[487/1164] clang obj/third_party/jerryscript/jerry-core/ecma/base/ecma-helpers-string.o
+[488/1164] clang obj/third_party/jerryscript/jerry-core/ecma/base/ecma-helpers-value.o
+[489/1164] clang obj/third_party/jerryscript/jerry-core/ecma/base/ecma-module.o
+[490/1164] clang obj/third_party/jerryscript/jerry-core/ecma/base/ecma-init-finalize.o
+[491/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-array-prototype.o
+[492/1164] clang obj/third_party/jerryscript/jerry-core/ecma/base/ecma-literal-storage.o
+[493/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-array-iterator-prototype.o
+[494/1164] clang obj/third_party/jerryscript/jerry-core/ecma/base/ecma-property-hashmap.o
+[495/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-array.o
+[496/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-arraybuffer-prototype.o
+[497/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-arraybuffer.o
+[498/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-boolean-prototype.o
+[499/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-boolean.o
+[500/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-dataview-prototype.o
+[501/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-dataview.o
+[502/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-date-prototype.o
+[503/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-error-prototype.o
+[504/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-date.o
+[505/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-error.o
+[506/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-evalerror-prototype.o
+[507/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-evalerror.o
+[508/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-function-prototype.o
+[509/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-function.o
+[510/1164] SOLINK ./libfreetype.so
+[511/1164] STAMP obj/third_party/freetype/freetype_shared.stamp
+[512/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-global.o
+[513/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-helpers-error.o
+[514/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-helpers-date.o
+[515/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-helpers-json.o
+[516/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-helpers-sort.o
+[517/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-helpers.o
+[518/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-iterator-prototype.o
+[519/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-map-iterator-prototype.o
+[520/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-map-prototype.o
+[521/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-json.o
+[522/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-map.o
+[523/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-number-prototype.o
+[524/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-math.o
+[525/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-number.o
+[526/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-object-prototype.o
+[527/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-promise-prototype.o
+[528/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-object.o
+[529/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-rangeerror-prototype.o
+[530/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-promise.o
+[531/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-referenceerror-prototype.o
+[532/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-rangeerror.o
+[533/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-regexp-prototype.o
+[534/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-referenceerror.o
+[535/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-regexp.o
+[536/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-set-iterator-prototype.o
+[537/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-set-prototype.o
+[538/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-string-iterator-prototype.o
+[539/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-set.o
+[540/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-string.o
+[541/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-string-prototype.o
+[542/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-symbol-prototype.o
+[543/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-symbol.o
+[544/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-syntaxerror-prototype.o
+[545/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-syntaxerror.o
+[546/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-type-error-thrower.o
+[547/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-typeerror-prototype.o
+[548/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-urierror-prototype.o
+[549/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-typeerror.o
+[550/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtin-urierror.o
+[551/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-float32array.o
+[552/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-float32array-prototype.o
+[553/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/ecma-builtins.o
+[554/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-float64array-prototype.o
+[555/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-int16array-prototype.o
+[556/1164] clang obj/third_party/jerryscript/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-float64array.o
+[557/1164] clang obj/third_party/jerryscript/jerry-core/ecma/operations/ecma-number-arithmetic.o
+[558/1164] clang obj/third_party/jerryscript/jerry-core/ecma/operations/ecma-arraybuffer-object.o
+[559/1164] clang obj/third_party/jerryscript/jerry-core/ecma/operations/ecma-container-object.o
+[560/1164] clang obj/third_party/jerryscript/jerry-core/ecma/operations/ecma-boolean-object.o
+[561/1164] clang obj/third_party/jerryscript/jerry-core/ecma/operations/ecma-array-object.o
+[562/1164] clang obj/third_party/jerryscript/jerry-core/ecma/operations/ecma-objects-arguments.o
+[563/1164] clang obj/third_party/jerryscript/jerry-core/ecma/operations/ecma-comparison.o
+[564/1164] clang obj/third_party/jerryscript/jerry-core/ecma/operations/ecma-dataview-object.o
+[565/1164] clang obj/third_party/jerryscript/jerry-core/ecma/operations/ecma-conversion.o
+[566/1164] clang obj/third_party/jerryscript/jerry-core/ecma/operations/ecma-eval.o
+[567/1164] clang obj/third_party/jerryscript/jerry-core/ecma/operations/ecma-exceptions.o
+[568/1164] clang obj/third_party/jerryscript/jerry-core/ecma/operations/ecma-get-put-value.o
+[569/1164] clang obj/third_party/jerryscript/jerry-core/ecma/operations/ecma-function-object.o
+[570/1164] clang obj/third_party/jerryscript/jerry-core/ecma/operations/ecma-iterator-object.o
+[571/1164] clang obj/third_party/jerryscript/jerry-core/ecma/operations/ecma-lex-env.o
+[572/1164] clang obj/third_party/jerryscript/jerry-core/ecma/operations/ecma-jobqueue.o
+[573/1164] clang obj/third_party/jerryscript/jerry-core/ecma/operations/ecma-number-object.o
+[574/1164] clang obj/third_party/jerryscript/jerry-core/ecma/operations/ecma-typedarray-object.o
+[575/1164] clang obj/third_party/jerryscript/jerry-core/jcontext/jcontext.o
+[576/1164] clang obj/third_party/jerryscript/jerry-core/ecma/operations/ecma-objects-general.o
+[577/1164] clang obj/third_party/jerryscript/jerry-core/ecma/operations/ecma-promise-object.o
+[578/1164] clang obj/third_party/jerryscript/jerry-core/ecma/operations/ecma-objects.o
+[579/1164] clang obj/third_party/jerryscript/jerry-core/ecma/operations/ecma-reference.o
+[580/1164] clang obj/third_party/jerryscript/jerry-core/ecma/operations/ecma-regexp-object.o
+[581/1164] clang obj/third_party/jerryscript/jerry-core/ecma/operations/ecma-string-object.o
+[582/1164] clang obj/third_party/jerryscript/jerry-core/ecma/operations/ecma-symbol-object.o
+[583/1164] clang obj/third_party/jerryscript/jerry-core/jmem/jmem-allocator.o
+[584/1164] clang obj/third_party/jerryscript/jerry-core/jmem/jmem-heap.o
+[585/1164] clang obj/third_party/jerryscript/jerry-core/jmem/jmem-poolman.o
+[586/1164] clang obj/third_party/jerryscript/jerry-core/jrt/jrt-fatals.o
+[587/1164] clang obj/third_party/jerryscript/jerry-core/lit/lit-char-helpers.o
+[588/1164] clang obj/third_party/jerryscript/jerry-core/lit/lit-strings.o
+[589/1164] clang obj/third_party/jerryscript/jerry-core/lit/lit-magic-strings.o
+[590/1164] clang obj/third_party/jerryscript/jerry-core/parser/js/byte-code.o
+[591/1164] clang obj/third_party/jerryscript/jerry-core/parser/js/common.o
+[592/1164] clang obj/third_party/jerryscript/jerry-core/vm/opcodes.o
+[593/1164] clang obj/third_party/jerryscript/jerry-core/parser/js/js-lexer.o
+[594/1164] clang obj/third_party/jerryscript/jerry-core/parser/js/js-parser.o
+[595/1164] clang obj/third_party/jerryscript/jerry-core/parser/js/js-parser-mem.o
+[596/1164] clang obj/third_party/jerryscript/jerry-core/parser/js/js-parser-expr.o
+[597/1164] clang obj/third_party/jerryscript/jerry-core/parser/js/js-parser-module.o
+[598/1164] clang obj/third_party/jerryscript/jerry-core/parser/js/js-parser-util.o
+[599/1164] clang obj/third_party/jerryscript/jerry-core/parser/js/js-parser-statm.o
+[600/1164] clang obj/third_party/jerryscript/jerry-core/parser/js/js-scanner-util.o
+[601/1164] clang obj/third_party/jerryscript/jerry-core/parser/js/js-scanner.o
+[602/1164] clang obj/third_party/jerryscript/jerry-core/parser/regexp/re-bytecode.o
+[603/1164] clang obj/third_party/jerryscript/jerry-core/vm/vm-stack.o
+[604/1164] clang obj/third_party/jerryscript/jerry-core/parser/regexp/re-compiler.o
+[605/1164] clang obj/third_party/jerryscript/jerry-core/parser/regexp/re-parser.o
+[606/1164] clang obj/third_party/jerryscript/jerry-core/vm/opcodes-ecma-arithmetics.o
+[607/1164] clang obj/third_party/jerryscript/jerry-core/vm/opcodes-ecma-bitwise.o
+[608/1164] clang obj/third_party/jerryscript/jerry-core/vm/opcodes-ecma-relational-equality.o
+[609/1164] clang obj/third_party/jerryscript/jerry-core/vm/vm-utils.o
+[610/1164] clang obj/third_party/jerryscript/jerry-ext/arg/arg-transform-functions.o
+[611/1164] clang obj/third_party/jerryscript/jerry-ext/arg/arg-js-iterator-helper.o
+[612/1164] clang obj/third_party/jerryscript/jerry-ext/debugger/debugger-sha1.o
+[613/1164] clang obj/third_party/jerryscript/jerry-core/vm/vm.o
+[614/1164] clang obj/third_party/jerryscript/jerry-ext/arg/arg.o
+[615/1164] clang obj/third_party/jerryscript/jerry-ext/debugger/debugger-common.o
+[616/1164] clang obj/third_party/jerryscript/jerry-ext/debugger/debugger-tcp.o
+[617/1164] clang obj/third_party/jerryscript/jerry-ext/debugger/debugger-serial.o
+[618/1164] clang obj/third_party/jerryscript/jerry-ext/debugger/debugger-ws.o
+[619/1164] clang obj/third_party/jerryscript/jerry-ext/handler/handler-print.o
+[620/1164] clang obj/third_party/jerryscript/jerry-ext/handle-scope/handle-scope.o
+[621/1164] clang obj/third_party/jerryscript/jerry-ext/debugger/debugger-rp.o
+[622/1164] clang obj/third_party/jerryscript/jerry-ext/handler/handler-gc.o
+[623/1164] clang obj/third_party/jerryscript/jerry-ext/handler/handler-assert.o
+[624/1164] clang obj/third_party/jerryscript/jerry-ext/handle-scope/handle-scope-allocator.o
+[625/1164] clang obj/third_party/libjpeg/cdjpeg.o
+[626/1164] clang obj/third_party/libjpeg/jaricom.o
+[627/1164] clang obj/third_party/jerryscript/jerry-port/default/default-io.o
+[628/1164] clang obj/third_party/jerryscript/jerry-port/default/default-module.o
+[629/1164] clang obj/third_party/jerryscript/jerry-port/default/default-fatal.o
+[630/1164] clang obj/third_party/jerryscript/jerry-libm/exp.o
+[631/1164] SOLINK ./libjerry-port-default_shared.so
+[632/1164] clang obj/third_party/jerryscript/jerry-libm/fabs.o
+[633/1164] STAMP obj/third_party/jerryscript/jerry-port/default/jerry-port-default.stamp
+[634/1164] clang obj/third_party/jerryscript/jerry-libm/floor.o
+[635/1164] clang obj/third_party/jerryscript/jerry-libm/finite.o
+[636/1164] clang obj/third_party/jerryscript/jerry-libm/isnan.o
+[637/1164] clang obj/third_party/jerryscript/jerry-libm/fmod.o
+[638/1164] clang obj/third_party/jerryscript/jerry-libm/copysign.o
+[639/1164] clang obj/third_party/jerryscript/jerry-libm/ceil.o
+[640/1164] clang obj/third_party/jerryscript/jerry-ext/module/module.o
+[641/1164] clang obj/third_party/jerryscript/jerry-ext/handler/handler-register.o
+[642/1164] clang obj/third_party/jerryscript/jerry-libm/atan.o
+[643/1164] clang obj/third_party/jerryscript/jerry-libm/asin.o
+[644/1164] clang obj/third_party/jerryscript/jerry-libm/atan2.o
+[645/1164] clang obj/third_party/jerryscript/jerry-libm/acos.o
+[646/1164] SOLINK ./libjerry-ext_shared.so
+[647/1164] STAMP obj/third_party/jerryscript/jerry-ext/jerry-ext.stamp
+[648/1164] SOLINK ./libjerry-libm_shared.so
+[649/1164] STAMP obj/third_party/jerryscript/jerry-libm/jerry-libm.stamp
+[650/1164] clang obj/third_party/libjpeg/jdtrans.o
+[651/1164] clang obj/third_party/libjpeg/jerror.o
+[652/1164] clang obj/third_party/libjpeg/jfdctflt.o
+[653/1164] clang obj/third_party/libjpeg/jfdctfst.o
+[654/1164] clang obj/third_party/libjpeg/jfdctint.o
+[655/1164] clang obj/third_party/libjpeg/jidctflt.o
+[656/1164] clang obj/third_party/libjpeg/jidctfst.o
+[657/1164] clang obj/third_party/libjpeg/jidctint.o
+[658/1164] clang obj/third_party/libjpeg/jmemansi.o
+[659/1164] clang obj/third_party/libjpeg/jmemmgr.o
+[660/1164] clang obj/third_party/libjpeg/jquant1.o
+[661/1164] clang obj/third_party/libjpeg/jquant2.o
+[662/1164] clang obj/third_party/libjpeg/jutils.o
+[663/1164] clang obj/third_party/libjpeg/rdbmp.o
+[664/1164] clang obj/third_party/libjpeg/rdcolmap.o
+[665/1164] clang obj/third_party/libjpeg/rdgif.o
+[666/1164] clang obj/third_party/libjpeg/rdppm.o
+[667/1164] clang obj/third_party/libjpeg/rdrle.o
+[668/1164] clang obj/third_party/libjpeg/rdswitch.o
+[669/1164] clang obj/third_party/libjpeg/rdtarga.o
+[670/1164] SOLINK ./libjerry-core_shared.so
+[671/1164] STAMP obj/third_party/jerryscript/jerry-core/jerry-core.stamp
+[672/1164] clang obj/third_party/libpng/pngread.o
+[673/1164] clang obj/third_party/libpng/pngrio.o
+[674/1164] clang obj/third_party/libjpeg/transupp.o
+[675/1164] clang obj/third_party/libpng/pngrtran.o
+[676/1164] clang obj/third_party/libpng/pngrutil.o
+[677/1164] clang obj/third_party/libpng/pngset.o
+[678/1164] clang obj/third_party/libpng/pngerror.o
+[679/1164] clang obj/third_party/libpng/pngget.o
+[680/1164] clang obj/third_party/libpng/pngmem.o
+[681/1164] clang obj/third_party/libpng/pngpread.o
+[682/1164] clang obj/third_party/libpng/png.o
+[683/1164] clang obj/third_party/mbedtls/library/aes.o
+[684/1164] clang obj/third_party/zlib/compress.o
+[685/1164] clang++ obj/utils/native/lite/js/builtin/filekit/src/nativeapi_fs.o
+[686/1164] clang obj/third_party/zlib/crc32.o
+[687/1164] clang obj/third_party/zlib/deflate.o
+[688/1164] clang obj/third_party/zlib/gzclose.o
+[689/1164] clang obj/third_party/zlib/gzlib.o
+[690/1164] clang obj/third_party/zlib/gzread.o
+[691/1164] clang obj/third_party/zlib/gzwrite.o
+[692/1164] clang obj/third_party/zlib/infback.o
+[693/1164] clang obj/third_party/zlib/inffast.o
+[694/1164] clang obj/third_party/zlib/inflate.o
+[695/1164] clang obj/third_party/mbedtls/library/dhm.o
+[696/1164] SOLINK ./libjpeg.so
+[697/1164] clang obj/third_party/mbedtls/library/ecdh.o
+[698/1164] clang obj/third_party/mbedtls/library/ecjpake.o
+[699/1164] clang obj/third_party/mbedtls/library/ecdsa.o
+[700/1164] clang obj/third_party/mbedtls/library/ecp_curves.o
+[701/1164] clang obj/third_party/mbedtls/library/entropy.o
+[702/1164] clang obj/third_party/mbedtls/library/entropy_poll.o
+[703/1164] clang obj/third_party/mbedtls/library/ecp.o
+[704/1164] clang obj/third_party/mbedtls/library/error.o
+[705/1164] clang obj/third_party/mbedtls/library/havege.o
+[706/1164] clang obj/third_party/mbedtls/library/gcm.o
+[707/1164] clang obj/third_party/mbedtls/library/hkdf.o
+[708/1164] clang obj/third_party/mbedtls/library/hmac_drbg.o
+[709/1164] clang obj/third_party/mbedtls/library/md_wrap.o
+[710/1164] clang obj/third_party/mbedtls/library/md.o
+[711/1164] clang obj/third_party/mbedtls/library/md2.o
+[712/1164] clang obj/third_party/mbedtls/library/md4.o
+[713/1164] clang obj/third_party/mbedtls/library/memory_buffer_alloc.o
+[714/1164] clang obj/third_party/mbedtls/library/nist_kw.o
+[715/1164] clang obj/third_party/mbedtls/library/md5.o
+[716/1164] clang obj/third_party/mbedtls/library/oid.o
+[717/1164] clang obj/third_party/mbedtls/library/padlock.o
+[718/1164] clang obj/third_party/mbedtls/library/pem.o
+[719/1164] clang obj/third_party/mbedtls/library/pk_wrap.o
+[720/1164] clang obj/third_party/mbedtls/library/pkcs12.o
+[721/1164] clang obj/third_party/mbedtls/library/pk.o
+[722/1164] clang obj/third_party/mbedtls/library/pkcs5.o
+[723/1164] clang obj/third_party/mbedtls/library/pkparse.o
+[724/1164] clang obj/third_party/mbedtls/library/pkwrite.o
+[725/1164] clang obj/third_party/mbedtls/library/platform.o
+[726/1164] clang obj/third_party/mbedtls/library/platform_util.o
+[727/1164] clang obj/third_party/mbedtls/library/poly1305.o
+[728/1164] clang obj/third_party/mbedtls/library/ripemd160.o
+[729/1164] clang obj/third_party/mbedtls/library/rsa_internal.o
+[730/1164] clang obj/third_party/mbedtls/library/rsa.o
+[731/1164] clang obj/third_party/mbedtls/library/sha1.o
+[732/1164] clang obj/third_party/mbedtls/library/sha256.o
+[733/1164] clang obj/third_party/mbedtls/library/threading.o
+[734/1164] clang obj/third_party/mbedtls/library/timing.o
+[735/1164] clang obj/third_party/mbedtls/library/sha512.o
+[736/1164] clang obj/third_party/mbedtls/library/version.o
+[737/1164] clang obj/third_party/mbedtls/library/version_features.o
+[738/1164] clang obj/third_party/mbedtls/library/x509.o
+[739/1164] clang obj/third_party/mbedtls/library/x509_crl.o
+[740/1164] clang obj/third_party/mbedtls/library/x509_crt.o
+[741/1164] clang obj/third_party/mbedtls/library/xtea.o
+[742/1164] clang obj/third_party/openssl/crypto/cryptlib.o
+[743/1164] AR libs/libmbedtls.a
+[744/1164] ACTION //kernel/liteos_a:make(//build/lite/toolchain:linux_x86_64_clang)
+sh param:hi3516dv300,clang,release
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/arch/arm/arm'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/arch/arm/arm'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/platform'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/platform'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/common'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/common'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/base'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/base'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/vendor/hisi/hi35xx/hi3516dv300/config/board'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/vendor/hisi/hi35xx/hi3516dv300/config/board'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/extended/cpup'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/extended/cpup'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/extended/dynload'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/extended/dynload'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/extended/vdso/usr'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/extended/vdso/usr'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/extended/vdso/src'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/extended/vdso/src'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/extended/liteipc'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/extended/liteipc'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/NuttX/drivers/pipes'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/NuttX/drivers/pipes'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/lib/libc'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/lib/libc'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/lib/libsec'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/lib/libsec'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/lib/libscrew'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/lib/libscrew'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/extended/cppsupport'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/extended/cppsupport'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/lib/zlib'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/lib/zlib'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/compat/posix'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/compat/posix'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/bsd'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/bsd'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/bsd/compat/linuxkpi'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/bsd/compat/linuxkpi'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/vfs'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/vfs'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/vfs/bch'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/vfs/bch'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/vfs'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/vfs'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/vfs/multi_partition'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/vfs/multi_partition'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/fat'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/fat'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/fat/virpart'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/fat/virpart'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/vfs/disk'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/vfs/disk'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/vfs/bcache'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/vfs/bcache'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/ramfs'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/ramfs'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/nfs'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/nfs'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/proc'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/proc'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/jffs2'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/jffs2'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/net/lwip-2.1'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/net/lwip-2.1'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/drivers/hdf/lite'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/drivers/hdf/lite'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/drivers/hdf/lite/model/network/wifi'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/drivers/hdf/lite/model/network/wifi'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/drivers/hdf/lite/model/bus/usb'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/drivers/hdf/lite/model/bus/usb'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/vendor/hisi/hi35xx/hi3516dv300/config'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/vendor/hisi/hi35xx/hi3516dv300/config'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/drivers/liteos/hievent'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/drivers/liteos/hievent'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/drivers/liteos/mem'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/drivers/liteos/mem'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/drivers/liteos/random'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/drivers/liteos/random'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/bsd/dev/usb'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/bsd/dev/usb'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/drivers/liteos/video'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/drivers/liteos/video'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/base/hiviewdfx/frameworks/hilog_lite/featured'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/base/hiviewdfx/frameworks/hilog_lite/featured'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/syscall'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/syscall'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/user'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/user'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/security'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/security'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/apps'
+make[1]: Nothing to be done for 'clean'.
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/apps'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a'
+clean hi3516dv300 finish
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a'
+/home/harmony/harmony/code/code-1.0/kernel/liteos_a/tools/menuconfig/conf --silentoldconfig /home/harmony/harmony/code/code-1.0/kernel/liteos_a/Kconfig
+mv -f /home/harmony/harmony/code/code-1.0/kernel/liteos_a/include/generated/autoconf.h /home/harmony/harmony/code/code-1.0/kernel/liteos_a/platform/include/menuconfig.h
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/arch/arm/arm'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/arch/arm/arm'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/platform'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/platform'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/common'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/common'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/base'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/base'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/vendor/hisi/hi35xx/hi3516dv300/config/board'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/vendor/hisi/hi35xx/hi3516dv300/config/board'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/extended/cpup'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/extended/cpup'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/extended/dynload'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/extended/dynload'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/extended/vdso/usr'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/extended/vdso/usr'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/extended/vdso/src'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/extended/vdso/src'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/extended/liteipc'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/extended/liteipc'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/NuttX/drivers/pipes'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/NuttX/drivers/pipes'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/lib/libc'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/lib/libc'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/lib/libsec'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/lib/libsec'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/lib/libscrew'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/lib/libscrew'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/extended/cppsupport'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/extended/cppsupport'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/lib/zlib'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/lib/zlib'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/compat/posix'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/compat/posix'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/bsd'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/bsd'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/bsd/compat/linuxkpi'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/bsd/compat/linuxkpi'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/vfs'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/vfs'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/vfs/bch'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/vfs/bch'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/vfs'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/vfs'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/vfs/multi_partition'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/vfs/multi_partition'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/fat'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/fat'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/fat/virpart'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/fat/virpart'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/vfs/disk'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/vfs/disk'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/vfs/bcache'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/vfs/bcache'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/ramfs'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/ramfs'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/nfs'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/nfs'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/proc'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/proc'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/jffs2'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/fs/jffs2'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/net/lwip-2.1'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/net/lwip-2.1'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/drivers/hdf/lite'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/drivers/hdf/lite'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/drivers/hdf/lite/model/network/wifi'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/drivers/hdf/lite/model/network/wifi'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/drivers/hdf/lite/model/bus/usb'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/drivers/hdf/lite/model/bus/usb'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/vendor/hisi/hi35xx/hi3516dv300/config'
+gen hdf built-in config
+compile module : hisilicon,hi35xx_chip
+Output: /home/harmony/harmony/code/code-1.0/out/ipcamera_hi3516dv300/obj/kernel/liteos_a/obj/vendor/hisi/hi35xx/hi3516dv300/hdf_config/config/hdf.hcb
+Total size: 13108 
+Output: /home/harmony/harmony/code/code-1.0/out/ipcamera_hi3516dv300/obj/kernel/liteos_a/obj/vendor/hisi/hi35xx/hi3516dv300/hdf_config/config/hdf_hex.c
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/vendor/hisi/hi35xx/hi3516dv300/config'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/drivers/liteos/hievent'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/drivers/liteos/hievent'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/drivers/liteos/mem'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/drivers/liteos/mem'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/drivers/liteos/random'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/drivers/liteos/random'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/bsd/dev/usb'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/bsd/dev/usb'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/drivers/liteos/video'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/drivers/liteos/video'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/base/hiviewdfx/frameworks/hilog_lite/featured'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/base/hiviewdfx/frameworks/hilog_lite/featured'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/syscall'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/syscall'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/user'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/kernel/user'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/security'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/security'
+/home/harmony/llvm/bin/..//bin/ld.lld  -static --gc-sections       -L/home/harmony/harmony/code/code-1.0/kernel/liteos_a/../../vendor/hisi/hi35xx/platform/libs/hi3516dv300 -L/home/harmony/harmony/code/code-1.0/kernel/liteos_a/../../vendor/huawei/hdf/libs/hi3516dv300 -L/home/harmony/harmony/code/code-1.0/kernel/liteos_a/tools/scripts/ld -L/home/harmony/harmony/code/code-1.0/kernel/liteos_a/platform -L/home/harmony/harmony/code/code-1.0/out/ipcamera_hi3516dv300/obj/kernel/liteos_a/lib -L/home/harmony/harmony/code/code-1.0/out/ipcamera_hi3516dv300/obj/kernel/liteos_a/lib/obj -L/home/harmony/harmony/code/code-1.0/kernel/liteos_a/tools/build -L/home/harmony/llvm/bin/..//lib/clang/9.0.0/lib/arm-liteos/a7_softfp_neon-vfpv4 -L/home/harmony/llvm/bin/..//lib/arm-liteos/c++/a7_softfp_neon-vfpv4 -T/home/harmony/harmony/code/code-1.0/kernel/liteos_a/tools/build/liteos_llvm.ld -utask_shellcmd -ug_usrVdsoDataPage -uvm_shellcmd -ucpup_shellcmd -uhelp_shellcmd -ufree_shellcmd -usem_shellcmd -umutex_shellcmd -uqueue_shellcmd -usysteminfo_shellcmd -uswtmr_shellcmd -uhwi_shellcmd -ufindsym_shellcmd -uzbar_scan_shellcmd -udmesg_shellcmd -udate_shellcmd -ureadExcInfo_shellcmd -uwatch_shellcmd -udeadlock_shellcmd -ukill_shellcmd -upmm_shellcmd -uarp_shellcmd -utelnet_shellcmd -uping_shellcmd -unetstat_shellcmd -uifconfig_shellcmd -ucd_shellcmd -uformat_shellcmd -upartition_shellcmd -uwriteproc_shellcmd -upartinfo_shellcmd -uumount_shellcmd -umount_shellcmd -uvirstatfs_shellcmd -ulsfd_shellcmd -usu_shellcmd -uchmod_shellcmd -uchown_shellcmd -uchgrp_shellcmd -uiperf_shellcmd -ulwip_dump_shellcmd -ureset_shellcmd -ustartap_shellcmd -uhiddrs_shellcmd -unand_bad_shellcmd -ui2c_read_shellcmd -ussp_read_shellcmd -uuart_config_shellcmd -uusb_debug_shellcmd -uramfs_fsmap -unfs_fsmap -ufat_fsmap -ujffs_fsmap -uprocfs_fsmap -ug_fsmap -ui2c_init -ugpio_init -uregulator_init -uMtdInitList -uhispi_init -uhifmc100_init -uhisfc350_init -unand_hifmc100_init -uhifmc100_parallel_init -usd_mci_init -uhi_mci_init -upl011_init -uhinfc620_init -uhisnfc100_init -uregulator_machine_init -uhisimeidia_regulator_init -ucpufreq_init -uhisilicon_cpufreq_init -ucpufreq_machine_init -udevfreq_init -umedia_devfreq_init -udevfreq_machine_init -uhieth_machine_init -uhigmac_machine_init -umachine_init  -Map=/home/harmony/harmony/code/code-1.0/out/ipcamera_hi3516dv300/obj/kernel/liteos_a/liteos.map -o /home/harmony/harmony/code/code-1.0/out/ipcamera_hi3516dv300/obj/kernel/liteos_a/liteos --start-group  -lclang_rt.builtins -lunwind --no-dependent-libraries -lcortex-a7 -lbsp -lrootfs -lbase -lhi35xx_bsp -lcpup -ldynload -lvdso -lliteipc -lpipes -lc -lsec -lscrew -lc++ -lc++abi -lcppsupport -lz -lposix -lbsd -llinuxkpi -lvfs -lmulti_partition -lbch -lfat -lvirpart -ldisk -lbcache -lramfs -lnfs -lproc -ljffs2 -llwip --whole-archive -lhdf -lhdf_wifi_model -lhdf_usb -lhdf_config -lhdf_i2c -lhdf_spi -lhdf_gpio -lhdf_watchdog -lhdf_sdio -lhdf_rtc -lhdf_uart -lhdf_hisi_sdk -lhdf_vendor_wifi -lhi3881 -lhdf_input_driver -lhdf_lcd_driver --no-whole-archive -lhievent -lhieth-sf -lmem -lmmc -lmtd_common -lspinor_flash -lrandom -lusb_base -lvideo -lhilog -lsyscall -lsecurity --end-group
+/home/harmony/llvm/bin/..//bin/llvm-objcopy -R .bss -O binary /home/harmony/harmony/code/code-1.0/out/ipcamera_hi3516dv300/obj/kernel/liteos_a/liteos /home/harmony/harmony/code/code-1.0/out/ipcamera_hi3516dv300/obj/kernel/liteos_a/../../..//liteos.bin
+/home/harmony/llvm/bin/..//bin/llvm-objdump -t /home/harmony/harmony/code/code-1.0/out/ipcamera_hi3516dv300/obj/kernel/liteos_a/liteos |sort >/home/harmony/harmony/code/code-1.0/out/ipcamera_hi3516dv300/obj/kernel/liteos_a/liteos.sym.sorted
+/home/harmony/llvm/bin/..//bin/llvm-objdump -d /home/harmony/harmony/code/code-1.0/out/ipcamera_hi3516dv300/obj/kernel/liteos_a/liteos >/home/harmony/harmony/code/code-1.0/out/ipcamera_hi3516dv300/obj/kernel/liteos_a/liteos.asm
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/apps'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/apps'
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/apps'
+make[1]: Nothing to be done for 'clean'.
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/kernel/liteos_a/apps'
+4438+0 records in
+4438+0 records out
+2272256 bytes (2.3 MB, 2.2 MiB) copied, 0.0217584 s, 104 MB/s
+  adding: rootfs/ (stored 0%)
+  adding: rootfs/app/ (stored 0%)
+  adding: rootfs/etc/ (stored 0%)
+  adding: rootfs/etc/os-release (stored 0%)
+  adding: rootfs/lib/ (stored 0%)
+  adding: rootfs/lib/libc++.so (deflated 71%)
+  adding: rootfs/lib/libc.so (deflated 45%)
+  adding: rootfs/system/ (stored 0%)
+  adding: rootfs/system/external/ (stored 0%)
+  adding: rootfs/system/internal/ (stored 0%)
+  adding: rootfs/usr/ (stored 0%)
+  adding: rootfs/usr/lib/ (stored 0%)
+  adding: rootfs/usr/bin/ (stored 0%)
+  adding: rootfs/data/ (stored 0%)
+  adding: rootfs/data/system/ (stored 0%)
+  adding: rootfs/data/system/param/ (stored 0%)
+  adding: rootfs/bin/ (stored 0%)
+[745/1164] STAMP obj/kernel/liteos_a/make.stamp
+[746/1164] STAMP obj/kernel/liteos_a/kernel.stamp
+[747/1164] clang obj/third_party/openssl/crypto/mem_clr.o
+[748/1164] clang obj/third_party/openssl/crypto/ec/curve25519.o
+[749/1164] clang obj/third_party/zlib/adler32.o
+[750/1164] clang obj/third_party/openssl/crypto/sha/sha512.o
+[751/1164] AR libs/libopenssl.a
+[752/1164] SOLINK ./libopenssl_shared.so
+[753/1164] clang obj/third_party/zlib/inftrees.o
+[754/1164] clang obj/third_party/zlib/trees.o
+[755/1164] clang obj/third_party/zlib/uncompr.o
+[756/1164] clang obj/third_party/zlib/zutil.o
+[757/1164] clang obj/third_party/zlib/contrib/minizip/ioapi.o
+[758/1164] clang obj/third_party/zlib/contrib/minizip/unzip.o
+[759/1164] SOLINK ./libmbedtls.so
+[760/1164] clang obj/third_party/zlib/contrib/minizip/zip.o
+[761/1164] SOLINK ./libcipher_shared.so
+[762/1164] SOLINK ./libace_kit_cipher.so
+[763/1164] STAMP obj/third_party/mbedtls/mbedtls.stamp
+[764/1164] STAMP obj/third_party/mbedtls/mbedtls_ndk.stamp
+[765/1164] SOLINK ./libhuks.so
+[766/1164] SOLINK ./libhichainsdk.so
+[767/1164] STAMP obj/base/security/frameworks/hichainsdk_lite/hichainsdk.stamp
+[768/1164] SOLINK ./libzlib_shared.so
+[769/1164] SOLINK ./libsoftbus_lite.so
+[770/1164] STAMP obj/foundation/communication/services/softbus_lite/softbus.stamp
+[771/1164] STAMP obj/foundation/communication/services/softbus_lite/softbus_ndk.stamp
+[772/1164] STAMP obj/foundation/communication/services/softbus_lite/softbus_lite_ndk.stamp
+[773/1164] SOLINK ./libdmslite.so
+[774/1164] STAMP obj/foundation/distributedschedule/services/dtbschedmgr_lite/dtbschedmgr.stamp
+[775/1164] LLVM LINK ./bin/bundle_daemon
+[776/1164] AR libs/libz.a
+[777/1164] clang++ obj/utils/native/lite/js/builtin/common/src/nativeapi_common.o
+[778/1164] SOLINK ./libace_kit_common.so
+[779/1164] clang obj/utils/native/lite/kal/timer/src/kal.o
+[780/1164] SOLINK ./libkal_timer.so
+[781/1164] clang++ obj/utils/native/lite/js/builtin/deviceinfokit/src/nativeapi_deviceinfo.o
+[782/1164] clang obj/utils/native/lite/js/builtin/filekit/src/nativeapi_fs_impl.o
+[783/1164] SOLINK ./libace_kit_file.so
+[784/1164] clang++ obj/utils/native/lite/js/builtin/kvstorekit/src/nativeapi_kv.o
+[785/1164] clang obj/utils/native/lite/js/builtin/kvstorekit/src/nativeapi_kv_impl.o
+[786/1164] SOLINK ./libace_kit_kvstore.so
+[787/1164] SOLINK ./libpng.so
+[788/1164] clang obj/utils/native/lite/kv_store/src/kvstore_common/kvstore_common.o
+[789/1164] clang obj/utils/native/lite/kv_store/src/kvstore_impl_posix/kv_store.o
+[790/1164] clang obj/utils/native/lite/timer_task/src/nativeapi_timer_task.o
+[791/1164] SOLINK ./libace_kit_timer.so
+[792/1164] SOLINK ./libutils_kv_store.so
+[793/1164] STAMP obj/utils/native/lite/kv_store/kv_store.stamp
+[794/1164] ACTION //vendor/hisi/hi35xx/hardware:hardware_media_sdk(//build/lite/toolchain:linux_x86_64_clang)
+[795/1164] STAMP obj/vendor/hisi/hi35xx/hardware/hardware_media_sdk.stamp
+[796/1164] ACTION //third_party/wpa_supplicant/wpa_supplicant-2.9:wpa_supplicant-2.9(//build/lite/toolchain:linux_x86_64_clang)
+make: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/wpa_supplicant'
+make -C ../src clean
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src'
+for d in ap common crypto drivers eapol_auth eapol_supp eap_common eap_peer eap_server l2_packet p2p pae radius rsn_supp tls utils wps fst; do [ -d $d ] && make -C $d clean; done
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/ap'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libap.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/ap'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/common'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libcommon.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/common'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/crypto'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libcrypto.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/crypto'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/drivers'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov
+rm -f build.wpa_supplicant build.hostapd
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/drivers'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eapol_auth'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libeapol_auth.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eapol_auth'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eapol_supp'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libeapol_supp.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eapol_supp'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eap_common'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libeap_common.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eap_common'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eap_peer'
+rm -f *~ *.o *.so *.d *.gcno *.gcda *.gcov libeap_peer.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eap_peer'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eap_server'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libeap_server.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eap_server'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/l2_packet'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libl2_packet.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/l2_packet'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/p2p'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libp2p.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/p2p'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/pae'
+rm -f *~ *.o *.d
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/pae'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/radius'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libradius.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/radius'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/rsn_supp'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov librsn_supp.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/rsn_supp'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/tls'
+rm -f *~ *.o *.d libtls.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/tls'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/utils'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libutils.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/utils'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/wps'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libwps.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/wps'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/fst'
+rm -f *~ *.o *.d
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/fst'
+rm -f *~
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src'
+make -C ./dbus clean
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/wpa_supplicant/dbus'
+Package dbus-1 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `dbus-1.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'dbus-1' found
+Package dbus-1 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `dbus-1.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'dbus-1' found
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov
+rm -f libwpadbus.a
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/wpa_supplicant/dbus'
+rm -f core *~ *.o *.d *.gcno *.gcda *.gcov
+rm -f eap_*.so copy_objs wpa_cli wpa_passphrase systemd/wpa_supplicant.service systemd/wpa_supplicant@.service systemd/wpa_supplicant-nl80211@.service systemd/wpa_supplicant-wired@.service dbus/fi.w1.wpa_supplicant1.service wpa_supplicant.exe wpa_cli.exe wpa_passphrase.exe win_if_list.exe eapol_test preauth_test
+rm -f wpa_priv
+rm -f nfc_pw_token
+rm -f lcov.info
+rm -rf lcov-html
+rm -f libwpa_client.a
+rm -f libwpa_client.so
+rm -f libwpa_test1 libwpa_test2
+make: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/wpa_supplicant'
+make: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/wpa_supplicant'
+  CC  eap_register.c
+  CC  ../src/utils/bitfield.c
+  CC  ../src/utils/wpa_debug.c
+  CC  ../src/utils/wpabuf.c
+  CC  ../src/crypto/aes-wrap.c
+  CC  ../src/crypto/aes-unwrap.c
+  CC  ../src/crypto/md5.c
+  CC  ../src/crypto/tls_none.c
+  CC  ../src/crypto/sha256.c
+  CC  ../src/eap_peer/eap_methods.c
+  CC  ../src/crypto/aes-internal.c
+  CC  ../src/crypto/rc4.c
+  CC  ../src/crypto/sha256-prf.c
+  CC  ../src/crypto/crypto_internal.c
+  CC  ../src/crypto/sha384-internal.c
+  CC  ../src/crypto/sha1-prf.c
+  CC  ../src/utils/os_unix.c
+  CC  config_file.c
+  CC  ../src/crypto/aes-omac1.c
+  CC  ../src/crypto/sha1.c
+  CC  ../src/rsn_supp/wpa_ie.c
+  CC  ../src/eap_common/eap_common.c
+  CC  ../src/crypto/aes-internal-enc.c
+  CC  op_classes.c
+  CC  ../src/crypto/sha1-pbkdf2.c
+  CC  ../src/crypto/aes-internal-dec.c
+  CC  ../src/rsn_supp/preauth.c
+  CC  ../src/crypto/sha256-internal.c
+  CC  ../src/drivers/wpa_hal_service.c
+  CC  ../src/crypto/sha512-internal.c
+  CC  blacklist.c
+  CC  notify.c
+  CC  ../src/rsn_supp/pmksa_cache.c
+  CC  ../src/drivers/drivers.c
+  sed systemd/wpa_supplicant.service.in
+  sed systemd/wpa_supplicant.service.arg.in
+  sed systemd/wpa_supplicant-nl80211.service.arg.in
+  sed systemd/wpa_supplicant-wired.service.arg.in
+  CC  ../src/drivers/driver_common.c
+  sed dbus/fi.w1.wpa_supplicant1.service.in
+  CC  ../src/l2_packet/l2_packet_rtos.c
+  CC  main.c
+  CC  ../src/ap/wpa_auth_ie.c
+  CC  ../src/utils/edit_simple.c
+  CC  ../src/ap/pmksa_cache_auth.c
+  CC  ../src/drivers/wpa_hal_event.c
+  CC  wpa_passphrase.c
+  CC  ../src/common/hw_features_common.c
+  CC  ../src/drivers/wpa_hal_cmd.c
+  CC  ctrl_iface_udp.c
+  CC  ../src/crypto/md5-internal.c
+  CC  ../src/common/wpa_ctrl.c
+  CC  ibss_rsn.c
+  CC  ../src/utils/eloop.c
+  CC  wmm_ac.c
+  CC  ../src/common/cli.c
+  CC  ../src/common/wpa_common.c
+  CC  wpas_glue.c
+  CC  ../src/utils/common.c
+  CC  bss.c
+  CC  rrm.c
+  CC  ../src/crypto/sha1-internal.c
+  CC  ../src/common/ieee802_11_common.c
+  CC  ../src/eapol_supp/eapol_supp_sm.c
+  LD  wpa_passphrase
+  CC  ../src/drivers/wpa_hal.c
+  CC  ../src/rsn_supp/wpa.c
+  CC  scan.c
+  CC  config.c
+  CC  ../src/eap_peer/eap.c
+  CC  wpa_cli.c
+  CC  events.c
+  CC  ../src/ap/wpa_auth.c
+  LD  wpa_cli
+  CC  wpa_supplicant.c
+  CC  ctrl_iface.c
+cp config.o notify.o bss.o eap_register.o ../src/utils/common.o ../src/utils/wpa_debug.o ../src/utils/wpabuf.o ../src/utils/bitfield.o op_classes.o rrm.o wmm_ac.o ../src/utils/os_unix.o ../src/utils/eloop.o config_file.o ../src/rsn_supp/wpa.o ../src/rsn_supp/preauth.o ../src/rsn_supp/pmksa_cache.o ../src/rsn_supp/wpa_ie.o ../src/common/wpa_common.o ibss_rsn.o ../src/eapol_supp/eapol_supp_sm.o ../src/eap_peer/eap.o ../src/eap_peer/eap_methods.o ../src/ap/wpa_auth.o ../src/ap/wpa_auth_ie.o ../src/ap/pmksa_cache_auth.o ../src/crypto/crypto_internal.o ../src/crypto/tls_none.o  ../src/crypto/aes-internal.o ../src/crypto/aes-internal-dec.o ../src/crypto/aes-unwrap.o ../src/crypto/aes-omac1.o ../src/crypto/aes-wrap.o ../src/crypto/aes-internal-enc.o ../src/crypto/md5.o ../src/crypto/md5-internal.o ../src/crypto/rc4.o  ../src/crypto/sha256.o ../src/crypto/sha256-prf.o ../src/crypto/sha256-internal.o ../src/crypto/sha384-internal.o ../src/crypto/sha512-internal.o ctrl_iface.o ctrl_iface_udp.o ../src/common/ieee802_11_common.o ../src/common/hw_features_common.o ../src/eap_common/eap_common.o ../src/crypto/sha1.o ../src/crypto/sha1-prf.o ../src/crypto/sha1-internal.o ../src/crypto/sha1-pbkdf2.o  ../src/drivers/driver_common.o wpa_supplicant.o events.o blacklist.o wpas_glue.o scan.o main.o   ../src/drivers/wpa_hal_cmd.o ../src/drivers/wpa_hal_event.o ../src/drivers/wpa_hal.o ../src/drivers/wpa_hal_service.o ../src/drivers/drivers.o ../src/l2_packet/l2_packet_rtos.o ../src/common/wpa_ctrl.o ../src/utils/os_unix.o ../src/utils/common.o ../src/utils/wpa_debug.o ../build/objs
+cp: warning: source file '../src/utils/os_unix.o' specified more than once
+cp: warning: source file '../src/utils/common.o' specified more than once
+cp: warning: source file '../src/utils/wpa_debug.o' specified more than once
+make: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/wpa_supplicant'
+make: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/hostapd'
+make -C ../src clean
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src'
+for d in ap common crypto drivers eapol_auth eapol_supp eap_common eap_peer eap_server l2_packet p2p pae radius rsn_supp tls utils wps fst; do [ -d $d ] && make -C $d clean; done
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/ap'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libap.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/ap'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/common'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libcommon.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/common'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/crypto'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libcrypto.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/crypto'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/drivers'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov
+rm -f build.wpa_supplicant build.hostapd
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/drivers'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eapol_auth'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libeapol_auth.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eapol_auth'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eapol_supp'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libeapol_supp.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eapol_supp'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eap_common'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libeap_common.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eap_common'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eap_peer'
+rm -f *~ *.o *.so *.d *.gcno *.gcda *.gcov libeap_peer.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eap_peer'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eap_server'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libeap_server.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eap_server'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/l2_packet'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libl2_packet.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/l2_packet'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/p2p'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libp2p.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/p2p'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/pae'
+rm -f *~ *.o *.d
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/pae'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/radius'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libradius.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/radius'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/rsn_supp'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov librsn_supp.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/rsn_supp'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/tls'
+rm -f *~ *.o *.d libtls.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/tls'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/utils'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libutils.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/utils'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/wps'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libwps.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/wps'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/fst'
+rm -f *~ *.o *.d
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/fst'
+rm -f *~
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src'
+rm -f core *~ *.o hostapd hostapd_cli nt_password_hash hlr_auc_gw
+rm -f *.d *.gcno *.gcda *.gcov
+rm -f lcov.info
+rm -rf lcov-html
+make: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/hostapd'
+make: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/hostapd'
+  CC  ../src/ap/preauth_auth.c
+  CC  ../src/ap/authsrv.c
+  CC  ../src/ap/eap_user_db.c
+  CC  ../src/ap/utils.c
+  CC  ../src/drivers/drivers.c
+  CC  ../src/ap/ieee802_11_auth.c
+  CC  ../src/utils/ip_addr.c
+  CC  ../src/ap/tkip_countermeasures.c
+  CC  ../src/ap/bss_load.c
+  CC  ../src/utils/wpa_debug.c
+  CC  ../src/drivers/wpa_hal_service.c
+  CC  ap_eap_register.c
+  CC  ../src/ap/ap_mlme.c
+  CC  ../src/l2_packet/l2_packet_rtos.c
+  CC  ../src/utils/wpabuf.c
+  CC  ../src/common/ctrl_iface_common.c
+  CC  ../src/ap/neighbor_db.c
+  CC  ../src/eap_common/eap_common.c
+  CC  ../src/ap/wpa_auth_glue.c
+  CC  ../src/eap_server/eap_server_identity.c
+  CC  ../src/crypto/aes-wrap.c
+  CC  ../src/eap_server/eap_server_methods.c
+  CC  ../src/crypto/sha1.c
+  CC  ../src/utils/os_unix.c
+  CC  ../src/drivers/wpa_hal_event.c
+  CC  ../src/crypto/crypto_internal.c
+  CC  ../src/crypto/tls_none.c
+  CC  ../src/crypto/aes-internal.c
+  CC  ../src/ap/ieee802_11_shared.c
+  CC  ../src/ap/pmksa_cache_auth.c
+  CC  ../src/ap/wpa_auth_ie.c
+  CC  ap_main.c
+  CC  ../src/crypto/sha1-prf.c
+  CC  ../src/crypto/sha1-pbkdf2.c
+  CC  ../src/crypto/md5.c
+  CC  ../src/crypto/sha256.c
+  CC  ../src/drivers/wpa_hal_cmd.c
+  CC  ../src/crypto/aes-omac1.c
+  CC  ../src/crypto/aes-internal-enc.c
+  CC  ../src/crypto/sha256-prf.c
+  CC  ../src/crypto/sha384-internal.c
+  CC  ../src/common/hw_features_common.c
+  CC  ../src/crypto/aes-internal-dec.c
+  CC  ../src/ap/ap_rrm.c
+  CC  ../src/crypto/sha256-internal.c
+  CC  ../src/crypto/sha512-internal.c
+  CC  ../src/utils/edit_simple.c
+  CC  ../src/ap/ap_config.c
+  CC  ../src/ap/ap_drv_ops.c
+  CC  ../src/ap/wmm.c
+  CC  ../src/common/wpa_ctrl.c
+  CC  ../src/ap/drv_callbacks.c
+  CC  ../src/drivers/driver_common.c
+  CC  ../src/utils/eloop.c
+  CC  ../src/ap/ap_list.c
+  CC  ../src/ap/ieee802_1x.c
+  CC  ../src/ap/sta_info.c
+  CC  ../src/ap/ctrl_iface_ap.c
+  CC  ../src/common/cli.c
+  CC  ../src/crypto/md5-internal.c
+  CC  ../src/common/wpa_common.c
+  CC  ../src/utils/common.c
+  CC  ../src/ap/hw_features.c
+  CC  ap_config_file.c
+  CC  ../src/ap/beacon.c
+  CC  ../src/ap/ieee802_11_ht.c
+  CC  ../src/common/ieee802_11_common.c
+  CC  ../src/drivers/wpa_hal.c
+  CC  ../src/crypto/sha1-internal.c
+  CC  ../src/ap/dfs.c
+  CC  ../src/eapol_auth/eapol_auth_sm.c
+  CC  ../src/eap_server/eap_server.c
+  CC  ap_ctrl_iface.c
+  CC  hostapd_cli.c
+  LD  hostapd_cli
+  CC  ../src/ap/hostapd.c
+  CC  ../src/ap/ieee802_11.c
+  CC  ../src/ap/wpa_auth.c
+cp ap_main.o ap_config_file.o ../src/ap/hostapd.o ../src/ap/wpa_auth_glue.o ../src/ap/drv_callbacks.o ../src/ap/ap_drv_ops.o ../src/ap/utils.o ../src/ap/authsrv.o ../src/ap/ieee802_1x.o ../src/ap/ap_config.o ../src/ap/eap_user_db.o ../src/ap/ieee802_11_auth.o ../src/ap/sta_info.o ../src/ap/wpa_auth.o ../src/ap/tkip_countermeasures.o ../src/ap/ap_mlme.o ../src/ap/wpa_auth_ie.o ../src/ap/preauth_auth.o ../src/ap/pmksa_cache_auth.o ../src/ap/ieee802_11_shared.o ../src/ap/beacon.o ../src/ap/bss_load.o ../src/ap/neighbor_db.o ../src/ap/ap_rrm.o ../src/drivers/drivers.o ../src/utils/eloop.o ../src/utils/common.o ../src/utils/wpa_debug.o ../src/utils/wpabuf.o ../src/utils/os_unix.o ../src/utils/ip_addr.o ../src/common/ieee802_11_common.o ../src/common/wpa_common.o ../src/common/hw_features_common.o ../src/eapol_auth/eapol_auth_sm.o ../src/common/ctrl_iface_common.o ap_ctrl_iface.o ../src/ap/ctrl_iface_ap.o   ../src/drivers/wpa_hal_cmd.o ../src/drivers/wpa_hal_event.o ../src/drivers/wpa_hal.o ../src/drivers/wpa_hal_service.o ../src/l2_packet/l2_packet_rtos.o ap_eap_register.o ../src/eap_server/eap_server.o ../src/eap_common/eap_common.o ../src/eap_server/eap_server_methods.o ../src/eap_server/eap_server_identity.o ../src/crypto/crypto_internal.o ../src/crypto/tls_none.o  ../src/crypto/aes-internal.o ../src/crypto/aes-internal-enc.o ../src/crypto/aes-wrap.o ../src/crypto/aes-omac1.o ../src/crypto/aes-internal-dec.o ../src/crypto/sha1.o ../src/crypto/sha1-prf.o ../src/crypto/sha1-internal.o ../src/crypto/sha1-pbkdf2.o ../src/crypto/md5.o ../src/crypto/md5-internal.o ../src/crypto/sha256.o ../src/crypto/sha256-prf.o ../src/crypto/sha256-internal.o ../src/crypto/sha384-internal.o ../src/crypto/sha512-internal.o ../src/ap/wmm.o ../src/ap/ap_list.o ../src/ap/ieee802_11.o ../src/ap/hw_features.o ../src/ap/dfs.o ../src/ap/ieee802_11_ht.o ../src/drivers/driver_common.o ../build/objs
+make: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/hostapd'
+make: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/build'
+rm -f libwpa.so
+rm -f libwpa.a
+rm -f 
+rm -f 
+rm -f 
+rm -f 
+rm -f test_wpa.d test_hostapd.d
+make: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/build'
+make: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/build'
+/home/harmony/llvm/bin/../bin/llvm-ar -crs libwpa.a objs/*.o
+make: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/build'
+make: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/wpa_supplicant'
+  AR  libwpa_client.a
+cp libwpa_client.a ../build
+make: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/wpa_supplicant'
+make: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/wpa_supplicant'
+make -C ../src clean
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src'
+for d in ap common crypto drivers eapol_auth eapol_supp eap_common eap_peer eap_server l2_packet p2p pae radius rsn_supp tls utils wps fst; do [ -d $d ] && make -C $d clean; done
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/ap'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libap.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/ap'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/common'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libcommon.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/common'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/crypto'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libcrypto.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/crypto'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/drivers'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov
+rm -f build.wpa_supplicant build.hostapd
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/drivers'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eapol_auth'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libeapol_auth.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eapol_auth'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eapol_supp'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libeapol_supp.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eapol_supp'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eap_common'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libeap_common.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eap_common'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eap_peer'
+rm -f *~ *.o *.so *.d *.gcno *.gcda *.gcov libeap_peer.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eap_peer'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eap_server'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libeap_server.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eap_server'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/l2_packet'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libl2_packet.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/l2_packet'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/p2p'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libp2p.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/p2p'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/pae'
+rm -f *~ *.o *.d
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/pae'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/radius'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libradius.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/radius'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/rsn_supp'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov librsn_supp.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/rsn_supp'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/tls'
+rm -f *~ *.o *.d libtls.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/tls'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/utils'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libutils.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/utils'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/wps'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libwps.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/wps'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/fst'
+rm -f *~ *.o *.d
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/fst'
+rm -f *~
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src'
+make -C ./dbus clean
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/wpa_supplicant/dbus'
+Package dbus-1 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `dbus-1.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'dbus-1' found
+Package dbus-1 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `dbus-1.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'dbus-1' found
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov
+rm -f libwpadbus.a
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/wpa_supplicant/dbus'
+rm -f core *~ *.o *.d *.gcno *.gcda *.gcov
+rm -f eap_*.so copy_objs wpa_cli wpa_passphrase systemd/wpa_supplicant.service systemd/wpa_supplicant@.service systemd/wpa_supplicant-nl80211@.service systemd/wpa_supplicant-wired@.service dbus/fi.w1.wpa_supplicant1.service wpa_supplicant.exe wpa_cli.exe wpa_passphrase.exe win_if_list.exe eapol_test preauth_test
+rm -f wpa_priv
+rm -f nfc_pw_token
+rm -f lcov.info
+rm -rf lcov-html
+rm -f libwpa_client.a
+rm -f libwpa_client.so
+rm -f libwpa_test1 libwpa_test2
+make: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/wpa_supplicant'
+make: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/wpa_supplicant'
+  CC  eap_register.c
+  CC  ../src/utils/bitfield.c
+  CC  ../src/utils/wpa_debug.c
+  CC  ../src/utils/wpabuf.c
+  CC  ../src/utils/os_unix.c
+  CC  ../src/eap_peer/eap_methods.c
+  CC  config_file.c
+  CC  ../src/crypto/aes-unwrap.c
+  CC  ../src/crypto/crypto_internal.c
+  CC  ../src/crypto/tls_none.c
+  CC  ../src/crypto/aes-wrap.c
+  CC  notify.c
+  CC  op_classes.c
+  CC  ../src/rsn_supp/preauth.c
+  CC  ../src/rsn_supp/wpa_ie.c
+  CC  ../src/crypto/aes-internal.c
+  CC  ../src/crypto/aes-omac1.c
+  CC  ../src/crypto/md5.c
+  CC  ../src/crypto/rc4.c
+  CC  ../src/crypto/sha256.c
+  CC  ../src/rsn_supp/pmksa_cache.c
+  CC  ../src/crypto/sha256-prf.c
+  CC  ../src/crypto/sha384-internal.c
+  CC  ../src/crypto/aes-internal-enc.c
+  CC  ../src/crypto/sha1.c
+  CC  ../src/crypto/aes-internal-dec.c
+  CC  ../src/crypto/sha256-internal.c
+  CC  ../src/eap_common/eap_common.c
+  CC  ../src/crypto/sha1-prf.c
+  CC  ../src/crypto/sha512-internal.c
+  CC  ../src/ap/wpa_auth_ie.c
+  CC  ../src/utils/common.c
+  CC  ../src/ap/pmksa_cache_auth.c
+  CC  ibss_rsn.c
+  CC  ../src/common/wpa_common.c
+  CC  wmm_ac.c
+  CC  ../src/utils/eloop.c
+  CC  ../src/common/hw_features_common.c
+  CC  ../src/crypto/sha1-pbkdf2.c
+  CC  ctrl_iface_udp.c
+  CC  ../src/crypto/md5-internal.c
+  CC  ../src/drivers/driver_common.c
+  CC  ../src/drivers/wpa_hal_service.c
+  sed systemd/wpa_supplicant.service.in
+  sed systemd/wpa_supplicant.service.arg.in
+  CC  bss.c
+  CC  blacklist.c
+  sed systemd/wpa_supplicant-nl80211.service.arg.in
+  CC  ../src/l2_packet/l2_packet_rtos.c
+  sed systemd/wpa_supplicant-wired.service.arg.in
+  CC  ../src/drivers/drivers.c
+  CC  main.c
+  CC  rrm.c
+  CC  ../src/drivers/wpa_hal_cmd.c
+  sed dbus/fi.w1.wpa_supplicant1.service.in
+  CC  ../src/utils/edit_simple.c
+  CC  ../src/drivers/wpa_hal_event.c
+  CC  wpa_passphrase.c
+  CC  ../src/common/ieee802_11_common.c
+  CC  ../src/common/wpa_ctrl.c
+  CC  ../src/common/cli.c
+  CC  wpas_glue.c
+  CC  ../src/rsn_supp/wpa.c
+  CC  ../src/eapol_supp/eapol_supp_sm.c
+  CC  config.c
+  CC  ../src/crypto/sha1-internal.c
+  CC  ../src/drivers/wpa_hal.c
+  CC  ../src/eap_peer/eap.c
+  CC  ../src/ap/wpa_auth.c
+  CC  scan.c
+  CC  wpa_cli.c
+  LD  wpa_passphrase
+  CC  events.c
+  CC  wpa_supplicant.c
+  CC  ctrl_iface.c
+cp config.o notify.o bss.o eap_register.o ../src/utils/common.o ../src/utils/wpa_debug.o ../src/utils/wpabuf.o ../src/utils/bitfield.o op_classes.o rrm.o wmm_ac.o ../src/utils/os_unix.o ../src/utils/eloop.o config_file.o ../src/rsn_supp/wpa.o ../src/rsn_supp/preauth.o ../src/rsn_supp/pmksa_cache.o ../src/rsn_supp/wpa_ie.o ../src/common/wpa_common.o ibss_rsn.o ../src/eapol_supp/eapol_supp_sm.o ../src/eap_peer/eap.o ../src/eap_peer/eap_methods.o ../src/ap/wpa_auth.o ../src/ap/wpa_auth_ie.o ../src/ap/pmksa_cache_auth.o ../src/crypto/crypto_internal.o ../src/crypto/tls_none.o  ../src/crypto/aes-internal.o ../src/crypto/aes-internal-dec.o ../src/crypto/aes-unwrap.o ../src/crypto/aes-omac1.o ../src/crypto/aes-wrap.o ../src/crypto/aes-internal-enc.o ../src/crypto/md5.o ../src/crypto/md5-internal.o ../src/crypto/rc4.o  ../src/crypto/sha256.o ../src/crypto/sha256-prf.o ../src/crypto/sha256-internal.o ../src/crypto/sha384-internal.o ../src/crypto/sha512-internal.o ctrl_iface.o ctrl_iface_udp.o ../src/common/ieee802_11_common.o ../src/common/hw_features_common.o ../src/eap_common/eap_common.o ../src/crypto/sha1.o ../src/crypto/sha1-prf.o ../src/crypto/sha1-internal.o ../src/crypto/sha1-pbkdf2.o  ../src/drivers/driver_common.o wpa_supplicant.o events.o blacklist.o wpas_glue.o scan.o main.o   ../src/drivers/wpa_hal_cmd.o ../src/drivers/wpa_hal_event.o ../src/drivers/wpa_hal.o ../src/drivers/wpa_hal_service.o ../src/drivers/drivers.o ../src/l2_packet/l2_packet_rtos.o ../build/objs
+  LD  wpa_cli
+make: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/wpa_supplicant'
+make: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/hostapd'
+make -C ../src clean
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src'
+for d in ap common crypto drivers eapol_auth eapol_supp eap_common eap_peer eap_server l2_packet p2p pae radius rsn_supp tls utils wps fst; do [ -d $d ] && make -C $d clean; done
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/ap'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libap.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/ap'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/common'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libcommon.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/common'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/crypto'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libcrypto.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/crypto'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/drivers'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov
+rm -f build.wpa_supplicant build.hostapd
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/drivers'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eapol_auth'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libeapol_auth.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eapol_auth'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eapol_supp'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libeapol_supp.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eapol_supp'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eap_common'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libeap_common.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eap_common'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eap_peer'
+rm -f *~ *.o *.so *.d *.gcno *.gcda *.gcov libeap_peer.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eap_peer'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eap_server'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libeap_server.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/eap_server'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/l2_packet'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libl2_packet.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/l2_packet'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/p2p'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libp2p.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/p2p'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/pae'
+rm -f *~ *.o *.d
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/pae'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/radius'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libradius.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/radius'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/rsn_supp'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov librsn_supp.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/rsn_supp'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/tls'
+rm -f *~ *.o *.d libtls.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/tls'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/utils'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libutils.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/utils'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/wps'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libwps.a
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/wps'
+make[2]: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/fst'
+rm -f *~ *.o *.d
+make[2]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src/fst'
+rm -f *~
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/src'
+rm -f core *~ *.o hostapd hostapd_cli nt_password_hash hlr_auc_gw
+rm -f *.d *.gcno *.gcda *.gcov
+rm -f lcov.info
+rm -rf lcov-html
+make: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/hostapd'
+make: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/hostapd'
+  CC  ../src/ap/preauth_auth.c
+  CC  ../src/ap/authsrv.c
+  CC  ../src/ap/utils.c
+  CC  ../src/ap/eap_user_db.c
+  CC  ../src/drivers/drivers.c
+  CC  ../src/utils/ip_addr.c
+  CC  ../src/ap/ieee802_11_auth.c
+  CC  ../src/ap/ap_mlme.c
+  CC  ../src/ap/tkip_countermeasures.c
+  CC  ../src/utils/wpa_debug.c
+  CC  ../src/drivers/wpa_hal_service.c
+  CC  ../src/ap/wpa_auth_glue.c
+  CC  ../src/ap/bss_load.c
+  CC  ../src/utils/wpabuf.c
+  CC  ../src/l2_packet/l2_packet_rtos.c
+  CC  ../src/ap/neighbor_db.c
+  CC  ap_eap_register.c
+  CC  ../src/common/ctrl_iface_common.c
+  CC  ../src/ap/pmksa_cache_auth.c
+  CC  ../src/utils/os_unix.c
+  CC  ../src/eap_common/eap_common.c
+  CC  ../src/drivers/wpa_hal_event.c
+  CC  ../src/ap/wpa_auth_ie.c
+  CC  ap_main.c
+  CC  ../src/eap_server/eap_server_methods.c
+  CC  ../src/drivers/wpa_hal_cmd.c
+  CC  ../src/ap/ap_drv_ops.c
+  CC  ../src/ap/ieee802_11_shared.c
+  CC  ../src/eap_server/eap_server_identity.c
+  CC  ../src/crypto/tls_none.c
+  CC  ../src/crypto/aes-wrap.c
+  CC  ../src/crypto/crypto_internal.c
+  CC  ../src/crypto/aes-internal.c
+  CC  ../src/crypto/sha1.c
+  CC  ../src/ap/ap_config.c
+  CC  ../src/common/hw_features_common.c
+  CC  ../src/crypto/aes-omac1.c
+  CC  ../src/crypto/sha1-prf.c
+  CC  ../src/crypto/aes-internal-enc.c
+  CC  ../src/crypto/md5.c
+  CC  ../src/crypto/sha1-pbkdf2.c
+  CC  ../src/ap/ap_rrm.c
+  CC  ../src/ap/drv_callbacks.c
+  CC  ../src/ap/sta_info.c
+  CC  ../src/ap/ieee802_1x.c
+  CC  ../src/utils/eloop.c
+  CC  ../src/crypto/aes-internal-dec.c
+  CC  ../src/crypto/sha256-prf.c
+  CC  ../src/crypto/sha256.c
+  CC  ../src/utils/common.c
+  CC  ap_config_file.c
+  CC  ../src/common/wpa_common.c
+  CC  ../src/crypto/sha384-internal.c
+  CC  ../src/ap/ctrl_iface_ap.c
+  CC  ../src/crypto/sha256-internal.c
+  CC  ../src/ap/beacon.c
+  CC  ../src/crypto/sha512-internal.c
+  CC  ../src/common/ieee802_11_common.c
+  CC  ../src/utils/edit_simple.c
+  CC  ../src/drivers/wpa_hal.c
+  CC  ../src/common/cli.c
+  CC  ../src/ap/ap_list.c
+  CC  ../src/drivers/driver_common.c
+  CC  ../src/common/wpa_ctrl.c
+  CC  ../src/ap/wmm.c
+  CC  ../src/crypto/md5-internal.c
+  CC  ../src/ap/ieee802_11_ht.c
+  CC  ../src/ap/hw_features.c
+  CC  ../src/crypto/sha1-internal.c
+  CC  ap_ctrl_iface.c
+  CC  ../src/eapol_auth/eapol_auth_sm.c
+  CC  ../src/eap_server/eap_server.c
+  CC  ../src/ap/dfs.c
+  CC  ../src/ap/hostapd.c
+  CC  hostapd_cli.c
+  CC  ../src/ap/wpa_auth.c
+  CC  ../src/ap/ieee802_11.c
+cp ap_main.o ap_config_file.o ../src/ap/hostapd.o ../src/ap/wpa_auth_glue.o ../src/ap/drv_callbacks.o ../src/ap/ap_drv_ops.o ../src/ap/utils.o ../src/ap/authsrv.o ../src/ap/ieee802_1x.o ../src/ap/ap_config.o ../src/ap/eap_user_db.o ../src/ap/ieee802_11_auth.o ../src/ap/sta_info.o ../src/ap/wpa_auth.o ../src/ap/tkip_countermeasures.o ../src/ap/ap_mlme.o ../src/ap/wpa_auth_ie.o ../src/ap/preauth_auth.o ../src/ap/pmksa_cache_auth.o ../src/ap/ieee802_11_shared.o ../src/ap/beacon.o ../src/ap/bss_load.o ../src/ap/neighbor_db.o ../src/ap/ap_rrm.o ../src/drivers/drivers.o ../src/utils/eloop.o ../src/utils/common.o ../src/utils/wpa_debug.o ../src/utils/wpabuf.o ../src/utils/os_unix.o ../src/utils/ip_addr.o ../src/common/ieee802_11_common.o ../src/common/wpa_common.o ../src/common/hw_features_common.o ../src/eapol_auth/eapol_auth_sm.o ../src/common/ctrl_iface_common.o ap_ctrl_iface.o ../src/ap/ctrl_iface_ap.o   ../src/drivers/wpa_hal_cmd.o ../src/drivers/wpa_hal_event.o ../src/drivers/wpa_hal.o ../src/drivers/wpa_hal_service.o ../src/l2_packet/l2_packet_rtos.o ap_eap_register.o ../src/eap_server/eap_server.o ../src/eap_common/eap_common.o ../src/eap_server/eap_server_methods.o ../src/eap_server/eap_server_identity.o ../src/crypto/crypto_internal.o ../src/crypto/tls_none.o  ../src/crypto/aes-internal.o ../src/crypto/aes-internal-enc.o ../src/crypto/aes-wrap.o ../src/crypto/aes-omac1.o ../src/crypto/aes-internal-dec.o ../src/crypto/sha1.o ../src/crypto/sha1-prf.o ../src/crypto/sha1-internal.o ../src/crypto/sha1-pbkdf2.o ../src/crypto/md5.o ../src/crypto/md5-internal.o ../src/crypto/sha256.o ../src/crypto/sha256-prf.o ../src/crypto/sha256-internal.o ../src/crypto/sha384-internal.o ../src/crypto/sha512-internal.o ../src/ap/wmm.o ../src/ap/ap_list.o ../src/ap/ieee802_11.o ../src/ap/hw_features.o ../src/ap/dfs.o ../src/ap/ieee802_11_ht.o ../src/drivers/driver_common.o ../build/objs
+  LD  hostapd_cli
+make: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/hostapd'
+make: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/build'
+rm -f libwpa.so
+rm -f libwpa.a
+rm -f 
+rm -f 
+rm -f 
+rm -f 
+rm -f test_wpa.d test_hostapd.d
+make: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/build'
+make: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/build'
+/home/harmony/llvm/bin/../bin/clang  -flto -O2  -shared -fPIC -Wl,-z,defs objs/*.o -o libwpa.so -L/home/harmony/harmony/code/code-1.0/out/ipcamera_hi3516dv300 -lhdf_core -lhdf_osal -lsec_shared -lrt -lm -lpthread -fuse-ld=lld --target=arm-liteos --sysroot=../../../../prebuilts/lite/sysroot -lc -v
+OHOS (34024) clang version 9.0.0 (llvm-project c20cd5feb33c9df88918ffe9a0df76499befaa46) (based on LLVM 9.0.0)
+Target: arm-unknown-liteos
+Thread model: posix
+InstalledDir: /home/harmony/llvm/bin/../bin
+ "/home/harmony/llvm/bin/../bin/ld.lld" --sysroot=../../../../prebuilts/lite/sysroot -z noexecstack -EL --warn-shared-textrel -z now -z relro -X --hash-style=gnu --hash-style=both --enable-new-dtags --eh-frame-hdr -m armelf_linux_eabi -shared -o libwpa.so ../../../../prebuilts/lite/sysroot/usr/lib/arm-liteos/crti.o /home/harmony/llvm/lib/clang/9.0.0/lib/arm-liteos/clang_rt.crtbegin.o -L/home/harmony/harmony/code/code-1.0/out/ipcamera_hi3516dv300 -L../../../../prebuilts/lite/sysroot/usr/lib/arm-liteos -plugin /home/harmony/llvm/bin/../lib/LLVMgold.so -plugin-opt=mcpu=arm7tdmi -plugin-opt=O2 -z defs objs/aes-internal-dec.o objs/aes-internal-enc.o objs/aes-internal.o objs/aes-omac1.o objs/aes-unwrap.o objs/aes-wrap.o objs/ap_config_file.o objs/ap_config.o objs/ap_ctrl_iface.o objs/ap_drv_ops.o objs/ap_eap_register.o objs/ap_list.o objs/ap_main.o objs/ap_mlme.o objs/ap_rrm.o objs/authsrv.o objs/beacon.o objs/bitfield.o objs/blacklist.o objs/bss_load.o objs/bss.o objs/common.o objs/config_file.o objs/config.o objs/crypto_internal.o objs/ctrl_iface_ap.o objs/ctrl_iface_common.o objs/ctrl_iface.o objs/ctrl_iface_udp.o objs/dfs.o objs/driver_common.o objs/drivers.o objs/drv_callbacks.o objs/eap_common.o objs/eap_methods.o objs/eap.o objs/eapol_auth_sm.o objs/eapol_supp_sm.o objs/eap_register.o objs/eap_server_identity.o objs/eap_server_methods.o objs/eap_server.o objs/eap_user_db.o objs/eloop.o objs/events.o objs/hostapd.o objs/hw_features_common.o objs/hw_features.o objs/ibss_rsn.o objs/ieee802_11_auth.o objs/ieee802_11_common.o objs/ieee802_11_ht.o objs/ieee802_11.o objs/ieee802_11_shared.o objs/ieee802_1x.o objs/ip_addr.o objs/l2_packet_rtos.o objs/main.o objs/md5-internal.o objs/md5.o objs/neighbor_db.o objs/notify.o objs/op_classes.o objs/os_unix.o objs/pmksa_cache_auth.o objs/pmksa_cache.o objs/preauth_auth.o objs/preauth.o objs/rc4.o objs/rrm.o objs/scan.o objs/sha1-internal.o objs/sha1.o objs/sha1-pbkdf2.o objs/sha1-prf.o objs/sha256-internal.o objs/sha256.o objs/sha256-prf.o objs/sha384-internal.o objs/sha512-internal.o objs/sta_info.o objs/tkip_countermeasures.o objs/tls_none.o objs/utils.o objs/wmm_ac.o objs/wmm.o objs/wpa_auth_glue.o objs/wpa_auth_ie.o objs/wpa_auth.o objs/wpabuf.o objs/wpa_common.o objs/wpa_debug.o objs/wpa_hal_cmd.o objs/wpa_hal_event.o objs/wpa_hal.o objs/wpa_hal_service.o objs/wpa_ie.o objs/wpa.o objs/wpas_glue.o objs/wpa_supplicant.o -lhdf_core -lhdf_osal -lsec_shared -lrt -lm -lpthread -lc /home/harmony/llvm/lib/clang/9.0.0/lib/arm-liteos/libclang_rt.builtins.a -lc /home/harmony/llvm/lib/clang/9.0.0/lib/arm-liteos/libclang_rt.builtins.a /home/harmony/llvm/lib/clang/9.0.0/lib/arm-liteos/clang_rt.crtend.o ../../../../prebuilts/lite/sysroot/usr/lib/arm-liteos/crtn.o
+make: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/build'
+make: Entering directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/wpa_supplicant'
+  CC  libwpa_client.so (../src/common/wpa_ctrl.c ../src/utils/os_unix.c ../src/utils/common.c ../src/utils/wpa_debug.c)
+cp libwpa_client.so ../build
+make: Leaving directory '/home/harmony/harmony/code/code-1.0/third_party/wpa_supplicant/wpa_supplicant-2.9/wpa_supplicant'
+[797/1164] STAMP obj/third_party/wpa_supplicant/wpa_supplicant-2.9/wpa_supplicant-2.9.stamp
+[798/1164] STAMP obj/third_party/wpa_supplicant/wpa_supplicant-2.9/wpa_supplicant.stamp
+[799/1164] clang obj/vendor/huawei/camera/hals/utils/token/hal_token.o
+[800/1164] SOLINK ./libhaltoken_shared.so
+[801/1164] SOLINK ./libtoken_shared.so
+[802/1164] STAMP obj/base/startup/frameworks/syspara_lite/token/token.stamp
+[803/1164] STAMP obj/base/startup/frameworks/syspara_lite/token/token_notes.stamp
+[804/1164] COPY ../../vendor/huawei/camera/init_configs/init_liteos_a_3516dv300.cfg obj/vendor/huawei/camera/init_configs/config/init.cfg
+[805/1164] STAMP obj/vendor/huawei/camera/init_configs/ConfigFiles.stamp
+[806/1164] STAMP obj/vendor/huawei/camera/init_configs/init_config.stamp
+[807/1164] COPY ../../vendor/huawei/hdf/libs/hi3516dv300/libdisplay_gfx.so libdisplay_gfx.so
+[808/1164] clang obj/vendor/huawei/camera/hals/utils/sys_param/hal_sys_param.o
+[809/1164] SOLINK ./libhal_sysparam.so
+[810/1164] SOLINK ./libsysparam.so
+[811/1164] STAMP obj/base/startup/frameworks/syspara_lite/parameter/parameter.stamp
+[812/1164] SOLINK ./libverify.so
+[813/1164] STAMP obj/base/startup/frameworks/syspara_lite/parameter/parameter_notes.stamp
+[814/1164] LLVM LINK ./bin/init
+[815/1164] STAMP obj/base/startup/services/init_lite/init_lite.stamp
+[816/1164] SOLINK ./libbundlems.so
+[817/1164] STAMP obj/foundation/appexecfwk/services/bundlemgr_lite/appexecfwk_services_lite.stamp
+[818/1164] LLVM LINK ./bin/query.bin
+[819/1164] ACTION //test/xts/acts:acts(//build/lite/toolchain:linux_x86_64_clang)
+[820/1164] STAMP obj/test/xts/acts/acts.stamp
+[821/1164] COPY bin/query.bin suites/acts/resource/tools/query.bin
+[822/1164] STAMP obj/test/xts/acts/query_copy.stamp
+[823/1164] SOLINK ./libace_kit_deviceinfo.so
+[824/1164] STAMP obj/utils/native/lite/js/builtin/ace_utils_kits.stamp
+[825/1164] STAMP obj/vendor/huawei/hdf/display/hdi/display_gfx.stamp
+[826/1164] COPY ../../vendor/huawei/hdf/libs/hi3516dv300/libdisplay_gralloc.so libdisplay_gralloc.so
+[827/1164] STAMP obj/vendor/huawei/hdf/display/hdi/display_gralloc.stamp
+[828/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/task/ability_dump_task.o
+[829/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/task/app_terminate_task.o
+[830/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/task/app_restart_task.o
+[831/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/util/abilityms_status.o
+[832/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/util/abilityms_helper.o
+[833/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/task/ability_background_task.o
+[834/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/task/ability_activate_task.o
+[835/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/task/ability_inactivate_task.o
+[836/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/client/ability_thread_client.o
+[837/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/task/ability_attach_task.o
+[838/1164] ACTION //vendor/hisi/hi35xx/hi35xx_init/hi3516dv300:hi3516dv300_image(//build/lite/toolchain:linux_x86_64_clang)
+/home/harmony/llvm/bin/..//bin/ld.lld -L/home/harmony/harmony/code/code-1.0/out/ipcamera_hi3516dv300/obj/kernel/liteos_a/lib  -static --gc-sections       -L/home/harmony/harmony/code/code-1.0/vendor/hisi/hi35xx/hi35xx_init/hi3516dv300/../../../../../kernel/liteos_a/../../vendor/hisi/hi35xx/platform/libs/hi3516dv300 -L/home/harmony/harmony/code/code-1.0/vendor/hisi/hi35xx/hi35xx_init/hi3516dv300/../../../../../kernel/liteos_a/../../vendor/huawei/hdf/libs/hi3516dv300 -L/home/harmony/harmony/code/code-1.0/vendor/hisi/hi35xx/hi35xx_init/hi3516dv300/../../../../../kernel/liteos_a/tools/scripts/ld -L/home/harmony/harmony/code/code-1.0/vendor/hisi/hi35xx/hi35xx_init/hi3516dv300/../../../../../kernel/liteos_a/platform -L/home/harmony/harmony/code/code-1.0/out/ipcamera_hi3516dv300/lib -L/home/harmony/harmony/code/code-1.0/out/ipcamera_hi3516dv300/lib/obj -L/home/harmony/harmony/code/code-1.0/vendor/hisi/hi35xx/hi35xx_init/hi3516dv300/../../../../../kernel/liteos_a/tools/build -L/home/harmony/llvm/bin/..//lib/clang/9.0.0/lib/arm-liteos/a7_softfp_neon-vfpv4 -L/home/harmony/llvm/bin/..//lib/arm-liteos/c++/a7_softfp_neon-vfpv4 -T/home/harmony/harmony/code/code-1.0/vendor/hisi/hi35xx/hi35xx_init/hi3516dv300/../../../../../kernel/liteos_a/tools/build/liteos_llvm.ld --gc-sections -Map=/home/harmony/harmony/code/code-1.0/vendor/hisi/hi35xx/hi35xx_init/hi3516dv300/OHOS_Image.map -o /home/harmony/harmony/code/code-1.0/vendor/hisi/hi35xx/hi35xx_init/hi3516dv300/OHOS_Image /home/harmony/harmony/code/code-1.0/vendor/hisi/hi35xx/hi35xx_init/hi3516dv300/../../hi3516dv300/module_init//src/system_init.o /home/harmony/harmony/code/code-1.0/vendor/hisi/hi35xx/hi35xx_init/hi3516dv300/../../hi3516dv300/module_init//src/sdk_init.o  -L/home/harmony/harmony/code/code-1.0/vendor/hisi/hi35xx/hi35xx_init/hi3516dv300/../../hi3516dv300/module_init//lib -L/home/harmony/harmony/code/code-1.0/vendor/hisi/hi35xx/hi35xx_init/hi3516dv300/../../hi3516dv300/module_init//lib/extdrv --start-group -lsys_config -lhi_osal -lhi3516cv500_base -lhi3516cv500_sys -lhi_user -lhi3516cv500_isp -lhi3516cv500_vi -lhi3516cv500_vo -lhifb -lhi3516cv500_vpss -lhi3516cv500_vgs -lhi3516cv500_tde -lhi_mipi_rx -lhi_mipi_tx -lhi3516cv500_chnl -lhi3516cv500_rc -lhi3516cv500_rgn -lhi3516cv500_vedu -lhi3516cv500_venc -lhi3516cv500_h265e -lhi3516cv500_jpege -lhi3516cv500_jpegd -lhi3516cv500_h264e -lhi3516cv500_vdec -lhi3516cv500_hdmi -lhi3516cv500_dis -lhi3516cv500_gdc -lhi_sensor_i2c -lhi_sensor_spi -lhi3516cv500_ai -lhi3516cv500_ao -lhi3516cv500_aio -lhi3516cv500_aenc -lhi3516cv500_adec -lhi3516cv500_acodec -lhi_sensor_spi -lhi_pwm -lhi_piris -lhi3516cv500_ive -lhi3516cv500_nnie -lhi3516cv500_vfmw -lhi3516cv500_cipher --end-group --start-group  -lclang_rt.builtins -lunwind --no-dependent-libraries -lcortex-a7 -lbsp -lrootfs -lbase -lhi35xx_bsp -lcpup -ldynload -lvdso -lliteipc -lpipes -lc -lsec -lscrew -lc++ -lc++abi -lcppsupport -lz -lposix -lbsd -llinuxkpi -lvfs -lmulti_partition -lbch -lfat -lvirpart -ldisk -lbcache -lramfs -lnfs -lproc -ljffs2 -llwip --whole-archive -lhdf -lhdf_wifi_model -lhdf_usb -lhdf_config -lhdf_i2c -lhdf_spi -lhdf_gpio -lhdf_watchdog -lhdf_sdio -lhdf_rtc -lhdf_uart -lhdf_hisi_sdk -lhdf_vendor_wifi -lhi3881 -lhdf_input_driver -lhdf_lcd_driver --no-whole-archive -lhievent -lhieth-sf -lmem -lmmc -lmtd_common -lspinor_flash -lrandom -lusb_base -lvideo -lhilog -lsyscall -lsecurity --end-group -utask_shellcmd -ug_usrVdsoDataPage -uvm_shellcmd -ucpup_shellcmd -uhelp_shellcmd -ufree_shellcmd -usem_shellcmd -umutex_shellcmd -uqueue_shellcmd -usysteminfo_shellcmd -uswtmr_shellcmd -uhwi_shellcmd -ufindsym_shellcmd -uzbar_scan_shellcmd -udmesg_shellcmd -udate_shellcmd -ureadExcInfo_shellcmd -uwatch_shellcmd -udeadlock_shellcmd -ukill_shellcmd -upmm_shellcmd -uarp_shellcmd -utelnet_shellcmd -uping_shellcmd -unetstat_shellcmd -uifconfig_shellcmd -ucd_shellcmd -uformat_shellcmd -upartition_shellcmd -uwriteproc_shellcmd -upartinfo_shellcmd -uumount_shellcmd -umount_shellcmd -uvirstatfs_shellcmd -ulsfd_shellcmd -usu_shellcmd -uchmod_shellcmd -uchown_shellcmd -uchgrp_shellcmd -uiperf_shellcmd -ulwip_dump_shellcmd -ureset_shellcmd -ustartap_shellcmd -uhiddrs_shellcmd -unand_bad_shellcmd -ui2c_read_shellcmd -ussp_read_shellcmd -uuart_config_shellcmd -uusb_debug_shellcmd -uramfs_fsmap -unfs_fsmap -ufat_fsmap -ujffs_fsmap -uprocfs_fsmap -ug_fsmap -ui2c_init -ugpio_init -uregulator_init -uMtdInitList -uhispi_init -uhifmc100_init -uhisfc350_init -unand_hifmc100_init -uhifmc100_parallel_init -usd_mci_init -uhi_mci_init -upl011_init -uhinfc620_init -uhisnfc100_init -uregulator_machine_init -uhisimeidia_regulator_init -ucpufreq_init -uhisilicon_cpufreq_init -ucpufreq_machine_init -udevfreq_init -umedia_devfreq_init -udevfreq_machine_init -uhieth_machine_init -uhigmac_machine_init -umachine_init
+cp /home/harmony/harmony/code/code-1.0/vendor/hisi/hi35xx/hi35xx_init/hi3516dv300/OHOS_Image* /home/harmony/harmony/code/code-1.0/out/ipcamera_hi3516dv300
+[839/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/task/ability_terminate_task.o
+[840/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/task/ability_stop_task.o
+[841/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/task/ability_start_task.o
+[842/1164] clang obj/foundation/distributedschedule/services/safwk_lite/src/main.o
+[843/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/client/ability_dump_client.o
+[844/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/client/app_spawn_client.o
+[845/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/app_record.o
+[846/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/client/bundlems_client.o
+[847/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/client/wms_client.o
+[848/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/task/ability_connect_done_task.o
+[849/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/ability_mgr_service.o
+[850/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/ability_mgr_context.o
+[851/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/ability_mission_stack.o
+[852/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/ability_worker.o
+[853/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/app_manager.o
+[854/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/ability_mgr_handler.o
+[855/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/ability_mgr_feature.o
+[856/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/ability_inner_feature.o
+[857/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/ability_stack_manager.o
+[858/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/ability_mission_record.o
+[859/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/task/ability_disconnect_done_task.o
+[860/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/page_ability_record.o
+[861/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/task/ability_connect_task.o
+[862/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/task/ability_disconnect_task.o
+[863/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/task/ability_terminate_service_task.o
+[864/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/src/ability_connect_mission.o
+[865/1164] clang++ obj/foundation/graphic/lite/frameworks/surface/src/buffer_queue_consumer.o
+[866/1164] clang++ obj/foundation/graphic/lite/frameworks/surface/src/buffer_queue_producer.o
+[867/1164] clang++ obj/foundation/graphic/lite/frameworks/surface/src/buffer_queue.o
+[868/1164] clang++ obj/foundation/graphic/lite/frameworks/surface/src/surface_buffer_impl.o
+[869/1164] clang++ obj/foundation/graphic/lite/frameworks/surface/src/surface.o
+[870/1164] clang++ obj/foundation/graphic/lite/frameworks/surface/src/surface_impl.o
+[871/1164] clang++ obj/foundation/graphic/lite/frameworks/surface/src/buffer_manager.o
+[872/1164] clang++ obj/foundation/graphic/lite/frameworks/surface/src/buffer_client_producer.o
+[873/1164] clang++ obj/foundation/graphic/lite/services/wms/src/client/lite_proxy_windows_manager.o
+[874/1164] SOLINK ./libsurface.so
+[875/1164] clang++ obj/foundation/graphic/lite/services/wms/src/client/lite_win_requestor.o
+[876/1164] STAMP obj/foundation/graphic/lite/frameworks/surface/litesurface.stamp
+[877/1164] SOLINK ./libabilityms.so
+[878/1164] clang++ obj/foundation/graphic/lite/services/wms/src/client/lite_wm_requestor.o
+[879/1164] LLVM LINK ./bin/foundation
+[880/1164] STAMP obj/foundation/distributedschedule/services/safwk_lite/safwk_lite.stamp
+[881/1164] clang++ obj/foundation/graphic/lite/services/wms/src/client/lite_wms_client.o
+[882/1164] clang++ obj/foundation/graphic/lite/services/wms/src/client/iwindows_manager.o
+[883/1164] clang++ obj/foundation/graphic/lite/services/wms/src/client/lite_proxy_surface.o
+[884/1164] STAMP obj/vendor/hisi/hi35xx/hi35xx_init/hi3516dv300/hi3516dv300_image.stamp
+[885/1164] COPY ../../vendor/hisi/hi35xx/hi3516dv300/hi3516dv300_adapter/hals/multimedia/libs/hi3516dv300/release/libhdi_media.so libhdi_media.so
+[886/1164] STAMP obj/vendor/hisi/hi35xx/hi3516dv300/hi3516dv300_adapter/hals/multimedia/hdi_media.stamp
+[887/1164] clang++ obj/foundation/graphic/lite/services/wms/src/client/lite_proxy_window.o
+[888/1164] COPY ../../vendor/huawei/hdf/libs/hi3516dv300/libdisplay_layer.so libdisplay_layer.so
+[889/1164] STAMP obj/vendor/huawei/hdf/display/hdi/display_layer.stamp
+[890/1164] STAMP obj/foundation/graphic/lite/hals/graphic_hals.inputdeps.stamp
+[891/1164] clang++ obj/foundation/graphic/lite/hals/src/hi_fbdev.o
+[892/1164] clang++ obj/foundation/graphic/lite/hals/src/hal_tick.o
+[893/1164] clang++ obj/foundation/multimedia/services/media_lite/media_main.o
+[894/1164] LLVM LINK ./bin/media_server
+[895/1164] COPY ../../vendor/huawei/hdf/libs/hi3516dv300/libhdi_input.so libhdi_input.so
+[896/1164] STAMP obj/vendor/huawei/hdf/display/hdi/hdi_display.stamp
+[897/1164] STAMP obj/vendor/huawei/hdf/input/hdi/hdi_input.stamp
+[898/1164] clang++ obj/foundation/graphic/lite/hals/src/gfx_engines.o
+[899/1164] STAMP obj/foundation/aafwk/services/abilitymgr_lite/tools/aa.inputdeps.stamp
+[900/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/tools/src/main.o
+[901/1164] clang++ obj/foundation/aafwk/frameworks/ability_lite/src/main.o
+[902/1164] STAMP obj/foundation/graphic/lite/frameworks/ui/ui.inputdeps.stamp
+[903/1164] clang++ obj/foundation/aafwk/services/abilitymgr_lite/tools/src/ability_tool.o
+[904/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/layout/grid_layout.o
+[905/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/layout/list_layout.o
+[906/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/themes/theme_manager.o
+[907/1164] ACTION //vendor/hisi/hi35xx/middleware:middleware_source_sdk(//build/lite/toolchain:linux_x86_64_clang)
+/home/harmony/harmony/code/code-1.0/vendor/hisi/hi35xx/middleware/source/third_party/ffmpeg/ffmpeg-y
+hi3516dv300 =? hi3516dv300
+--prefix=./install --enable-cross-compile --disable-doc --disable-htmlpages --target-os=linux --enable-shared --disable-static --disable-debug --disable-iconv --enable-small --disable-network --disable-filters --disable-devices --disable-programs --disable-swresample --disable-swscale --disable-avdevice --disable-postproc --disable-avfilter --disable-protocols --disable-pthreads --disable-runtime-cpudetect --disable-everything --enable-pic --enable-protocol=file --disable-muxers --enable-demuxer=mov --enable-demuxer=mpegts --enable-parser=hevc --enable-parser=h264 --disable-neon --disable-inline-asm --disable-asm --disable-armv6 --disable-armv6t2 --disable-armv5te --disable-vfp --disable-hardcoded-tables --disable-mediacodec --enable-bsf=h264_mp4toannexb --enable-bsf=hevc_mp4toannexb --disable-pixelutils --enable-demuxer=wav --disable-gpl --disable-zlib --disable-linux-perf --cpu=cortex-a7 --arch=armv7-a --cross-prefix=/home/harmony/llvm/bin/../bin/
+install prefix            ./install
+source path               .
+C compiler                /home/harmony/llvm/bin/../bin/clang
+C library                 glibc
+host C compiler           clang
+host C library            glibc
+ARCH                      c (cortex-a7)
+big-endian                no
+runtime cpu detection     no
+debug symbols             no
+strip symbols             yes
+optimize for size         yes
+optimizations             yes
+static                    no
+shared                    yes
+postprocessing support    no
+network support           no
+threading support         no
+safe bitstream reader     yes
+texi2html enabled         no
+perl enabled              yes
+pod2man enabled           yes
+makeinfo enabled          no
+makeinfo supports HTML    no
+
+External libraries:
+
+External libraries providing hardware acceleration:
+
+Libraries:
+avcodec                 avformat                avutil
+
+Programs:
+
+Enabled decoders:
+
+Enabled encoders:
+
+Enabled hwaccels:
+
+Enabled parsers:
+h264                    hevc
+
+Enabled demuxers:
+mov                     mpegts                  wav
+
+Enabled muxers:
+
+Enabled protocols:
+file
+
+Enabled filters:
+
+Enabled bsfs:
+h264_mp4toannexb        hevc_mp4toannexb        null
+
+Enabled indevs:
+
+Enabled outdevs:
+
+License: LGPL version 2.1 or later
+
+WARNING: /home/harmony/llvm/bin/../bin/pkg-config not found, library detection may fail.
+WARNING: Compiler does not indicate floating-point ABI, guessing soft.
+/home/harmony/harmony/code/code-1.0/vendor/hisi/hi35xx/middleware/source/third_party/ffmpeg
+adapt ffmpeg for liteos
+HAVE_UNISTD_H
+HAVE_CBRT
+HAVE_CBRTF
+HAVE_COPYSIGN
+HAVE_ERF
+HAVE_HYPOT
+HAVE_RINT
+HAVE_LRINT
+HAVE_LRINTF
+HAVE_ROUND
+HAVE_ROUNDF
+HAVE_TRUNC
+HAVE_TRUNCF
+HAVE_GMTIME_R
+HAVE_LOCALTIME_R
+HAVE_PTHREAD_CANCEL
+HAVE_PTHREADS
+HAVE_SIMD_ALIGN_16
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/vendor/hisi/hi35xx/middleware/source/third_party/ffmpeg/ffmpeg-y'
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/vendor/hisi/hi35xx/middleware/source/third_party/ffmpeg/ffmpeg-y'
+already adapt ffmpeg to liteos
+/home/harmony/harmony/code/code-1.0/vendor/hisi/hi35xx/middleware/source/third_party/ffmpeg
+make -j -j16 -C /home/harmony/harmony/code/code-1.0/vendor/hisi/hi35xx/middleware/source/third_party/ffmpeg/ffmpeg-y
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/vendor/hisi/hi35xx/middleware/source/third_party/ffmpeg/ffmpeg-y'
+GEN	libavutil/libavutil.version
+GEN	libavcodec/libavcodec.version
+GEN	libavformat/libavformat.version
+CC	libavformat/allformats.o
+CC	libavformat/avio.o
+CC	libavformat/aviobuf.o
+CC	libavformat/cutils.o
+CC	libavformat/dump.o
+CC	libavformat/file.o
+CC	libavformat/format.o
+CC	libavformat/golomb_tab.o
+CC	libavformat/id3v1.o
+CC	libavformat/id3v2.o
+CC	libavformat/isom.o
+CC	libavformat/log2_tab.o
+CC	libavformat/metadata.o
+CC	libavformat/mov.o
+CC	libavformat/mov_chan.o
+CC	libavformat/mov_esds.o
+CC	libavformat/mpegts.o
+CC	libavformat/mux.o
+CC	libavformat/options.o
+CC	libavformat/os_support.o
+CC	libavformat/pcm.o
+CC	libavformat/protocols.o
+CC	libavformat/qtpalette.o
+CC	libavformat/replaygain.o
+CC	libavformat/riff.o
+CC	libavformat/riffdec.o
+CC	libavformat/sdp.o
+CC	libavformat/url.o
+CC	libavformat/utils.o
+CC	libavformat/wavdec.o
+CC	libavcodec/ac3_parser.o
+CC	libavcodec/ac3tab.o
+CC	libavcodec/adts_parser.o
+CC	libavcodec/allcodecs.o
+CC	libavcodec/avdct.o
+CC	libavcodec/avpacket.o
+CC	libavcodec/avpicture.o
+CC	libavcodec/bitstream.o
+CC	libavcodec/bitstream_filter.o
+CC	libavcodec/bitstream_filters.o
+CC	libavcodec/bsf.o
+CC	libavcodec/codec_desc.o
+CC	libavcodec/d3d11va.o
+CC	libavcodec/decode.o
+CC	libavcodec/dirac.o
+CC	libavcodec/dv_profile.o
+CC	libavcodec/encode.o
+CC	libavcodec/faandct.o
+CC	libavcodec/faanidct.o
+CC	libavcodec/fdctdsp.o
+CC	libavcodec/golomb.o
+CC	libavcodec/h2645_parse.o
+CC	libavcodec/h264_mp4toannexb_bsf.o
+CC	libavcodec/h264_parse.o
+CC	libavcodec/h264_parser.o
+CC	libavcodec/h264_ps.o
+CC	libavcodec/h264_sei.o
+CC	libavcodec/h264data.o
+CC	libavcodec/h264dsp.o
+CC	libavcodec/h264idct.o
+CC	libavcodec/hevc_data.o
+CC	libavcodec/hevc_mp4toannexb_bsf.o
+CC	libavcodec/hevc_parse.o
+CC	libavcodec/hevc_parser.o
+CC	libavcodec/hevc_ps.o
+CC	libavcodec/hevc_sei.o
+CC	libavcodec/idctdsp.o
+CC	libavcodec/imgconvert.o
+CC	libavcodec/jfdctfst.o
+CC	libavcodec/jfdctint.o
+CC	libavcodec/jni.o
+CC	libavcodec/jrevdct.o
+CC	libavcodec/log2_tab.o
+CC	libavcodec/mathtables.o
+CC	libavcodec/mediacodec.o
+CC	libavcodec/mjpegenc_huffman.o
+CC	libavcodec/mpeg12framerate.o
+CC	libavcodec/mpeg4audio.o
+CC	libavcodec/mpegaudiodata.o
+CC	libavcodec/null_bsf.o
+CC	libavcodec/options.o
+CC	libavcodec/parser.o
+CC	libavcodec/parsers.o
+CC	libavcodec/profiles.o
+CC	libavcodec/qsv_api.o
+CC	libavcodec/raw.o
+CC	libavcodec/reverse.o
+CC	libavcodec/simple_idct.o
+CC	libavcodec/startcode.o
+CC	libavcodec/utils.o
+CC	libavcodec/vorbis_parser.o
+CC	libavcodec/xiph.o
+CC	libavutil/adler32.o
+CC	libavutil/aes.o
+CC	libavutil/aes_ctr.o
+CC	libavutil/audio_fifo.o
+CC	libavutil/avstring.o
+CC	libavutil/avsscanf.o
+CC	libavutil/base64.o
+CC	libavutil/blowfish.o
+CC	libavutil/bprint.o
+CC	libavutil/buffer.o
+CC	libavutil/camellia.o
+CC	libavutil/cast5.o
+CC	libavutil/channel_layout.o
+CC	libavutil/color_utils.o
+CC	libavutil/cpu.o
+CC	libavutil/crc.o
+CC	libavutil/des.o
+CC	libavutil/dict.o
+CC	libavutil/display.o
+CC	libavutil/downmix_info.o
+CC	libavutil/encryption_info.o
+CC	libavutil/error.o
+CC	libavutil/eval.o
+CC	libavutil/fifo.o
+CC	libavutil/file.o
+CC	libavutil/file_open.o
+CC	libavutil/fixed_dsp.o
+CC	libavutil/float_dsp.o
+CC	libavutil/frame.o
+CC	libavutil/hash.o
+CC	libavutil/hdr_dynamic_metadata.o
+CC	libavutil/hmac.o
+CC	libavutil/hwcontext.o
+CC	libavutil/imgutils.o
+CC	libavutil/integer.o
+CC	libavutil/intmath.o
+CC	libavutil/lfg.o
+CC	libavutil/lls.o
+CC	libavutil/log.o
+CC	libavutil/log2_tab.o
+CC	libavutil/mastering_display_metadata.o
+CC	libavutil/mathematics.o
+CC	libavutil/md5.o
+CC	libavutil/mem.o
+CC	libavutil/murmur3.o
+CC	libavutil/opt.o
+CC	libavutil/parseutils.o
+CC	libavutil/pixdesc.o
+CC	libavutil/pixelutils.o
+CC	libavutil/random_seed.o
+CC	libavutil/rational.o
+CC	libavutil/rc4.o
+CC	libavutil/reverse.o
+CC	libavutil/ripemd.o
+CC	libavutil/samplefmt.o
+CC	libavutil/sha.o
+CC	libavutil/sha512.o
+CC	libavutil/slicethread.o
+CC	libavutil/spherical.o
+CC	libavutil/stereo3d.o
+CC	libavutil/tea.o
+CC	libavutil/threadmessage.o
+CC	libavutil/time.o
+CC	libavutil/timecode.o
+CC	libavutil/tree.o
+CC	libavutil/twofish.o
+CC	libavutil/tx.o
+CC	libavutil/utils.o
+CC	libavutil/xga_font_data.o
+CC	libavutil/xtea.o
+GEN	libavformat/libavformat.pc
+GEN	libavcodec/libavcodec.pc
+GEN	libavutil/libavutil.pc
+GEN	libavutil/libavutil.ver
+LD	libavutil/libavutil.so
+GEN	libavformat/libavformat.ver
+GEN	libavcodec/libavcodec.ver
+LD	libavcodec/libavcodec.so
+LD	libavformat/libavformat.so
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/vendor/hisi/hi35xx/middleware/source/third_party/ffmpeg/ffmpeg-y'
+make -j -C ffmpeg-y install
+make[1]: Entering directory '/home/harmony/harmony/code/code-1.0/vendor/hisi/hi35xx/middleware/source/third_party/ffmpeg/ffmpeg-y'
+INSTALL	doc/examples/transcoding.c
+INSTALL	doc/examples/vaapi_transcode.c
+INSTALL	doc/examples/metadata.c
+INSTALL	doc/examples/filtering_video.c
+INSTALL	doc/examples/muxing.c
+INSTALL	doc/examples/avio_dir_cmd.c
+INSTALL	doc/examples/extract_mvs.c
+INSTALL	doc/examples/encode_audio.c
+INSTALL	doc/examples/hw_decode.c
+INSTALL	doc/examples/filter_audio.c
+INSTALL	doc/examples/resampling_audio.c
+INSTALL	doc/examples/decode_video.c
+INSTALL	doc/examples/remuxing.c
+INSTALL	doc/examples/filtering_audio.c
+INSTALL	doc/examples/http_multiclient.c
+INSTALL	doc/examples/avio_reading.c
+INSTALL	doc/examples/qsvdec.c
+INSTALL	doc/examples/vaapi_encode.c
+INSTALL	doc/examples/decode_audio.c
+INSTALL	doc/examples/transcode_aac.c
+INSTALL	doc/examples/demuxing_decoding.c
+INSTALL	doc/examples/encode_video.c
+INSTALL	doc/examples/scaling_video.c
+INSTALL	doc/examples/README
+INSTALL	doc/examples/Makefile
+INSTALL	libavformat/libavformat.so
+INSTALL	doc/examples/transcoding.c
+INSTALL	doc/examples/vaapi_transcode.c
+INSTALL	doc/examples/metadata.c
+INSTALL	doc/examples/filtering_video.c
+INSTALL	doc/examples/muxing.c
+INSTALL	doc/examples/avio_dir_cmd.c
+INSTALL	doc/examples/extract_mvs.c
+INSTALL	doc/examples/encode_audio.c
+INSTALL	doc/examples/hw_decode.c
+INSTALL	doc/examples/filter_audio.c
+INSTALL	doc/examples/resampling_audio.c
+INSTALL	doc/examples/decode_video.c
+INSTALL	doc/examples/remuxing.c
+INSTALL	doc/examples/filtering_audio.c
+INSTALL	doc/examples/http_multiclient.c
+INSTALL	doc/examples/avio_reading.c
+INSTALL	doc/examples/qsvdec.c
+INSTALL	doc/examples/vaapi_encode.c
+INSTALL	doc/examples/decode_audio.c
+INSTALL	doc/examples/transcode_aac.c
+INSTALL	doc/examples/demuxing_decoding.c
+INSTALL	doc/examples/encode_video.c
+INSTALL	doc/examples/scaling_video.c
+INSTALL	doc/examples/README
+INSTALL	doc/examples/Makefile
+INSTALL	libavcodec/libavcodec.so
+STRIP	install-libavformat-shared
+INSTALL	libavutil/libavutil.so
+INSTALL	libavformat/avformat.h
+INSTALL	libavformat/avio.h
+INSTALL	libavformat/version.h
+STRIP	install-libavcodec-shared
+STRIP	install-libavutil-shared
+INSTALL	libavformat/libavformat.pc
+INSTALL	libavcodec/ac3_parser.h
+INSTALL	libavcodec/adts_parser.h
+INSTALL	libavcodec/avcodec.h
+INSTALL	libavcodec/avdct.h
+INSTALL	libavcodec/avfft.h
+INSTALL	libavcodec/d3d11va.h
+INSTALL	libavcodec/dirac.h
+INSTALL	libavcodec/dv_profile.h
+INSTALL	libavcodec/dxva2.h
+INSTALL	libavcodec/jni.h
+INSTALL	libavcodec/mediacodec.h
+INSTALL	libavcodec/qsv.h
+INSTALL	libavcodec/vaapi.h
+INSTALL	libavcodec/vdpau.h
+INSTALL	libavcodec/version.h
+INSTALL	libavcodec/videotoolbox.h
+INSTALL	libavcodec/vorbis_parser.h
+INSTALL	libavcodec/xvmc.h
+INSTALL	libavcodec/libavcodec.pc
+INSTALL	libavutil/adler32.h
+INSTALL	libavutil/aes.h
+INSTALL	libavutil/aes_ctr.h
+INSTALL	libavutil/attributes.h
+INSTALL	libavutil/audio_fifo.h
+INSTALL	libavutil/avassert.h
+INSTALL	libavutil/avstring.h
+INSTALL	libavutil/avutil.h
+INSTALL	libavutil/base64.h
+INSTALL	libavutil/blowfish.h
+INSTALL	libavutil/bprint.h
+INSTALL	libavutil/bswap.h
+INSTALL	libavutil/buffer.h
+INSTALL	libavutil/cast5.h
+INSTALL	libavutil/camellia.h
+INSTALL	libavutil/channel_layout.h
+INSTALL	libavutil/common.h
+INSTALL	libavutil/cpu.h
+INSTALL	libavutil/crc.h
+INSTALL	libavutil/des.h
+INSTALL	libavutil/dict.h
+INSTALL	libavutil/display.h
+INSTALL	libavutil/downmix_info.h
+INSTALL	libavutil/encryption_info.h
+INSTALL	libavutil/error.h
+INSTALL	libavutil/eval.h
+INSTALL	libavutil/fifo.h
+INSTALL	libavutil/file.h
+INSTALL	libavutil/frame.h
+INSTALL	libavutil/hash.h
+INSTALL	libavutil/hdr_dynamic_metadata.h
+INSTALL	libavutil/hmac.h
+INSTALL	libavutil/hwcontext.h
+INSTALL	libavutil/hwcontext_cuda.h
+INSTALL	libavutil/hwcontext_d3d11va.h
+INSTALL	libavutil/hwcontext_drm.h
+INSTALL	libavutil/hwcontext_dxva2.h
+INSTALL	libavutil/hwcontext_qsv.h
+INSTALL	libavutil/hwcontext_mediacodec.h
+INSTALL	libavutil/hwcontext_vaapi.h
+INSTALL	libavutil/hwcontext_videotoolbox.h
+INSTALL	libavutil/hwcontext_vdpau.h
+INSTALL	libavutil/imgutils.h
+INSTALL	libavutil/intfloat.h
+INSTALL	libavutil/intreadwrite.h
+INSTALL	libavutil/lfg.h
+INSTALL	libavutil/log.h
+INSTALL	libavutil/macros.h
+INSTALL	libavutil/mathematics.h
+INSTALL	libavutil/mastering_display_metadata.h
+INSTALL	libavutil/md5.h
+INSTALL	libavutil/mem.h
+INSTALL	libavutil/motion_vector.h
+INSTALL	libavutil/murmur3.h
+INSTALL	libavutil/opt.h
+INSTALL	libavutil/parseutils.h
+INSTALL	libavutil/pixdesc.h
+INSTALL	libavutil/pixelutils.h
+INSTALL	libavutil/pixfmt.h
+INSTALL	libavutil/random_seed.h
+INSTALL	libavutil/rc4.h
+INSTALL	libavutil/rational.h
+INSTALL	libavutil/replaygain.h
+INSTALL	libavutil/ripemd.h
+INSTALL	libavutil/samplefmt.h
+INSTALL	libavutil/sha.h
+INSTALL	libavutil/sha512.h
+INSTALL	libavutil/spherical.h
+INSTALL	libavutil/stereo3d.h
+INSTALL	libavutil/threadmessage.h
+INSTALL	libavutil/time.h
+INSTALL	libavutil/timecode.h
+INSTALL	libavutil/timestamp.h
+INSTALL	libavutil/tree.h
+INSTALL	libavutil/twofish.h
+INSTALL	libavutil/version.h
+INSTALL	libavutil/xtea.h
+INSTALL	libavutil/tea.h
+INSTALL	libavutil/tx.h
+INSTALL	libavutil/avconfig.h
+INSTALL	libavutil/ffversion.h
+INSTALL	libavutil/libavutil.pc
+make[1]: Leaving directory '/home/harmony/harmony/code/code-1.0/vendor/hisi/hi35xx/middleware/source/third_party/ffmpeg/ffmpeg-y'
+/home/harmony/harmony/code/code-1.0/vendor/hisi/hi35xx/middleware/source
+[908/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/draw/draw_arc.o
+[909/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/window/window_impl.o
+[910/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/animator/easing_equation.o
+[911/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/animator/animator.o
+[912/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/animator/interpolation.o
+[913/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/common/task.o
+[914/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/draw/draw_utils.o
+[915/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/ui_abstract_scroll.o
+[916/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/common/screen.o
+[917/1164] STAMP obj/foundation/graphic/lite/services/wms/wms_server.inputdeps.stamp
+[918/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/common/text.o
+[919/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/common/image.o
+[920/1164] clang++ obj/foundation/graphic/lite/services/wms/src/server/wms.o
+[921/1164] clang++ obj/foundation/graphic/lite/services/wms/src/server/lite_win.o
+[922/1164] clang++ obj/foundation/graphic/lite/services/wms/src/server/samgr_wms.o
+[923/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/ui_abstract_clock.o
+[924/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/common/typed_text.o
+[925/1164] clang++ obj/foundation/graphic/lite/services/wms/src/server/lite_wms.o
+[926/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/common/ui_text_language.o
+[927/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/common/input_device_manager.o
+[928/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/common/screen_device_proxy.o
+[929/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/ui_button.o
+[930/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/common/graphic_startup.o
+[931/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/ui_checkbox.o
+[932/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/ui_label_button.o
+[933/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/ui_radiobutton.o
+[934/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/ui_repeat_button.o
+[935/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/ui_axis.o
+[936/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/ui_toggle_button.o
+[937/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/ui_canvas.o
+[938/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/ui_abstract_progress.o
+[939/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/ui_analog_clock.o
+[940/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/ui_chart.o
+[941/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/ui_image_animator.o
+[942/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/ui_view.o
+[943/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/root_view.o
+[944/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/ui_digital_clock.o
+[945/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/ui_view_group.o
+[946/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/ui_circle_progress.o
+[947/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/ui_image_view.o
+[948/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/ui_arc_label.o
+[949/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/text_adapter.o
+[950/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/ui_label.o
+[951/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/ui_list.o
+[952/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/ui_picker.o
+[953/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/default_resource/radio_button_res.o
+[954/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/ui_time_picker.o
+[955/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/ui_texture_mapper.o
+[956/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/ui_scroll_view.o
+[957/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/ui_box_progress.o
+[958/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/ui_swipe_view.o
+[959/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/ui_slider.o
+[960/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/default_resource/check_box_res.o
+[961/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/ui_surface_view.o
+[962/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/core/measure_manager.o
+[963/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/components/ui_dialog.o
+[964/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/core/task_manager.o
+[965/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/core/render_manager.o
+[966/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/default_resource/toggle_button_res.o
+[967/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/events/event.o
+[968/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/dfx/event_injector.o
+[969/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/font/ui_font.o
+[970/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/dfx/point_event_injector.o
+[971/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/dock/input_device.o
+[972/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/dfx/ui_dump_dom_tree.o
+[973/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/dock/key_input_device.o
+[974/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/dfx/ui_screenshot.o
+[975/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/dock/pointer_input_device.o
+[976/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/dock/ohos/ohos_input_device.o
+[977/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/dock/virtual_input_device.o
+[978/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/font/ui_font_allocator.o
+[979/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/font/ui_font_cache.o
+[980/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/themes/theme.o
+[981/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/font/ui_dynamic_font.o
+[982/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/font/ui_base_font.o
+[983/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/window/window.o
+[984/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/font/ui_font_vector.o
+[985/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/imgdecode/file_img_decoder.o
+[986/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/imgdecode/cache_manager.o
+[987/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/layout/flex_layout.o
+[988/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/draw/draw_curve.o
+[989/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/draw/draw_image.o
+[990/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/draw/draw_line.o
+[991/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/draw/draw_label.o
+[992/1164] SOLINK ./libgraphic_hals.so
+[993/1164] STAMP obj/foundation/graphic/lite/hals/hals.stamp
+[994/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/draw/draw_triangle.o
+[995/1164] clang++ obj/foundation/graphic/lite/frameworks/ui/src/draw/draw_rect.o
+[996/1164] clang++ obj/foundation/graphic/lite/utils/src/geometry2d.o
+[997/1164] clang++ obj/foundation/graphic/lite/services/wms/src/server/lite_wm.o
+[998/1164] clang++ obj/foundation/graphic/lite/services/ims/src/input_event_distributer.o
+[999/1164] clang++ obj/foundation/graphic/lite/services/ims/src/input_event_reader.o
+[1000/1164] clang++ obj/foundation/graphic/lite/services/ims/src/input_event_hub.o
+[1001/1164] STAMP obj/vendor/hisi/hi35xx/middleware/middleware_source_sdk.stamp
+[1002/1164] clang++ obj/foundation/graphic/lite/services/ims/src/input_manager_service.o
+[1003/1164] SOLINK ./libgraphic_utils.so
+[1004/1164] STAMP obj/foundation/ace/frameworks/lite/ace_lite.inputdeps.stamp
+[1005/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/components/list_adapter.o
+[1006/1164] clang++ obj/applications/sample/camera/media/player_sample.o
+[1007/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/components/list_component.o
+[1008/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/components/marquee_component.o
+[1009/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/base/js_fwk_common.o
+[1010/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/components/analog_clock_component.o
+[1011/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/base/time_util.o
+[1012/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/components/clock_hand_component.o
+[1013/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/base/js_debugger_config.o
+[1014/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/components/image_animator_component.o
+[1015/1164] clang++ obj/applications/sample/camera/media/camera_sample.o
+[1016/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/components/canvas_component.o
+[1017/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/components/video_view.o
+[1018/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/directive/directive_watcher_callback.o
+[1019/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/components/chart_component.o
+[1020/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/components/component.o
+[1021/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/async/message_queue_utils.o
+[1022/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/components/component_utils.o
+[1023/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/base/memory_heap.o
+[1024/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/base/ace_mem_base.o
+[1025/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/base/ace_log.o
+[1026/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/base/key_parser.o
+[1027/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/animation/transition_impl.o
+[1028/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/components/camera_component.o
+[1029/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/components/div_component.o
+[1030/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/components/event_listener.o
+[1031/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/components/image_component.o
+[1032/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/components/picker_view_component.o
+[1033/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/async/js_async_work.o
+[1034/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/components/tab_content_component.o
+[1035/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/components/input_component.o
+[1036/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/components/progress_component.o
+[1037/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/components/scroll_layer.o
+[1038/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/components/panel_view.o
+[1039/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/components/slider_component.o
+[1040/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/components/tab_bar_component.o
+[1041/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/components/swiper_component.o
+[1042/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/components/switch_component.o
+[1043/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/components/tabs_component.o
+[1044/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/jsi/jsi.o
+[1045/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/components/text_component.o
+[1046/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/context/ace_event_error_code.o
+[1047/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/context/fatal_handler.o
+[1048/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/context/js_ability.o
+[1049/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/context/ace_ability.o
+[1050/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/context/js_ability_impl.o
+[1051/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/components/video_component.o
+[1052/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/context/js_framework_raw.o
+[1053/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/context/js_profiler.o
+[1054/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/context/js_app_environment.o
+[1055/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/context/js_timer_list.o
+[1056/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/modules/presets/localization_module.o
+[1057/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/modules/presets/console_log_impl.o
+[1058/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/directive/descriptor_utils.o
+[1059/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/modules/app_module.o
+[1060/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/modules/presets/timer_module.o
+[1061/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/modules/presets/cjson_parser.o
+[1062/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/modules/module_manager.o
+[1063/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/modules/presets/profiler_module.o
+[1064/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/modules/presets/console_module.o
+[1065/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/context/js_app_context.o
+[1066/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/modules/presets/require_module.o
+[1067/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/modules/presets/preset_module.o
+[1068/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/modules/presets/version_module.o
+[1069/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/resource/video_muted_image_res.o
+[1070/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/modules/router_module.o
+[1071/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/modules/dfx_module.o
+[1072/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/modules/sample_module.o
+[1073/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/resource/video_play_image_res.o
+[1074/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/router/js_router.o
+[1075/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/router/js_page_state.o
+[1076/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/router/js_page_state_machine.o
+[1077/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/modules/presets/render_module.o
+[1078/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/wrapper/js.o
+[1079/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/stylemgr/app_style.o
+[1080/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/stylemgr/app_style_item.o
+[1081/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/stylemgr/app_style_list.o
+[1082/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/stylemgr/app_style_sheet.o
+[1083/1164] STAMP obj/foundation/graphic/lite/utils/litegraphicutils.stamp
+[1084/1164] STAMP obj/foundation/multimedia/frameworks/audio_lite/audio_capturer.inputdeps.stamp
+[1085/1164] clang++ obj/foundation/ace/frameworks/lite/src/core/stylemgr/app_style_manager.o
+[1086/1164] SOLINK ./libwms_client.so
+[1087/1164] SOLINK ./libims.so
+[1088/1164] clang++ obj/foundation/ace/frameworks/lite/targets/platform_adapter.o
+[1089/1164] STAMP obj/foundation/graphic/lite/services/ims/liteims.stamp
+[1090/1164] clang++ obj/foundation/multimedia/frameworks/audio_lite/audio_encoder/audio_encoder.o
+[1091/1164] LLVM LINK ./bin/wms_server
+[1092/1164] STAMP obj/foundation/graphic/lite/services/wms/litewms.stamp
+[1093/1164] clang++ obj/foundation/multimedia/frameworks/audio_lite/audio_capturer.o
+[1094/1164] clang++ obj/foundation/multimedia/frameworks/audio_lite/audio_capturer_impl.o
+[1095/1164] STAMP obj/foundation/multimedia/frameworks/camera_lite/camera.inputdeps.stamp
+[1096/1164] clang++ obj/foundation/multimedia/frameworks/audio_lite/audio_source/audio_source.o
+[1097/1164] clang++ obj/foundation/multimedia/frameworks/camera_lite/frame_config.o
+[1098/1164] clang++ obj/foundation/multimedia/frameworks/camera_lite/camera_impl.o
+[1099/1164] clang++ obj/foundation/multimedia/frameworks/camera_lite/camera_ability.o
+[1100/1164] clang++ obj/foundation/multimedia/frameworks/camera_lite/camera_config.o
+[1101/1164] SOLINK ./libui.so
+[1102/1164] LLVM LINK ./bin/abilityMain
+[1103/1164] STAMP obj/foundation/aafwk/frameworks/ability_lite/aafwk_abilityMain_lite.stamp
+[1104/1164] LLVM LINK dev_tools/bin/aa
+[1105/1164] STAMP obj/foundation/aafwk/services/abilitymgr_lite/aafwk_services_lite.stamp
+[1106/1164] STAMP obj/foundation/aafwk/services/abilitymgr_lite/tools/tools_lite.stamp
+[1107/1164] STAMP obj/foundation/graphic/lite/frameworks/ui/liteui.stamp
+[1108/1164] clang++ obj/foundation/multimedia/frameworks/camera_lite/camera_device.o
+[1109/1164] clang++ obj/foundation/multimedia/frameworks/camera_lite/camera_kit.o
+[1110/1164] clang++ obj/foundation/multimedia/frameworks/camera_lite/camera_service.o
+[1111/1164] STAMP obj/foundation/multimedia/frameworks/player_lite/player.inputdeps.stamp
+[1112/1164] clang++ obj/foundation/multimedia/frameworks/camera_lite/event_handler.o
+[1113/1164] clang++ obj/foundation/multimedia/frameworks/camera_lite/camera_manager.o
+[1114/1164] clang++ obj/foundation/multimedia/frameworks/player_lite/player_control/player/liteplayer_comm.o
+[1115/1164] clang++ obj/foundation/multimedia/frameworks/player_lite/player_impl.o
+[1116/1164] clang++ obj/foundation/multimedia/frameworks/player_lite/player_control/player/liteplayer.o
+[1117/1164] clang++ obj/foundation/multimedia/frameworks/player_lite/player_control/player/fsm/src/fsm_common.o
+[1118/1164] clang++ obj/foundation/multimedia/frameworks/player_lite/player_control/player/liteplayer_state_machine.o
+[1119/1164] clang++ obj/foundation/multimedia/frameworks/player_lite/buffersource/src/buffer_source.o
+[1120/1164] clang++ obj/foundation/multimedia/frameworks/player_lite/player_control/player/fsm/src/hi_fsm.o
+[1121/1164] clang++ obj/foundation/multimedia/frameworks/player_lite/player.o
+[1122/1164] STAMP obj/foundation/multimedia/interfaces/kits/player_lite/js/builtin/audio_api.inputdeps.stamp
+[1123/1164] STAMP obj/foundation/multimedia/utils/lite/media_common.inputdeps.stamp
+[1124/1164] clang++ obj/foundation/multimedia/frameworks/player_lite/player_control/decoder/decoder.o
+[1125/1164] SOLINK ./libcamera.so
+[1126/1164] clang++ obj/foundation/multimedia/utils/lite/src/format.o
+[1127/1164] clang++ obj/foundation/multimedia/frameworks/player_lite/player_control/player/fsm/src/hi_state.o
+[1128/1164] clang++ obj/foundation/multimedia/interfaces/kits/player_lite/js/builtin/src/audio_player.o
+[1129/1164] clang++ obj/foundation/multimedia/frameworks/player_lite/player_control/player/fsm/src/message_looper.o
+[1130/1164] clang++ obj/foundation/multimedia/frameworks/player_lite/player_control/player/fsm/src/hi_state_machine.o
+[1131/1164] clang++ obj/foundation/multimedia/frameworks/player_lite/player_control/player/fsm/src/hi_state_machine_observer.o
+[1132/1164] clang++ obj/foundation/multimedia/frameworks/player_lite/player_control/player/fsm/src/mmessage_pool.o
+[1133/1164] clang++ obj/foundation/multimedia/frameworks/player_lite/player_control/sink/player_audio_sink.o
+[1134/1164] clang++ obj/foundation/multimedia/frameworks/player_lite/player_control/sink/player_sink_manager.o
+[1135/1164] clang++ obj/foundation/multimedia/frameworks/player_lite/player_control/sink/player_sync.o
+[1136/1164] clang++ obj/foundation/multimedia/frameworks/player_lite/player_control/sink/player_video_sink.o
+[1137/1164] clang++ obj/foundation/multimedia/frameworks/player_lite/player_control/source/player_demux.o
+[1138/1164] STAMP obj/foundation/multimedia/frameworks/recorder_lite/recorder.inputdeps.stamp
+[1139/1164] clang++ obj/foundation/multimedia/frameworks/player_lite/player_control/source/player_source.o
+[1140/1164] clang++ obj/foundation/multimedia/interfaces/kits/player_lite/js/builtin/src/audio_module.o
+[1141/1164] clang++ obj/foundation/multimedia/frameworks/recorder_lite/recorder_source/src/recorder_video_source.o
+[1142/1164] clang++ obj/foundation/multimedia/frameworks/recorder_lite/recorder_source/src/recorder_audio_source.o
+[1143/1164] clang++ obj/foundation/multimedia/frameworks/recorder_lite/recorder_impl.o
+[1144/1164] clang++ obj/foundation/multimedia/frameworks/recorder_lite/recorder_sink/src/recorder_sink.o
+[1145/1164] COPY ../../vendor/huawei/hdf/wifi/driver/firmware vendor/firmware
+[1146/1164] STAMP obj/vendor/huawei/hdf/wifi/wifi_firmware.stamp
+[1147/1164] clang++ obj/foundation/multimedia/frameworks/recorder_lite/recorder.o
+[1148/1164] clang++ obj/foundation/multimedia/utils/lite/src/source.o
+[1149/1164] SOLINK ./libmedia_common.so
+[1150/1164] SOLINK ./libaudio_capturer.so
+[1151/1164] SOLINK ./librecorder.so
+[1152/1164] STAMP obj/foundation/multimedia/frameworks/recorder_lite/media_lite.stamp
+[1153/1164] LLVM LINK dev_tools/bin/camera_sample
+[1154/1164] SOLINK ./libplayer.so
+[1155/1164] STAMP obj/foundation/multimedia/services/media_lite/media_lite.stamp
+[1156/1164] STAMP obj/foundation/multimedia/services/media_lite/media_ndk.stamp
+[1157/1164] LLVM LINK dev_tools/bin/player_sample
+[1158/1164] STAMP obj/applications/sample/camera/media/media_sample.stamp
+[1159/1164] SOLINK ./libaudio_api.so
+[1160/1164] SOLINK ./libace_lite.so
+[1161/1164] STAMP obj/foundation/ace/frameworks/lite/jsfwk.stamp
+[1162/1164] STAMP obj/build/lite/ohos.stamp
+[1163/1164] ACTION //build/lite:gen_rootfs(//build/lite/toolchain:linux_x86_64_clang)
+[1164/1164] STAMP obj/build/lite/gen_rootfs.stamp

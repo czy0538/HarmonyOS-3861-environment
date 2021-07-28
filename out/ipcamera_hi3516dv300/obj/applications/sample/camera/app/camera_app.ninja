@@ -1,0 +1,10 @@
+defines = -D_XOPEN_SOURCE=700 -D_FORTIFY_SOURCE=2 -DOHOS_RELEASE -D__LITEOS__ -D__LITEOS_A__
+include_dirs = -I/home/harmony/llvm/include/c++/v1 -I../../prebuilts/lite/sysroot/usr/include/arm-liteos
+target_output_name = camera_app
+
+
+build ./bin/camera_app: link ./libs/libhello_world.a
+  ldflags = -lc --target=arm-liteos --sysroot=/home/harmony/harmony/code/code-1.0/prebuilts/lite/sysroot -L/home/harmony/llvm/bin/../lib/arm-liteos/c++ -L/home/harmony/harmony/code/code-1.0/prebuilts/lite/sysroot/usr/lib/arm-liteos -L/home/harmony/llvm/bin/../lib/clang/9.0.0/lib/arm-liteos -L/home/harmony/llvm/bin/../lib/arm-liteos/c++ -lclang_rt.builtins -lc++ -lc++abi -march=armv7-a -mfloat-abi=softfp -Wl,-z,now -Wl,-z,relro -Wl,-z,noexecstack -L/home/harmony/harmony/code/code-1.0/out/ipcamera_hi3516dv300 -Wl,-rpath-link=/home/harmony/harmony/code/code-1.0/out/ipcamera_hi3516dv300 -pie
+  libs =
+  output_extension = 
+  output_dir = .

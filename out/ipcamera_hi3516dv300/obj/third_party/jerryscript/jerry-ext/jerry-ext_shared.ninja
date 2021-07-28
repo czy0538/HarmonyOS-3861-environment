@@ -1,0 +1,28 @@
+defines = -D_XOPEN_SOURCE=700 -D_FORTIFY_SOURCE=2 -DOHOS_RELEASE -D__LITEOS__ -D__LITEOS_A__
+include_dirs = -I../../third_party/jerryscript/jerry-ext/include -I../../third_party/jerryscript/jerry-ext/debugger -I../../third_party/jerryscript/jerry-ext/common -I../../third_party/jerryscript/jerry-ext/arg -I../../third_party/jerryscript/jerry-ext/handle-scope -I../../third_party/jerryscript/jerry-core/include -I/home/harmony/llvm/include/c++/v1 -I../../prebuilts/lite/sysroot/usr/include/arm-liteos
+cflags = -fPIC -nostdlib -fno-common -fno-builtin -fno-strict-aliasing -fsigned-char -Werror -mno-unaligned-access -fno-omit-frame-pointer --target=arm-liteos --sysroot=/home/harmony/harmony/code/code-1.0/prebuilts/lite/sysroot -march=armv7-a -mfloat-abi=softfp -fstack-protector-all -Oz -flto -fPIC
+cflags_c = -std=c99
+target_output_name = libjerry-ext_shared
+
+build obj/third_party/jerryscript/jerry-ext/arg/arg-js-iterator-helper.o: cc ../../third_party/jerryscript/jerry-ext/arg/arg-js-iterator-helper.c
+build obj/third_party/jerryscript/jerry-ext/arg/arg-transform-functions.o: cc ../../third_party/jerryscript/jerry-ext/arg/arg-transform-functions.c
+build obj/third_party/jerryscript/jerry-ext/arg/arg.o: cc ../../third_party/jerryscript/jerry-ext/arg/arg.c
+build obj/third_party/jerryscript/jerry-ext/debugger/debugger-common.o: cc ../../third_party/jerryscript/jerry-ext/debugger/debugger-common.c
+build obj/third_party/jerryscript/jerry-ext/debugger/debugger-rp.o: cc ../../third_party/jerryscript/jerry-ext/debugger/debugger-rp.c
+build obj/third_party/jerryscript/jerry-ext/debugger/debugger-serial.o: cc ../../third_party/jerryscript/jerry-ext/debugger/debugger-serial.c
+build obj/third_party/jerryscript/jerry-ext/debugger/debugger-sha1.o: cc ../../third_party/jerryscript/jerry-ext/debugger/debugger-sha1.c
+build obj/third_party/jerryscript/jerry-ext/debugger/debugger-tcp.o: cc ../../third_party/jerryscript/jerry-ext/debugger/debugger-tcp.c
+build obj/third_party/jerryscript/jerry-ext/debugger/debugger-ws.o: cc ../../third_party/jerryscript/jerry-ext/debugger/debugger-ws.c
+build obj/third_party/jerryscript/jerry-ext/handle-scope/handle-scope-allocator.o: cc ../../third_party/jerryscript/jerry-ext/handle-scope/handle-scope-allocator.c
+build obj/third_party/jerryscript/jerry-ext/handle-scope/handle-scope.o: cc ../../third_party/jerryscript/jerry-ext/handle-scope/handle-scope.c
+build obj/third_party/jerryscript/jerry-ext/handler/handler-assert.o: cc ../../third_party/jerryscript/jerry-ext/handler/handler-assert.c
+build obj/third_party/jerryscript/jerry-ext/handler/handler-gc.o: cc ../../third_party/jerryscript/jerry-ext/handler/handler-gc.c
+build obj/third_party/jerryscript/jerry-ext/handler/handler-print.o: cc ../../third_party/jerryscript/jerry-ext/handler/handler-print.c
+build obj/third_party/jerryscript/jerry-ext/handler/handler-register.o: cc ../../third_party/jerryscript/jerry-ext/handler/handler-register.c
+build obj/third_party/jerryscript/jerry-ext/module/module.o: cc ../../third_party/jerryscript/jerry-ext/module/module.c
+
+build ./libjerry-ext_shared.so: solink obj/third_party/jerryscript/jerry-ext/arg/arg-js-iterator-helper.o obj/third_party/jerryscript/jerry-ext/arg/arg-transform-functions.o obj/third_party/jerryscript/jerry-ext/arg/arg.o obj/third_party/jerryscript/jerry-ext/debugger/debugger-common.o obj/third_party/jerryscript/jerry-ext/debugger/debugger-rp.o obj/third_party/jerryscript/jerry-ext/debugger/debugger-serial.o obj/third_party/jerryscript/jerry-ext/debugger/debugger-sha1.o obj/third_party/jerryscript/jerry-ext/debugger/debugger-tcp.o obj/third_party/jerryscript/jerry-ext/debugger/debugger-ws.o obj/third_party/jerryscript/jerry-ext/handle-scope/handle-scope-allocator.o obj/third_party/jerryscript/jerry-ext/handle-scope/handle-scope.o obj/third_party/jerryscript/jerry-ext/handler/handler-assert.o obj/third_party/jerryscript/jerry-ext/handler/handler-gc.o obj/third_party/jerryscript/jerry-ext/handler/handler-print.o obj/third_party/jerryscript/jerry-ext/handler/handler-register.o obj/third_party/jerryscript/jerry-ext/module/module.o
+  ldflags = -lc --target=arm-liteos --sysroot=/home/harmony/harmony/code/code-1.0/prebuilts/lite/sysroot -L/home/harmony/llvm/bin/../lib/arm-liteos/c++ -L/home/harmony/harmony/code/code-1.0/prebuilts/lite/sysroot/usr/lib/arm-liteos -L/home/harmony/llvm/bin/../lib/clang/9.0.0/lib/arm-liteos -L/home/harmony/llvm/bin/../lib/arm-liteos/c++ -lclang_rt.builtins -lc++ -lc++abi -march=armv7-a -mfloat-abi=softfp -Wl,-z,now -Wl,-z,relro -Wl,-z,noexecstack -L/home/harmony/harmony/code/code-1.0/out/ipcamera_hi3516dv300 -Wl,-rpath-link=/home/harmony/harmony/code/code-1.0/out/ipcamera_hi3516dv300
+  libs =
+  output_extension = .so
+  output_dir = .

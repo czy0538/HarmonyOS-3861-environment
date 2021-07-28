@@ -1,0 +1,571 @@
+ninja_required_version = 1.7.2
+
+rule gn
+  command = ../../../../../gn/gn --root=../.. -q --dotfile=../../build/lite/.gn gen .
+  description = Regenerating ninja files
+
+build build.ninja: gn
+  generator = 1
+  depfile = build.ninja.d
+
+subninja toolchain.ninja
+
+build CalcSubTest: phony test/unittest/bin/CalcSubTest.bin
+build aa: phony dev_tools/bin/aa
+build abilityMain: phony ./bin/abilityMain
+build apphilogcat: phony ./bin/apphilogcat
+build appspawn: phony ./bin/appspawn
+build bm: phony dev_tools/bin/bm
+build bundle_daemon: phony ./bin/bundle_daemon
+build camera_app: phony ./bin/camera_app
+build camera_sample: phony dev_tools/bin/camera_sample
+build foundation: phony ./bin/foundation
+build hilogcat: phony ./bin/hilogcat
+build init: phony ./bin/init
+build media_server: phony ./bin/media_server
+build player_sample: phony dev_tools/bin/player_sample
+build query: phony ./bin/query.bin
+build wms_server: phony ./bin/wms_server
+build ConfigFiles: phony obj/vendor/huawei/camera/init_configs/ConfigFiles.stamp
+build aafwk_abilityMain_lite: phony obj/foundation/aafwk/frameworks/ability_lite/aafwk_abilityMain_lite.stamp
+build aafwk_abilityManager_lite: phony obj/foundation/aafwk/frameworks/abilitymgr_lite/aafwk_abilityManager_lite.stamp
+build aafwk_abilitykit_lite: phony obj/foundation/aafwk/frameworks/ability_lite/aafwk_abilitykit_lite.stamp
+build aafwk_services_lite: phony obj/foundation/aafwk/services/abilitymgr_lite/aafwk_services_lite.stamp
+build ability: phony ./libability.so
+build ability_notes: phony obj/foundation/aafwk/frameworks/ability_lite/ability_notes.stamp
+build abilitymanager: phony ./libabilitymanager.so
+build abilityms: phony ./libabilityms.so
+build ace_kit_cipher: phony ./libace_kit_cipher.so
+build ace_kit_common: phony ./libace_kit_common.so
+build ace_kit_deviceinfo: phony ./libace_kit_deviceinfo.so
+build ace_kit_file: phony ./libace_kit_file.so
+build ace_kit_kvstore: phony ./libace_kit_kvstore.so
+build ace_kit_timer: phony ./libace_kit_timer.so
+build ace_lite: phony ./libace_lite.so
+build ace_utils_kits: phony obj/utils/native/lite/js/builtin/ace_utils_kits.stamp
+build acts: phony obj/test/xts/acts/acts.stamp
+build acts_compoment: phony obj/test/xts/acts/acts_compoment.stamp
+build app_sample: phony obj/applications/sample/camera/app/app_sample.stamp
+build appexecfwk_kits_lite: phony obj/foundation/appexecfwk/frameworks/bundle_lite/appexecfwk_kits_lite.stamp
+build appexecfwk_services_lite: phony obj/foundation/appexecfwk/services/bundlemgr_lite/appexecfwk_services_lite.stamp
+build apphilogcat_static: phony ./libs/libapphilogcat_static.a
+build appspawn_lite: phony obj/base/startup/services/appspawn_lite/appspawn_lite.stamp
+build audio_api: phony ./libaudio_api.so
+build audio_capturer: phony ./libaudio_capturer.so
+build bootstrap: phony ./libs/libbootstrap.a
+build broadcast: phony ./libbroadcast.so
+build bundle: phony ./libbundle.so
+build bundle_notes: phony obj/foundation/appexecfwk/frameworks/bundle_lite/bundle_notes.stamp
+build bundlems: phony ./libbundlems.so
+build camera: phony ./libcamera.so
+build camera_config: phony obj/applications/sample/camera/media/camera_config.stamp
+build cipher_shared: phony ./libcipher_shared.so
+build cjson_ndk: phony obj/third_party/cJSON/cjson_ndk.stamp
+build cjson_shared: phony ./libcjson_shared.so
+build cjson_static: phony ./libs/libcjson_static.a
+build client: phony obj/foundation/distributedschedule/services/samgr_lite/samgr_client/client.stamp
+build copy_hap: phony obj/applications/sample/camera/hap/copy_hap.stamp
+build display_gfx: phony obj/vendor/huawei/hdf/display/hdi/display_gfx.stamp
+build display_gralloc: phony obj/vendor/huawei/hdf/display/hdi/display_gralloc.stamp
+build display_layer: phony obj/vendor/huawei/hdf/display/hdi/display_layer.stamp
+build dmslite: phony ./libdmslite.so
+build dtbschedmgr: phony obj/foundation/distributedschedule/services/dtbschedmgr_lite/dtbschedmgr.stamp
+build endpoint_source: phony obj/foundation/distributedschedule/services/samgr_lite/samgr_endpoint/endpoint_source.stamp
+build freetype: phony ./libfreetype.so
+build freetype_shared: phony obj/third_party/freetype/freetype_shared.stamp
+build gen_rootfs: phony obj/build/lite/gen_rootfs.stamp
+build global_manager_lite: phony obj/base/global/frameworks/resmgr_lite/global_manager_lite.stamp
+build global_resmgr: phony ./libglobal_resmgr.so
+build graphic_hals: phony ./libgraphic_hals.so
+build graphic_utils: phony ./libgraphic_utils.so
+build gtest: phony ./libs/libgtest.a
+build gtest_main: phony ./libs/libgtest_main.a
+build hal_sysparam: phony ./libhal_sysparam.so
+build hals: phony obj/foundation/graphic/lite/hals/hals.stamp
+build haltoken_shared: phony ./libhaltoken_shared.so
+build hardware_media_sdk: phony obj/vendor/hisi/hi35xx/hardware/hardware_media_sdk.stamp
+build hdf_core: phony ./libhdf_core.so
+build hdf_manager: phony obj/drivers/hdf/lite/manager/hdf_manager.stamp
+build hdf_posix_osal: phony ./libhdf_osal.so
+build hdi_display: phony obj/vendor/huawei/hdf/display/hdi/hdi_display.stamp
+build hdi_input: phony obj/vendor/huawei/hdf/input/hdi/hdi_input.stamp
+build hdi_media: phony obj/vendor/hisi/hi35xx/hi3516dv300/hi3516dv300_adapter/hals/multimedia/hdi_media.stamp
+build hello_world: phony ./libs/libhello_world.a
+build hi3516dv300_image: phony obj/vendor/hisi/hi35xx/hi35xx_init/hi3516dv300/hi3516dv300_image.stamp
+build hilog_ndk: phony obj/base/hiviewdfx/frameworks/hilog_lite/featured/hilog_ndk.stamp
+build hilog_shared: phony ./libhilog_shared.so
+build hilog_static: phony ./libs/libhilog_static.a
+build hilogcat_static: phony ./libs/libhilogcat_static.a
+build huks: phony ./libhuks.so
+build ims: phony ./libims.so
+build iniparser: phony ./libiniparser.so
+build init_config: phony obj/vendor/huawei/camera/init_configs/init_config.stamp
+build init_lite: phony obj/base/startup/services/init_lite/init_lite.stamp
+build ipc_auth_target: phony ./libipc_auth_target.so
+build jerry-core: phony obj/third_party/jerryscript/jerry-core/jerry-core.stamp
+build jerry-core_shared: phony ./libjerry-core_shared.so
+build jerry-ext: phony obj/third_party/jerryscript/jerry-ext/jerry-ext.stamp
+build jerry-ext_shared: phony ./libjerry-ext_shared.so
+build jerry-libm: phony obj/third_party/jerryscript/jerry-libm/jerry-libm.stamp
+build jerry-libm_shared: phony ./libjerry-libm_shared.so
+build jerry-port-default: phony obj/third_party/jerryscript/jerry-port/default/jerry-port-default.stamp
+build jerry-port-default_shared: phony ./libjerry-port-default_shared.so
+build jsfwk: phony obj/foundation/ace/frameworks/lite/jsfwk.stamp
+build kal_timer: phony ./libkal_timer.so
+build kernel: phony obj/kernel/liteos_a/kernel.stamp
+build kv_store: phony obj/utils/native/lite/kv_store/kv_store.stamp
+build libjpeg: phony ./libjpeg.so
+build libpng: phony ./libpng.so
+build libsec_shared: phony ./libsec_shared.so
+build libsec_static: phony ./libs/libsec_static.a
+build litegraphicutils: phony obj/foundation/graphic/lite/utils/litegraphicutils.stamp
+build liteims: phony obj/foundation/graphic/lite/services/ims/liteims.stamp
+build liteipc: phony obj/foundation/communication/frameworks/ipc_lite/liteipc.stamp
+build liteipc_adapter: phony ./libliteipc_adapter.so
+build liteipc_ndk: phony obj/foundation/communication/frameworks/ipc_lite/liteipc_ndk.stamp
+build litesurface: phony obj/foundation/graphic/lite/frameworks/surface/litesurface.stamp
+build liteui: phony obj/foundation/graphic/lite/frameworks/ui/liteui.stamp
+build litewms: phony obj/foundation/graphic/lite/services/wms/litewms.stamp
+build make: phony obj/kernel/liteos_a/make.stamp
+build mbedtls: phony obj/third_party/mbedtls/mbedtls.stamp
+build mbedtls_ndk: phony obj/third_party/mbedtls/mbedtls_ndk.stamp
+build mbedtls_shared: phony ./libmbedtls.so
+build mbedtls_static: phony ./libs/libmbedtls.a
+build media_common: phony ./libmedia_common.so
+build media_ndk: phony obj/foundation/multimedia/services/media_lite/media_ndk.stamp
+build media_sample: phony obj/applications/sample/camera/media/media_sample.stamp
+build middleware_source_sdk: phony obj/vendor/hisi/hi35xx/middleware/middleware_source_sdk.stamp
+build ndk: phony obj/build/lite/ndk.stamp
+build ohos: phony obj/build/lite/ohos.stamp
+build openssl_shared: phony ./libopenssl_shared.so
+build openssl_static: phony ./libs/libopenssl.a
+build parameter: phony obj/base/startup/frameworks/syspara_lite/parameter/parameter.stamp
+build parameter_notes: phony obj/base/startup/frameworks/syspara_lite/parameter/parameter_notes.stamp
+build player: phony ./libplayer.so
+build pms_base: phony ./libpms_base.so
+build pms_client: phony ./libpms_client.so
+build pms_lite: phony obj/base/security/services/iam_lite/pms_lite.stamp
+build pms_target: phony ./libpms_target.so
+build query_copy: phony obj/test/xts/acts/query_copy.stamp
+build recorder: phony ./librecorder.so
+build safwk_lite: phony obj/foundation/distributedschedule/services/safwk_lite/safwk_lite.stamp
+build samgr_adapter: phony obj/foundation/distributedschedule/services/samgr_lite/samgr/adapter/samgr_adapter.stamp
+build samgr_lite_ndk: phony obj/foundation/distributedschedule/services/samgr_lite/samgr_lite_ndk.stamp
+build samgr_source: phony obj/foundation/distributedschedule/services/samgr_lite/samgr/source/samgr_source.stamp
+build sample: phony obj/applications/sample/camera/communication/sample.stamp
+build server: phony ./libserver.so
+build softbus: phony obj/foundation/communication/services/softbus_lite/softbus.stamp
+build softbus_lite: phony ./libsoftbus_lite.so
+build softbus_lite_ndk: phony obj/foundation/communication/services/softbus_lite/softbus_lite_ndk.stamp
+build softbus_ndk: phony obj/foundation/communication/services/softbus_lite/softbus_ndk.stamp
+build store_source: phony obj/foundation/distributedschedule/services/samgr_lite/samgr_endpoint/store_source.stamp
+build surface: phony ./libsurface.so
+build sysparam: phony ./libsysparam.so
+build test: phony obj/test/developertest/test.stamp
+build token: phony obj/base/startup/frameworks/syspara_lite/token/token.stamp
+build token_notes: phony obj/base/startup/frameworks/syspara_lite/token/token_notes.stamp
+build token_shared: phony ./libtoken_shared.so
+build tools: phony obj/test/xts/tools/tools.stamp
+build tools_lite: phony obj/foundation/aafwk/services/abilitymgr_lite/tools/tools_lite.stamp
+build ui: phony ./libui.so
+build utils_config: phony obj/foundation/graphic/lite/utils/utils_config.stamp
+build utils_kv_store: phony ./libutils_kv_store.so
+build verify: phony ./libverify.so
+build want: phony obj/foundation/aafwk/frameworks/want_lite/want.stamp
+build wifi_firmware: phony obj/vendor/huawei/hdf/wifi/wifi_firmware.stamp
+build wms_client: phony ./libwms_client.so
+build wpa_supplicant: phony obj/third_party/wpa_supplicant/wpa_supplicant-2.9/wpa_supplicant.stamp
+build wpa_supplicant-2.9: phony obj/third_party/wpa_supplicant/wpa_supplicant-2.9/wpa_supplicant-2.9.stamp
+build xdevice: phony obj/test/xdevice/xdevice.stamp
+build zlib_shared: phony ./libzlib_shared.so
+build zlib_static: phony ./libs/libz.a
+build applications/sample/camera/app$:app_sample: phony obj/applications/sample/camera/app/app_sample.stamp
+build applications/sample/camera/app$:camera_app: phony ./bin/camera_app
+build applications/sample/camera/app$:hello_world: phony ./libs/libhello_world.a
+build applications/sample/camera/communication$:sample: phony obj/applications/sample/camera/communication/sample.stamp
+build applications/sample/camera/hap$:copy_hap: phony obj/applications/sample/camera/hap/copy_hap.stamp
+build applications/sample/camera/media$:camera_config: phony obj/applications/sample/camera/media/camera_config.stamp
+build applications/sample/camera/media$:camera_sample: phony dev_tools/bin/camera_sample
+build applications/sample/camera/media$:media_sample: phony obj/applications/sample/camera/media/media_sample.stamp
+build applications/sample/camera/media$:player_sample: phony dev_tools/bin/player_sample
+build base/global/frameworks/resmgr_lite$:global_manager_lite: phony obj/base/global/frameworks/resmgr_lite/global_manager_lite.stamp
+build base/global/frameworks/resmgr_lite$:global_resmgr: phony ./libglobal_resmgr.so
+build base/hiviewdfx/frameworks/hilog_lite/featured$:hilog_ndk: phony obj/base/hiviewdfx/frameworks/hilog_lite/featured/hilog_ndk.stamp
+build base/hiviewdfx/frameworks/hilog_lite/featured$:hilog_shared: phony ./libhilog_shared.so
+build base/hiviewdfx/frameworks/hilog_lite/featured$:hilog_static: phony ./libs/libhilog_static.a
+build base/hiviewdfx/services/hilogcat_lite/apphilogcat$:apphilogcat: phony ./bin/apphilogcat
+build base/hiviewdfx/services/hilogcat_lite/apphilogcat: phony ./bin/apphilogcat
+build base/hiviewdfx/services/hilogcat_lite/apphilogcat$:apphilogcat_static: phony ./libs/libapphilogcat_static.a
+build base/hiviewdfx/services/hilogcat_lite/hilogcat$:hilogcat: phony ./bin/hilogcat
+build base/hiviewdfx/services/hilogcat_lite/hilogcat: phony ./bin/hilogcat
+build base/hiviewdfx/services/hilogcat_lite/hilogcat$:hilogcat_static: phony ./libs/libhilogcat_static.a
+build base/security/frameworks/app_verify$:verify: phony ./libverify.so
+build base/security/frameworks/crypto_lite/cipher$:cipher_shared: phony ./libcipher_shared.so
+build base/security/frameworks/crypto_lite/js/builtin$:ace_kit_cipher: phony ./libace_kit_cipher.so
+build base/security/frameworks/hichainsdk_lite$:hichainsdk: phony obj/base/security/frameworks/hichainsdk_lite/hichainsdk.stamp
+build base/security/frameworks/hichainsdk_lite/source$:hichainsdk: phony ./libhichainsdk.so
+build base/security/frameworks/huks_lite/source$:huks: phony ./libhuks.so
+build base/security/services/iam_lite$:pms_lite: phony obj/base/security/services/iam_lite/pms_lite.stamp
+build base/security/services/iam_lite/ipc_auth$:ipc_auth_target: phony ./libipc_auth_target.so
+build base/security/services/iam_lite/pms$:pms_target: phony ./libpms_target.so
+build base/security/services/iam_lite/pms_base$:pms_base: phony ./libpms_base.so
+build base/security/services/iam_lite/pms_base: phony ./libpms_base.so
+build base/security/services/iam_lite/pms_client$:pms_client: phony ./libpms_client.so
+build base/security/services/iam_lite/pms_client: phony ./libpms_client.so
+build base/startup/frameworks/syspara_lite/parameter$:parameter: phony obj/base/startup/frameworks/syspara_lite/parameter/parameter.stamp
+build base/startup/frameworks/syspara_lite/parameter: phony obj/base/startup/frameworks/syspara_lite/parameter/parameter.stamp
+build base/startup/frameworks/syspara_lite/parameter$:parameter_notes: phony obj/base/startup/frameworks/syspara_lite/parameter/parameter_notes.stamp
+build base/startup/frameworks/syspara_lite/parameter/src$:sysparam: phony ./libsysparam.so
+build base/startup/frameworks/syspara_lite/token$:token: phony obj/base/startup/frameworks/syspara_lite/token/token.stamp
+build base/startup/frameworks/syspara_lite/token: phony obj/base/startup/frameworks/syspara_lite/token/token.stamp
+build base/startup/frameworks/syspara_lite/token$:token_notes: phony obj/base/startup/frameworks/syspara_lite/token/token_notes.stamp
+build base/startup/frameworks/syspara_lite/token$:token_shared: phony ./libtoken_shared.so
+build base/startup/services/appspawn_lite$:appspawn: phony ./bin/appspawn
+build base/startup/services/appspawn_lite$:appspawn_lite: phony obj/base/startup/services/appspawn_lite/appspawn_lite.stamp
+build base/startup/services/appspawn_lite: phony obj/base/startup/services/appspawn_lite/appspawn_lite.stamp
+build base/startup/services/bootstrap_lite/source$:bootstrap: phony ./libs/libbootstrap.a
+build base/startup/services/init_lite$:init: phony ./bin/init
+build base/startup/services/init_lite$:init_lite: phony obj/base/startup/services/init_lite/init_lite.stamp
+build base/startup/services/init_lite: phony obj/base/startup/services/init_lite/init_lite.stamp
+build build/lite$:gen_rootfs: phony obj/build/lite/gen_rootfs.stamp
+build build/lite$:ndk: phony obj/build/lite/ndk.stamp
+build build/lite$:ohos: phony obj/build/lite/ohos.stamp
+build drivers/hdf/lite/adapter/osal/posix$:hdf_posix: phony obj/drivers/hdf/lite/adapter/osal/posix/hdf_posix.stamp
+build drivers/hdf/lite/adapter/osal/posix$:hdf_posix_osal: phony ./libhdf_osal.so
+build drivers/hdf/lite/manager$:hdf_core: phony ./libhdf_core.so
+build drivers/hdf/lite/manager$:hdf_manager: phony obj/drivers/hdf/lite/manager/hdf_manager.stamp
+build drivers/hdf/lite/posix$:hdf_posix: phony obj/drivers/hdf/lite/posix/hdf_posix.stamp
+build foundation/aafwk/frameworks/ability_lite$:aafwk_abilityMain_lite: phony obj/foundation/aafwk/frameworks/ability_lite/aafwk_abilityMain_lite.stamp
+build foundation/aafwk/frameworks/ability_lite$:aafwk_abilitykit_lite: phony obj/foundation/aafwk/frameworks/ability_lite/aafwk_abilitykit_lite.stamp
+build foundation/aafwk/frameworks/ability_lite$:ability: phony ./libability.so
+build foundation/aafwk/frameworks/ability_lite$:abilityMain: phony ./bin/abilityMain
+build foundation/aafwk/frameworks/ability_lite$:ability_notes: phony obj/foundation/aafwk/frameworks/ability_lite/ability_notes.stamp
+build foundation/aafwk/frameworks/abilitymgr_lite$:aafwk_abilityManager_lite: phony obj/foundation/aafwk/frameworks/abilitymgr_lite/aafwk_abilityManager_lite.stamp
+build foundation/aafwk/frameworks/abilitymgr_lite$:abilitymanager: phony ./libabilitymanager.so
+build foundation/aafwk/frameworks/want_lite$:want: phony obj/foundation/aafwk/frameworks/want_lite/want.stamp
+build foundation/aafwk/services/abilitymgr_lite$:aafwk_services_lite: phony obj/foundation/aafwk/services/abilitymgr_lite/aafwk_services_lite.stamp
+build foundation/aafwk/services/abilitymgr_lite$:abilityms: phony ./libabilityms.so
+build foundation/aafwk/services/abilitymgr_lite/tools$:aa: phony dev_tools/bin/aa
+build foundation/aafwk/services/abilitymgr_lite/tools$:tools_lite: phony obj/foundation/aafwk/services/abilitymgr_lite/tools/tools_lite.stamp
+build foundation/ace/frameworks/lite$:ace_lite: phony ./libace_lite.so
+build foundation/ace/frameworks/lite$:jsfwk: phony obj/foundation/ace/frameworks/lite/jsfwk.stamp
+build foundation/appexecfwk/frameworks/bundle_lite$:appexecfwk_kits_lite: phony obj/foundation/appexecfwk/frameworks/bundle_lite/appexecfwk_kits_lite.stamp
+build foundation/appexecfwk/frameworks/bundle_lite$:bundle: phony ./libbundle.so
+build foundation/appexecfwk/frameworks/bundle_lite$:bundle_notes: phony obj/foundation/appexecfwk/frameworks/bundle_lite/bundle_notes.stamp
+build foundation/appexecfwk/services/bundlemgr_lite$:appexecfwk_services_lite: phony obj/foundation/appexecfwk/services/bundlemgr_lite/appexecfwk_services_lite.stamp
+build foundation/appexecfwk/services/bundlemgr_lite$:bundlems: phony ./libbundlems.so
+build foundation/appexecfwk/services/bundlemgr_lite/bundle_daemon$:bundle_daemon: phony ./bin/bundle_daemon
+build foundation/appexecfwk/services/bundlemgr_lite/bundle_daemon: phony ./bin/bundle_daemon
+build foundation/appexecfwk/services/bundlemgr_lite/tools$:bm: phony dev_tools/bin/bm
+build foundation/communication/frameworks/ipc_lite$:liteipc: phony obj/foundation/communication/frameworks/ipc_lite/liteipc.stamp
+build foundation/communication/frameworks/ipc_lite$:liteipc_adapter: phony ./libliteipc_adapter.so
+build foundation/communication/frameworks/ipc_lite$:liteipc_ndk: phony obj/foundation/communication/frameworks/ipc_lite/liteipc_ndk.stamp
+build foundation/communication/services/softbus_lite$:softbus: phony obj/foundation/communication/services/softbus_lite/softbus.stamp
+build foundation/communication/services/softbus_lite$:softbus_lite: phony ./libsoftbus_lite.so
+build foundation/communication/services/softbus_lite: phony ./libsoftbus_lite.so
+build foundation/communication/services/softbus_lite$:softbus_lite_ndk: phony obj/foundation/communication/services/softbus_lite/softbus_lite_ndk.stamp
+build foundation/communication/services/softbus_lite$:softbus_ndk: phony obj/foundation/communication/services/softbus_lite/softbus_ndk.stamp
+build foundation/distributedschedule/services/dtbschedmgr_lite$:dmslite: phony ./libdmslite.so
+build foundation/distributedschedule/services/dtbschedmgr_lite$:dtbschedmgr: phony obj/foundation/distributedschedule/services/dtbschedmgr_lite/dtbschedmgr.stamp
+build foundation/distributedschedule/services/safwk_lite$:foundation: phony ./bin/foundation
+build foundation/distributedschedule/services/safwk_lite$:safwk_lite: phony obj/foundation/distributedschedule/services/safwk_lite/safwk_lite.stamp
+build foundation/distributedschedule/services/safwk_lite: phony obj/foundation/distributedschedule/services/safwk_lite/safwk_lite.stamp
+build foundation/distributedschedule/services/samgr_lite$:samgr: phony obj/foundation/distributedschedule/services/samgr_lite/samgr.stamp
+build foundation/distributedschedule/services/samgr_lite$:samgr_lite_ndk: phony obj/foundation/distributedschedule/services/samgr_lite/samgr_lite_ndk.stamp
+build foundation/distributedschedule/services/samgr_lite/communication/broadcast$:broadcast: phony ./libbroadcast.so
+build foundation/distributedschedule/services/samgr_lite/communication/broadcast: phony ./libbroadcast.so
+build foundation/distributedschedule/services/samgr_lite/samgr$:samgr: phony ./libsamgr.so
+build foundation/distributedschedule/services/samgr_lite/samgr: phony ./libsamgr.so
+build foundation/distributedschedule/services/samgr_lite/samgr/adapter$:samgr_adapter: phony obj/foundation/distributedschedule/services/samgr_lite/samgr/adapter/samgr_adapter.stamp
+build foundation/distributedschedule/services/samgr_lite/samgr/source$:samgr_source: phony obj/foundation/distributedschedule/services/samgr_lite/samgr/source/samgr_source.stamp
+build foundation/distributedschedule/services/samgr_lite/samgr_client$:client: phony obj/foundation/distributedschedule/services/samgr_lite/samgr_client/client.stamp
+build foundation/distributedschedule/services/samgr_lite/samgr_endpoint$:endpoint_source: phony obj/foundation/distributedschedule/services/samgr_lite/samgr_endpoint/endpoint_source.stamp
+build foundation/distributedschedule/services/samgr_lite/samgr_endpoint$:store_source: phony obj/foundation/distributedschedule/services/samgr_lite/samgr_endpoint/store_source.stamp
+build foundation/distributedschedule/services/samgr_lite/samgr_server$:server: phony ./libserver.so
+build foundation/graphic/lite/frameworks/surface$:litesurface: phony obj/foundation/graphic/lite/frameworks/surface/litesurface.stamp
+build foundation/graphic/lite/frameworks/surface$:surface: phony ./libsurface.so
+build foundation/graphic/lite/frameworks/surface: phony ./libsurface.so
+build foundation/graphic/lite/frameworks/ui$:liteui: phony obj/foundation/graphic/lite/frameworks/ui/liteui.stamp
+build foundation/graphic/lite/frameworks/ui$:ui: phony ./libui.so
+build foundation/graphic/lite/frameworks/ui: phony ./libui.so
+build foundation/graphic/lite/hals$:graphic_hals: phony ./libgraphic_hals.so
+build foundation/graphic/lite/hals$:hals: phony obj/foundation/graphic/lite/hals/hals.stamp
+build foundation/graphic/lite/hals: phony obj/foundation/graphic/lite/hals/hals.stamp
+build foundation/graphic/lite/services/ims$:ims: phony ./libims.so
+build foundation/graphic/lite/services/ims: phony ./libims.so
+build foundation/graphic/lite/services/ims$:liteims: phony obj/foundation/graphic/lite/services/ims/liteims.stamp
+build foundation/graphic/lite/services/wms$:litewms: phony obj/foundation/graphic/lite/services/wms/litewms.stamp
+build foundation/graphic/lite/services/wms$:wms_client: phony ./libwms_client.so
+build foundation/graphic/lite/services/wms$:wms_server: phony ./bin/wms_server
+build foundation/graphic/lite/utils$:graphic_utils: phony ./libgraphic_utils.so
+build foundation/graphic/lite/utils$:litegraphicutils: phony obj/foundation/graphic/lite/utils/litegraphicutils.stamp
+build foundation/graphic/lite/utils$:utils_config: phony obj/foundation/graphic/lite/utils/utils_config.stamp
+build foundation/multimedia/frameworks/audio_lite$:audio_capturer: phony ./libaudio_capturer.so
+build foundation/multimedia/frameworks/camera_lite$:camera: phony ./libcamera.so
+build foundation/multimedia/frameworks/player_lite$:player: phony ./libplayer.so
+build foundation/multimedia/frameworks/recorder_lite$:media_lite: phony obj/foundation/multimedia/frameworks/recorder_lite/media_lite.stamp
+build foundation/multimedia/frameworks/recorder_lite$:recorder: phony ./librecorder.so
+build foundation/multimedia/interfaces/kits/player_lite/js/builtin$:audio_api: phony ./libaudio_api.so
+build foundation/multimedia/services/media_lite$:media_lite: phony obj/foundation/multimedia/services/media_lite/media_lite.stamp
+build foundation/multimedia/services/media_lite: phony obj/foundation/multimedia/services/media_lite/media_lite.stamp
+build foundation/multimedia/services/media_lite$:media_ndk: phony obj/foundation/multimedia/services/media_lite/media_ndk.stamp
+build foundation/multimedia/services/media_lite$:media_server: phony ./bin/media_server
+build foundation/multimedia/utils/lite$:media_common: phony ./libmedia_common.so
+build kernel/liteos_a$:kernel: phony obj/kernel/liteos_a/kernel.stamp
+build kernel/liteos_a$:make: phony obj/kernel/liteos_a/make.stamp
+build test/developertest$:test: phony obj/test/developertest/test.stamp
+build test/developertest/example/cxx_demo/test/unittest/common$:CalcSubTest: phony test/unittest/bin/CalcSubTest.bin
+build test/developertest/third_party/lib/cpp$:gtest: phony ./libs/libgtest.a
+build test/developertest/third_party/lib/cpp$:gtest_main: phony ./libs/libgtest_main.a
+build test/xdevice$:xdevice: phony obj/test/xdevice/xdevice.stamp
+build test/xdevice: phony obj/test/xdevice/xdevice.stamp
+build test/xts/acts$:acts: phony obj/test/xts/acts/acts.stamp
+build test/xts/acts: phony obj/test/xts/acts/acts.stamp
+build test/xts/acts$:acts_compoment: phony obj/test/xts/acts/acts_compoment.stamp
+build test/xts/acts$:query_copy: phony obj/test/xts/acts/query_copy.stamp
+build test/xts/tools$:tools: phony obj/test/xts/tools/tools.stamp
+build test/xts/tools: phony obj/test/xts/tools/tools.stamp
+build test/xts/tools/others/query$:query: phony ./bin/query.bin
+build test/xts/tools/others/query: phony ./bin/query.bin
+build third_party/bounds_checking_function$:libsec_shared: phony ./libsec_shared.so
+build third_party/bounds_checking_function$:libsec_static: phony ./libs/libsec_static.a
+build third_party/cJSON$:cjson_ndk: phony obj/third_party/cJSON/cjson_ndk.stamp
+build third_party/cJSON$:cjson_shared: phony ./libcjson_shared.so
+build third_party/cJSON$:cjson_static: phony ./libs/libcjson_static.a
+build third_party/freetype$:freetype: phony ./libfreetype.so
+build third_party/freetype: phony ./libfreetype.so
+build third_party/freetype$:freetype_shared: phony obj/third_party/freetype/freetype_shared.stamp
+build third_party/iniparser$:iniparser: phony ./libiniparser.so
+build third_party/iniparser: phony ./libiniparser.so
+build third_party/jerryscript/jerry-core$:jerry-core: phony obj/third_party/jerryscript/jerry-core/jerry-core.stamp
+build third_party/jerryscript/jerry-core: phony obj/third_party/jerryscript/jerry-core/jerry-core.stamp
+build third_party/jerryscript/jerry-core$:jerry-core_shared: phony ./libjerry-core_shared.so
+build third_party/jerryscript/jerry-ext$:jerry-ext: phony obj/third_party/jerryscript/jerry-ext/jerry-ext.stamp
+build third_party/jerryscript/jerry-ext: phony obj/third_party/jerryscript/jerry-ext/jerry-ext.stamp
+build third_party/jerryscript/jerry-ext$:jerry-ext_shared: phony ./libjerry-ext_shared.so
+build third_party/jerryscript/jerry-libm$:jerry-libm: phony obj/third_party/jerryscript/jerry-libm/jerry-libm.stamp
+build third_party/jerryscript/jerry-libm: phony obj/third_party/jerryscript/jerry-libm/jerry-libm.stamp
+build third_party/jerryscript/jerry-libm$:jerry-libm_shared: phony ./libjerry-libm_shared.so
+build third_party/jerryscript/jerry-port/default$:jerry-port-default: phony obj/third_party/jerryscript/jerry-port/default/jerry-port-default.stamp
+build third_party/jerryscript/jerry-port/default$:jerry-port-default_shared: phony ./libjerry-port-default_shared.so
+build third_party/libjpeg$:libjpeg: phony ./libjpeg.so
+build third_party/libjpeg: phony ./libjpeg.so
+build third_party/libpng$:libpng: phony ./libpng.so
+build third_party/libpng: phony ./libpng.so
+build third_party/mbedtls$:mbedtls: phony obj/third_party/mbedtls/mbedtls.stamp
+build third_party/mbedtls: phony obj/third_party/mbedtls/mbedtls.stamp
+build third_party/mbedtls$:mbedtls_ndk: phony obj/third_party/mbedtls/mbedtls_ndk.stamp
+build third_party/mbedtls$:mbedtls_shared: phony ./libmbedtls.so
+build third_party/mbedtls$:mbedtls_static: phony ./libs/libmbedtls.a
+build third_party/openssl$:openssl_shared: phony ./libopenssl_shared.so
+build third_party/openssl$:openssl_static: phony ./libs/libopenssl.a
+build third_party/wpa_supplicant/wpa_supplicant-2.9$:wpa_supplicant: phony obj/third_party/wpa_supplicant/wpa_supplicant-2.9/wpa_supplicant.stamp
+build third_party/wpa_supplicant/wpa_supplicant-2.9$:wpa_supplicant-2.9: phony obj/third_party/wpa_supplicant/wpa_supplicant-2.9/wpa_supplicant-2.9.stamp
+build third_party/wpa_supplicant/wpa_supplicant-2.9: phony obj/third_party/wpa_supplicant/wpa_supplicant-2.9/wpa_supplicant-2.9.stamp
+build third_party/zlib$:zlib_shared: phony ./libzlib_shared.so
+build third_party/zlib$:zlib_static: phony ./libs/libz.a
+build utils/native/lite/js/builtin$:ace_utils_kits: phony obj/utils/native/lite/js/builtin/ace_utils_kits.stamp
+build utils/native/lite/js/builtin/common$:ace_kit_common: phony ./libace_kit_common.so
+build utils/native/lite/js/builtin/deviceinfokit$:ace_kit_deviceinfo: phony ./libace_kit_deviceinfo.so
+build utils/native/lite/js/builtin/filekit$:ace_kit_file: phony ./libace_kit_file.so
+build utils/native/lite/js/builtin/kvstorekit$:ace_kit_kvstore: phony ./libace_kit_kvstore.so
+build utils/native/lite/kal/timer$:kal_timer: phony ./libkal_timer.so
+build utils/native/lite/kv_store$:kv_store: phony obj/utils/native/lite/kv_store/kv_store.stamp
+build utils/native/lite/kv_store: phony obj/utils/native/lite/kv_store/kv_store.stamp
+build utils/native/lite/kv_store/src$:utils_kv_store: phony ./libutils_kv_store.so
+build utils/native/lite/timer_task$:ace_kit_timer: phony ./libace_kit_timer.so
+build vendor/hisi/hi35xx/hardware$:hardware_media_sdk: phony obj/vendor/hisi/hi35xx/hardware/hardware_media_sdk.stamp
+build vendor/hisi/hi35xx/hi3516dv300/hi3516dv300_adapter/hals/multimedia$:hdi_media: phony obj/vendor/hisi/hi35xx/hi3516dv300/hi3516dv300_adapter/hals/multimedia/hdi_media.stamp
+build vendor/hisi/hi35xx/hi35xx_init/hi3516dv300$:hi3516dv300_image: phony obj/vendor/hisi/hi35xx/hi35xx_init/hi3516dv300/hi3516dv300_image.stamp
+build vendor/hisi/hi35xx/middleware$:middleware_source_sdk: phony obj/vendor/hisi/hi35xx/middleware/middleware_source_sdk.stamp
+build vendor/huawei/camera/hals/utils/sys_param$:hal_sysparam: phony ./libhal_sysparam.so
+build vendor/huawei/camera/hals/utils/token$:haltoken_shared: phony ./libhaltoken_shared.so
+build vendor/huawei/camera/init_configs$:ConfigFiles: phony obj/vendor/huawei/camera/init_configs/ConfigFiles.stamp
+build vendor/huawei/camera/init_configs$:init_config: phony obj/vendor/huawei/camera/init_configs/init_config.stamp
+build vendor/huawei/hdf/display/hdi$:display_gfx: phony obj/vendor/huawei/hdf/display/hdi/display_gfx.stamp
+build vendor/huawei/hdf/display/hdi$:display_gralloc: phony obj/vendor/huawei/hdf/display/hdi/display_gralloc.stamp
+build vendor/huawei/hdf/display/hdi$:display_layer: phony obj/vendor/huawei/hdf/display/hdi/display_layer.stamp
+build vendor/huawei/hdf/display/hdi$:hdi_display: phony obj/vendor/huawei/hdf/display/hdi/hdi_display.stamp
+build vendor/huawei/hdf/input/hdi$:hdi_input: phony obj/vendor/huawei/hdf/input/hdi/hdi_input.stamp
+build vendor/huawei/hdf/wifi$:wifi_firmware: phony obj/vendor/huawei/hdf/wifi/wifi_firmware.stamp
+
+build all: phony $
+    obj/applications/sample/camera/app/app_sample.stamp $
+    ./bin/camera_app $
+    ./libs/libhello_world.a $
+    obj/applications/sample/camera/communication/sample.stamp $
+    obj/applications/sample/camera/hap/copy_hap.stamp $
+    obj/applications/sample/camera/media/camera_config.stamp $
+    dev_tools/bin/camera_sample $
+    obj/applications/sample/camera/media/media_sample.stamp $
+    dev_tools/bin/player_sample $
+    obj/base/global/frameworks/resmgr_lite/global_manager_lite.stamp $
+    ./libglobal_resmgr.so $
+    obj/base/hiviewdfx/frameworks/hilog_lite/featured/hilog_ndk.stamp $
+    ./libhilog_shared.so $
+    ./libs/libhilog_static.a $
+    ./bin/apphilogcat $
+    ./libs/libapphilogcat_static.a $
+    ./bin/hilogcat $
+    ./libs/libhilogcat_static.a $
+    ./libverify.so $
+    ./libcipher_shared.so $
+    ./libace_kit_cipher.so $
+    obj/base/security/frameworks/hichainsdk_lite/hichainsdk.stamp $
+    ./libhichainsdk.so $
+    ./libhuks.so $
+    obj/base/security/services/iam_lite/pms_lite.stamp $
+    ./libipc_auth_target.so $
+    ./libpms_target.so $
+    ./libpms_base.so $
+    ./libpms_client.so $
+    obj/base/startup/frameworks/syspara_lite/parameter/parameter.stamp $
+    obj/base/startup/frameworks/syspara_lite/parameter/parameter_notes.stamp $
+    ./libsysparam.so $
+    obj/base/startup/frameworks/syspara_lite/token/token.stamp $
+    obj/base/startup/frameworks/syspara_lite/token/token_notes.stamp $
+    ./libtoken_shared.so $
+    ./bin/appspawn $
+    obj/base/startup/services/appspawn_lite/appspawn_lite.stamp $
+    ./libs/libbootstrap.a $
+    ./bin/init $
+    obj/base/startup/services/init_lite/init_lite.stamp $
+    obj/build/lite/gen_rootfs.stamp $
+    obj/build/lite/ndk.stamp $
+    obj/build/lite/ohos.stamp $
+    obj/drivers/hdf/lite/adapter/osal/posix/hdf_posix.stamp $
+    ./libhdf_osal.so $
+    ./libhdf_core.so $
+    obj/drivers/hdf/lite/manager/hdf_manager.stamp $
+    obj/drivers/hdf/lite/posix/hdf_posix.stamp $
+    obj/foundation/aafwk/frameworks/ability_lite/aafwk_abilityMain_lite.stamp $
+    obj/foundation/aafwk/frameworks/ability_lite/aafwk_abilitykit_lite.stamp $
+    ./libability.so $
+    ./bin/abilityMain $
+    obj/foundation/aafwk/frameworks/ability_lite/ability_notes.stamp $
+    obj/foundation/aafwk/frameworks/abilitymgr_lite/aafwk_abilityManager_lite.stamp $
+    ./libabilitymanager.so $
+    obj/foundation/aafwk/frameworks/want_lite/want.stamp $
+    obj/foundation/aafwk/services/abilitymgr_lite/aafwk_services_lite.stamp $
+    ./libabilityms.so $
+    dev_tools/bin/aa $
+    obj/foundation/aafwk/services/abilitymgr_lite/tools/tools_lite.stamp $
+    ./libace_lite.so $
+    obj/foundation/ace/frameworks/lite/jsfwk.stamp $
+    obj/foundation/appexecfwk/frameworks/bundle_lite/appexecfwk_kits_lite.stamp $
+    ./libbundle.so $
+    obj/foundation/appexecfwk/frameworks/bundle_lite/bundle_notes.stamp $
+    obj/foundation/appexecfwk/services/bundlemgr_lite/appexecfwk_services_lite.stamp $
+    ./libbundlems.so $
+    ./bin/bundle_daemon $
+    dev_tools/bin/bm $
+    obj/foundation/communication/frameworks/ipc_lite/liteipc.stamp $
+    ./libliteipc_adapter.so $
+    obj/foundation/communication/frameworks/ipc_lite/liteipc_ndk.stamp $
+    obj/foundation/communication/services/softbus_lite/softbus.stamp $
+    ./libsoftbus_lite.so $
+    obj/foundation/communication/services/softbus_lite/softbus_lite_ndk.stamp $
+    obj/foundation/communication/services/softbus_lite/softbus_ndk.stamp $
+    ./libdmslite.so $
+    obj/foundation/distributedschedule/services/dtbschedmgr_lite/dtbschedmgr.stamp $
+    ./bin/foundation $
+    obj/foundation/distributedschedule/services/safwk_lite/safwk_lite.stamp $
+    obj/foundation/distributedschedule/services/samgr_lite/samgr.stamp $
+    obj/foundation/distributedschedule/services/samgr_lite/samgr_lite_ndk.stamp $
+    ./libbroadcast.so $
+    ./libsamgr.so $
+    obj/foundation/distributedschedule/services/samgr_lite/samgr/adapter/samgr_adapter.stamp $
+    obj/foundation/distributedschedule/services/samgr_lite/samgr/source/samgr_source.stamp $
+    obj/foundation/distributedschedule/services/samgr_lite/samgr_client/client.stamp $
+    obj/foundation/distributedschedule/services/samgr_lite/samgr_endpoint/endpoint_source.stamp $
+    obj/foundation/distributedschedule/services/samgr_lite/samgr_endpoint/store_source.stamp $
+    ./libserver.so $
+    obj/foundation/graphic/lite/frameworks/surface/litesurface.stamp $
+    ./libsurface.so $
+    obj/foundation/graphic/lite/frameworks/ui/liteui.stamp $
+    ./libui.so $
+    ./libgraphic_hals.so $
+    obj/foundation/graphic/lite/hals/hals.stamp $
+    ./libims.so $
+    obj/foundation/graphic/lite/services/ims/liteims.stamp $
+    obj/foundation/graphic/lite/services/wms/litewms.stamp $
+    ./libwms_client.so $
+    ./bin/wms_server $
+    ./libgraphic_utils.so $
+    obj/foundation/graphic/lite/utils/litegraphicutils.stamp $
+    obj/foundation/graphic/lite/utils/utils_config.stamp $
+    ./libaudio_capturer.so $
+    ./libcamera.so $
+    ./libplayer.so $
+    obj/foundation/multimedia/frameworks/recorder_lite/media_lite.stamp $
+    ./librecorder.so $
+    ./libaudio_api.so $
+    obj/foundation/multimedia/services/media_lite/media_lite.stamp $
+    obj/foundation/multimedia/services/media_lite/media_ndk.stamp $
+    ./bin/media_server $
+    ./libmedia_common.so $
+    obj/kernel/liteos_a/kernel.stamp $
+    obj/kernel/liteos_a/make.stamp $
+    obj/test/developertest/test.stamp $
+    test/unittest/bin/CalcSubTest.bin $
+    ./libs/libgtest.a $
+    ./libs/libgtest_main.a $
+    obj/test/xdevice/xdevice.stamp $
+    obj/test/xts/acts/acts.stamp $
+    obj/test/xts/acts/acts_compoment.stamp $
+    obj/test/xts/acts/query_copy.stamp $
+    obj/test/xts/tools/tools.stamp $
+    ./bin/query.bin $
+    ./libsec_shared.so $
+    ./libs/libsec_static.a $
+    obj/third_party/cJSON/cjson_ndk.stamp $
+    ./libcjson_shared.so $
+    ./libs/libcjson_static.a $
+    ./libfreetype.so $
+    obj/third_party/freetype/freetype_shared.stamp $
+    ./libiniparser.so $
+    obj/third_party/jerryscript/jerry-core/jerry-core.stamp $
+    ./libjerry-core_shared.so $
+    obj/third_party/jerryscript/jerry-ext/jerry-ext.stamp $
+    ./libjerry-ext_shared.so $
+    obj/third_party/jerryscript/jerry-libm/jerry-libm.stamp $
+    ./libjerry-libm_shared.so $
+    obj/third_party/jerryscript/jerry-port/default/jerry-port-default.stamp $
+    ./libjerry-port-default_shared.so $
+    ./libjpeg.so $
+    ./libpng.so $
+    obj/third_party/mbedtls/mbedtls.stamp $
+    obj/third_party/mbedtls/mbedtls_ndk.stamp $
+    ./libmbedtls.so $
+    ./libs/libmbedtls.a $
+    ./libopenssl_shared.so $
+    ./libs/libopenssl.a $
+    obj/third_party/wpa_supplicant/wpa_supplicant-2.9/wpa_supplicant.stamp $
+    obj/third_party/wpa_supplicant/wpa_supplicant-2.9/wpa_supplicant-2.9.stamp $
+    ./libzlib_shared.so $
+    ./libs/libz.a $
+    obj/utils/native/lite/js/builtin/ace_utils_kits.stamp $
+    ./libace_kit_common.so $
+    ./libace_kit_deviceinfo.so $
+    ./libace_kit_file.so $
+    ./libace_kit_kvstore.so $
+    ./libkal_timer.so $
+    obj/utils/native/lite/kv_store/kv_store.stamp $
+    ./libutils_kv_store.so $
+    ./libace_kit_timer.so $
+    obj/vendor/hisi/hi35xx/hardware/hardware_media_sdk.stamp $
+    obj/vendor/hisi/hi35xx/hi3516dv300/hi3516dv300_adapter/hals/multimedia/hdi_media.stamp $
+    obj/vendor/hisi/hi35xx/hi35xx_init/hi3516dv300/hi3516dv300_image.stamp $
+    obj/vendor/hisi/hi35xx/middleware/middleware_source_sdk.stamp $
+    ./libhal_sysparam.so $
+    ./libhaltoken_shared.so $
+    obj/vendor/huawei/camera/init_configs/ConfigFiles.stamp $
+    obj/vendor/huawei/camera/init_configs/init_config.stamp $
+    obj/vendor/huawei/hdf/display/hdi/display_gfx.stamp $
+    obj/vendor/huawei/hdf/display/hdi/display_gralloc.stamp $
+    obj/vendor/huawei/hdf/display/hdi/display_layer.stamp $
+    obj/vendor/huawei/hdf/display/hdi/hdi_display.stamp $
+    obj/vendor/huawei/hdf/input/hdi/hdi_input.stamp $
+    obj/vendor/huawei/hdf/wifi/wifi_firmware.stamp
+
+default all
