@@ -49,26 +49,60 @@ void UdpServerTest(unsigned short port)
     serverAddr.sin_addr.s_addr = htonl(INADDR_ANY);
 
     retval = bind(sockfd, (struct sockaddr *)&serverAddr, sizeof(serverAddr));
-    if (retval < 0) {
+    if (retval < 0)
+    {
         printf("bind failed, %ld!\r\n", retval);
         goto do_cleanup;
     }
     printf("bind to port %d success!\r\n", port);
 
-    retval = recvfrom(sockfd, message, sizeof(message), 0, (struct sockaddr *)&clientAddr, &clientAddrLen);
-    if (retval < 0) {
-        printf("recvfrom failed, %ld!\r\n", retval);
-        goto do_cleanup;
-    }
-    printf("recv message {%s} %ld done!\r\n", message, retval);
-    printf("peer info: ipaddr = %s, port = %d\r\n", inet_ntoa(clientAddr.sin_addr), ntohs(clientAddr.sin_port));
+    //raw
+    // retval = recvfrom(sockfd, message, sizeof(message), 0, (struct sockaddr *)&clientAddr, &clientAddrLen);
+    // if (retval < 0) {
+    //     printf("recvfrom failed, %ld!\r\n", retval);
+    //     goto do_cleanup;
+    // }
+    // printf("recv message {%s} %ld done!\r\n", message, retval);
+    // printf("peer info: ipaddr = %s, port = %d\r\n", inet_ntoa(clientAddr.sin_addr), ntohs(clientAddr.sin_port));
 
-    retval = sendto(sockfd, message, strlen(message), 0, (struct sockaddr *)&clientAddr, sizeof(clientAddr));
-    if (retval <= 0) {
-        printf("send failed, %ld!\r\n", retval);
-        goto do_cleanup;
+    // retval = sendto(sockfd, message, strlen(message), 0, (struct sockaddr *)&clientAddr, sizeof(clientAddr));
+    // if (retval <= 0) {
+    //     printf("send failed, %ld!\r\n", retval);
+    //     goto do_cleanup;
+    // }
+    // printf("send message {%s} %ld done!\r\n", message, retval);
+
+    //end raw
+
+    //new
+    while (1)
+    {
+
+        retval = recvfrom(sockfd, message, sizeof(message), 0, (struct sockaddr *)&clientAddr, &clientAddrLen);
+        if (retval < 0)
+        {
+            printf("recvfrom failed, %ld!\r\n", retval);
+            goto do_cleanup;
+        }
+        printf("recv message {%s} %ld done!\r\n", message, retval);
+        printf("peer info: ipaddr = %s, port = %d\r\n", inet_ntoa(clientAddr.sin_addr), ntohs(clientAddr.sin_port));
+        if (strncmp(message, "exit", 4) == 0)
+        {
+            strcpy(message, "exit!");
+            retval = sendto(sockfd, message, strlen(message), 0, (struct sockaddr *)&clientAddr, sizeof(clientAddr));
+            goto do_cleanup;
+        }
+        retval = sendto(sockfd, message, strlen(message), 0, (struct sockaddr *)&clientAddr, sizeof(clientAddr));
+        if (retval <= 0)
+        {
+            printf("send failed, %ld!\r\n", retval);
+            goto do_cleanup;
+        }
+        printf("send message {%s} %ld done!\r\n", message, retval);
+        memset(message, 0, sizeof(message));
     }
-    printf("send message {%s} %ld done!\r\n", message, retval);
+
+    //end new
 
 do_cleanup:
     printf("do_cleanup...\r\n");

@@ -131,6 +131,7 @@ static void EnvironmentTask(void *arg)
             gasSensorResistance = 5 / Vx - 1;
         }
 
+        //显示区
         OledShowString(0, 0, "Sensor values:", 1);
 
         snprintf(line, sizeof(line), "temp: %.2f", temperature);
