@@ -27,9 +27,9 @@
 
 static_library("sensing_demo") {
     sources = [
-        # "colorful_light_demo.c",
+         "colorful_light_demo.c",
         # "oled_demo.c", "oled_ssd1306.c",
-        "environment_demo.c", "oled_ssd1306.c", "aht20.c"
+        #"environment_demo.c", "oled_ssd1306.c", "aht20.c"
     ]
 
     include_dirs = [

@@ -68,8 +68,12 @@ static void CorlorfulLightTask(void *arg)
     (void)arg;
     static const WifiIotGpioIdx pins[] = {RED_LED_PIN_NAME, GREEN_LED_PIN_NAME, BLUE_LED_PIN_NAME};
 
-    for (int i = 0; i < NUM_BLINKS; i++) {
-        for (unsigned j = 0; j < sizeof(pins)/sizeof(pins[0]); j++) {
+
+    //闪两遍
+    for (int i = 0; i < NUM_BLINKS; i++)
+    {
+        for (unsigned j = 0; j < sizeof(pins) / sizeof(pins[0]); j++)
+        {
             GpioSetOutputVal(pins[j], LED_BRIGHT);
             usleep(LED_DELAY_TIME_US);
             GpioSetOutputVal(pins[j], LED_DARK);
@@ -77,7 +81,7 @@ static void CorlorfulLightTask(void *arg)
         }
     }
 
-    // GpioDeinit(); 
+    // GpioDeinit();，切换到pwm功能
     IoSetFunc(RED_LED_PIN_NAME, WIFI_IOT_IO_FUNC_GPIO_10_PWM1_OUT);
     IoSetFunc(GREEN_LED_PIN_NAME, WIFI_IOT_IO_FUNC_GPIO_11_PWM2_OUT);
     IoSetFunc(BLUE_LED_PIN_NAME, WIFI_IOT_IO_FUNC_GPIO_12_PWM3_OUT);
@@ -87,27 +91,35 @@ static void CorlorfulLightTask(void *arg)
     PwmInit(WIFI_IOT_PWM_PORT_PWM3); // B
 
     // use PWM control BLUE LED brightness
-    for (int i = 1; i <= ADC_RESOLUTION; i *= 2) {
+    for (int i = 1; i <= ADC_RESOLUTION; i *= 2)
+    {
         PwmStart(WIFI_IOT_PWM_PORT_PWM3, i, PWM_FREQ_DIVITION);
         usleep(250000);
         PwmStop(WIFI_IOT_PWM_PORT_PWM3);
     }
 
-    while (1) {
+    while (1)
+    {
         unsigned short duty[NUM_SENSORS] = {0, 0};
         unsigned short data[NUM_SENSORS] = {0, 0};
+        //chan[1]是光照传感器
         static const WifiIotAdcChannelIndex chan[] = {HUMAN_SENSOR_CHAN_NAME, LIGHT_SENSOR_CHAN_NAME};
         static const WifiIotPwmPort port[] = {WIFI_IOT_PWM_PORT_PWM1, WIFI_IOT_PWM_PORT_PWM2};
 
-        for (size_t i = 0; i < sizeof(chan)/sizeof(chan[0]); i++) { 
-            if (AdcRead(chan[i], &data[i], WIFI_IOT_ADC_EQU_MODEL_4, WIFI_IOT_ADC_CUR_BAIS_DEFAULT, 0)
-                == WIFI_IOT_SUCCESS) {
+        //暂时关闭传感器
+        for (size_t i = 1; i < sizeof(chan) / sizeof(chan[0]); i++)
+        {
+            //光照传感器值放入了data[1]
+            //四次取平均
+            if (AdcRead(chan[i], &data[i], WIFI_IOT_ADC_EQU_MODEL_4, WIFI_IOT_ADC_CUR_BAIS_DEFAULT, 0) == WIFI_IOT_SUCCESS)
+            {
                 duty[i] = PWM_FREQ_DIVITION * (unsigned int)data[i] / ADC_RESOLUTION;
             }
             PwmStart(port[i], duty[i], PWM_FREQ_DIVITION);
             usleep(10000);
             PwmStop(port[i]);
         }
+        printf("data light sensor：%d\n", data[1],duty[1]);
     }
 }
 
@@ -135,7 +147,8 @@ static void ColorfulLightDemo(void)
     attr.stack_size = 4096;
     attr.priority = osPriorityNormal;
 
-    if (osThreadNew(CorlorfulLightTask, NULL, &attr) == NULL) {
+    if (osThreadNew(CorlorfulLightTask, NULL, &attr) == NULL)
+    {
         printf("[ColorfulLightDemo] Falied to create CorlorfulLightTask!\n");
     }
 }

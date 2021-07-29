@@ -4,11 +4,9 @@ cflags = -nostdlib -fno-common -fno-builtin -fno-strict-aliasing -fsigned-char -
 cflags_c = -std=c99
 target_output_name = libsensing_demo
 
-build obj/applications/sample/wifi-iot/app/iothardware/environment_demo.o: cc ../../applications/sample/wifi-iot/app/iothardware/environment_demo.c
-build obj/applications/sample/wifi-iot/app/iothardware/oled_ssd1306.o: cc ../../applications/sample/wifi-iot/app/iothardware/oled_ssd1306.c
-build obj/applications/sample/wifi-iot/app/iothardware/aht20.o: cc ../../applications/sample/wifi-iot/app/iothardware/aht20.c
+build obj/applications/sample/wifi-iot/app/iothardware/colorful_light_demo.o: cc ../../applications/sample/wifi-iot/app/iothardware/colorful_light_demo.c
 
-build ./libs/libsensing_demo.a: alink obj/applications/sample/wifi-iot/app/iothardware/environment_demo.o obj/applications/sample/wifi-iot/app/iothardware/oled_ssd1306.o obj/applications/sample/wifi-iot/app/iothardware/aht20.o
+build ./libs/libsensing_demo.a: alink obj/applications/sample/wifi-iot/app/iothardware/colorful_light_demo.o
   arflags =
   output_extension = .a
   output_dir = ./libs
