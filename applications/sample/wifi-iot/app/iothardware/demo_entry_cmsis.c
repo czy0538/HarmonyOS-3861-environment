@@ -51,13 +51,13 @@ static void NetDemoTask(void *arg)
 
     int netId = ConnectToHotspot(&config);
 
-    int timeout = 10;
+    int timeout = 3;//启动后延迟timeout 秒连接ap
     while (timeout--) {
         printf("After %d seconds, I will start %s test!\r\n", timeout, GetNetDemoName());
         osDelay(100);
     }
 
-    NetDemoTest(PARAM_SERVER_PORT, PARAM_SERVER_ADDR);
+    NetDemoTest(PARAM_SERVER_PORT, PARAM_SERVER_ADDR);//测试网络连接的函数
 
     printf("disconnect to AP ...\r\n");
     DisconnectWithHotspot(netId);

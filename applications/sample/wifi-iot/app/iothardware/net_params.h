@@ -30,11 +30,11 @@
 #define NET_PARAMS_H
 
 #ifndef PARAM_HOTSPOT_SSID
-#define PARAM_HOTSPOT_SSID "811_cluster"   // your AP SSID
+#define PARAM_HOTSPOT_SSID "811_cluster" // your AP SSID
 #endif
 
 #ifndef PARAM_HOTSPOT_PSK
-#define PARAM_HOTSPOT_PSK  "hitedu811"  // your AP PSK
+#define PARAM_HOTSPOT_PSK "hitedu811" // your AP PSK
 #endif
 
 #ifndef PARAM_HOTSPOT_TYPE
@@ -42,11 +42,11 @@
 #endif
 
 #ifndef PARAM_SERVER_ADDR
-#define PARAM_SERVER_ADDR "192.168.1.126" // your PC IP address
+#define PARAM_SERVER_ADDR "192.168.1.233" //没用 放着吧
 #endif
 
 #ifndef PARAM_SERVER_PORT
 #define PARAM_SERVER_PORT 5678
 #endif
 
-#endif  // NET_PARAMS_H
+#endif // NET_PARAMS_H

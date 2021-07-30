@@ -51,6 +51,7 @@ const char* GetNetDemoName(void);
     } \
     IMPL_GET_NET_DEMO_NAME(testFunc)
 
+//server会执行到这里
 #define SERVER_TEST_DEMO(testFunc) \
     void NetDemoTest(unsigned short port, const char* host) { \
         (void) host; \

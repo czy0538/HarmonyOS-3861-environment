@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "net_params.h": "c",
+        "net_demo.h": "c"
+    }
+}
