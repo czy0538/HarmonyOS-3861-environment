@@ -35,10 +35,14 @@ build hiview_lite: phony ./libs/libhiview_lite.a
 build iothardware_ndk: phony obj/base/iot_hardware/frameworks/wifiiot_lite/src/iothardware_ndk.stamp
 build kal: phony ./libs/libkal.a
 build kv_store: phony obj/utils/native/lite/kv_store/kv_store.stamp
+build mqtt_test_at: phony ./libs/libmqtt_test_at.a
 build myapp: phony ./libs/libmyapp.a
 build native_file: phony ./libs/libnative_file.a
 build ndk: phony obj/build/lite/ndk.stamp
 build ohos: phony obj/build/lite/ohos.stamp
+build pahomqtt_ndk: phony obj/third_party/pahomqtt/pahomqtt_ndk.stamp
+build pahomqtt_shared: phony obj/third_party/pahomqtt/pahomqtt_shared.stamp
+build pahomqtt_static: phony ./libs/libpahomqtt_static.a
 build parameter: phony obj/base/startup/frameworks/syspara_lite/parameter/parameter.stamp
 build parameter_notes: phony obj/base/startup/frameworks/syspara_lite/parameter/parameter_notes.stamp
 build run_wifiiot_scons: phony obj/vendor/hisi/hi3861/hi3861/run_wifiiot_scons.stamp
@@ -46,7 +50,6 @@ build samgr_adapter: phony ./libs/libsamgr_adapter.a
 build samgr_lite_ndk: phony obj/foundation/distributedschedule/services/samgr_lite/samgr_lite_ndk.stamp
 build samgr_source: phony ./libs/libsamgr_source.a
 build sdk: phony obj/vendor/hisi/hi3861/hi3861/sdk.stamp
-build sensing_demo: phony ./libs/libsensing_demo.a
 build softbus: phony obj/foundation/communication/services/softbus_lite/softbus.stamp
 build softbus_lite_ndk: phony obj/foundation/communication/services/softbus_lite/softbus_lite_ndk.stamp
 build startup: phony obj/applications/sample/wifi-iot/app/startup/startup.stamp
@@ -65,7 +68,7 @@ build wifiservice_ndk: phony obj/vendor/hisi/hi3861/hi3861_adapter/hals/communic
 build xdevice: phony obj/test/xdevice/xdevice.stamp
 build applications/sample/wifi-iot/app$:app: phony obj/applications/sample/wifi-iot/app/app.stamp
 build applications/sample/wifi-iot/app: phony obj/applications/sample/wifi-iot/app/app.stamp
-build applications/sample/wifi-iot/app/iothardware$:sensing_demo: phony ./libs/libsensing_demo.a
+build applications/sample/wifi-iot/app/MQTT$:mqtt_test_at: phony ./libs/libmqtt_test_at.a
 build applications/sample/wifi-iot/app/my_first_app$:myapp: phony ./libs/libmyapp.a
 build applications/sample/wifi-iot/app/startup$:startup: phony obj/applications/sample/wifi-iot/app/startup/startup.stamp
 build applications/sample/wifi-iot/app/startup: phony obj/applications/sample/wifi-iot/app/startup/startup.stamp
@@ -124,6 +127,9 @@ build test/xts/tools: phony obj/test/xts/tools/tools.stamp
 build third_party/cJSON$:cjson_ndk: phony obj/third_party/cJSON/cjson_ndk.stamp
 build third_party/cJSON$:cjson_shared: phony obj/third_party/cJSON/cjson_shared.stamp
 build third_party/cJSON$:cjson_static: phony ./libs/libcjson_static.a
+build third_party/pahomqtt$:pahomqtt_ndk: phony obj/third_party/pahomqtt/pahomqtt_ndk.stamp
+build third_party/pahomqtt$:pahomqtt_shared: phony obj/third_party/pahomqtt/pahomqtt_shared.stamp
+build third_party/pahomqtt$:pahomqtt_static: phony ./libs/libpahomqtt_static.a
 build utils/native/lite/file$:file: phony obj/utils/native/lite/file/file.stamp
 build utils/native/lite/file: phony obj/utils/native/lite/file/file.stamp
 build utils/native/lite/file$:native_file: phony ./libs/libnative_file.a
@@ -143,7 +149,7 @@ build vendor/huawei/wifi-iot/hals/utils/token$:hal_token_static: phony ./libs/li
 
 build all: phony $
     obj/applications/sample/wifi-iot/app/app.stamp $
-    ./libs/libsensing_demo.a $
+    ./libs/libmqtt_test_at.a $
     ./libs/libmyapp.a $
     obj/applications/sample/wifi-iot/app/startup/startup.stamp $
     ./libs/libhilog_lite.a $
@@ -188,6 +194,9 @@ build all: phony $
     obj/third_party/cJSON/cjson_ndk.stamp $
     obj/third_party/cJSON/cjson_shared.stamp $
     ./libs/libcjson_static.a $
+    obj/third_party/pahomqtt/pahomqtt_ndk.stamp $
+    obj/third_party/pahomqtt/pahomqtt_shared.stamp $
+    ./libs/libpahomqtt_static.a $
     obj/utils/native/lite/file/file.stamp $
     ./libs/libnative_file.a $
     obj/utils/native/lite/kv_store/kv_store.stamp $

@@ -17,6 +17,7 @@ lite_component("app") {
     features = [
         "startup",
         "my_first_app:myapp",
-        "iothardware:sensing_demo"
+        #"iothardware:sensing_demo"
+        "MQTT:mqtt_test_at"
     ]
 }
