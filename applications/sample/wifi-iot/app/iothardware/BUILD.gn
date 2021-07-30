@@ -25,16 +25,18 @@
 # OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-static_library("sensing_demo") {
-    sources = [
-         "colorful_light_demo.c",
-        # "oled_demo.c", "oled_ssd1306.c",
-        #"environment_demo.c", "oled_ssd1306.c", "aht20.c"
-    ]
 
+
+static_library("net_demo") {
+    sources = ["udp_server_test.c"]
+    sources += ["demo_entry_cmsis.c", "wifi_connecter.c"]
     include_dirs = [
         "//utils/native/lite/include",
         "//kernel/liteos_m/components/cmsis/2.0",
+        "//foundation/communication/interfaces/kits/wifi_lite/wifiservice",
+        "//vendor/hisi/hi3861/hi3861/third_party/lwip_sack/include/",
         "//base/iot_hardware/interfaces/kits/wifiiot_lite",
     ]
 }
+
+

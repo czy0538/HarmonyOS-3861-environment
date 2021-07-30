@@ -38,6 +38,7 @@ build kv_store: phony obj/utils/native/lite/kv_store/kv_store.stamp
 build myapp: phony ./libs/libmyapp.a
 build native_file: phony ./libs/libnative_file.a
 build ndk: phony obj/build/lite/ndk.stamp
+build net_demo: phony ./libs/libnet_demo.a
 build ohos: phony obj/build/lite/ohos.stamp
 build parameter: phony obj/base/startup/frameworks/syspara_lite/parameter/parameter.stamp
 build parameter_notes: phony obj/base/startup/frameworks/syspara_lite/parameter/parameter_notes.stamp
@@ -46,7 +47,6 @@ build samgr_adapter: phony ./libs/libsamgr_adapter.a
 build samgr_lite_ndk: phony obj/foundation/distributedschedule/services/samgr_lite/samgr_lite_ndk.stamp
 build samgr_source: phony ./libs/libsamgr_source.a
 build sdk: phony obj/vendor/hisi/hi3861/hi3861/sdk.stamp
-build sensing_demo: phony ./libs/libsensing_demo.a
 build softbus: phony obj/foundation/communication/services/softbus_lite/softbus.stamp
 build softbus_lite_ndk: phony obj/foundation/communication/services/softbus_lite/softbus_lite_ndk.stamp
 build startup: phony obj/applications/sample/wifi-iot/app/startup/startup.stamp
@@ -65,7 +65,7 @@ build wifiservice_ndk: phony obj/vendor/hisi/hi3861/hi3861_adapter/hals/communic
 build xdevice: phony obj/test/xdevice/xdevice.stamp
 build applications/sample/wifi-iot/app$:app: phony obj/applications/sample/wifi-iot/app/app.stamp
 build applications/sample/wifi-iot/app: phony obj/applications/sample/wifi-iot/app/app.stamp
-build applications/sample/wifi-iot/app/iothardware$:sensing_demo: phony ./libs/libsensing_demo.a
+build applications/sample/wifi-iot/app/iothardware$:net_demo: phony ./libs/libnet_demo.a
 build applications/sample/wifi-iot/app/my_first_app$:myapp: phony ./libs/libmyapp.a
 build applications/sample/wifi-iot/app/startup$:startup: phony obj/applications/sample/wifi-iot/app/startup/startup.stamp
 build applications/sample/wifi-iot/app/startup: phony obj/applications/sample/wifi-iot/app/startup/startup.stamp
@@ -143,7 +143,7 @@ build vendor/huawei/wifi-iot/hals/utils/token$:hal_token_static: phony ./libs/li
 
 build all: phony $
     obj/applications/sample/wifi-iot/app/app.stamp $
-    ./libs/libsensing_demo.a $
+    ./libs/libnet_demo.a $
     ./libs/libmyapp.a $
     obj/applications/sample/wifi-iot/app/startup/startup.stamp $
     ./libs/libhilog_lite.a $
