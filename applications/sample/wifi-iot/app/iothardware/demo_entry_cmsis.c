@@ -51,8 +51,9 @@ static void NetDemoTask(void *arg)
 
     int netId = ConnectToHotspot(&config);
 
-    int timeout = 10;
-    while (timeout--) {
+    int timeout = 0;
+    while (timeout--)
+    {
         printf("After %d seconds, I will start %s test!\r\n", timeout, GetNetDemoName());
         osDelay(100);
     }
@@ -76,10 +77,10 @@ static void NetDemoEntry(void)
     attr.stack_size = 10240;
     attr.priority = osPriorityNormal;
 
-    if (osThreadNew(NetDemoTask, NULL, &attr) == NULL) {
+    if (osThreadNew(NetDemoTask, NULL, &attr) == NULL)
+    {
         printf("[NetDemoEntry] Falied to create NetDemoTask!\n");
     }
 }
 
 SYS_RUN(NetDemoEntry);
-
