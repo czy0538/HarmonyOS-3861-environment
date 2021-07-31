@@ -309,10 +309,9 @@ void EnvironmentDemo_wifi(void)
 
 
 static char message[128] = "";
-void UdpServerTest(unsigned short port)
+void UdpServerTest(void)
 {
-
-    printf("port:%u\n",port);//没有实际意义，骗编译器用的
+    EnvironmentDemo_wifi();//启动环境监测
     printf("[MQTT]Start MQTT\r\n");
     if (mqtt_init() == 1)
     {
@@ -320,9 +319,7 @@ void UdpServerTest(unsigned short port)
         mqtt_subscribe("substopic233"); //设置订阅
 
     }
-
     //new
-    EnvironmentDemo_wifi();
     while (1)
     {
         //getEnvData

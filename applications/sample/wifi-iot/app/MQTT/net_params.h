@@ -41,12 +41,5 @@
 #define PARAM_HOTSPOT_TYPE WIFI_SEC_TYPE_PSK // defined in wifi_device_config.h
 #endif
 
-#ifndef PARAM_SERVER_ADDR
-#define PARAM_SERVER_ADDR "192.168.1.233" //没用 放着吧
-#endif
-
-#ifndef PARAM_SERVER_PORT
-#define PARAM_SERVER_PORT 5678
-#endif
 
 #endif // NET_PARAMS_H

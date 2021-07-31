@@ -41,23 +41,13 @@ const char* GetNetDemoName(void);
         return demoName; \
     }
 
-#define CLIENT_TEST_DEMO(testFunc) \
-    void NetDemoTest(unsigned short port, const char* host) { \
-        (void) host; \
-        printf("%s start\r\n", #testFunc); \
-        printf("I will connect to %s:%d\r\n", host, port); \
-        testFunc(host, port); \
-        printf("%s done!\r\n", #testFunc); \
-    } \
-    IMPL_GET_NET_DEMO_NAME(testFunc)
-
 //server会执行到这里
 #define SERVER_TEST_DEMO(testFunc) \
     void NetDemoTest(unsigned short port, const char* host) { \
         (void) host; \
+        (void) port; \
         printf("%s start\r\n", #testFunc); \
-        printf("I will listen on :%d\r\n", port); \
-        testFunc(port); \
+        testFunc(); \
         printf("%s done!\r\n", #testFunc); \
     } \
     IMPL_GET_NET_DEMO_NAME(testFunc)

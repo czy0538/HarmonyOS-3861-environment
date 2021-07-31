@@ -57,8 +57,7 @@ static void NetDemoTask(void *arg)
         osDelay(100);
     }
 
-    NetDemoTest(PARAM_SERVER_PORT, PARAM_SERVER_ADDR);//测试网络连接的函数
-
+    NetDemoTest(0, 0);//测试网络连接的函数
     printf("disconnect to AP ...\r\n");
     DisconnectWithHotspot(netId);
     printf("disconnect to AP done!\r\n");
