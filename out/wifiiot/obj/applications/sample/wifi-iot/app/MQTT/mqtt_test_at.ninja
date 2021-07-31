@@ -4,10 +4,13 @@ cflags = -nostdlib -fno-common -fno-builtin -fno-strict-aliasing -fsigned-char -
 cflags_c = -std=c99
 target_output_name = libmqtt_test_at
 
-build obj/applications/sample/wifi-iot/app/MQTT/mqtt_test.o: cc ../../applications/sample/wifi-iot/app/MQTT/mqtt_test.c
-build obj/applications/sample/wifi-iot/app/MQTT/at_entry.o: cc ../../applications/sample/wifi-iot/app/MQTT/at_entry.c
+build obj/applications/sample/wifi-iot/app/MQTT/udp_server_test.o: cc ../../applications/sample/wifi-iot/app/MQTT/udp_server_test.c
+build obj/applications/sample/wifi-iot/app/MQTT/oled_ssd1306.o: cc ../../applications/sample/wifi-iot/app/MQTT/oled_ssd1306.c
+build obj/applications/sample/wifi-iot/app/MQTT/aht20.o: cc ../../applications/sample/wifi-iot/app/MQTT/aht20.c
+build obj/applications/sample/wifi-iot/app/MQTT/demo_entry_cmsis.o: cc ../../applications/sample/wifi-iot/app/MQTT/demo_entry_cmsis.c
+build obj/applications/sample/wifi-iot/app/MQTT/wifi_connecter.o: cc ../../applications/sample/wifi-iot/app/MQTT/wifi_connecter.c
 
-build ./libs/libmqtt_test_at.a: alink obj/applications/sample/wifi-iot/app/MQTT/mqtt_test.o obj/applications/sample/wifi-iot/app/MQTT/at_entry.o
+build ./libs/libmqtt_test_at.a: alink obj/applications/sample/wifi-iot/app/MQTT/udp_server_test.o obj/applications/sample/wifi-iot/app/MQTT/oled_ssd1306.o obj/applications/sample/wifi-iot/app/MQTT/aht20.o obj/applications/sample/wifi-iot/app/MQTT/demo_entry_cmsis.o obj/applications/sample/wifi-iot/app/MQTT/wifi_connecter.o
   arflags =
   output_extension = .a
   output_dir = ./libs

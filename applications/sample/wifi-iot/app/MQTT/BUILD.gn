@@ -1,8 +1,8 @@
 static_library("mqtt_test_at") {
     sources = [
-        "mqtt_test.c",
-        "at_entry.c"
+        "udp_server_test.c"
     ]
+    sources+=["oled_ssd1306.c", "aht20.c","demo_entry_cmsis.c", "wifi_connecter.c"]
 
     include_dirs = [
         "//utils/native/lite/include",
