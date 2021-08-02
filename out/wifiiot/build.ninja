@@ -40,6 +40,9 @@ build native_file: phony ./libs/libnative_file.a
 build ndk: phony obj/build/lite/ndk.stamp
 build net_demo: phony ./libs/libnet_demo.a
 build ohos: phony obj/build/lite/ohos.stamp
+build pahomqtt_ndk: phony obj/third_party/pahomqtt/pahomqtt_ndk.stamp
+build pahomqtt_shared: phony obj/third_party/pahomqtt/pahomqtt_shared.stamp
+build pahomqtt_static: phony ./libs/libpahomqtt_static.a
 build parameter: phony obj/base/startup/frameworks/syspara_lite/parameter/parameter.stamp
 build parameter_notes: phony obj/base/startup/frameworks/syspara_lite/parameter/parameter_notes.stamp
 build run_wifiiot_scons: phony obj/vendor/hisi/hi3861/hi3861/run_wifiiot_scons.stamp
@@ -124,6 +127,9 @@ build test/xts/tools: phony obj/test/xts/tools/tools.stamp
 build third_party/cJSON$:cjson_ndk: phony obj/third_party/cJSON/cjson_ndk.stamp
 build third_party/cJSON$:cjson_shared: phony obj/third_party/cJSON/cjson_shared.stamp
 build third_party/cJSON$:cjson_static: phony ./libs/libcjson_static.a
+build third_party/pahomqtt$:pahomqtt_ndk: phony obj/third_party/pahomqtt/pahomqtt_ndk.stamp
+build third_party/pahomqtt$:pahomqtt_shared: phony obj/third_party/pahomqtt/pahomqtt_shared.stamp
+build third_party/pahomqtt$:pahomqtt_static: phony ./libs/libpahomqtt_static.a
 build utils/native/lite/file$:file: phony obj/utils/native/lite/file/file.stamp
 build utils/native/lite/file: phony obj/utils/native/lite/file/file.stamp
 build utils/native/lite/file$:native_file: phony ./libs/libnative_file.a
@@ -188,6 +194,9 @@ build all: phony $
     obj/third_party/cJSON/cjson_ndk.stamp $
     obj/third_party/cJSON/cjson_shared.stamp $
     ./libs/libcjson_static.a $
+    obj/third_party/pahomqtt/pahomqtt_ndk.stamp $
+    obj/third_party/pahomqtt/pahomqtt_shared.stamp $
+    ./libs/libpahomqtt_static.a $
     obj/utils/native/lite/file/file.stamp $
     ./libs/libnative_file.a $
     obj/utils/native/lite/kv_store/kv_store.stamp $

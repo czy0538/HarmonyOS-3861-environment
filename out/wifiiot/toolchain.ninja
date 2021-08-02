@@ -100,6 +100,9 @@ build obj/test/xts/tools/tools.stamp: stamp
 build obj/third_party/cJSON/cjson_ndk.stamp: stamp ./libs/libcjson_static.a
 build obj/third_party/cJSON/cjson_shared.stamp: stamp
 subninja obj/third_party/cJSON/cjson_static.ninja
+build obj/third_party/pahomqtt/pahomqtt_ndk.stamp: stamp ./libs/libpahomqtt_static.a
+build obj/third_party/pahomqtt/pahomqtt_shared.stamp: stamp
+subninja obj/third_party/pahomqtt/pahomqtt_static.ninja
 build obj/utils/native/lite/file/file.stamp: stamp ./libs/libnative_file.a
 subninja obj/utils/native/lite/file/native_file.ninja
 build obj/utils/native/lite/kv_store/kv_store.stamp: stamp ./libs/libutils_kv_store.a
@@ -112,7 +115,7 @@ rule __vendor_hisi_hi3861_hi3861_run_wifiiot_scons___build_lite_toolchain_linux_
 build obj/vendor/hisi/hi3861/hi3861/run_wifiiot_scons_build_ext_components.txt: __vendor_hisi_hi3861_hi3861_run_wifiiot_scons___build_lite_toolchain_linux_x86_64_riscv32_gcc__rule | ../../build/lite/build_ext_components.py obj/base/security/frameworks/hichainsdk_lite/hichainsdk.stamp obj/build/lite/ohos.stamp obj/vendor/hisi/hi3861/hi3861/sdk.stamp
 
 build obj/vendor/hisi/hi3861/hi3861/run_wifiiot_scons.stamp: stamp obj/vendor/hisi/hi3861/hi3861/run_wifiiot_scons_build_ext_components.txt
-build obj/vendor/hisi/hi3861/hi3861/sdk.stamp: stamp ./libs/libcmsis.a ./libs/libkal.a ./libs/libcjson_static.a
+build obj/vendor/hisi/hi3861/hi3861/sdk.stamp: stamp ./libs/libcmsis.a ./libs/libkal.a ./libs/libcjson_static.a ./libs/libpahomqtt_static.a
 build obj/vendor/hisi/hi3861/hi3861/wifiiot_sdk.stamp: stamp obj/vendor/hisi/hi3861/hi3861/sdk.stamp
 subninja obj/vendor/hisi/hi3861/hi3861_adapter/hals/communication/wifi_lite/wifiservice/wifiservice.ninja
 build obj/vendor/hisi/hi3861/hi3861_adapter/hals/communication/wifi_lite/wifiservice/wifiservice_ndk.stamp: stamp ./libs/libwifiservice.a
