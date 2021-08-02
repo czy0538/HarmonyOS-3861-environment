@@ -46,7 +46,7 @@
 #include <sys/types.h>  // for AF_INET SOCK_STREAM
 #include <sys/socket.h> // for socket
 #include <netinet/in.h> // for sockaddr_in
-#include <arpa/inet.h> // for inet_pton
+#include <arpa/inet.h>  // for inet_pton
 #elif HAVE_LWIP_SOCKET
 #include "lwip/sockets.h"
 #ifndef close
@@ -56,4 +56,4 @@
 #error "Unknow platform!"
 #endif
 
-#endif  // NET_COMMON_H
+#endif // NET_COMMON_H

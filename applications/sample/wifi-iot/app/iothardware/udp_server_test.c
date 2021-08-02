@@ -42,6 +42,9 @@
 #include "wifiiot_adc.h"
 #include "wifiiot_errno.h"
 
+#include "MQTTPacket.h"
+#include "transport.h"
+
 //传感器部分
 #define HUMAN_SENSOR_CHAN_NAME WIFI_IOT_ADC_CHANNEL_3
 #define LIGHT_SENSOR_CHAN_NAME WIFI_IOT_ADC_CHANNEL_4
@@ -70,6 +73,125 @@
 
 unsigned short duty[NUM_SENSORS] = {0, 0}; //处理后pwm
 unsigned short data[NUM_SENSORS] = {0, 0}; //光照
+
+
+int mqtt_rc = 0;
+int mqtt_sock = 0;
+int mqtt_len = 0;
+unsigned char mqtt_buf[200];
+int mqtt_buflen = sizeof(mqtt_buf);
+int mqtt_req_qos = 0;
+int mqtt_msgid = 1;
+int toStop = 0;
+MQTTString topicString = MQTTString_initializer;
+
+void mqtt_exit(void)
+{
+    transport_close(mqtt_sock);
+    mqtt_rc = mqtt_rc;
+    printf("[MQTT] ERROR EXIT\n");
+}
+
+void mqtt_task(char *payload)
+{
+
+    int payloadlen = strlen(payload);
+
+    if (MQTTPacket_read(mqtt_buf, mqtt_buflen, transport_getdata) == PUBLISH)
+    {
+        unsigned char dup;
+        int qos;
+        unsigned char retained;
+        unsigned short msgid;
+        int payloadlen_in;
+        unsigned char *payload_in;
+        int rc;
+        MQTTString receivedTopic;
+        rc = MQTTDeserialize_publish(&dup, &qos, &retained, &msgid, &receivedTopic,
+                                     &payload_in, &payloadlen_in, mqtt_buf, mqtt_buflen); // 发送数据
+        printf("message arrived %.*s\n", payloadlen_in, payload_in);
+
+        mqtt_rc = rc;
+    }
+
+    printf("publishing reading\n");
+    mqtt_len = MQTTSerialize_publish(mqtt_buf, mqtt_buflen, 0, 0, 0, 0, topicString, (unsigned char *)payload, payloadlen);
+    mqtt_rc = transport_sendPacketBuffer(mqtt_sock, mqtt_buf, mqtt_len);
+
+    osDelay(100);
+}
+
+int mqtt_subscribe(char *topic)
+{ // MQTT订阅
+    /* subscribe */
+    topicString.cstring = topic;
+    mqtt_len = MQTTSerialize_subscribe(mqtt_buf, mqtt_buflen, 0, mqtt_msgid, 1, &topicString, &mqtt_req_qos); // MQTT订阅
+    mqtt_rc = transport_sendPacketBuffer(mqtt_sock, mqtt_buf, mqtt_len);                                      // 传输发送缓冲区
+    if (MQTTPacket_read(mqtt_buf, mqtt_buflen, transport_getdata) == SUBACK) /* wait for suback */            // 等待订阅返回
+    {
+        unsigned short submsgid;
+        int subcount;
+        int granted_qos;
+
+        mqtt_rc = MQTTDeserialize_suback(&submsgid, 1, &subcount, &granted_qos, mqtt_buf, mqtt_buflen);
+        if (granted_qos != 0)
+        {
+            printf("granted qos != 0, %d\n", granted_qos);
+            mqtt_exit();
+            return 0;
+        }
+
+        return 1;
+    }
+    else
+    {
+        mqtt_exit();
+        return 0;
+    }
+}
+
+int mqtt_init(void)
+{ // MQTT初始化开始连接
+    MQTTPacket_connectData data = MQTTPacket_connectData_initializer;
+    char *host = "broker-cn.emqx.io"; // 地址
+    int port = 1883;                  // 端口
+
+    mqtt_sock = transport_open(host, port);
+    if (mqtt_sock < 0)
+    {
+        return mqtt_sock;
+    }
+
+    data.clientID.cstring = "hitclusterme"; // ClientID
+    data.keepAliveInterval = 20;
+    data.cleansession = 1;
+    data.username.cstring = ""; // 用户名
+    data.password.cstring = ""; // 密码
+
+    printf("[MQTT]Sending to hostname %s port %d\n", host, port);
+
+    mqtt_len = MQTTSerialize_connect(mqtt_buf, mqtt_buflen, &data);      // 开始连接
+    mqtt_rc = transport_sendPacketBuffer(mqtt_sock, mqtt_buf, mqtt_len); // 发送缓冲区
+
+    if (MQTTPacket_read(mqtt_buf, mqtt_buflen, transport_getdata) == CONNACK)
+    { // 等待链接返回
+        unsigned char sessionPresent, connack_rc;
+
+        if (MQTTDeserialize_connack(&sessionPresent, &connack_rc, mqtt_buf, mqtt_buflen) != 1 || connack_rc != 0)
+        {
+            printf("Unable to connect, return code %d\n", connack_rc);
+            mqtt_exit();
+            return 0;
+        }
+    }
+    else
+    {
+        mqtt_exit();
+        return 0;
+    }
+
+    return 1;
+}
 
 void CorlorfulLightTask(void *arg)
 {
@@ -159,65 +281,24 @@ void ColorfulLightDemo(void)
     }
 }
 
-//udp部分
+
 static char message[128] = "";
-void UdpServerTest(unsigned short port)
+void UdpServerTest(void)
 {
-    ColorfulLightDemo();
-    ssize_t retval = 0;
-    int sockfd = socket(AF_INET, SOCK_DGRAM, 0); // UDP socket
-
-    struct sockaddr_in clientAddr = {0};
-    socklen_t clientAddrLen = sizeof(clientAddr);
-    struct sockaddr_in serverAddr = {0};
-    serverAddr.sin_family = AF_INET;
-    serverAddr.sin_port = htons(port);
-    serverAddr.sin_addr.s_addr = htonl(INADDR_ANY);
-
-    retval = bind(sockfd, (struct sockaddr *)&serverAddr, sizeof(serverAddr));
-    if (retval < 0)
+    ColorfulLightDemo();//启动板子
+    printf("[MQTT]Start MQTT\r\n");
+    if (mqtt_init() == 1)
     {
-        printf("bind failed, %ld!\r\n", retval);
-        goto do_cleanup;
+        printf("[MQTT]MQTT Connect\r\n");
+        mqtt_subscribe("substopic233"); //设置订阅
     }
-    printf("bind to port %d success!\r\n", port);
-
     while (1)
     {
-
-        retval = recvfrom(sockfd, message, sizeof(message), 0, (struct sockaddr *)&clientAddr, &clientAddrLen);
-        if (retval < 0)
-        {
-            printf("recvfrom failed, %ld!\r\n", retval);
-            goto do_cleanup;
-        }
-        printf("recv message {%s} %ld done!\r\n", message, retval);
-        printf("peer info: ipaddr = %s, port = %d\r\n", inet_ntoa(clientAddr.sin_addr), ntohs(clientAddr.sin_port));
-        if (strncmp(message, "exit", 4) == 0)
-        {
-            strcpy(message, "exit!");
-            retval = sendto(sockfd, message, strlen(message), 0, (struct sockaddr *)&clientAddr, sizeof(clientAddr));
-            goto do_cleanup;
-        }
-        //unsigned2char
         snprintf(message, sizeof(message), "light: %u\n", data[1]); //float2str
-
-        retval = sendto(sockfd, message, strlen(message), 0, (struct sockaddr *)&clientAddr, sizeof(clientAddr));
-        if (retval <= 0)
-        {
-            printf("send failed, %ld!\r\n", retval);
-            goto do_cleanup;
-        }
-        printf("send message {%s} %ld done!\r\n", message, retval);
+        mqtt_task(message);
         memset(message, 0, sizeof(message));
     }
 
-    //end new
-
-do_cleanup:
-    printf("do_cleanup...\r\n");
-
-    close(sockfd);
 }
 
 SERVER_TEST_DEMO(UdpServerTest);
