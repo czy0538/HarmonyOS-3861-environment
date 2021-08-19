@@ -34117,473 +34117,473 @@ Linker script and memory map
                 0x00000000004a41cc       0x3e ohos/libs/libmqtt_test_at.a(mqtt.o)
                 0x00000000004a41cc                mqtt_exit
  .text.mqtt_onmessage
-                0x00000000004a420a      0x138 ohos/libs/libmqtt_test_at.a(mqtt.o)
+                0x00000000004a420a      0x13c ohos/libs/libmqtt_test_at.a(mqtt.o)
                 0x00000000004a420a                mqtt_onmessage
  .text.mqttreceTask
-                0x00000000004a4342       0x30 ohos/libs/libmqtt_test_at.a(mqtt.o)
-                0x00000000004a4342                mqttreceTask
+                0x00000000004a4346       0x30 ohos/libs/libmqtt_test_at.a(mqtt.o)
+                0x00000000004a4346                mqttreceTask
  .text.mqtt_publish
-                0x00000000004a4372      0x100 ohos/libs/libmqtt_test_at.a(mqtt.o)
-                0x00000000004a4372                mqtt_publish
+                0x00000000004a4376      0x100 ohos/libs/libmqtt_test_at.a(mqtt.o)
+                0x00000000004a4376                mqtt_publish
  .text.mqtt_subscribe
-                0x00000000004a4472       0xda ohos/libs/libmqtt_test_at.a(mqtt.o)
-                0x00000000004a4472                mqtt_subscribe
+                0x00000000004a4476       0xda ohos/libs/libmqtt_test_at.a(mqtt.o)
+                0x00000000004a4476                mqtt_subscribe
  .text.mqtt_init
-                0x00000000004a454c      0x12c ohos/libs/libmqtt_test_at.a(mqtt.o)
-                0x00000000004a454c                mqtt_init
+                0x00000000004a4550      0x12c ohos/libs/libmqtt_test_at.a(mqtt.o)
+                0x00000000004a4550                mqtt_init
  .text.ConvertToVoltage
-                0x00000000004a4678       0x60 ohos/libs/libmqtt_test_at.a(mqtt.o)
-                0x00000000004a4678                ConvertToVoltage
+                0x00000000004a467c       0x60 ohos/libs/libmqtt_test_at.a(mqtt.o)
+                0x00000000004a467c                ConvertToVoltage
  .text.EnvironmentTask
-                0x00000000004a46d8      0x1e2 ohos/libs/libmqtt_test_at.a(mqtt.o)
-                0x00000000004a46d8                EnvironmentTask
+                0x00000000004a46dc      0x1e2 ohos/libs/libmqtt_test_at.a(mqtt.o)
+                0x00000000004a46dc                EnvironmentTask
  .text.EnvironmentDemo_wifi
-                0x00000000004a48ba       0x76 ohos/libs/libmqtt_test_at.a(mqtt.o)
-                0x00000000004a48ba                EnvironmentDemo_wifi
+                0x00000000004a48be       0x76 ohos/libs/libmqtt_test_at.a(mqtt.o)
+                0x00000000004a48be                EnvironmentDemo_wifi
  .text.mqttrec_Thread
-                0x00000000004a4930       0x60 ohos/libs/libmqtt_test_at.a(mqtt.o)
-                0x00000000004a4930                mqttrec_Thread
- .text.entry    0x00000000004a4990      0x102 ohos/libs/libmqtt_test_at.a(mqtt.o)
-                0x00000000004a4990                entry
+                0x00000000004a4934       0x60 ohos/libs/libmqtt_test_at.a(mqtt.o)
+                0x00000000004a4934                mqttrec_Thread
+ .text.entry    0x00000000004a4994      0x102 ohos/libs/libmqtt_test_at.a(mqtt.o)
+                0x00000000004a4994                entry
  .text.NetDemoTest
-                0x00000000004a4a92       0x2a ohos/libs/libmqtt_test_at.a(mqtt.o)
-                0x00000000004a4a92                NetDemoTest
+                0x00000000004a4a96       0x2a ohos/libs/libmqtt_test_at.a(mqtt.o)
+                0x00000000004a4a96                NetDemoTest
  .text.GetNetDemoName
-                0x00000000004a4abc       0x2c ohos/libs/libmqtt_test_at.a(mqtt.o)
-                0x00000000004a4abc                GetNetDemoName
+                0x00000000004a4ac0       0x2c ohos/libs/libmqtt_test_at.a(mqtt.o)
+                0x00000000004a4ac0                GetNetDemoName
  .text.I2cWiteByte
-                0x00000000004a4ae8       0x48 ohos/libs/libmqtt_test_at.a(oled_ssd1306.o)
+                0x00000000004a4aec       0x48 ohos/libs/libmqtt_test_at.a(oled_ssd1306.o)
  .text.WriteCmd
-                0x00000000004a4b30       0x2c ohos/libs/libmqtt_test_at.a(oled_ssd1306.o)
+                0x00000000004a4b34       0x2c ohos/libs/libmqtt_test_at.a(oled_ssd1306.o)
  .text.WriteData
-                0x00000000004a4b5c       0x2e ohos/libs/libmqtt_test_at.a(oled_ssd1306.o)
+                0x00000000004a4b60       0x2e ohos/libs/libmqtt_test_at.a(oled_ssd1306.o)
  .text.OledInit
-                0x00000000004a4b8a       0x62 ohos/libs/libmqtt_test_at.a(oled_ssd1306.o)
-                0x00000000004a4b8a                OledInit
+                0x00000000004a4b8e       0x62 ohos/libs/libmqtt_test_at.a(oled_ssd1306.o)
+                0x00000000004a4b8e                OledInit
  .text.OledSetPosition
-                0x00000000004a4bec       0x46 ohos/libs/libmqtt_test_at.a(oled_ssd1306.o)
-                0x00000000004a4bec                OledSetPosition
+                0x00000000004a4bf0       0x46 ohos/libs/libmqtt_test_at.a(oled_ssd1306.o)
+                0x00000000004a4bf0                OledSetPosition
  .text.OledFillScreen
-                0x00000000004a4c32       0x5e ohos/libs/libmqtt_test_at.a(oled_ssd1306.o)
-                0x00000000004a4c32                OledFillScreen
+                0x00000000004a4c36       0x5e ohos/libs/libmqtt_test_at.a(oled_ssd1306.o)
+                0x00000000004a4c36                OledFillScreen
  .text.OledShowChar
-                0x00000000004a4c90       0xc6 ohos/libs/libmqtt_test_at.a(oled_ssd1306.o)
-                0x00000000004a4c90                OledShowChar
+                0x00000000004a4c94       0xc6 ohos/libs/libmqtt_test_at.a(oled_ssd1306.o)
+                0x00000000004a4c94                OledShowChar
  .text.OledShowString
-                0x00000000004a4d56       0x78 ohos/libs/libmqtt_test_at.a(oled_ssd1306.o)
-                0x00000000004a4d56                OledShowString
+                0x00000000004a4d5a       0x78 ohos/libs/libmqtt_test_at.a(oled_ssd1306.o)
+                0x00000000004a4d5a                OledShowString
  .text.OnWifiScanStateChanged
-                0x00000000004a4dce       0x40 ohos/libs/libmqtt_test_at.a(wifi_connecter.o)
+                0x00000000004a4dd2       0x40 ohos/libs/libmqtt_test_at.a(wifi_connecter.o)
  .text.PrintLinkedInfo
-                0x00000000004a4e0e       0x7a ohos/libs/libmqtt_test_at.a(wifi_connecter.o)
+                0x00000000004a4e12       0x7a ohos/libs/libmqtt_test_at.a(wifi_connecter.o)
  .text.OnWifiConnectionChanged
-                0x00000000004a4e88       0x64 ohos/libs/libmqtt_test_at.a(wifi_connecter.o)
+                0x00000000004a4e8c       0x64 ohos/libs/libmqtt_test_at.a(wifi_connecter.o)
  .text.ConnectToHotspot
-                0x00000000004a4eec      0x138 ohos/libs/libmqtt_test_at.a(wifi_connecter.o)
-                0x00000000004a4eec                ConnectToHotspot
+                0x00000000004a4ef0      0x138 ohos/libs/libmqtt_test_at.a(wifi_connecter.o)
+                0x00000000004a4ef0                ConnectToHotspot
  .text.DisconnectWithHotspot
-                0x00000000004a5024       0x9a ohos/libs/libmqtt_test_at.a(wifi_connecter.o)
-                0x00000000004a5024                DisconnectWithHotspot
+                0x00000000004a5028       0x9a ohos/libs/libmqtt_test_at.a(wifi_connecter.o)
+                0x00000000004a5028                DisconnectWithHotspot
  .text.HelloWorld
-                0x00000000004a50be       0x30 ohos/libs/libmyapp.a(hello_world.o)
-                0x00000000004a50be                HelloWorld
+                0x00000000004a50c2       0x30 ohos/libs/libmyapp.a(hello_world.o)
+                0x00000000004a50c2                HelloWorld
  .text.UtilsFileOpen
-                0x00000000004a50ee       0x28 ohos/libs/libnative_file.a(file.o)
-                0x00000000004a50ee                UtilsFileOpen
+                0x00000000004a50f2       0x28 ohos/libs/libnative_file.a(file.o)
+                0x00000000004a50f2                UtilsFileOpen
  .text.UtilsFileRead
-                0x00000000004a5116       0x28 ohos/libs/libnative_file.a(file.o)
-                0x00000000004a5116                UtilsFileRead
+                0x00000000004a511a       0x28 ohos/libs/libnative_file.a(file.o)
+                0x00000000004a511a                UtilsFileRead
  .text.UtilsFileWrite
-                0x00000000004a513e       0x28 ohos/libs/libnative_file.a(file.o)
-                0x00000000004a513e                UtilsFileWrite
+                0x00000000004a5142       0x28 ohos/libs/libnative_file.a(file.o)
+                0x00000000004a5142                UtilsFileWrite
  .text.UtilsFileSeek
-                0x00000000004a5166       0x28 ohos/libs/libnative_file.a(file.o)
-                0x00000000004a5166                UtilsFileSeek
+                0x00000000004a516a       0x28 ohos/libs/libnative_file.a(file.o)
+                0x00000000004a516a                UtilsFileSeek
  .text.MQTTSerialize_connectLength
-                0x00000000004a518e       0xc2 ohos/libs/libpahomqtt_static.a(MQTTConnectClient.o)
-                0x00000000004a518e                MQTTSerialize_connectLength
+                0x00000000004a5192       0xc2 ohos/libs/libpahomqtt_static.a(MQTTConnectClient.o)
+                0x00000000004a5192                MQTTSerialize_connectLength
  .text.MQTTSerialize_connect
-                0x00000000004a5250      0x156 ohos/libs/libpahomqtt_static.a(MQTTConnectClient.o)
-                0x00000000004a5250                MQTTSerialize_connect
+                0x00000000004a5254      0x156 ohos/libs/libpahomqtt_static.a(MQTTConnectClient.o)
+                0x00000000004a5254                MQTTSerialize_connect
  .text.MQTTDeserialize_connack
-                0x00000000004a53a6       0x66 ohos/libs/libpahomqtt_static.a(MQTTConnectClient.o)
-                0x00000000004a53a6                MQTTDeserialize_connack
+                0x00000000004a53aa       0x66 ohos/libs/libpahomqtt_static.a(MQTTConnectClient.o)
+                0x00000000004a53aa                MQTTDeserialize_connack
  .text.MQTTDeserialize_publish
-                0x00000000004a540c       0xb2 ohos/libs/libpahomqtt_static.a(MQTTDeserializePublish.o)
-                0x00000000004a540c                MQTTDeserialize_publish
- .text.bufchar  0x00000000004a54be       0x5e ohos/libs/libpahomqtt_static.a(MQTTPacket.o)
-                0x00000000004a54be                bufchar
+                0x00000000004a5410       0xb2 ohos/libs/libpahomqtt_static.a(MQTTDeserializePublish.o)
+                0x00000000004a5410                MQTTDeserialize_publish
+ .text.bufchar  0x00000000004a54c2       0x5e ohos/libs/libpahomqtt_static.a(MQTTPacket.o)
+                0x00000000004a54c2                bufchar
  .text.MQTTPacket_encode
-                0x00000000004a551c       0x50 ohos/libs/libpahomqtt_static.a(MQTTPacket.o)
-                0x00000000004a551c                MQTTPacket_encode
+                0x00000000004a5520       0x50 ohos/libs/libpahomqtt_static.a(MQTTPacket.o)
+                0x00000000004a5520                MQTTPacket_encode
  .text.MQTTPacket_decode
-                0x00000000004a556c       0x6c ohos/libs/libpahomqtt_static.a(MQTTPacket.o)
-                0x00000000004a556c                MQTTPacket_decode
+                0x00000000004a5570       0x6c ohos/libs/libpahomqtt_static.a(MQTTPacket.o)
+                0x00000000004a5570                MQTTPacket_decode
  .text.MQTTPacket_len
-                0x00000000004a55d8       0x50 ohos/libs/libpahomqtt_static.a(MQTTPacket.o)
-                0x00000000004a55d8                MQTTPacket_len
+                0x00000000004a55dc       0x50 ohos/libs/libpahomqtt_static.a(MQTTPacket.o)
+                0x00000000004a55dc                MQTTPacket_len
  .text.MQTTPacket_decodeBuf
-                0x00000000004a5628       0x38 ohos/libs/libpahomqtt_static.a(MQTTPacket.o)
-                0x00000000004a5628                MQTTPacket_decodeBuf
- .text.readInt  0x00000000004a5660       0x38 ohos/libs/libpahomqtt_static.a(MQTTPacket.o)
-                0x00000000004a5660                readInt
+                0x00000000004a562c       0x38 ohos/libs/libpahomqtt_static.a(MQTTPacket.o)
+                0x00000000004a562c                MQTTPacket_decodeBuf
+ .text.readInt  0x00000000004a5664       0x38 ohos/libs/libpahomqtt_static.a(MQTTPacket.o)
+                0x00000000004a5664                readInt
  .text.readChar
-                0x00000000004a5698       0x30 ohos/libs/libpahomqtt_static.a(MQTTPacket.o)
-                0x00000000004a5698                readChar
+                0x00000000004a569c       0x30 ohos/libs/libpahomqtt_static.a(MQTTPacket.o)
+                0x00000000004a569c                readChar
  .text.writeChar
-                0x00000000004a56c8       0x30 ohos/libs/libpahomqtt_static.a(MQTTPacket.o)
-                0x00000000004a56c8                writeChar
+                0x00000000004a56cc       0x30 ohos/libs/libpahomqtt_static.a(MQTTPacket.o)
+                0x00000000004a56cc                writeChar
  .text.writeInt
-                0x00000000004a56f8       0x48 ohos/libs/libpahomqtt_static.a(MQTTPacket.o)
-                0x00000000004a56f8                writeInt
+                0x00000000004a56fc       0x48 ohos/libs/libpahomqtt_static.a(MQTTPacket.o)
+                0x00000000004a56fc                writeInt
  .text.writeCString
-                0x00000000004a5740       0x4c ohos/libs/libpahomqtt_static.a(MQTTPacket.o)
-                0x00000000004a5740                writeCString
+                0x00000000004a5744       0x4c ohos/libs/libpahomqtt_static.a(MQTTPacket.o)
+                0x00000000004a5744                writeCString
  .text.writeMQTTString
-                0x00000000004a578c       0x60 ohos/libs/libpahomqtt_static.a(MQTTPacket.o)
-                0x00000000004a578c                writeMQTTString
+                0x00000000004a5790       0x60 ohos/libs/libpahomqtt_static.a(MQTTPacket.o)
+                0x00000000004a5790                writeMQTTString
  .text.readMQTTLenString
-                0x00000000004a57ec       0x60 ohos/libs/libpahomqtt_static.a(MQTTPacket.o)
-                0x00000000004a57ec                readMQTTLenString
+                0x00000000004a57f0       0x60 ohos/libs/libpahomqtt_static.a(MQTTPacket.o)
+                0x00000000004a57f0                readMQTTLenString
  .text.MQTTstrlen
-                0x00000000004a584c       0x34 ohos/libs/libpahomqtt_static.a(MQTTPacket.o)
-                0x00000000004a584c                MQTTstrlen
+                0x00000000004a5850       0x34 ohos/libs/libpahomqtt_static.a(MQTTPacket.o)
+                0x00000000004a5850                MQTTstrlen
  .text.MQTTPacket_read
-                0x00000000004a5880       0x6c ohos/libs/libpahomqtt_static.a(MQTTPacket.o)
-                0x00000000004a5880                MQTTPacket_read
+                0x00000000004a5884       0x6c ohos/libs/libpahomqtt_static.a(MQTTPacket.o)
+                0x00000000004a5884                MQTTPacket_read
  .text.MQTTSerialize_publishLength
-                0x00000000004a58ec       0x40 ohos/libs/libpahomqtt_static.a(MQTTSerializePublish.o)
-                0x00000000004a58ec                MQTTSerialize_publishLength
+                0x00000000004a58f0       0x40 ohos/libs/libpahomqtt_static.a(MQTTSerializePublish.o)
+                0x00000000004a58f0                MQTTSerialize_publishLength
  .text.MQTTSerialize_publish
-                0x00000000004a592c       0xbc ohos/libs/libpahomqtt_static.a(MQTTSerializePublish.o)
-                0x00000000004a592c                MQTTSerialize_publish
+                0x00000000004a5930       0xbc ohos/libs/libpahomqtt_static.a(MQTTSerializePublish.o)
+                0x00000000004a5930                MQTTSerialize_publish
  .text.MQTTSerialize_subscribeLength
-                0x00000000004a59e8       0x54 ohos/libs/libpahomqtt_static.a(MQTTSubscribeClient.o)
-                0x00000000004a59e8                MQTTSerialize_subscribeLength
+                0x00000000004a59ec       0x54 ohos/libs/libpahomqtt_static.a(MQTTSubscribeClient.o)
+                0x00000000004a59ec                MQTTSerialize_subscribeLength
  .text.MQTTSerialize_subscribe
-                0x00000000004a5a3c       0xb2 ohos/libs/libpahomqtt_static.a(MQTTSubscribeClient.o)
-                0x00000000004a5a3c                MQTTSerialize_subscribe
+                0x00000000004a5a40       0xb2 ohos/libs/libpahomqtt_static.a(MQTTSubscribeClient.o)
+                0x00000000004a5a40                MQTTSerialize_subscribe
  .text.MQTTDeserialize_suback
-                0x00000000004a5aee       0x9a ohos/libs/libpahomqtt_static.a(MQTTSubscribeClient.o)
-                0x00000000004a5aee                MQTTDeserialize_suback
+                0x00000000004a5af2       0x9a ohos/libs/libpahomqtt_static.a(MQTTSubscribeClient.o)
+                0x00000000004a5af2                MQTTDeserialize_suback
  .text.transport_sendPacketBuffer
-                0x00000000004a5b88       0x2a ohos/libs/libpahomqtt_static.a(transport.o)
-                0x00000000004a5b88                transport_sendPacketBuffer
+                0x00000000004a5b8c       0x2a ohos/libs/libpahomqtt_static.a(transport.o)
+                0x00000000004a5b8c                transport_sendPacketBuffer
  .text.transport_getdata
-                0x00000000004a5bb2       0x38 ohos/libs/libpahomqtt_static.a(transport.o)
-                0x00000000004a5bb2                transport_getdata
+                0x00000000004a5bb6       0x38 ohos/libs/libpahomqtt_static.a(transport.o)
+                0x00000000004a5bb6                transport_getdata
  .text.transport_open
-                0x00000000004a5bea      0x164 ohos/libs/libpahomqtt_static.a(transport.o)
-                0x00000000004a5bea                transport_open
+                0x00000000004a5bee      0x164 ohos/libs/libpahomqtt_static.a(transport.o)
+                0x00000000004a5bee                transport_open
  .text.transport_close
-                0x00000000004a5d4e       0x3e ohos/libs/libpahomqtt_static.a(transport.o)
-                0x00000000004a5d4e                transport_close
+                0x00000000004a5d52       0x3e ohos/libs/libpahomqtt_static.a(transport.o)
+                0x00000000004a5d52                transport_close
  .text.GetImplement
-                0x00000000004a5d8c       0x2c ohos/libs/libsamgr.a(samgr_lite.o)
+                0x00000000004a5d90       0x2c ohos/libs/libsamgr.a(samgr_lite.o)
  .text.GetServiceName
-                0x00000000004a5db8       0x32 ohos/libs/libsamgr.a(samgr_lite.o)
- .text.Init     0x00000000004a5dea      0x128 ohos/libs/libsamgr.a(samgr_lite.o)
+                0x00000000004a5dbc       0x32 ohos/libs/libsamgr.a(samgr_lite.o)
+ .text.Init     0x00000000004a5dee      0x128 ohos/libs/libsamgr.a(samgr_lite.o)
  .text.GetService
-                0x00000000004a5f12       0x64 ohos/libs/libsamgr.a(samgr_lite.o)
+                0x00000000004a5f16       0x64 ohos/libs/libsamgr.a(samgr_lite.o)
  .text.GetFeatureApi
-                0x00000000004a5f76       0x4e ohos/libs/libsamgr.a(samgr_lite.o)
+                0x00000000004a5f7a       0x4e ohos/libs/libsamgr.a(samgr_lite.o)
  .text.GetDefaultFeatureApi
-                0x00000000004a5fc4       0x2a ohos/libs/libsamgr.a(samgr_lite.o)
+                0x00000000004a5fc8       0x2a ohos/libs/libsamgr.a(samgr_lite.o)
  .text.UnregisterFeatureApi
-                0x00000000004a5fee       0x46 ohos/libs/libsamgr.a(samgr_lite.o)
+                0x00000000004a5ff2       0x46 ohos/libs/libsamgr.a(samgr_lite.o)
  .text.UnregisterDefaultFeatureApi
-                0x00000000004a6034       0x2a ohos/libs/libsamgr.a(samgr_lite.o)
+                0x00000000004a6038       0x2a ohos/libs/libsamgr.a(samgr_lite.o)
  .text.RegisterFeatureApi
-                0x00000000004a605e       0x5c ohos/libs/libsamgr.a(samgr_lite.o)
+                0x00000000004a6062       0x5c ohos/libs/libsamgr.a(samgr_lite.o)
  .text.RegisterDefaultFeatureApi
-                0x00000000004a60ba       0x2c ohos/libs/libsamgr.a(samgr_lite.o)
+                0x00000000004a60be       0x2c ohos/libs/libsamgr.a(samgr_lite.o)
  .text.UnregisterFeature
-                0x00000000004a60e6       0x38 ohos/libs/libsamgr.a(samgr_lite.o)
+                0x00000000004a60ea       0x38 ohos/libs/libsamgr.a(samgr_lite.o)
  .text.RegisterFeature
-                0x00000000004a611e       0x6a ohos/libs/libsamgr.a(samgr_lite.o)
+                0x00000000004a6122       0x6a ohos/libs/libsamgr.a(samgr_lite.o)
  .text.UnregisterService
-                0x00000000004a6188       0x9a ohos/libs/libsamgr.a(samgr_lite.o)
+                0x00000000004a618c       0x9a ohos/libs/libsamgr.a(samgr_lite.o)
  .text.RegisterService
-                0x00000000004a6222       0xaa ohos/libs/libsamgr.a(samgr_lite.o)
+                0x00000000004a6226       0xaa ohos/libs/libsamgr.a(samgr_lite.o)
  .text.GetUninitializedPos
-                0x00000000004a62cc       0x70 ohos/libs/libsamgr.a(samgr_lite.o)
+                0x00000000004a62d0       0x70 ohos/libs/libsamgr.a(samgr_lite.o)
  .text.GetSpecifiedTaskPool
-                0x00000000004a633c       0x94 ohos/libs/libsamgr.a(samgr_lite.o)
+                0x00000000004a6340       0x94 ohos/libs/libsamgr.a(samgr_lite.o)
  .text.AddTaskPool
-                0x00000000004a63d0      0x138 ohos/libs/libsamgr.a(samgr_lite.o)
+                0x00000000004a63d4      0x138 ohos/libs/libsamgr.a(samgr_lite.o)
  .text.InitializeSingleService
-                0x00000000004a6508       0x5e ohos/libs/libsamgr.a(samgr_lite.o)
+                0x00000000004a650c       0x5e ohos/libs/libsamgr.a(samgr_lite.o)
  .text.InitializeAllServices
-                0x00000000004a6566       0xca ohos/libs/libsamgr.a(samgr_lite.o)
+                0x00000000004a656a       0xca ohos/libs/libsamgr.a(samgr_lite.o)
  .text.SendBootRequest
-                0x00000000004a6630       0x5a ohos/libs/libsamgr.a(samgr_lite.o)
+                0x00000000004a6634       0x5a ohos/libs/libsamgr.a(samgr_lite.o)
  .text.InitCompleted
-                0x00000000004a668a       0xc4 ohos/libs/libsamgr.a(samgr_lite.o)
+                0x00000000004a668e       0xc4 ohos/libs/libsamgr.a(samgr_lite.o)
  .text.SAMGR_Bootstrap
-                0x00000000004a674e      0x11a ohos/libs/libsamgr.a(samgr_lite.o)
-                0x00000000004a674e                SAMGR_Bootstrap
+                0x00000000004a6752      0x11a ohos/libs/libsamgr.a(samgr_lite.o)
+                0x00000000004a6752                SAMGR_Bootstrap
  .text.HandleInitRequest
-                0x00000000004a6868       0xb0 ohos/libs/libsamgr.a(samgr_lite.o)
+                0x00000000004a686c       0xb0 ohos/libs/libsamgr.a(samgr_lite.o)
  .text.SAMGR_GetInstance
-                0x00000000004a6918       0x3a ohos/libs/libsamgr.a(samgr_lite.o)
-                0x00000000004a6918                SAMGR_GetInstance
+                0x00000000004a691c       0x3a ohos/libs/libsamgr.a(samgr_lite.o)
+                0x00000000004a691c                SAMGR_GetInstance
  .text.SAMGR_GetServiceByID
-                0x00000000004a6952       0x56 ohos/libs/libsamgr.a(samgr_lite.o)
-                0x00000000004a6952                SAMGR_GetServiceByID
+                0x00000000004a6956       0x56 ohos/libs/libsamgr.a(samgr_lite.o)
+                0x00000000004a6956                SAMGR_GetServiceByID
  .text.SAMGR_RegisterServiceApi
-                0x00000000004a69a8       0x26 ohos/libs/libsamgr.a(service_registry.o)
-                0x00000000004a69a8                SAMGR_RegisterServiceApi
+                0x00000000004a69ac       0x26 ohos/libs/libsamgr.a(service_registry.o)
+                0x00000000004a69ac                SAMGR_RegisterServiceApi
  .text.SAMGR_FindServiceApi
-                0x00000000004a69ce       0x26 ohos/libs/libsamgr.a(service_registry.o)
-                0x00000000004a69ce                SAMGR_FindServiceApi
+                0x00000000004a69d2       0x26 ohos/libs/libsamgr.a(service_registry.o)
+                0x00000000004a69d2                SAMGR_FindServiceApi
  .text.SAMGR_Malloc
-                0x00000000004a69f4       0x3a ohos/libs/libsamgr_adapter.a(memory_adapter.o)
-                0x00000000004a69f4                SAMGR_Malloc
+                0x00000000004a69f8       0x3a ohos/libs/libsamgr_adapter.a(memory_adapter.o)
+                0x00000000004a69f8                SAMGR_Malloc
  .text.SAMGR_Free
-                0x00000000004a6a2e       0x38 ohos/libs/libsamgr_adapter.a(memory_adapter.o)
-                0x00000000004a6a2e                SAMGR_Free
+                0x00000000004a6a32       0x38 ohos/libs/libsamgr_adapter.a(memory_adapter.o)
+                0x00000000004a6a32                SAMGR_Free
  .text.QUEUE_Create
-                0x00000000004a6a66       0x3a ohos/libs/libsamgr_adapter.a(queue_adapter.o)
-                0x00000000004a6a66                QUEUE_Create
+                0x00000000004a6a6a       0x3a ohos/libs/libsamgr_adapter.a(queue_adapter.o)
+                0x00000000004a6a6a                QUEUE_Create
  .text.QUEUE_Put
-                0x00000000004a6aa0       0x38 ohos/libs/libsamgr_adapter.a(queue_adapter.o)
-                0x00000000004a6aa0                QUEUE_Put
+                0x00000000004a6aa4       0x38 ohos/libs/libsamgr_adapter.a(queue_adapter.o)
+                0x00000000004a6aa4                QUEUE_Put
  .text.QUEUE_Pop
-                0x00000000004a6ad8       0x3c ohos/libs/libsamgr_adapter.a(queue_adapter.o)
-                0x00000000004a6ad8                QUEUE_Pop
+                0x00000000004a6adc       0x3c ohos/libs/libsamgr_adapter.a(queue_adapter.o)
+                0x00000000004a6adc                QUEUE_Pop
  .text.QUEUE_Destroy
-                0x00000000004a6b14       0x30 ohos/libs/libsamgr_adapter.a(queue_adapter.o)
-                0x00000000004a6b14                QUEUE_Destroy
+                0x00000000004a6b18       0x30 ohos/libs/libsamgr_adapter.a(queue_adapter.o)
+                0x00000000004a6b18                QUEUE_Destroy
  .text.MUTEX_InitValue
-                0x00000000004a6b44       0x2a ohos/libs/libsamgr_adapter.a(thread_adapter.o)
-                0x00000000004a6b44                MUTEX_InitValue
+                0x00000000004a6b48       0x2a ohos/libs/libsamgr_adapter.a(thread_adapter.o)
+                0x00000000004a6b48                MUTEX_InitValue
  .text.MUTEX_Lock
-                0x00000000004a6b6e       0x2e ohos/libs/libsamgr_adapter.a(thread_adapter.o)
-                0x00000000004a6b6e                MUTEX_Lock
+                0x00000000004a6b72       0x2e ohos/libs/libsamgr_adapter.a(thread_adapter.o)
+                0x00000000004a6b72                MUTEX_Lock
  .text.MUTEX_Unlock
-                0x00000000004a6b9c       0x2c ohos/libs/libsamgr_adapter.a(thread_adapter.o)
-                0x00000000004a6b9c                MUTEX_Unlock
+                0x00000000004a6ba0       0x2c ohos/libs/libsamgr_adapter.a(thread_adapter.o)
+                0x00000000004a6ba0                MUTEX_Unlock
  .text.MUTEX_GlobalLock
-                0x00000000004a6bc8       0x28 ohos/libs/libsamgr_adapter.a(thread_adapter.o)
-                0x00000000004a6bc8                MUTEX_GlobalLock
+                0x00000000004a6bcc       0x28 ohos/libs/libsamgr_adapter.a(thread_adapter.o)
+                0x00000000004a6bcc                MUTEX_GlobalLock
  .text.MUTEX_GlobalUnlock
-                0x00000000004a6bf0       0x28 ohos/libs/libsamgr_adapter.a(thread_adapter.o)
-                0x00000000004a6bf0                MUTEX_GlobalUnlock
+                0x00000000004a6bf4       0x28 ohos/libs/libsamgr_adapter.a(thread_adapter.o)
+                0x00000000004a6bf4                MUTEX_GlobalUnlock
  .text.THREAD_Create
-                0x00000000004a6c18       0x44 ohos/libs/libsamgr_adapter.a(thread_adapter.o)
-                0x00000000004a6c18                THREAD_Create
+                0x00000000004a6c1c       0x44 ohos/libs/libsamgr_adapter.a(thread_adapter.o)
+                0x00000000004a6c1c                THREAD_Create
  .text.THREAD_Total
-                0x00000000004a6c5c       0x28 ohos/libs/libsamgr_adapter.a(thread_adapter.o)
-                0x00000000004a6c5c                THREAD_Total
+                0x00000000004a6c60       0x28 ohos/libs/libsamgr_adapter.a(thread_adapter.o)
+                0x00000000004a6c60                THREAD_Total
  .text.THREAD_GetThreadLocal
-                0x00000000004a6c84       0x28 ohos/libs/libsamgr_adapter.a(thread_adapter.o)
-                0x00000000004a6c84                THREAD_GetThreadLocal
+                0x00000000004a6c88       0x28 ohos/libs/libsamgr_adapter.a(thread_adapter.o)
+                0x00000000004a6c88                THREAD_GetThreadLocal
  .text.THREAD_SetThreadLocal
-                0x00000000004a6cac       0x24 ohos/libs/libsamgr_adapter.a(thread_adapter.o)
-                0x00000000004a6cac                THREAD_SetThreadLocal
+                0x00000000004a6cb0       0x24 ohos/libs/libsamgr_adapter.a(thread_adapter.o)
+                0x00000000004a6cb0                THREAD_SetThreadLocal
  .text.WDT_Reset
-                0x00000000004a6cd0       0x26 ohos/libs/libsamgr_adapter.a(time_adapter.o)
-                0x00000000004a6cd0                WDT_Reset
+                0x00000000004a6cd4       0x26 ohos/libs/libsamgr_adapter.a(time_adapter.o)
+                0x00000000004a6cd4                WDT_Reset
  .text.WDT_Start
-                0x00000000004a6cf6       0x28 ohos/libs/libsamgr_adapter.a(time_adapter.o)
-                0x00000000004a6cf6                WDT_Start
+                0x00000000004a6cfa       0x28 ohos/libs/libsamgr_adapter.a(time_adapter.o)
+                0x00000000004a6cfa                WDT_Start
  .text.WDT_Stop
-                0x00000000004a6d1e       0x26 ohos/libs/libsamgr_adapter.a(time_adapter.o)
-                0x00000000004a6d1e                WDT_Stop
+                0x00000000004a6d22       0x26 ohos/libs/libsamgr_adapter.a(time_adapter.o)
+                0x00000000004a6d22                WDT_Stop
  .text.SAMGR_GetProcessTime
-                0x00000000004a6d44       0x2e ohos/libs/libsamgr_adapter.a(time_adapter.o)
-                0x00000000004a6d44                SAMGR_GetProcessTime
+                0x00000000004a6d48       0x2e ohos/libs/libsamgr_adapter.a(time_adapter.o)
+                0x00000000004a6d48                SAMGR_GetProcessTime
  .text.VECTOR_Make
-                0x00000000004a6d72       0x34 ohos/libs/libsamgr_source.a(common.o)
-                0x00000000004a6d72                VECTOR_Make
+                0x00000000004a6d76       0x34 ohos/libs/libsamgr_source.a(common.o)
+                0x00000000004a6d76                VECTOR_Make
  .text.VECTOR_Clear
-                0x00000000004a6da6       0x3e ohos/libs/libsamgr_source.a(common.o)
-                0x00000000004a6da6                VECTOR_Clear
+                0x00000000004a6daa       0x3e ohos/libs/libsamgr_source.a(common.o)
+                0x00000000004a6daa                VECTOR_Clear
  .text.VECTOR_Add
-                0x00000000004a6de4       0xca ohos/libs/libsamgr_source.a(common.o)
-                0x00000000004a6de4                VECTOR_Add
+                0x00000000004a6de8       0xca ohos/libs/libsamgr_source.a(common.o)
+                0x00000000004a6de8                VECTOR_Add
  .text.VECTOR_At
-                0x00000000004a6eae       0x3e ohos/libs/libsamgr_source.a(common.o)
-                0x00000000004a6eae                VECTOR_At
+                0x00000000004a6eb2       0x3e ohos/libs/libsamgr_source.a(common.o)
+                0x00000000004a6eb2                VECTOR_At
  .text.VECTOR_Swap
-                0x00000000004a6eec       0x4c ohos/libs/libsamgr_source.a(common.o)
-                0x00000000004a6eec                VECTOR_Swap
+                0x00000000004a6ef0       0x4c ohos/libs/libsamgr_source.a(common.o)
+                0x00000000004a6ef0                VECTOR_Swap
  .text.VECTOR_FindByKey
-                0x00000000004a6f38       0x6a ohos/libs/libsamgr_source.a(common.o)
-                0x00000000004a6f38                VECTOR_FindByKey
+                0x00000000004a6f3c       0x6a ohos/libs/libsamgr_source.a(common.o)
+                0x00000000004a6f3c                VECTOR_FindByKey
  .text.VECTOR_Size
-                0x00000000004a6fa2       0x2e ohos/libs/libsamgr_source.a(common.o)
-                0x00000000004a6fa2                VECTOR_Size
+                0x00000000004a6fa6       0x2e ohos/libs/libsamgr_source.a(common.o)
+                0x00000000004a6fa6                VECTOR_Size
  .text.VECTOR_Num
-                0x00000000004a6fd0       0x3a ohos/libs/libsamgr_source.a(common.o)
-                0x00000000004a6fd0                VECTOR_Num
+                0x00000000004a6fd4       0x3a ohos/libs/libsamgr_source.a(common.o)
+                0x00000000004a6fd4                VECTOR_Num
  .text.SAMGR_AddInterface
-                0x00000000004a700a       0x34 ohos/libs/libsamgr_source.a(feature.o)
-                0x00000000004a700a                SAMGR_AddInterface
+                0x00000000004a700e       0x34 ohos/libs/libsamgr_source.a(feature.o)
+                0x00000000004a700e                SAMGR_AddInterface
  .text.SAMGR_DelInterface
-                0x00000000004a703e       0x30 ohos/libs/libsamgr_source.a(feature.o)
-                0x00000000004a703e                SAMGR_DelInterface
+                0x00000000004a7042       0x30 ohos/libs/libsamgr_source.a(feature.o)
+                0x00000000004a7042                SAMGR_DelInterface
  .text.SAMGR_GetInterface
-                0x00000000004a706e       0x2c ohos/libs/libsamgr_source.a(feature.o)
-                0x00000000004a706e                SAMGR_GetInterface
+                0x00000000004a7072       0x2c ohos/libs/libsamgr_source.a(feature.o)
+                0x00000000004a7072                SAMGR_GetInterface
  .text.SAMGR_IsNoInterface
-                0x00000000004a709a       0x30 ohos/libs/libsamgr_source.a(feature.o)
-                0x00000000004a709a                SAMGR_IsNoInterface
+                0x00000000004a709e       0x30 ohos/libs/libsamgr_source.a(feature.o)
+                0x00000000004a709e                SAMGR_IsNoInterface
  .text.FEATURE_CreateInstance
-                0x00000000004a70ca       0x3a ohos/libs/libsamgr_source.a(feature.o)
-                0x00000000004a70ca                FEATURE_CreateInstance
+                0x00000000004a70ce       0x3a ohos/libs/libsamgr_source.a(feature.o)
+                0x00000000004a70ce                FEATURE_CreateInstance
  .text.IUNKNOWN_AddRef
-                0x00000000004a7104       0x3c ohos/libs/libsamgr_source.a(iunknown.o)
-                0x00000000004a7104                IUNKNOWN_AddRef
+                0x00000000004a7108       0x3c ohos/libs/libsamgr_source.a(iunknown.o)
+                0x00000000004a7108                IUNKNOWN_AddRef
  .text.IUNKNOWN_QueryInterface
-                0x00000000004a7140       0x4c ohos/libs/libsamgr_source.a(iunknown.o)
-                0x00000000004a7140                IUNKNOWN_QueryInterface
+                0x00000000004a7144       0x4c ohos/libs/libsamgr_source.a(iunknown.o)
+                0x00000000004a7144                IUNKNOWN_QueryInterface
  .text.IUNKNOWN_Release
-                0x00000000004a718c       0x3c ohos/libs/libsamgr_source.a(iunknown.o)
-                0x00000000004a718c                IUNKNOWN_Release
+                0x00000000004a7190       0x3c ohos/libs/libsamgr_source.a(iunknown.o)
+                0x00000000004a7190                IUNKNOWN_Release
  .text.SharedSend
-                0x00000000004a71c8       0x84 ohos/libs/libsamgr_source.a(message.o)
+                0x00000000004a71cc       0x84 ohos/libs/libsamgr_source.a(message.o)
  .text.FreeReference
-                0x00000000004a724c       0x5a ohos/libs/libsamgr_source.a(message.o)
+                0x00000000004a7250       0x5a ohos/libs/libsamgr_source.a(message.o)
  .text.SAMGR_SendRequest
-                0x00000000004a72a6       0x66 ohos/libs/libsamgr_source.a(message.o)
-                0x00000000004a72a6                SAMGR_SendRequest
+                0x00000000004a72aa       0x66 ohos/libs/libsamgr_source.a(message.o)
+                0x00000000004a72aa                SAMGR_SendRequest
  .text.SAMGR_SendResponse
-                0x00000000004a730c       0x80 ohos/libs/libsamgr_source.a(message.o)
-                0x00000000004a730c                SAMGR_SendResponse
+                0x00000000004a7310       0x80 ohos/libs/libsamgr_source.a(message.o)
+                0x00000000004a7310                SAMGR_SendResponse
  .text.SAMGR_MsgRecv
-                0x00000000004a738c       0x52 ohos/libs/libsamgr_source.a(message.o)
-                0x00000000004a738c                SAMGR_MsgRecv
+                0x00000000004a7390       0x52 ohos/libs/libsamgr_source.a(message.o)
+                0x00000000004a7390                SAMGR_MsgRecv
  .text.SAMGR_FreeMsg
-                0x00000000004a73de       0x52 ohos/libs/libsamgr_source.a(message.o)
-                0x00000000004a73de                SAMGR_FreeMsg
+                0x00000000004a73e2       0x52 ohos/libs/libsamgr_source.a(message.o)
+                0x00000000004a73e2                SAMGR_FreeMsg
  .text.SAMGR_SendSharedRequest
-                0x00000000004a7430       0x8e ohos/libs/libsamgr_source.a(message.o)
-                0x00000000004a7430                SAMGR_SendSharedRequest
+                0x00000000004a7434       0x8e ohos/libs/libsamgr_source.a(message.o)
+                0x00000000004a7434                SAMGR_SendSharedRequest
  .text.SAMGR_SendSharedDirectRequest
-                0x00000000004a74be       0xbc ohos/libs/libsamgr_source.a(message.o)
-                0x00000000004a74be                SAMGR_SendSharedDirectRequest
+                0x00000000004a74c2       0xbc ohos/libs/libsamgr_source.a(message.o)
+                0x00000000004a74c2                SAMGR_SendSharedDirectRequest
  .text.SAMGR_SendResponseByIdentity
-                0x00000000004a757a       0x46 ohos/libs/libsamgr_source.a(message.o)
-                0x00000000004a757a                SAMGR_SendResponseByIdentity
+                0x00000000004a757e       0x46 ohos/libs/libsamgr_source.a(message.o)
+                0x00000000004a757e                SAMGR_SendResponseByIdentity
  .text.GetFeatureName
-                0x00000000004a75c0       0x32 ohos/libs/libsamgr_source.a(service.o)
+                0x00000000004a75c4       0x32 ohos/libs/libsamgr_source.a(service.o)
  .text.SAMGR_CreateServiceImpl
-                0x00000000004a75f2       0x7c ohos/libs/libsamgr_source.a(service.o)
-                0x00000000004a75f2                SAMGR_CreateServiceImpl
+                0x00000000004a75f6       0x7c ohos/libs/libsamgr_source.a(service.o)
+                0x00000000004a75f6                SAMGR_CreateServiceImpl
  .text.DEFAULT_AddFeature
-                0x00000000004a766e       0x66 ohos/libs/libsamgr_source.a(service.o)
-                0x00000000004a766e                DEFAULT_AddFeature
+                0x00000000004a7672       0x66 ohos/libs/libsamgr_source.a(service.o)
+                0x00000000004a7672                DEFAULT_AddFeature
  .text.DEFAULT_Initialize
-                0x00000000004a76d4       0xb0 ohos/libs/libsamgr_source.a(service.o)
-                0x00000000004a76d4                DEFAULT_Initialize
+                0x00000000004a76d8       0xb0 ohos/libs/libsamgr_source.a(service.o)
+                0x00000000004a76d8                DEFAULT_Initialize
  .text.DEFAULT_MessageHandle
-                0x00000000004a7784       0x6c ohos/libs/libsamgr_source.a(service.o)
-                0x00000000004a7784                DEFAULT_MessageHandle
+                0x00000000004a7788       0x6c ohos/libs/libsamgr_source.a(service.o)
+                0x00000000004a7788                DEFAULT_MessageHandle
  .text.DEFAULT_GetFeature
-                0x00000000004a77f0       0x3e ohos/libs/libsamgr_source.a(service.o)
-                0x00000000004a77f0                DEFAULT_GetFeature
+                0x00000000004a77f4       0x3e ohos/libs/libsamgr_source.a(service.o)
+                0x00000000004a77f4                DEFAULT_GetFeature
  .text.DEFAULT_GetFeatureId
-                0x00000000004a782e       0x64 ohos/libs/libsamgr_source.a(service.o)
-                0x00000000004a782e                DEFAULT_GetFeatureId
+                0x00000000004a7832       0x64 ohos/libs/libsamgr_source.a(service.o)
+                0x00000000004a7832                DEFAULT_GetFeatureId
  .text.DEFAULT_DeleteFeature
-                0x00000000004a7892       0x78 ohos/libs/libsamgr_source.a(service.o)
-                0x00000000004a7892                DEFAULT_DeleteFeature
+                0x00000000004a7896       0x78 ohos/libs/libsamgr_source.a(service.o)
+                0x00000000004a7896                DEFAULT_DeleteFeature
  .text.ProcResponse
-                0x00000000004a790a       0x3c ohos/libs/libsamgr_source.a(task_manager.o)
+                0x00000000004a790e       0x3c ohos/libs/libsamgr_source.a(task_manager.o)
  .text.ProcDirectRequest
-                0x00000000004a7946       0x3c ohos/libs/libsamgr_source.a(task_manager.o)
+                0x00000000004a794a       0x3c ohos/libs/libsamgr_source.a(task_manager.o)
  .text.CorrectServiceImpl
-                0x00000000004a7982       0x46 ohos/libs/libsamgr_source.a(task_manager.o)
+                0x00000000004a7986       0x46 ohos/libs/libsamgr_source.a(task_manager.o)
  .text.BeginWork
-                0x00000000004a79c8       0x5e ohos/libs/libsamgr_source.a(task_manager.o)
+                0x00000000004a79cc       0x5e ohos/libs/libsamgr_source.a(task_manager.o)
  .text.ProcRequest
-                0x00000000004a7a26       0x5a ohos/libs/libsamgr_source.a(task_manager.o)
- .text.EndWork  0x00000000004a7a80       0xa2 ohos/libs/libsamgr_source.a(task_manager.o)
+                0x00000000004a7a2a       0x5a ohos/libs/libsamgr_source.a(task_manager.o)
+ .text.EndWork  0x00000000004a7a84       0xa2 ohos/libs/libsamgr_source.a(task_manager.o)
  .text.TaskEntry
-                0x00000000004a7b22       0x8a ohos/libs/libsamgr_source.a(task_manager.o)
+                0x00000000004a7b26       0x8a ohos/libs/libsamgr_source.a(task_manager.o)
  .text.SAMGR_CreateFixedTaskPool
-                0x00000000004a7bac       0xe2 ohos/libs/libsamgr_source.a(task_manager.o)
-                0x00000000004a7bac                SAMGR_CreateFixedTaskPool
+                0x00000000004a7bb0       0xe2 ohos/libs/libsamgr_source.a(task_manager.o)
+                0x00000000004a7bb0                SAMGR_CreateFixedTaskPool
  .text.SAMGR_StartTaskPool
-                0x00000000004a7c8e       0xb0 ohos/libs/libsamgr_source.a(task_manager.o)
-                0x00000000004a7c8e                SAMGR_StartTaskPool
+                0x00000000004a7c92       0xb0 ohos/libs/libsamgr_source.a(task_manager.o)
+                0x00000000004a7c92                SAMGR_StartTaskPool
  .text.SAMGR_ReleaseTaskPool
-                0x00000000004a7d3e       0x66 ohos/libs/libsamgr_source.a(task_manager.o)
-                0x00000000004a7d3e                SAMGR_ReleaseTaskPool
+                0x00000000004a7d42       0x66 ohos/libs/libsamgr_source.a(task_manager.o)
+                0x00000000004a7d42                SAMGR_ReleaseTaskPool
  .text.SAMGR_ReferenceTaskPool
-                0x00000000004a7da4       0x3a ohos/libs/libsamgr_source.a(task_manager.o)
-                0x00000000004a7da4                SAMGR_ReferenceTaskPool
+                0x00000000004a7da8       0x3a ohos/libs/libsamgr_source.a(task_manager.o)
+                0x00000000004a7da8                SAMGR_ReferenceTaskPool
  .text.SAMGR_GetCurrentQueueID
-                0x00000000004a7dde       0x28 ohos/libs/libsamgr_source.a(task_manager.o)
-                0x00000000004a7dde                SAMGR_GetCurrentQueueID
+                0x00000000004a7de2       0x28 ohos/libs/libsamgr_source.a(task_manager.o)
+                0x00000000004a7de2                SAMGR_GetCurrentQueueID
  .text.DispatchStaConnectEvent
-                0x00000000004a7e06       0x8c ohos/libs/libwifiservice.a(wifi_device.o)
+                0x00000000004a7e0a       0x8c ohos/libs/libwifiservice.a(wifi_device.o)
  .text.StaConnect
-                0x00000000004a7e92      0x10c ohos/libs/libwifiservice.a(wifi_device.o)
+                0x00000000004a7e96      0x10c ohos/libs/libwifiservice.a(wifi_device.o)
  .text.RegisterHisiCallback
-                0x00000000004a7f9e       0x56 ohos/libs/libwifiservice.a(wifi_device.o)
+                0x00000000004a7fa2       0x56 ohos/libs/libwifiservice.a(wifi_device.o)
  .text.DispatchScanStateChangeEvent.isra.0
-                0x00000000004a7ff4       0x42 ohos/libs/libwifiservice.a(wifi_device.o)
+                0x00000000004a7ff8       0x42 ohos/libs/libwifiservice.a(wifi_device.o)
  .text.DispatchApStartEvent.isra.1
-                0x00000000004a8036       0x2e ohos/libs/libwifiservice.a(wifi_device.o)
+                0x00000000004a803a       0x2e ohos/libs/libwifiservice.a(wifi_device.o)
  .text.DispatchConnectEvent.isra.2
-                0x00000000004a8064       0xda ohos/libs/libwifiservice.a(wifi_device.o)
+                0x00000000004a8068       0xda ohos/libs/libwifiservice.a(wifi_device.o)
  .text.DispatchEvent
-                0x00000000004a813e       0x5e ohos/libs/libwifiservice.a(wifi_device.o)
+                0x00000000004a8142       0x5e ohos/libs/libwifiservice.a(wifi_device.o)
  .text.HiWifiWpaEventCb
-                0x00000000004a819c       0x50 ohos/libs/libwifiservice.a(wifi_device.o)
+                0x00000000004a81a0       0x50 ohos/libs/libwifiservice.a(wifi_device.o)
  .text.EnableWifi
-                0x00000000004a81ec       0xa0 ohos/libs/libwifiservice.a(wifi_device.o)
-                0x00000000004a81ec                EnableWifi
+                0x00000000004a81f0       0xa0 ohos/libs/libwifiservice.a(wifi_device.o)
+                0x00000000004a81f0                EnableWifi
  .text.DisableWifi
-                0x00000000004a828c       0x60 ohos/libs/libwifiservice.a(wifi_device.o)
-                0x00000000004a828c                DisableWifi
+                0x00000000004a8290       0x60 ohos/libs/libwifiservice.a(wifi_device.o)
+                0x00000000004a8290                DisableWifi
  .text.AddDeviceConfig
-                0x00000000004a82ec       0xac ohos/libs/libwifiservice.a(wifi_device.o)
-                0x00000000004a82ec                AddDeviceConfig
+                0x00000000004a82f0       0xac ohos/libs/libwifiservice.a(wifi_device.o)
+                0x00000000004a82f0                AddDeviceConfig
  .text.ConnectTo
-                0x00000000004a8398       0xea ohos/libs/libwifiservice.a(wifi_device.o)
-                0x00000000004a8398                ConnectTo
+                0x00000000004a839c       0xea ohos/libs/libwifiservice.a(wifi_device.o)
+                0x00000000004a839c                ConnectTo
  .text.Disconnect
-                0x00000000004a8482       0x30 ohos/libs/libwifiservice.a(wifi_device.o)
-                0x00000000004a8482                Disconnect
+                0x00000000004a8486       0x30 ohos/libs/libwifiservice.a(wifi_device.o)
+                0x00000000004a8486                Disconnect
  .text.RemoveDevice
-                0x00000000004a84b2       0x7a ohos/libs/libwifiservice.a(wifi_device.o)
-                0x00000000004a84b2                RemoveDevice
+                0x00000000004a84b6       0x7a ohos/libs/libwifiservice.a(wifi_device.o)
+                0x00000000004a84b6                RemoveDevice
  .text.RegisterWifiEvent
-                0x00000000004a852c       0x72 ohos/libs/libwifiservice.a(wifi_device.o)
-                0x00000000004a852c                RegisterWifiEvent
+                0x00000000004a8530       0x72 ohos/libs/libwifiservice.a(wifi_device.o)
+                0x00000000004a8530                RegisterWifiEvent
  .text.UnRegisterWifiEvent
-                0x00000000004a859e       0x60 ohos/libs/libwifiservice.a(wifi_device.o)
-                0x00000000004a859e                UnRegisterWifiEvent
+                0x00000000004a85a2       0x60 ohos/libs/libwifiservice.a(wifi_device.o)
+                0x00000000004a85a2                UnRegisterWifiEvent
  .text.InitWifiGlobalLock
-                0x00000000004a85fe       0x7a ohos/libs/libwifiservice.a(wifi_device_util.o)
+                0x00000000004a8602       0x7a ohos/libs/libwifiservice.a(wifi_device_util.o)
  .text.HoSecToHiSec
-                0x00000000004a8678       0x3c ohos/libs/libwifiservice.a(wifi_device_util.o)
-                0x00000000004a8678                HoSecToHiSec
+                0x00000000004a867c       0x3c ohos/libs/libwifiservice.a(wifi_device_util.o)
+                0x00000000004a867c                HoSecToHiSec
  .text.LockWifiGlobalLock
-                0x00000000004a86b4       0x4e ohos/libs/libwifiservice.a(wifi_device_util.o)
-                0x00000000004a86b4                LockWifiGlobalLock
+                0x00000000004a86b8       0x4e ohos/libs/libwifiservice.a(wifi_device_util.o)
+                0x00000000004a86b8                LockWifiGlobalLock
  .text.UnlockWifiGlobalLock
-                0x00000000004a8702       0x4c ohos/libs/libwifiservice.a(wifi_device_util.o)
-                0x00000000004a8702                UnlockWifiGlobalLock
+                0x00000000004a8706       0x4c ohos/libs/libwifiservice.a(wifi_device_util.o)
+                0x00000000004a8706                UnlockWifiGlobalLock
  .text.LockWifiEventLock
-                0x00000000004a874e       0x4e ohos/libs/libwifiservice.a(wifi_device_util.o)
-                0x00000000004a874e                LockWifiEventLock
+                0x00000000004a8752       0x4e ohos/libs/libwifiservice.a(wifi_device_util.o)
+                0x00000000004a8752                LockWifiEventLock
  .text.UnlockWifiEventLock
-                0x00000000004a879c       0x4c ohos/libs/libwifiservice.a(wifi_device_util.o)
-                0x00000000004a879c                UnlockWifiEventLock
+                0x00000000004a87a0       0x4c ohos/libs/libwifiservice.a(wifi_device_util.o)
+                0x00000000004a87a0                UnlockWifiEventLock
  .text.FrequencyToChannel
-                0x00000000004a87e8       0x4c ohos/libs/libwifiservice.a(wifi_device_util.o)
-                0x00000000004a87e8                FrequencyToChannel
+                0x00000000004a87ec       0x4c ohos/libs/libwifiservice.a(wifi_device_util.o)
+                0x00000000004a87ec                FrequencyToChannel
  SORT_BY_NAME(*)(EXCLUDE_FILE(*libasm_flash.o) .got*)
- *fill*         0x00000000004a8834        0x0 
- .got           0x00000000004a8834      0x19c build/libs/hi3861/release/no_mesh/libwifi_base.o
-                0x00000000004a8834                _GLOBAL_OFFSET_TABLE_
- .got.plt       0x00000000004a89d0        0x8 build/libs/hi3861/release/no_mesh/libwifi_base.o
+ *fill*         0x00000000004a8838        0x0 
+ .got           0x00000000004a8838      0x19c build/libs/hi3861/release/no_mesh/libwifi_base.o
+                0x00000000004a8838                _GLOBAL_OFFSET_TABLE_
+ .got.plt       0x00000000004a89d4        0x8 build/libs/hi3861/release/no_mesh/libwifi_base.o
                 0x00000000004a89e0                . = ALIGN (0x20)
- *fill*         0x00000000004a89d8        0x8 
+ *fill*         0x00000000004a89dc        0x4 
                 0x00000000004a89e0                __text_cache_end2_ = .
  SORT_BY_NAME(*)(.rodata*)
  .rodata        0x00000000004a89e0       0x3c /home/harmony/gcc_riscv32/bin/../lib/gcc/riscv32-unknown-elf/7.3.0/libgcc.a(divdf3.o)

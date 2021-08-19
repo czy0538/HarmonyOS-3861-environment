@@ -131,7 +131,7 @@ void mqtt_onmessage(void){
                 payload_in[i]='\0';
                 if(atoi(temp)>0)
                 {
-                    MQTT_PUBLISH_DELAY=atoi(temp);
+                    MQTT_PUBLISH_DELAY=atoi(temp)-100;
                 }
 
 			}
