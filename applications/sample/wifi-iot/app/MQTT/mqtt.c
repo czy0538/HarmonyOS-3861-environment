@@ -129,7 +129,11 @@ void mqtt_onmessage(void){
                     temp[i-1]=payload_in[i];
                 }
                 payload_in[i]='\0';
-                printf("number is :%d\n",atoi(temp));
+                if(atoi(temp)>0)
+                {
+                    MQTT_PUBLISH_DELAY=atoi(temp);
+                }
+
 			}
         }
 }
