@@ -111,10 +111,12 @@ void mqtt_onmessage(void){
 			printf("message arrived %.*s\n", payloadlen_in, payload_in);
 
             mqtt_rc = rc;
-			if(strncmp("open", (const char *)payload_in, strlen("open")) == 0)
+			if(strncmp("beep", (const char *)payload_in, strlen("open")) == 0)
 			{
-				//GpioSetOutputVal(WIFI_IOT_IO_NAME_GPIO_9, 1);
-                printf("reveived open\n");
+			    PwmStart(WIFI_IOT_PWM_PORT_PWM0, BEEP_PWM_DUTY, BEEP_PWM_FREQ);
+                usleep(BEEP_DURATION * 1000);
+                PwmStop(WIFI_IOT_PWM_PORT_PWM0);
+                usleep((1000 - BEEP_DURATION) * 1000);
 			}
 			if(strncmp("close", (const char *)payload_in, strlen("close")) == 0)
 			{
@@ -365,7 +367,7 @@ void mqttrec_Thread(void){
 }
 
 static char message[128] = "";
-void UdpServerTest(void)
+void entry(void)
 {
     EnvironmentDemo_wifi();//启动环境监测
     mqttrec_Thread();//read thread
@@ -396,4 +398,4 @@ void UdpServerTest(void)
 
 }
 
-SERVER_TEST_DEMO(UdpServerTest);
+SERVER_TEST_DEMO(entry);
