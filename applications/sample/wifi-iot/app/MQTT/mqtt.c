@@ -131,7 +131,7 @@ void mqtt_onmessage(void){
                 payload_in[i]='\0';
                 if(atoi(temp)>0)
                 {
-                    MQTT_PUBLISH_DELAY=atoi(temp)-100;
+                    MQTT_PUBLISH_DELAY=atoi(temp);
                 }
 
 			}
@@ -143,22 +143,22 @@ void mqtt_publish(char* payload)
 
     int payloadlen = strlen(payload);
 
-    if (MQTTPacket_read(mqtt_buf, mqtt_buflen, transport_getdata) == PUBLISH)
-    {
-        unsigned char dup;
-        int qos;
-        unsigned char retained;
-        unsigned short msgid;
-        int payloadlen_in;
-        unsigned char *payload_in;
-        int rc;
-        MQTTString receivedTopic;
-        rc = MQTTDeserialize_publish(&dup, &qos, &retained, &msgid, &receivedTopic,
-                                        &payload_in, &payloadlen_in, mqtt_buf, mqtt_buflen); // 发送数据
-        printf("message arrived %.*s\n", payloadlen_in, payload_in);
+    // if (MQTTPacket_read(mqtt_buf, mqtt_buflen, transport_getdata) == PUBLISH)
+    // {
+    //     unsigned char dup;
+    //     int qos;
+    //     unsigned char retained;
+    //     unsigned short msgid;
+    //     int payloadlen_in;
+    //     unsigned char *payload_in;
+    //     int rc;
+    //     MQTTString receivedTopic;
+    //     rc = MQTTDeserialize_publish(&dup, &qos, &retained, &msgid, &receivedTopic,
+    //                                     &payload_in, &payloadlen_in, mqtt_buf, mqtt_buflen); // 发送数据
+    //     printf("message arrived %.*s\n", payloadlen_in, payload_in);
 
-        mqtt_rc = rc;
-    }
+    //     mqtt_rc = rc;
+    // }
 
     printf("publishing reading\n");
     mqtt_len = MQTTSerialize_publish(mqtt_buf, mqtt_buflen, 0, 0, 0, 0, topicString, (unsigned char *)payload, payloadlen);
