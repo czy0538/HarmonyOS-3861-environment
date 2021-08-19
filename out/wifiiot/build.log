@@ -1,10 +1,10 @@
-Done. Made 62 targets from 56 files in 488ms
+Done. Made 62 targets from 56 files in 525ms
 ninja: Entering directory `/home/harmony/harmony/code/code-1.0/out/wifiiot'
 [1/217] STAMP obj/applications/sample/wifi-iot/app/startup/startup.stamp
 [2/217] cross compiler obj/applications/sample/wifi-iot/app/iothardware/demo_entry_cmsis.o
 [3/217] cross compiler obj/applications/sample/wifi-iot/app/my_first_app/hello_world.o
-[4/217] cross compiler obj/applications/sample/wifi-iot/app/iothardware/wifi_connecter.o
-[5/217] AR libs/libmyapp.a
+[4/217] AR libs/libmyapp.a
+[5/217] cross compiler obj/applications/sample/wifi-iot/app/iothardware/wifi_connecter.o
 [6/217] cross compiler obj/applications/sample/wifi-iot/app/iothardware/udp_server_test.o
 [7/217] AR libs/libnet_demo.a
 [8/217] STAMP obj/applications/sample/wifi-iot/app/app.stamp
@@ -14,28 +14,28 @@ ninja: Entering directory `/home/harmony/harmony/code/code-1.0/out/wifiiot'
 [12/217] AR libs/libhiview_lite.a
 [13/217] cross compiler obj/base/hiviewdfx/utils/lite/hiview_config.o
 [14/217] cross compiler obj/base/iot_hardware/frameworks/wifiiot_lite/src/wifiiot_adc.o
-[15/217] cross compiler obj/base/iot_hardware/frameworks/wifiiot_lite/src/wifiiot_kal.o
-[16/217] cross compiler obj/base/hiviewdfx/frameworks/hilog_lite/mini/hiview_output_log.o
-[17/217] cross compiler obj/base/iot_hardware/frameworks/wifiiot_lite/src/reset.o
-[18/217] AR libs/libhilog_lite.a
-[19/217] STAMP obj/base/hiviewdfx/frameworks/hilog_lite/mini/hilog_lite_ndk.stamp
-[20/217] cross compiler obj/base/iot_hardware/frameworks/wifiiot_lite/src/wifiiot_gpio.o
-[21/217] cross compiler obj/base/iot_hardware/frameworks/wifiiot_lite/src/lowpower.o
+[15/217] cross compiler obj/base/hiviewdfx/frameworks/hilog_lite/mini/hiview_output_log.o
+[16/217] AR libs/libhilog_lite.a
+[17/217] cross compiler obj/base/iot_hardware/frameworks/wifiiot_lite/src/wifiiot_kal.o
+[18/217] STAMP obj/base/hiviewdfx/frameworks/hilog_lite/mini/hilog_lite_ndk.stamp
+[19/217] cross compiler obj/base/iot_hardware/frameworks/wifiiot_lite/src/reset.o
+[20/217] cross compiler obj/base/iot_hardware/frameworks/wifiiot_lite/src/lowpower.o
+[21/217] cross compiler obj/base/iot_hardware/frameworks/wifiiot_lite/src/wifiiot_gpio.o
 [22/217] cross compiler obj/base/iot_hardware/frameworks/wifiiot_lite/src/wifiiot_flash.o
-[23/217] cross compiler obj/base/iot_hardware/frameworks/wifiiot_lite/src/wifiiot_partition.o
-[24/217] cross compiler obj/base/iot_hardware/frameworks/wifiiot_lite/src/wifiiot_watchdog.o
+[23/217] cross compiler obj/base/iot_hardware/frameworks/wifiiot_lite/src/wifiiot_watchdog.o
+[24/217] cross compiler obj/base/iot_hardware/frameworks/wifiiot_lite/src/wifiiot_partition.o
 [25/217] cross compiler obj/base/hiviewdfx/utils/lite/hiview_cache.o
-[26/217] cross compiler obj/base/hiviewdfx/utils/lite/hiview_util.o
-[27/217] cross compiler obj/base/hiviewdfx/utils/lite/hiview_file.o
-[28/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/auth_info/add_auth_info.o
-[29/217] AR libs/libcommon_lite.a
-[30/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/auth_info/remove_auth_info_client.o
+[26/217] cross compiler obj/base/hiviewdfx/utils/lite/hiview_file.o
+[27/217] cross compiler obj/base/hiviewdfx/utils/lite/hiview_util.o
+[28/217] AR libs/libcommon_lite.a
+[29/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/auth_info/add_auth_info.o
+[30/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/auth_info/exchange_auth_info.o
 [31/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/auth_info/auth_info.o
-[32/217] cross compiler obj/base/iot_hardware/frameworks/wifiiot_lite/src/wifiiot_i2c.o
-[33/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/auth_info/exchange_auth_info.o
-[34/217] cross compiler obj/base/iot_hardware/frameworks/wifiiot_lite/src/wifiiot_at.o
-[35/217] cross compiler obj/base/iot_hardware/frameworks/wifiiot_lite/src/wifiiot_pwm.o
-[36/217] cross compiler obj/base/iot_hardware/frameworks/wifiiot_lite/src/wifiiot_i2s.o
+[32/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/auth_info/remove_auth_info_client.o
+[33/217] cross compiler obj/base/iot_hardware/frameworks/wifiiot_lite/src/wifiiot_i2c.o
+[34/217] cross compiler obj/base/iot_hardware/frameworks/wifiiot_lite/src/wifiiot_pwm.o
+[35/217] cross compiler obj/base/iot_hardware/frameworks/wifiiot_lite/src/wifiiot_i2s.o
+[36/217] cross compiler obj/base/iot_hardware/frameworks/wifiiot_lite/src/wifiiot_at.o
 [37/217] cross compiler obj/base/iot_hardware/frameworks/wifiiot_lite/src/wifiiot_uart.o
 [38/217] cross compiler obj/base/iot_hardware/frameworks/wifiiot_lite/src/wifiiot_spi.o
 [39/217] cross compiler obj/base/iot_hardware/frameworks/wifiiot_lite/src/wifiiot_sdio.o
@@ -45,64 +45,64 @@ ninja: Entering directory `/home/harmony/harmony/code/code-1.0/out/wifiiot'
 [43/217] STAMP obj/base/iot_hardware/frameworks/wifiiot_lite/src/iothardware_ndk.stamp
 [44/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/auth_info/exchange_auth_info_client.o
 [45/217] cross compiler obj/foundation/communication/services/softbus_lite/authmanager/source/auth_conn.o
-[46/217] cross compiler obj/foundation/communication/services/softbus_lite/authmanager/source/msg_get_deviceid.o
-[47/217] cross compiler obj/base/startup/services/bootstrap_lite/source/bootstrap_service.o
-[48/217] cross compiler obj/foundation/communication/services/softbus_lite/authmanager/source/auth_interface.o
-[49/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/key_agreement/key_agreement.o
+[46/217] cross compiler obj/base/startup/services/bootstrap_lite/source/bootstrap_service.o
+[47/217] cross compiler obj/foundation/communication/services/softbus_lite/authmanager/source/msg_get_deviceid.o
+[48/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/key_agreement/key_agreement.o
+[49/217] cross compiler obj/foundation/communication/services/softbus_lite/authmanager/source/auth_interface.o
 [50/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/key_agreement/key_agreement_client.o
 [51/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/json/commonutil.o
-[52/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/hichain.o
-[53/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/json/jsonutil.o
-[54/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/key_agreement/key_agreement_server.o
-[55/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/key_agreement/sec_clone_server.o
-[56/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/huks_adapter/huks_adapter.o
-[57/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/log/log.o
-[58/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/key_agreement/sts_client.o
-[59/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/key_agreement/pake_server.o
-[60/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/key_agreement/pake_client.o
+[52/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/json/jsonutil.o
+[53/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/key_agreement/key_agreement_server.o
+[54/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/key_agreement/sec_clone_server.o
+[55/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/hichain.o
+[56/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/key_agreement/pake_server.o
+[57/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/key_agreement/pake_client.o
+[58/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/huks_adapter/huks_adapter.o
+[59/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/key_agreement/sts_client.o
+[60/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/log/log.o
 [61/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/add_auth_info_request.o
 [62/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/add_auth_info_data.o
-[63/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/schedule/build_object.o
-[64/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/key_agreement/sts_server.o
-[65/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/schedule/distribution.o
-[66/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/add_auth_info_response.o
+[63/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/key_agreement/sts_server.o
+[64/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/schedule/build_object.o
+[65/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/add_auth_info_response.o
+[66/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/schedule/distribution.o
 [67/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/auth_ack_response.o
-[68/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/auth_start_response.o
-[69/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/auth_ack_request.o
-[70/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/exchange_response.o
-[71/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/auth_start_request.o
+[68/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/auth_ack_request.o
+[69/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/auth_start_response.o
+[70/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/auth_start_request.o
+[71/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/exchange_response.o
 [72/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/exchange_auth_data.o
 [73/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/import_add_auth_data.o
 [74/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/exchange_request.o
 [75/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/pake_client_confirm.o
-[76/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/key_agreement_version.o
-[77/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/rmv_auth_info_data.o
-[78/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/inform_message.o
-[79/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/pake_request.o
-[80/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/pake_server_confirm.o
-[81/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/pake_response.o
-[82/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/rmv_auth_info_request.o
-[83/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/parsedata.o
-[84/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/rmv_auth_info_response.o
+[76/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/pake_server_confirm.o
+[77/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/key_agreement_version.o
+[78/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/rmv_auth_info_data.o
+[79/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/inform_message.o
+[80/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/rmv_auth_info_request.o
+[81/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/pake_request.o
+[82/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/pake_response.o
+[83/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/rmv_auth_info_response.o
+[84/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/parsedata.o
 [85/217] cross compiler obj/base/security/frameworks/hichainsdk_lite/source/struct/sec_clone_data.o
-[86/217] cross compiler obj/base/startup/frameworks/syspara_lite/parameter/src/param_impl_hal/param_impl_hal.o
-[87/217] STAMP obj/base/startup/frameworks/syspara_lite/token/token_notes.stamp
+[86/217] STAMP obj/base/startup/frameworks/syspara_lite/token/token_notes.stamp
+[87/217] cross compiler obj/base/startup/frameworks/syspara_lite/parameter/src/param_impl_hal/param_impl_hal.o
 [88/217] AR libs/libhichainsdk.a
 [89/217] STAMP obj/base/security/frameworks/hichainsdk_lite/hichainsdk.stamp
 [90/217] cross compiler obj/base/startup/frameworks/syspara_lite/token/src/token_impl_hal/token.o
 [91/217] cross compiler obj/base/startup/services/bootstrap_lite/source/system_init.o
-[92/217] AR libs/libbootstrap.a
-[93/217] cross compiler obj/base/startup/frameworks/syspara_lite/parameter/src/parameter_common.o
-[94/217] cross compiler obj/foundation/distributedschedule/services/samgr_lite/communication/broadcast/source/pub_sub_implement.o
+[92/217] cross compiler obj/base/startup/frameworks/syspara_lite/parameter/src/parameter_common.o
+[93/217] AR libs/libbootstrap.a
+[94/217] cross compiler obj/foundation/distributedschedule/services/samgr_lite/communication/broadcast/source/pub_sub_feature.o
 [95/217] cross compiler obj/foundation/distributedschedule/services/samgr_lite/communication/broadcast/source/broadcast_service.o
-[96/217] cross compiler obj/foundation/distributedschedule/services/samgr_lite/samgr/adapter/cmsis/memory_adapter.o
-[97/217] cross compiler obj/foundation/distributedschedule/services/samgr_lite/communication/broadcast/source/pub_sub_feature.o
-[98/217] cross compiler obj/foundation/communication/services/softbus_lite/authmanager/source/bus_manager.o
-[99/217] cross compiler obj/foundation/communication/services/softbus_lite/trans_service/source/libdistbus/tcp_session.o
+[96/217] cross compiler obj/foundation/distributedschedule/services/samgr_lite/communication/broadcast/source/pub_sub_implement.o
+[97/217] cross compiler obj/foundation/distributedschedule/services/samgr_lite/samgr/adapter/cmsis/memory_adapter.o
+[98/217] cross compiler obj/foundation/communication/services/softbus_lite/trans_service/source/libdistbus/tcp_session.o
+[99/217] cross compiler obj/foundation/communication/services/softbus_lite/authmanager/source/bus_manager.o
 [100/217] cross compiler obj/foundation/communication/services/softbus_lite/authmanager/source/wifi_auth_manager.o
-[101/217] cross compiler obj/foundation/communication/services/softbus_lite/discovery/coap/source/json_payload.o
-[102/217] cross compiler obj/foundation/communication/services/softbus_lite/discovery/coap/source/nstackx_common.o
-[103/217] cross compiler obj/foundation/communication/services/softbus_lite/discovery/coap/source/coap_discover.o
+[101/217] cross compiler obj/foundation/communication/services/softbus_lite/discovery/coap/source/coap_discover.o
+[102/217] cross compiler obj/foundation/communication/services/softbus_lite/discovery/coap/source/json_payload.o
+[103/217] cross compiler obj/foundation/communication/services/softbus_lite/discovery/coap/source/nstackx_common.o
 [104/217] cross compiler obj/foundation/communication/services/softbus_lite/discovery/coap/source/coap_socket.o
 [105/217] cross compiler obj/foundation/communication/services/softbus_lite/discovery/coap/source/nstackx_device.o
 [106/217] cross compiler obj/foundation/communication/services/softbus_lite/trans_service/source/libdistbus/tcp_session_manager.o
@@ -114,16 +114,16 @@ ninja: Entering directory `/home/harmony/harmony/code/code-1.0/out/wifiiot'
 [112/217] cross compiler obj/foundation/communication/services/softbus_lite/trans_service/source/libdistbus/trans_lock.o
 [113/217] cross compiler obj/foundation/communication/services/softbus_lite/trans_service/source/libdistbus/auth_conn_manager.o
 [114/217] cross compiler obj/foundation/communication/services/softbus_lite/trans_service/source/utils/message.o
-[115/217] cross compiler obj/foundation/communication/services/softbus_lite/trans_service/source/utils/tcp_socket.o
-[116/217] cross compiler obj/foundation/distributedschedule/services/samgr_lite/samgr/adapter/cmsis/queue_adapter.o
+[115/217] cross compiler obj/foundation/distributedschedule/services/samgr_lite/samgr/adapter/cmsis/queue_adapter.o
+[116/217] cross compiler obj/foundation/communication/services/softbus_lite/trans_service/source/utils/tcp_socket.o
 [117/217] cross compiler obj/foundation/communication/services/softbus_lite/trans_service/source/utils/aes_gcm.o
 [118/217] cross compiler obj/foundation/distributedschedule/services/samgr_lite/samgr/registry/service_registry.o
 [119/217] AR libs/libbroadcast.a
 [120/217] cross compiler obj/foundation/distributedschedule/services/samgr_lite/samgr/adapter/cmsis/thread_adapter.o
 [121/217] cross compiler obj/foundation/distributedschedule/services/samgr_lite/samgr/adapter/cmsis/time_adapter.o
 [122/217] cross compiler obj/foundation/distributedschedule/services/samgr_lite/samgr/source/iunknown.o
-[123/217] cross compiler obj/foundation/distributedschedule/services/samgr_lite/samgr/source/samgr_lite.o
-[124/217] AR libs/libsamgr_adapter.a
+[123/217] AR libs/libsamgr_adapter.a
+[124/217] cross compiler obj/foundation/distributedschedule/services/samgr_lite/samgr/source/samgr_lite.o
 [125/217] cross compiler obj/foundation/distributedschedule/services/samgr_lite/samgr/source/common.o
 [126/217] cross compiler obj/foundation/distributedschedule/services/samgr_lite/samgr/source/task_manager.o
 [127/217] cross compiler obj/foundation/distributedschedule/services/samgr_lite/samgr/source/feature.o
@@ -132,8 +132,8 @@ ninja: Entering directory `/home/harmony/harmony/code/code-1.0/out/wifiiot'
 [130/217] AR libs/libsamgr_source.a
 [131/217] AR libs/libsamgr.a
 [132/217] STAMP obj/foundation/distributedschedule/services/samgr_lite/samgr.stamp
-[133/217] STAMP obj/foundation/distributedschedule/services/samgr_lite/samgr_lite_ndk.stamp
-[134/217] cross compiler obj/kernel/liteos_m/components/kal/src/kal.o
+[133/217] cross compiler obj/kernel/liteos_m/components/kal/src/kal.o
+[134/217] STAMP obj/foundation/distributedschedule/services/samgr_lite/samgr_lite_ndk.stamp
 [135/217] AR libs/libkal.a
 [136/217] STAMP obj/test/xts/acts/acts_compoment.stamp
 [137/217] STAMP obj/test/xts/tools/tools.stamp
@@ -147,8 +147,7 @@ ninja: Entering directory `/home/harmony/harmony/code/code-1.0/out/wifiiot'
 [145/217] STAMP obj/foundation/communication/services/softbus_lite/softbus_lite_ndk.stamp
 [146/217] cross compiler obj/kernel/liteos_m/components/cmsis/cmsis_liteos.o
 [147/217] AR libs/libcmsis.a
-[148/217] cross compiler obj/third_party/cJSON/cJSON_Utils.o
-[149/217] ACTION //test/xdevice:xdevice(//build/lite/toolchain:linux_x86_64_riscv32_gcc)
+[148/217] ACTION //test/xdevice:xdevice(//build/lite/toolchain:linux_x86_64_riscv32_gcc)
 running install
 running bdist_egg
 running egg_info
@@ -281,41 +280,42 @@ Installing xdevice_report script to /home/harmony/.local/bin
 Installed /home/harmony/.local/lib/python3.8/site-packages/xdevice-0.0.0-py3.8.egg
 Processing dependencies for xdevice==0.0.0
 Finished processing dependencies for xdevice==0.0.0
-[150/217] STAMP obj/third_party/pahomqtt/pahomqtt_shared.stamp
-[151/217] STAMP obj/test/xdevice/xdevice.stamp
-[152/217] cross compiler obj/third_party/pahomqtt/MQTTPacket/samples/transport.o
-[153/217] ACTION //test/xts/acts:acts(//build/lite/toolchain:linux_x86_64_riscv32_gcc)
-[154/217] STAMP obj/test/xts/acts/acts.stamp
-[155/217] cross compiler obj/third_party/cJSON/cJSON.o
-[156/217] AR libs/libcjson_static.a
-[157/217] STAMP obj/third_party/cJSON/cjson_ndk.stamp
-[158/217] cross compiler obj/utils/native/lite/kv_store/src/kvstore_impl_hal/kv_store.o
-[159/217] cross compiler obj/third_party/pahomqtt/MQTTPacket/src/MQTTConnectClient.o
-[160/217] cross compiler obj/utils/native/lite/kv_store/src/kvstore_common/kvstore_common.o
+[149/217] STAMP obj/test/xdevice/xdevice.stamp
+[150/217] cross compiler obj/third_party/cJSON/cJSON_Utils.o
+[151/217] STAMP obj/third_party/pahomqtt/pahomqtt_shared.stamp
+[152/217] ACTION //test/xts/acts:acts(//build/lite/toolchain:linux_x86_64_riscv32_gcc)
+[153/217] STAMP obj/test/xts/acts/acts.stamp
+[154/217] cross compiler obj/third_party/pahomqtt/MQTTPacket/samples/transport.o
+[155/217] cross compiler obj/utils/native/lite/kv_store/src/kvstore_impl_hal/kv_store.o
+[156/217] cross compiler obj/utils/native/lite/kv_store/src/kvstore_common/kvstore_common.o
+[157/217] cross compiler obj/third_party/pahomqtt/MQTTPacket/src/MQTTConnectClient.o
+[158/217] cross compiler obj/third_party/cJSON/cJSON.o
+[159/217] AR libs/libcjson_static.a
+[160/217] STAMP obj/third_party/cJSON/cjson_ndk.stamp
 [161/217] cross compiler obj/third_party/pahomqtt/MQTTPacket/src/MQTTConnectServer.o
 [162/217] cross compiler obj/third_party/pahomqtt/MQTTPacket/src/MQTTDeserializePublish.o
-[163/217] cross compiler obj/third_party/pahomqtt/MQTTPacket/src/MQTTFormat.o
-[164/217] cross compiler obj/third_party/pahomqtt/MQTTPacket/src/MQTTPacket.o
-[165/217] cross compiler obj/third_party/pahomqtt/MQTTPacket/src/MQTTSubscribeServer.o
-[166/217] cross compiler obj/third_party/pahomqtt/MQTTPacket/src/MQTTSubscribeClient.o
+[163/217] cross compiler obj/third_party/pahomqtt/MQTTPacket/src/MQTTSubscribeClient.o
+[164/217] cross compiler obj/third_party/pahomqtt/MQTTPacket/src/MQTTFormat.o
+[165/217] cross compiler obj/third_party/pahomqtt/MQTTPacket/src/MQTTPacket.o
+[166/217] cross compiler obj/third_party/pahomqtt/MQTTPacket/src/MQTTSubscribeServer.o
 [167/217] cross compiler obj/third_party/pahomqtt/MQTTPacket/src/MQTTSerializePublish.o
 [168/217] cross compiler obj/third_party/pahomqtt/MQTTPacket/src/MQTTUnsubscribeClient.o
 [169/217] cross compiler obj/third_party/pahomqtt/MQTTPacket/src/MQTTUnsubscribeServer.o
 [170/217] AR libs/libpahomqtt_static.a
-[171/217] STAMP obj/third_party/pahomqtt/pahomqtt_ndk.stamp
-[172/217] STAMP obj/vendor/hisi/hi3861/hi3861/sdk.stamp
-[173/217] AR libs/libutils_kv_store.a
-[174/217] STAMP obj/utils/native/lite/kv_store/kv_store.stamp
-[175/217] cross compiler obj/utils/native/lite/file/src/file_impl_hal/file.o
-[176/217] STAMP obj/vendor/hisi/hi3861/hi3861/wifiiot_sdk.stamp
+[171/217] cross compiler obj/utils/native/lite/file/src/file_impl_hal/file.o
+[172/217] STAMP obj/third_party/pahomqtt/pahomqtt_ndk.stamp
+[173/217] STAMP obj/vendor/hisi/hi3861/hi3861/sdk.stamp
+[174/217] AR libs/libutils_kv_store.a
+[175/217] STAMP obj/vendor/hisi/hi3861/hi3861/wifiiot_sdk.stamp
+[176/217] STAMP obj/utils/native/lite/kv_store/kv_store.stamp
 [177/217] cross compiler obj/vendor/hisi/hi3861/hi3861_adapter/hals/iot_hardware/wifiiot_lite/hal_wifiiot_watchdog.o
-[178/217] cross compiler obj/vendor/hisi/hi3861/hi3861_adapter/hals/iot_hardware/wifiiot_lite/hal_wifiiot_at.o
-[179/217] cross compiler obj/vendor/hisi/hi3861/hi3861_adapter/hals/iot_hardware/wifiiot_lite/hal_wifiiot_partition.o
+[178/217] cross compiler obj/vendor/hisi/hi3861/hi3861_adapter/hals/iot_hardware/wifiiot_lite/hal_wifiiot_partition.o
+[179/217] cross compiler obj/vendor/hisi/hi3861/hi3861_adapter/hals/iot_hardware/wifiiot_lite/hal_wifiiot_at.o
 [180/217] cross compiler obj/vendor/hisi/hi3861/hi3861_adapter/hals/iot_hardware/wifiiot_lite/hal_wifiiot_uart.o
-[181/217] cross compiler obj/vendor/hisi/hi3861/hi3861_adapter/hals/communication/wifi_lite/wifiservice/source/wifi_device.o
-[182/217] cross compiler obj/vendor/hisi/hi3861/hi3861_adapter/hals/communication/wifi_lite/wifiservice/source/wifi_device_util.o
-[183/217] cross compiler obj/vendor/huawei/wifi-iot/hals/utils/token/hal_token.o
-[184/217] cross compiler obj/vendor/hisi/hi3861/hi3861_adapter/hals/communication/wifi_lite/wifiservice/source/wifi_hotspot.o
+[181/217] cross compiler obj/vendor/hisi/hi3861/hi3861_adapter/hals/communication/wifi_lite/wifiservice/source/wifi_device_util.o
+[182/217] cross compiler obj/vendor/huawei/wifi-iot/hals/utils/token/hal_token.o
+[183/217] cross compiler obj/vendor/hisi/hi3861/hi3861_adapter/hals/communication/wifi_lite/wifiservice/source/wifi_hotspot.o
+[184/217] cross compiler obj/vendor/hisi/hi3861/hi3861_adapter/hals/communication/wifi_lite/wifiservice/source/wifi_device.o
 [185/217] cross compiler obj/vendor/hisi/hi3861/hi3861_adapter/hals/iot_hardware/wifiiot_lite/hal_wifiiot_spi.o
 [186/217] AR libs/libwifiservice.a
 [187/217] STAMP obj/foundation/communication/frameworks/wifi_lite/wifi.stamp
@@ -324,26 +324,26 @@ Finished processing dependencies for xdevice==0.0.0
 [190/217] cross compiler obj/vendor/hisi/hi3861/hi3861_adapter/hals/iot_hardware/wifiiot_lite/hal_wifiiot_kal.o
 [191/217] cross compiler obj/vendor/hisi/hi3861/hi3861_adapter/hals/iot_hardware/wifiiot_lite/hal_wifiiot_i2s.o
 [192/217] cross compiler obj/vendor/hisi/hi3861/hi3861_adapter/hals/iot_hardware/wifiiot_lite/hal_wifiiot_sdio.o
-[193/217] cross compiler obj/vendor/hisi/hi3861/hi3861_adapter/hals/iot_hardware/wifiiot_lite/hal_wifiiot_i2c.o
-[194/217] cross compiler obj/vendor/hisi/hi3861/hi3861_adapter/hals/iot_hardware/wifiiot_lite/hal_wifiiot_adc.o
-[195/217] cross compiler obj/vendor/hisi/hi3861/hi3861_adapter/hals/iot_hardware/wifiiot_lite/hal_lowpower.o
-[196/217] cross compiler obj/vendor/hisi/hi3861/hi3861_adapter/hals/iot_hardware/wifiiot_lite/hal_wifiiot_flash.o
-[197/217] cross compiler obj/vendor/hisi/hi3861/hi3861_adapter/hals/iot_hardware/wifiiot_lite/hal_wifiiot_gpio.o
-[198/217] cross compiler obj/vendor/hisi/hi3861/hi3861_adapter/hals/utils/file/src/hal_file.o
-[199/217] AR libs/libhal_file_static.a
-[200/217] cross compiler obj/vendor/hisi/hi3861/hi3861_adapter/hals/iot_hardware/wifiiot_lite/hal_reset.o
-[201/217] AR libs/libnative_file.a
-[202/217] STAMP obj/utils/native/lite/file/file.stamp
-[203/217] AR libs/libhal_iothardware.a
-[204/217] AR libs/libhal_token_static.a
-[205/217] STAMP obj/base/iot_hardware/frameworks/wifiiot_lite/iothardware.stamp
-[206/217] AR libs/libtoken_static.a
-[207/217] STAMP obj/base/startup/frameworks/syspara_lite/token/token.stamp
+[193/217] cross compiler obj/vendor/hisi/hi3861/hi3861_adapter/hals/iot_hardware/wifiiot_lite/hal_wifiiot_adc.o
+[194/217] cross compiler obj/vendor/hisi/hi3861/hi3861_adapter/hals/iot_hardware/wifiiot_lite/hal_wifiiot_i2c.o
+[195/217] cross compiler obj/vendor/hisi/hi3861/hi3861_adapter/hals/iot_hardware/wifiiot_lite/hal_wifiiot_flash.o
+[196/217] cross compiler obj/vendor/hisi/hi3861/hi3861_adapter/hals/iot_hardware/wifiiot_lite/hal_reset.o
+[197/217] cross compiler obj/vendor/hisi/hi3861/hi3861_adapter/hals/iot_hardware/wifiiot_lite/hal_lowpower.o
+[198/217] cross compiler obj/vendor/hisi/hi3861/hi3861_adapter/hals/iot_hardware/wifiiot_lite/hal_wifiiot_gpio.o
+[199/217] AR libs/libhal_iothardware.a
+[200/217] STAMP obj/base/iot_hardware/frameworks/wifiiot_lite/iothardware.stamp
+[201/217] AR libs/libhal_token_static.a
+[202/217] AR libs/libtoken_static.a
+[203/217] STAMP obj/base/startup/frameworks/syspara_lite/token/token.stamp
+[204/217] cross compiler obj/vendor/hisi/hi3861/hi3861_adapter/hals/utils/file/src/hal_file.o
+[205/217] AR libs/libhal_file_static.a
+[206/217] AR libs/libnative_file.a
+[207/217] STAMP obj/utils/native/lite/file/file.stamp
 [208/217] cross compiler obj/vendor/huawei/wifi-iot/hals/utils/sys_param/hal_sys_param.o
 [209/217] AR libs/libhal_sysparam.a
 [210/217] AR libs/libsysparam.a
-[211/217] STAMP obj/base/startup/frameworks/syspara_lite/parameter/parameter_notes.stamp
-[212/217] STAMP obj/base/startup/frameworks/syspara_lite/parameter/parameter.stamp
+[211/217] STAMP obj/base/startup/frameworks/syspara_lite/parameter/parameter.stamp
+[212/217] STAMP obj/base/startup/frameworks/syspara_lite/parameter/parameter_notes.stamp
 [213/217] STAMP obj/build/lite/ohos.stamp
 [214/217] ACTION //build/lite:gen_rootfs(//build/lite/toolchain:linux_x86_64_riscv32_gcc)
 [215/217] STAMP obj/build/lite/gen_rootfs.stamp
@@ -365,7 +365,7 @@ make app_subver_temp_dir
 mdmxml:/home/harmony/harmony/code/code-1.0/vendor/hisi/hi3861/hi3861/tools/nvtool/xml_file/mss_nvi_db.xml
 src_xml_list: ['/home/harmony/harmony/code/code-1.0/vendor/hisi/hi3861/hi3861/tools/nvtool/xml_file/mss_nvi_db.xml']
 combin_xml:/home/harmony/harmony/code/code-1.0/vendor/hisi/hi3861/hi3861/tools/nvtool/out_nv_bin/sta/nv/Hi3861_wifiiot_app/mss_nvi_db.xml
-root_list [<Element 'HISTUDIO' at 0x7f61749dbe00>]
+root_list [<Element 'HISTUDIO' at 0x7f8174fecdb0>]
 hi_nv_modify_by_cfg
 cfg_file: nv
 
@@ -424,10 +424,10 @@ upg file          out: build/build_tmp/cache/Hi3861_wifiiot_app_ota_temp.bin
 [common sign][01]=[0x8]
 [common sign][30]=[0xb5]
 [common sign][31]=[0x2a]
-[section sign][00]=[0x31]
-[section sign][01]=[0x1a]
-[section sign][30]=[0xbc]
-[section sign][31]=[0x54]
+[section sign][00]=[0x2]
+[section sign][01]=[0x6b]
+[section sign][30]=[0xd2]
+[section sign][31]=[0xc9]
 [image_id=0x3c78961e][struct_version=0x0]]
 [hash_alg=0x0][sign_alg=0x3f][sign_param=0x0]
 [section_count=0x2]
@@ -507,14 +507,14 @@ lzma    out   file : build/build_tmp/cache/Hi3861_wifiiot_app_ota_temp.lzma
 LZMA 19.00 (x64) : Igor Pavlov : Public domain : 2019-02-21
 
 Input size:  697808 (0 MiB)
-                                                                Output size: 438275 (0 MiB)
+                                                                Output size: 438274 (0 MiB)
 [upgbin-compressbin]0xaa5d0-0x12b000
 [common_head_offset=0][common_head_size=96]
 [common_key_offset=96][common_key_size=288]
 [common_head_sign_offset=384][common_head_sign_size=256]
 [section_head_offset=640][section_head_size=64]
 [upg_file_sign_offset=704][upg_file_sign_size=256]
-[padding_offset=439235][padding_size=13]
+[padding_offset=439234][padding_size=14]
 [upg fill user info]chip:b'Hi3861'
 -------------output/bin/Hi3861_wifiiot_app_ota.bin image info print start-------------
 [image_id=0x3c78961e][struct_version=0x0]]
@@ -533,14 +533,14 @@ Input size:  697808 (0 MiB)
 [common sign][01]=[0x6]
 [common sign][30]=[0xeb]
 [common sign][31]=[0x22]
-[section sign][00]=[0x38]
-[section sign][01]=[0xc3]
-[section sign][30]=[0xcb]
-[section sign][31]=[0x9d]
+[section sign][00]=[0xf8]
+[section sign][01]=[0x8f]
+[section sign][30]=[0xdb]
+[section sign][31]=[0x7c]
 [image_id=0x3c78961e][struct_version=0x0]]
 [hash_alg=0x0][sign_alg=0x3f][sign_param=0x0]
 [section_count=0x1]
-[section0_compress=0x1][section0_offset=0x3c0][section0_len=0x6b003]
+[section0_compress=0x1][section0_offset=0x3c0][section0_len=0x6b002]
 [section1_compress=0x0][section1_offset=0x0][section1_len=0x0]
 -------------output/bin/Hi3861_wifiiot_app_ota.bin image info print end--------------
 

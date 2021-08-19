@@ -35969,137 +35969,137 @@ Linker script and memory map
                 0x00000000004b0ec8       0x3a ohos/libs/libnet_demo.a(demo_entry_cmsis.o)
  *fill*         0x00000000004b0f02        0x2 
  .rodata.NetDemoTask.str1.4
-                0x00000000004b0f04       0x75 ohos/libs/libnet_demo.a(demo_entry_cmsis.o)
- *fill*         0x00000000004b0f79        0x3 
- .rodata        0x00000000004b0f7c       0x58 ohos/libs/libnet_demo.a(udp_server_test.o)
+                0x00000000004b0f04       0x6d ohos/libs/libnet_demo.a(demo_entry_cmsis.o)
+ *fill*         0x00000000004b0f71        0x3 
+ .rodata        0x00000000004b0f74       0x58 ohos/libs/libnet_demo.a(udp_server_test.o)
  .rodata.ColorfulLightDemo.str1.4
-                0x00000000004b0fd4       0x4e ohos/libs/libnet_demo.a(udp_server_test.o)
- *fill*         0x00000000004b1022        0x2 
+                0x00000000004b0fcc       0x4e ohos/libs/libnet_demo.a(udp_server_test.o)
+ *fill*         0x00000000004b101a        0x2 
  .rodata.CorlorfulLightTask.str1.4
-                0x00000000004b1024       0x18 ohos/libs/libnet_demo.a(udp_server_test.o)
+                0x00000000004b101c       0x18 ohos/libs/libnet_demo.a(udp_server_test.o)
  .rodata.NetDemoTest.str1.4
-                0x00000000004b103c       0x1b ohos/libs/libnet_demo.a(udp_server_test.o)
- *fill*         0x00000000004b1057        0x1 
+                0x00000000004b1034       0x1b ohos/libs/libnet_demo.a(udp_server_test.o)
+ *fill*         0x00000000004b104f        0x1 
  .rodata.UdpServerTest.str1.4
-                0x00000000004b1058       0x47 ohos/libs/libnet_demo.a(udp_server_test.o)
- *fill*         0x00000000004b109f        0x1 
+                0x00000000004b1050       0x47 ohos/libs/libnet_demo.a(udp_server_test.o)
+ *fill*         0x00000000004b1097        0x1 
  .rodata.mqtt_exit.str1.4
-                0x00000000004b10a0       0x13 ohos/libs/libnet_demo.a(udp_server_test.o)
- *fill*         0x00000000004b10b3        0x1 
+                0x00000000004b1098       0x13 ohos/libs/libnet_demo.a(udp_server_test.o)
+ *fill*         0x00000000004b10ab        0x1 
  .rodata.mqtt_init.str1.4
-                0x00000000004b10b4       0x6f ohos/libs/libnet_demo.a(udp_server_test.o)
+                0x00000000004b10ac       0x6f ohos/libs/libnet_demo.a(udp_server_test.o)
                                          0x73 (size before relaxing)
- *fill*         0x00000000004b1123        0x1 
+ *fill*         0x00000000004b111b        0x1 
  .rodata.mqtt_onmessage.str1.4
-                0x00000000004b1124       0x16 ohos/libs/libnet_demo.a(udp_server_test.o)
- *fill*         0x00000000004b113a        0x2 
+                0x00000000004b111c       0x16 ohos/libs/libnet_demo.a(udp_server_test.o)
+ *fill*         0x00000000004b1132        0x2 
  .rodata.mqtt_publish.str1.4
-                0x00000000004b113c       0x14 ohos/libs/libnet_demo.a(udp_server_test.o)
+                0x00000000004b1134       0x14 ohos/libs/libnet_demo.a(udp_server_test.o)
  .rodata.mqtt_subscribe.str1.4
-                0x00000000004b1150       0x16 ohos/libs/libnet_demo.a(udp_server_test.o)
- *fill*         0x00000000004b1166        0x2 
+                0x00000000004b1148       0x16 ohos/libs/libnet_demo.a(udp_server_test.o)
+ *fill*         0x00000000004b115e        0x2 
  .rodata.mqttrec_Thread.str1.4
-                0x00000000004b1168       0x3a ohos/libs/libnet_demo.a(udp_server_test.o)
- *fill*         0x00000000004b11a2        0x2 
- .rodata.pins   0x00000000004b11a4        0xc ohos/libs/libnet_demo.a(udp_server_test.o)
+                0x00000000004b1160       0x3a ohos/libs/libnet_demo.a(udp_server_test.o)
+ *fill*         0x00000000004b119a        0x2 
+ .rodata.pins   0x00000000004b119c        0xc ohos/libs/libnet_demo.a(udp_server_test.o)
  .rodata.ConnectToHotspot.str1.4
-                0x00000000004b11b0       0xc8 ohos/libs/libnet_demo.a(wifi_connecter.o)
+                0x00000000004b11a8       0xc8 ohos/libs/libnet_demo.a(wifi_connecter.o)
                                          0xd0 (size before relaxing)
  .rodata.DisconnectWithHotspot.str1.4
-                0x00000000004b1278       0x72 ohos/libs/libnet_demo.a(wifi_connecter.o)
- *fill*         0x00000000004b12ea        0x2 
+                0x00000000004b1270       0x72 ohos/libs/libnet_demo.a(wifi_connecter.o)
+ *fill*         0x00000000004b12e2        0x2 
  .rodata.OnWifiConnectionChanged.str1.4
-                0x00000000004b12ec       0x1d ohos/libs/libnet_demo.a(wifi_connecter.o)
- *fill*         0x00000000004b1309        0x3 
+                0x00000000004b12e4       0x1d ohos/libs/libnet_demo.a(wifi_connecter.o)
+ *fill*         0x00000000004b1301        0x3 
  .rodata.OnWifiScanStateChanged.str1.4
-                0x00000000004b130c       0x1f ohos/libs/libnet_demo.a(wifi_connecter.o)
- *fill*         0x00000000004b132b        0x1 
+                0x00000000004b1304       0x1f ohos/libs/libnet_demo.a(wifi_connecter.o)
+ *fill*         0x00000000004b1323        0x1 
  .rodata.PrintLinkedInfo.str1.4
-                0x00000000004b132c       0x5b ohos/libs/libnet_demo.a(wifi_connecter.o)
- *fill*         0x00000000004b1387        0x1 
+                0x00000000004b1324       0x5b ohos/libs/libnet_demo.a(wifi_connecter.o)
+ *fill*         0x00000000004b137f        0x1 
  .rodata.__FUNCTION__.6287
-                0x00000000004b1388       0x18 ohos/libs/libnet_demo.a(wifi_connecter.o)
+                0x00000000004b1380       0x18 ohos/libs/libnet_demo.a(wifi_connecter.o)
  .rodata.__FUNCTION__.6292
-                0x00000000004b13a0       0x17 ohos/libs/libnet_demo.a(wifi_connecter.o)
- *fill*         0x00000000004b13b7        0x1 
+                0x00000000004b1398       0x17 ohos/libs/libnet_demo.a(wifi_connecter.o)
+ *fill*         0x00000000004b13af        0x1 
  .rodata.MQTTSerialize_connect.str1.4
-                0x00000000004b13b8        0xf ohos/libs/libpahomqtt_static.a(MQTTConnectClient.o)
- *fill*         0x00000000004b13c7        0x1 
- .rodata        0x00000000004b13c8       0x20 ohos/libs/libpahomqtt_static.a(transport.o)
+                0x00000000004b13b0        0xf ohos/libs/libpahomqtt_static.a(MQTTConnectClient.o)
+ *fill*         0x00000000004b13bf        0x1 
+ .rodata        0x00000000004b13c0       0x20 ohos/libs/libpahomqtt_static.a(transport.o)
  .rodata.transport_open.str1.4
-                0x00000000004b13e8       0x16 ohos/libs/libpahomqtt_static.a(transport.o)
- *fill*         0x00000000004b13fe        0x2 
+                0x00000000004b13e0       0x16 ohos/libs/libpahomqtt_static.a(transport.o)
+ *fill*         0x00000000004b13f6        0x2 
  .rodata.AddTaskPool.str1.4
-                0x00000000004b1400       0x7e ohos/libs/libsamgr.a(samgr_lite.o)
- *fill*         0x00000000004b147e        0x2 
+                0x00000000004b13f8       0x7e ohos/libs/libsamgr.a(samgr_lite.o)
+ *fill*         0x00000000004b1476        0x2 
  .rodata.HandleInitRequest.str1.4
-                0x00000000004b1480       0x56 ohos/libs/libsamgr.a(samgr_lite.o)
- *fill*         0x00000000004b14d6        0x2 
+                0x00000000004b1478       0x56 ohos/libs/libsamgr.a(samgr_lite.o)
+ *fill*         0x00000000004b14ce        0x2 
  .rodata.InitCompleted.str1.4
-                0x00000000004b14d8       0x59 ohos/libs/libsamgr.a(samgr_lite.o)
- *fill*         0x00000000004b1531        0x3 
+                0x00000000004b14d0       0x59 ohos/libs/libsamgr.a(samgr_lite.o)
+ *fill*         0x00000000004b1529        0x3 
  .rodata.InitializeAllServices.str1.4
-                0x00000000004b1534       0x1c ohos/libs/libsamgr.a(samgr_lite.o)
+                0x00000000004b152c       0x1c ohos/libs/libsamgr.a(samgr_lite.o)
  .rodata.SAMGR_Bootstrap.str1.4
-                0x00000000004b1550       0xf9 ohos/libs/libsamgr.a(samgr_lite.o)
+                0x00000000004b1548       0xf9 ohos/libs/libsamgr.a(samgr_lite.o)
  .rodata.SendBootRequest.str1.4
-                0x00000000004b1649        0xa ohos/libs/libsamgr.a(samgr_lite.o)
- *fill*         0x00000000004b1649        0x3 
+                0x00000000004b1641        0xa ohos/libs/libsamgr.a(samgr_lite.o)
+ *fill*         0x00000000004b1641        0x3 
  .rodata.SAMGR_SendSharedRequest.str1.4
-                0x00000000004b164c       0x1c ohos/libs/libsamgr_source.a(message.o)
+                0x00000000004b1644       0x1c ohos/libs/libsamgr_source.a(message.o)
  .rodata.EndWork.str1.4
-                0x00000000004b1668       0x47 ohos/libs/libsamgr_source.a(task_manager.o)
- *fill*         0x00000000004b16af        0x1 
+                0x00000000004b1660       0x47 ohos/libs/libsamgr_source.a(task_manager.o)
+ *fill*         0x00000000004b16a7        0x1 
  .rodata.SAMGR_CreateFixedTaskPool.str1.4
-                0x00000000004b16b0       0x48 ohos/libs/libsamgr_source.a(task_manager.o)
+                0x00000000004b16a8       0x48 ohos/libs/libsamgr_source.a(task_manager.o)
  .rodata.SAMGR_StartTaskPool.str1.4
-                0x00000000004b16f8       0x1f ohos/libs/libsamgr_source.a(task_manager.o)
- *fill*         0x00000000004b1717        0x1 
+                0x00000000004b16f0       0x1f ohos/libs/libsamgr_source.a(task_manager.o)
+ *fill*         0x00000000004b170f        0x1 
  .rodata.DispatchEvent
-                0x00000000004b1718       0x28 ohos/libs/libwifiservice.a(wifi_device.o)
+                0x00000000004b1710       0x28 ohos/libs/libwifiservice.a(wifi_device.o)
  .rodata.AddDeviceConfig.str1.4
-                0x00000000004b1740       0x7e ohos/libs/libwifiservice.a(wifi_device.o)
- *fill*         0x00000000004b17be        0x2 
+                0x00000000004b1738       0x7e ohos/libs/libwifiservice.a(wifi_device.o)
+ *fill*         0x00000000004b17b6        0x2 
  .rodata.ConnectTo.str1.4
-                0x00000000004b17c0       0x32 ohos/libs/libwifiservice.a(wifi_device.o)
- *fill*         0x00000000004b17f2        0x2 
+                0x00000000004b17b8       0x32 ohos/libs/libwifiservice.a(wifi_device.o)
+ *fill*         0x00000000004b17ea        0x2 
  .rodata.DisableWifi.str1.4
-                0x00000000004b17f4       0x2f ohos/libs/libwifiservice.a(wifi_device.o)
- *fill*         0x00000000004b1823        0x1 
+                0x00000000004b17ec       0x2f ohos/libs/libwifiservice.a(wifi_device.o)
+ *fill*         0x00000000004b181b        0x1 
  .rodata.DispatchConnectEvent.isra.2.str1.4
-                0x00000000004b1824       0x3d ohos/libs/libwifiservice.a(wifi_device.o)
- *fill*         0x00000000004b1861        0x3 
+                0x00000000004b181c       0x3d ohos/libs/libwifiservice.a(wifi_device.o)
+ *fill*         0x00000000004b1859        0x3 
  .rodata.DispatchStaConnectEvent.str1.4
-                0x00000000004b1864       0x40 ohos/libs/libwifiservice.a(wifi_device.o)
+                0x00000000004b185c       0x40 ohos/libs/libwifiservice.a(wifi_device.o)
  .rodata.EnableWifi.str1.4
-                0x00000000004b18a4       0x5e ohos/libs/libwifiservice.a(wifi_device.o)
- *fill*         0x00000000004b1902        0x2 
+                0x00000000004b189c       0x5e ohos/libs/libwifiservice.a(wifi_device.o)
+ *fill*         0x00000000004b18fa        0x2 
  .rodata.RegisterHisiCallback.str1.4
-                0x00000000004b1904       0x6a ohos/libs/libwifiservice.a(wifi_device.o)
- *fill*         0x00000000004b196e        0x2 
+                0x00000000004b18fc       0x6a ohos/libs/libwifiservice.a(wifi_device.o)
+ *fill*         0x00000000004b1966        0x2 
  .rodata.RemoveDevice.str1.4
-                0x00000000004b1970       0x2b ohos/libs/libwifiservice.a(wifi_device.o)
- *fill*         0x00000000004b199b        0x1 
+                0x00000000004b1968       0x2b ohos/libs/libwifiservice.a(wifi_device.o)
+ *fill*         0x00000000004b1993        0x1 
  .rodata.StaConnect.str1.4
-                0x00000000004b199c       0x69 ohos/libs/libwifiservice.a(wifi_device.o)
- *fill*         0x00000000004b1a05        0x3 
+                0x00000000004b1994       0x69 ohos/libs/libwifiservice.a(wifi_device.o)
+ *fill*         0x00000000004b19fd        0x3 
  .rodata.CSWTCH.14
-                0x00000000004b1a08        0x4 ohos/libs/libwifiservice.a(wifi_device_util.o)
+                0x00000000004b1a00        0x4 ohos/libs/libwifiservice.a(wifi_device_util.o)
  .rodata.LockWifiEventLock.str1.4
-                0x00000000004b1a0c       0x2d ohos/libs/libwifiservice.a(wifi_device_util.o)
- *fill*         0x00000000004b1a39        0x3 
+                0x00000000004b1a04       0x2d ohos/libs/libwifiservice.a(wifi_device_util.o)
+ *fill*         0x00000000004b1a31        0x3 
  .rodata.LockWifiGlobalLock.str1.4
-                0x00000000004b1a3c       0x27 ohos/libs/libwifiservice.a(wifi_device_util.o)
- *fill*         0x00000000004b1a63        0x1 
+                0x00000000004b1a34       0x27 ohos/libs/libwifiservice.a(wifi_device_util.o)
+ *fill*         0x00000000004b1a5b        0x1 
  .rodata.UnlockWifiEventLock.str1.4
-                0x00000000004b1a64       0x2c ohos/libs/libwifiservice.a(wifi_device_util.o)
+                0x00000000004b1a5c       0x2c ohos/libs/libwifiservice.a(wifi_device_util.o)
  .rodata.UnlockWifiGlobalLock.str1.4
-                0x00000000004b1a90       0x26 ohos/libs/libwifiservice.a(wifi_device_util.o)
- *fill*         0x00000000004b1ab6        0x2 
+                0x00000000004b1a88       0x26 ohos/libs/libwifiservice.a(wifi_device_util.o)
+ *fill*         0x00000000004b1aae        0x2 
  .rodata.str1.4
-                0x00000000004b1ab8       0x1f ohos/libs/libwifiservice.a(wifi_device_util.o)
+                0x00000000004b1ab0       0x1f ohos/libs/libwifiservice.a(wifi_device_util.o)
                 0x00000000004b1ae0                . = ALIGN (0x20)
- *fill*         0x00000000004b1ad7        0x9 
+ *fill*         0x00000000004b1acf       0x11 
                 0x00000000004b1ae0                __text_rodata_end_ = .
                 0x00000000004b1ae0                . = ALIGN (0x20)
 

@@ -30,11 +30,11 @@
 #define NET_PARAMS_H
 
 #ifndef PARAM_HOTSPOT_SSID
-#define PARAM_HOTSPOT_SSID "811_cluster" // your AP SSID
+#define PARAM_HOTSPOT_SSID "bwb" // your AP SSID
 #endif
 
 #ifndef PARAM_HOTSPOT_PSK
-#define PARAM_HOTSPOT_PSK "hitedu811" // your AP PSK
+#define PARAM_HOTSPOT_PSK "bwb060614" // your AP PSK
 #endif
 
 #ifndef PARAM_HOTSPOT_TYPE
