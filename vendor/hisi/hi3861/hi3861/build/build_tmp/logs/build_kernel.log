@@ -15,7 +15,7 @@ make app_subver_temp_dir
 mdmxml:/home/harmony/harmony/code/code-1.0/vendor/hisi/hi3861/hi3861/tools/nvtool/xml_file/mss_nvi_db.xml
 src_xml_list: ['/home/harmony/harmony/code/code-1.0/vendor/hisi/hi3861/hi3861/tools/nvtool/xml_file/mss_nvi_db.xml']
 combin_xml:/home/harmony/harmony/code/code-1.0/vendor/hisi/hi3861/hi3861/tools/nvtool/out_nv_bin/sta/nv/Hi3861_wifiiot_app/mss_nvi_db.xml
-root_list [<Element 'HISTUDIO' at 0x7fc342c3edb0>]
+root_list [<Element 'HISTUDIO' at 0x7f98ac796e00>]
 hi_nv_modify_by_cfg
 cfg_file: nv
 
@@ -74,10 +74,10 @@ upg file          out: build/build_tmp/cache/Hi3861_wifiiot_app_ota_temp.bin
 [common sign][01]=[0x73]
 [common sign][30]=[0xe9]
 [common sign][31]=[0x44]
-[section sign][00]=[0xb5]
-[section sign][01]=[0x3]
-[section sign][30]=[0x39]
-[section sign][31]=[0x32]
+[section sign][00]=[0xca]
+[section sign][01]=[0xea]
+[section sign][30]=[0xd2]
+[section sign][31]=[0x29]
 [image_id=0x3c78961e][struct_version=0x0]]
 [hash_alg=0x0][sign_alg=0x3f][sign_param=0x0]
 [section_count=0x2]
@@ -157,14 +157,14 @@ lzma    out   file : build/build_tmp/cache/Hi3861_wifiiot_app_ota_temp.lzma
 LZMA 19.00 (x64) : Igor Pavlov : Public domain : 2019-02-21
 
 Input size:  704784 (0 MiB)
-                                                                Output size: 442112 (0 MiB)
+                                                                Output size: 442108 (0 MiB)
 [upgbin-compressbin]0xac110-0x129000
 [common_head_offset=0][common_head_size=96]
 [common_key_offset=96][common_key_size=288]
 [common_head_sign_offset=384][common_head_sign_size=256]
 [section_head_offset=640][section_head_size=64]
 [upg_file_sign_offset=704][upg_file_sign_size=256]
-[padding_offset=0][padding_size=0]
+[padding_offset=443068][padding_size=4]
 [upg fill user info]chip:b'Hi3861'
 -------------output/bin/Hi3861_wifiiot_app_ota.bin image info print start-------------
 [image_id=0x3c78961e][struct_version=0x0]]
@@ -183,14 +183,14 @@ Input size:  704784 (0 MiB)
 [common sign][01]=[0x72]
 [common sign][30]=[0x8a]
 [common sign][31]=[0xe5]
-[section sign][00]=[0xd4]
-[section sign][01]=[0xb0]
-[section sign][30]=[0x71]
-[section sign][31]=[0x41]
+[section sign][00]=[0xa4]
+[section sign][01]=[0x14]
+[section sign][30]=[0xf0]
+[section sign][31]=[0xec]
 [image_id=0x3c78961e][struct_version=0x0]]
 [hash_alg=0x0][sign_alg=0x3f][sign_param=0x0]
 [section_count=0x1]
-[section0_compress=0x1][section0_offset=0x3c0][section0_len=0x6bf00]
+[section0_compress=0x1][section0_offset=0x3c0][section0_len=0x6befc]
 [section1_compress=0x0][section1_offset=0x0][section1_len=0x0]
 -------------output/bin/Hi3861_wifiiot_app_ota.bin image info print end--------------
 [95m
