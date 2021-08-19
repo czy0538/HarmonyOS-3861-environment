@@ -30,6 +30,7 @@
 #include <errno.h>
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include <unistd.h>
 
 #include "net_demo.h"
@@ -55,7 +56,7 @@
 #define ARRAY_SIZE(a) sizeof(a) / sizeof(a[0])
 #endif
 
-#define MQTT_PUBLISH_DELAY 1000
+
 #define MS_PER_S 1000
 
 #define BEEP_TIMES 3
@@ -73,6 +74,7 @@
 
 #define ADC_RESOLUTION 2048
 
+static int MQTT_PUBLISH_DELAY=1000;
 float humidity = 0.0f;
 float temperature = 0.0f;
 float gasSensorResistance = 0.0f;
@@ -118,10 +120,16 @@ void mqtt_onmessage(void){
                 PwmStop(WIFI_IOT_PWM_PORT_PWM0);
                 usleep((1000 - BEEP_DURATION) * 1000);
 			}
-			if(strncmp("close", (const char *)payload_in, strlen("close")) == 0)
+			if(payloadlen_in>0&&payload_in[0]=='$')
 			{
-				//GpioSetOutputVal(WIFI_IOT_IO_NAME_GPIO_9, 0);
-                printf("reveived close\n");
+				char temp[256]="";
+                int i=1;
+                for(;i<payloadlen_in;++i)
+                {
+                    temp[i-1]=payload_in[i];
+                }
+                payload_in[i]='\0';
+                printf("number is :%d\n",atoi(temp));
 			}
         }
 }
