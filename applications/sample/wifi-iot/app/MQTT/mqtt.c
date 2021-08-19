@@ -55,6 +55,7 @@
 #define ARRAY_SIZE(a) sizeof(a) / sizeof(a[0])
 #endif
 
+#define MQTT_PUBLISH_DELAY 1000
 #define MS_PER_S 1000
 
 #define BEEP_TIMES 3
@@ -85,6 +86,7 @@ int mqtt_req_qos = 0;
 int mqtt_msgid = 1;
 int toStop = 0;
 MQTTString topicString = MQTTString_initializer;
+int connectedflag=0;
 
 void mqtt_exit(void)
 {
@@ -93,7 +95,36 @@ void mqtt_exit(void)
     printf("[MQTT] ERROR EXIT\n");
 }
 
-void mqtt_task(char* payload)
+//change light
+void mqtt_onmessage(void){
+	if (MQTTPacket_read(mqtt_buf, mqtt_buflen, transport_getdata) == PUBLISH){
+			unsigned char dup;
+			int qos;
+			unsigned char retained;
+			unsigned short msgid;
+			int payloadlen_in;
+			unsigned char* payload_in;
+			int rc;
+			MQTTString receivedTopic;
+			rc = MQTTDeserialize_publish(&dup, &qos, &retained, &msgid, &receivedTopic,
+					&payload_in, &payloadlen_in, mqtt_buf, mqtt_buflen);								// 接收数据
+			printf("message arrived %.*s\n", payloadlen_in, payload_in);
+
+            mqtt_rc = rc;
+			if(strncmp("open", (const char *)payload_in, strlen("open")) == 0)
+			{
+				//GpioSetOutputVal(WIFI_IOT_IO_NAME_GPIO_9, 1);
+                printf("reveived open\n");
+			}
+			if(strncmp("close", (const char *)payload_in, strlen("close")) == 0)
+			{
+				//GpioSetOutputVal(WIFI_IOT_IO_NAME_GPIO_9, 0);
+                printf("reveived close\n");
+			}
+        }
+}
+
+void mqtt_publish(char* payload)
 {
 
     int payloadlen = strlen(payload);
@@ -119,7 +150,7 @@ void mqtt_task(char* payload)
     mqtt_len = MQTTSerialize_publish(mqtt_buf, mqtt_buflen, 0, 0, 0, 0, topicString, (unsigned char *)payload, payloadlen);
     mqtt_rc = transport_sendPacketBuffer(mqtt_sock, mqtt_buf, mqtt_len);
 
-    osDelay(100);
+    osDelay(MQTT_PUBLISH_DELAY);
 
 }
 
@@ -191,7 +222,7 @@ int mqtt_init(void)
         mqtt_exit();
         return 0;
     }
-
+    connectedflag=1;
     return 1;
 }
 
@@ -307,11 +338,37 @@ void EnvironmentDemo_wifi(void)
 //end
 
 
+void mqttreceTask(void){	// MQTT定时接收
+	while(1){
+		if(connectedflag==1){
+			mqtt_onmessage();
+		}
+
+		osDelay(100);
+	}
+}
+
+// mqtt接收
+void mqttrec_Thread(void){
+    osThreadAttr_t mqttrecattr;
+    mqttrecattr.name = "mqttreceTask";
+    mqttrecattr.attr_bits = 0U;
+    mqttrecattr.cb_mem = NULL;
+    mqttrecattr.cb_size = 0U;
+    mqttrecattr.stack_mem = NULL;
+    mqttrecattr.stack_size = 10240;
+    mqttrecattr.priority =osPriorityNormal;
+ 
+    if (osThreadNew((osThreadFunc_t)mqttreceTask, NULL, &mqttrecattr) == NULL) {
+        printf("[mqttrec] Falied to create mqttreceTask!\n");
+    }
+}
 
 static char message[128] = "";
 void UdpServerTest(void)
 {
     EnvironmentDemo_wifi();//启动环境监测
+    mqttrec_Thread();//read thread
     printf("[MQTT]Start MQTT\r\n");
     if (mqtt_init() == 1)
     {
@@ -330,7 +387,7 @@ void UdpServerTest(void)
         strcat(message, temp);
         snprintf(temp, sizeof(temp), "gas: %.2f kom", gasSensorResistance);
         strcat(message, temp);
-        mqtt_task(message);
+        mqtt_publish(message);
         memset(message, 0, sizeof(message));
     }
 
