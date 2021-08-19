@@ -103,7 +103,20 @@ void mqtt_onmessage(void)
         printf("message arrived %.*s\n", payloadlen_in, payload_in);
 
         mqtt_rc = rc;
-
+        if (payloadlen_in > 0 && payload_in[0] == '$')
+        {
+            char temp[256] = "";
+            int i = 1;
+            for (; i < payloadlen_in; ++i)
+            {
+                temp[i - 1] = payload_in[i];
+            }
+            payload_in[i] = '\0';
+            if (atoi(temp) > 0)
+            {
+                MQTT_PUBLISH_DELAY = atoi(temp);
+            }
+        }
         if (payloadlen_in == 2)
         {
             switch (payload_in[0])
@@ -137,7 +150,7 @@ void mqtt_publish(char *payload)
     printf("publishing reading\n");
     mqtt_len = MQTTSerialize_publish(mqtt_buf, mqtt_buflen, 0, 0, 0, 0, topicString, (unsigned char *)payload, payloadlen);
     mqtt_rc = transport_sendPacketBuffer(mqtt_sock, mqtt_buf, mqtt_len);
-
+    printf("data light sensor：%u\n", data[1]);
     osDelay(MQTT_PUBLISH_DELAY);
 }
 
@@ -209,7 +222,7 @@ int mqtt_init(void)
         mqtt_exit();
         return 0;
     }
-
+    connectedflag=1;
     return 1;
 }
 
@@ -250,7 +263,7 @@ void CorlorfulLightTask(void *arg)
     {
         if (AdcRead(LIGHT_SENSOR_CHAN_NAME, &data[1], WIFI_IOT_ADC_EQU_MODEL_4, WIFI_IOT_ADC_CUR_BAIS_DEFAULT, 0) == WIFI_IOT_SUCCESS)
         {
-            printf("data light sensor：%u\n", data[1]);
+           
         }
 
         // //chan[1]是光照传感器
@@ -304,7 +317,6 @@ void ColorfulLightDemo(void)
     }
 }
 
-
 void mqttreceTask(void)
 { // MQTT定时接收
     while (1)
@@ -354,6 +366,5 @@ void UdpServerTest(void)
         memset(message, 0, sizeof(message));
     }
 }
-
 
 SERVER_TEST_DEMO(UdpServerTest);
