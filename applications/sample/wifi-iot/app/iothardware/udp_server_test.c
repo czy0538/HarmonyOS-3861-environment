@@ -48,8 +48,6 @@
 //传感器部分
 #define HUMAN_SENSOR_CHAN_NAME WIFI_IOT_ADC_CHANNEL_3
 #define LIGHT_SENSOR_CHAN_NAME WIFI_IOT_ADC_CHANNEL_4
-// #define HUMAN_SENSOR_PIN_NAME WIFI_IOT_IO_NAME_GPIO_7
-// #define LIGHT_SENSOR_PIN_NAME WIFI_IOT_IO_NAME_GPIO_9
 
 #define RED_LED_PIN_NAME WIFI_IOT_IO_NAME_GPIO_10
 #define RED_LED_PIN_FUNCTION WIFI_IOT_IO_FUNC_GPIO_10_GPIO
@@ -71,9 +69,9 @@
 #define ADC_RESOLUTION 4096
 #define PWM_FREQ_DIVITION 64000
 
+static const WifiIotGpioIdx pins[] = {RED_LED_PIN_NAME, GREEN_LED_PIN_NAME, BLUE_LED_PIN_NAME};
 unsigned short duty[NUM_SENSORS] = {0, 0}; //处理后pwm
 unsigned short data[NUM_SENSORS] = {0, 0}; //光照
-
 
 int mqtt_rc = 0;
 int mqtt_sock = 0;
@@ -84,19 +82,12 @@ int mqtt_req_qos = 0;
 int mqtt_msgid = 1;
 int toStop = 0;
 MQTTString topicString = MQTTString_initializer;
+int connectedflag = 0;
+static int MQTT_PUBLISH_DELAY = 1000;
 
-void mqtt_exit(void)
+//change light
+void mqtt_onmessage(void)
 {
-    transport_close(mqtt_sock);
-    mqtt_rc = mqtt_rc;
-    printf("[MQTT] ERROR EXIT\n");
-}
-
-void mqtt_task(char *payload)
-{
-
-    int payloadlen = strlen(payload);
-
     if (MQTTPacket_read(mqtt_buf, mqtt_buflen, transport_getdata) == PUBLISH)
     {
         unsigned char dup;
@@ -108,17 +99,46 @@ void mqtt_task(char *payload)
         int rc;
         MQTTString receivedTopic;
         rc = MQTTDeserialize_publish(&dup, &qos, &retained, &msgid, &receivedTopic,
-                                     &payload_in, &payloadlen_in, mqtt_buf, mqtt_buflen); // 发送数据
+                                     &payload_in, &payloadlen_in, mqtt_buf, mqtt_buflen); // 接收数据
         printf("message arrived %.*s\n", payloadlen_in, payload_in);
 
         mqtt_rc = rc;
+
+        if (payloadlen_in == 2)
+        {
+            switch (payload_in[0])
+            {
+            case 'r':
+                payload_in[1] == '1' ? GpioSetOutputVal(RED_LED_PIN_NAME, LED_BRIGHT) : GpioSetOutputVal(RED_LED_PIN_NAME, LED_DARK);
+                break;
+            case 'g':
+                payload_in[1] == '1' ? GpioSetOutputVal(GREEN_LED_PIN_NAME, LED_BRIGHT) : GpioSetOutputVal(GREEN_LED_PIN_NAME, LED_DARK);
+                break;
+            case 'b':
+                payload_in[1] == '1' ? GpioSetOutputVal(BLUE_LED_PIN_NAME, LED_BRIGHT) : GpioSetOutputVal(BLUE_LED_PIN_NAME, LED_DARK);
+                break;
+            }
+        }
     }
+}
+
+void mqtt_exit(void)
+{
+    transport_close(mqtt_sock);
+    mqtt_rc = mqtt_rc;
+    printf("[MQTT] ERROR EXIT\n");
+}
+
+void mqtt_publish(char *payload)
+{
+
+    int payloadlen = strlen(payload);
 
     printf("publishing reading\n");
     mqtt_len = MQTTSerialize_publish(mqtt_buf, mqtt_buflen, 0, 0, 0, 0, topicString, (unsigned char *)payload, payloadlen);
     mqtt_rc = transport_sendPacketBuffer(mqtt_sock, mqtt_buf, mqtt_len);
 
-    osDelay(100);
+    osDelay(MQTT_PUBLISH_DELAY);
 }
 
 int mqtt_subscribe(char *topic)
@@ -196,7 +216,6 @@ int mqtt_init(void)
 void CorlorfulLightTask(void *arg)
 {
     (void)arg;
-    static const WifiIotGpioIdx pins[] = {RED_LED_PIN_NAME, GREEN_LED_PIN_NAME, BLUE_LED_PIN_NAME};
 
     //闪两遍
     for (int i = 0; i < NUM_BLINKS; i++)
@@ -210,44 +229,48 @@ void CorlorfulLightTask(void *arg)
         }
     }
 
-    // GpioDeinit();，切换到pwm功能
-    IoSetFunc(RED_LED_PIN_NAME, WIFI_IOT_IO_FUNC_GPIO_10_PWM1_OUT);
-    IoSetFunc(GREEN_LED_PIN_NAME, WIFI_IOT_IO_FUNC_GPIO_11_PWM2_OUT);
-    IoSetFunc(BLUE_LED_PIN_NAME, WIFI_IOT_IO_FUNC_GPIO_12_PWM3_OUT);
+    // // GpioDeinit();，切换到pwm功能
+    // IoSetFunc(RED_LED_PIN_NAME, WIFI_IOT_IO_FUNC_GPIO_10_PWM1_OUT);
+    // IoSetFunc(GREEN_LED_PIN_NAME, WIFI_IOT_IO_FUNC_GPIO_11_PWM2_OUT);
+    // IoSetFunc(BLUE_LED_PIN_NAME, WIFI_IOT_IO_FUNC_GPIO_12_PWM3_OUT);
 
-    PwmInit(WIFI_IOT_PWM_PORT_PWM1); // R
-    PwmInit(WIFI_IOT_PWM_PORT_PWM2); // G
-    PwmInit(WIFI_IOT_PWM_PORT_PWM3); // B
+    // PwmInit(WIFI_IOT_PWM_PORT_PWM1); // R
+    // PwmInit(WIFI_IOT_PWM_PORT_PWM2); // G
+    // PwmInit(WIFI_IOT_PWM_PORT_PWM3); // B
 
-    // use PWM control BLUE LED brightness
-    for (int i = 1; i <= ADC_RESOLUTION; i *= 2)
-    {
-        PwmStart(WIFI_IOT_PWM_PORT_PWM3, i, PWM_FREQ_DIVITION);
-        usleep(250000);
-        PwmStop(WIFI_IOT_PWM_PORT_PWM3);
-    }
+    // // use PWM control BLUE LED brightness
+    // for (int i = 1; i <= ADC_RESOLUTION; i *= 2)
+    // {
+    //     PwmStart(WIFI_IOT_PWM_PORT_PWM3, i, PWM_FREQ_DIVITION);
+    //     usleep(250000);
+    //     PwmStop(WIFI_IOT_PWM_PORT_PWM3);
+    // }
 
     while (1)
     {
-
-        //chan[1]是光照传感器
-        static const WifiIotAdcChannelIndex chan[] = {HUMAN_SENSOR_CHAN_NAME, LIGHT_SENSOR_CHAN_NAME};
-        static const WifiIotPwmPort port[] = {WIFI_IOT_PWM_PORT_PWM1, WIFI_IOT_PWM_PORT_PWM2};
-
-        //暂时关闭传感器
-        for (size_t i = 1; i < sizeof(chan) / sizeof(chan[0]); i++)
+        if (AdcRead(LIGHT_SENSOR_CHAN_NAME, &data[1], WIFI_IOT_ADC_EQU_MODEL_4, WIFI_IOT_ADC_CUR_BAIS_DEFAULT, 0) == WIFI_IOT_SUCCESS)
         {
-            //光照传感器值放入了data[1]
-            //四次取平均
-            if (AdcRead(chan[i], &data[i], WIFI_IOT_ADC_EQU_MODEL_4, WIFI_IOT_ADC_CUR_BAIS_DEFAULT, 0) == WIFI_IOT_SUCCESS)
-            {
-                duty[i] = PWM_FREQ_DIVITION * (unsigned int)data[i] / ADC_RESOLUTION;
-            }
-            PwmStart(port[i], duty[i], PWM_FREQ_DIVITION);
-            usleep(10000);
-            PwmStop(port[i]);
+            printf("data light sensor：%u\n", data[1]);
         }
-        printf("data light sensor：%u\n", data[1]);
+
+        // //chan[1]是光照传感器
+        // static const WifiIotAdcChannelIndex chan[] = {HUMAN_SENSOR_CHAN_NAME, LIGHT_SENSOR_CHAN_NAME};
+        // static const WifiIotPwmPort port[] = {WIFI_IOT_PWM_PORT_PWM1, WIFI_IOT_PWM_PORT_PWM2};
+
+        // //暂时关闭传感器
+        // for (size_t i = 1; i < sizeof(chan) / sizeof(chan[0]); i++)
+        // {
+        //     //光照传感器值放入了data[1]
+        //     //四次取平均
+        //     if (AdcRead(chan[i], &data[i], WIFI_IOT_ADC_EQU_MODEL_4, WIFI_IOT_ADC_CUR_BAIS_DEFAULT, 0) == WIFI_IOT_SUCCESS)
+        //     {
+        //         duty[i] = PWM_FREQ_DIVITION * (unsigned int)data[i] / ADC_RESOLUTION;
+        //     }
+        //     PwmStart(port[i], duty[i], PWM_FREQ_DIVITION);
+        //     usleep(10000);
+        //     PwmStop(port[i]);
+        // }
+        //printf("data light sensor：%u\n", data[1]);
     }
 }
 
@@ -282,10 +305,42 @@ void ColorfulLightDemo(void)
 }
 
 
+void mqttreceTask(void)
+{ // MQTT定时接收
+    while (1)
+    {
+        if (connectedflag == 1)
+        {
+            mqtt_onmessage();
+        }
+
+        osDelay(100);
+    }
+}
+
+// mqtt接收
+void mqttrec_Thread(void)
+{
+    osThreadAttr_t mqttrecattr;
+    mqttrecattr.name = "mqttreceTask";
+    mqttrecattr.attr_bits = 0U;
+    mqttrecattr.cb_mem = NULL;
+    mqttrecattr.cb_size = 0U;
+    mqttrecattr.stack_mem = NULL;
+    mqttrecattr.stack_size = 10240;
+    mqttrecattr.priority = osPriorityNormal;
+
+    if (osThreadNew((osThreadFunc_t)mqttreceTask, NULL, &mqttrecattr) == NULL)
+    {
+        printf("[mqttrec] Falied to create mqttreceTask!\n");
+    }
+}
+
 static char message[128] = "";
 void UdpServerTest(void)
 {
-    ColorfulLightDemo();//启动板子
+    ColorfulLightDemo(); //启动板子
+    mqttrec_Thread();    //read thread
     printf("[MQTT]Start MQTT\r\n");
     if (mqtt_init() == 1)
     {
@@ -295,10 +350,10 @@ void UdpServerTest(void)
     while (1)
     {
         snprintf(message, sizeof(message), "light: %u\n", data[1]); //float2str
-        mqtt_task(message);
+        mqtt_publish(message);
         memset(message, 0, sizeof(message));
     }
-
 }
+
 
 SERVER_TEST_DEMO(UdpServerTest);
