@@ -1,14 +1,6 @@
-rule cc
-  command = riscv32-unknown-elf-gcc ${defines} ${include_dirs} ${cflags} ${cflags_c} -c ${in} -o ${out}
-  description = cross compiler ${out}
 rule cxx
   command = riscv32-unknown-elf-g++ ${defines} ${include_dirs} ${cflags_cc} -c ${in} -o ${out}
   description = CXX ${out}
-  depfile = ${out}.d
-  deps = gcc
-rule asm
-  command = riscv32-unknown-elf-gcc ${defines} ${include_dirs} ${asmflags} ${in} -c -o ${out}
-  description = cross compiler ${out}
   depfile = ${out}.d
   deps = gcc
 rule alink
@@ -16,19 +8,27 @@ rule alink
   description = AR ${out}
   rspfile = ${out}.rsp
   rspfile_content = ${in}
-rule solink
-  command = riscv32-unknown-elf-gcc -shared ${ldflags}  -Wl,--start-group ${in} ${libs} -Wl,--end-group -o ${output_dir}/${target_output_name}${output_extension}&& riscv32-unknown-elf-strip --strip-unneeded ${output_dir}/${target_output_name}${output_extension}
-  description = SOLINK ${output_dir}/${target_output_name}${output_extension}
-  rspfile = ${out}.rsp
-  rspfile_content = ${in}
 rule link
   command = riscv32-unknown-elf-gcc ${ldflags}  -Wl,--start-group ${in} ${libs} -Wl,--end-group -o ${output_dir}/bin/${target_output_name}${output_extension} && riscv32-unknown-elf-strip --strip-unneeded ${output_dir}/bin/${target_output_name}${output_extension}
   description = LINK ${output_dir}/bin/${target_output_name}${output_extension}
   rspfile = ${output_dir}/bin/${target_output_name}${output_extension}.rsp
   rspfile_content = ${in}
+rule solink
+  command = riscv32-unknown-elf-gcc -shared ${ldflags}  -Wl,--start-group ${in} ${libs} -Wl,--end-group -o ${output_dir}/${target_output_name}${output_extension}&& riscv32-unknown-elf-strip --strip-unneeded ${output_dir}/${target_output_name}${output_extension}
+  description = SOLINK ${output_dir}/${target_output_name}${output_extension}
+  rspfile = ${out}.rsp
+  rspfile_content = ${in}
 rule stamp
   command = /usr/bin/touch ${out}
   description = STAMP ${out}
+rule asm
+  command = riscv32-unknown-elf-gcc ${defines} ${include_dirs} ${asmflags} ${in} -c -o ${out}
+  description = cross compiler ${out}
+  depfile = ${out}.d
+  deps = gcc
+rule cc
+  command = riscv32-unknown-elf-gcc ${defines} ${include_dirs} ${cflags} ${cflags_c} -c ${in} -o ${out}
+  description = cross compiler ${out}
 rule copy
   command = cp -afd ${in} ${out}
   description = COPY ${in} ${out}

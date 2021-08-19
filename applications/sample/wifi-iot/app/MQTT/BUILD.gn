@@ -1,6 +1,6 @@
 static_library("mqtt_test_at") {
     sources = [
-        "udp_server_test.c"
+        "mqtt.c"
     ]
     sources+=["oled_ssd1306.c", "aht20.c","demo_entry_cmsis.c", "wifi_connecter.c"]
 
